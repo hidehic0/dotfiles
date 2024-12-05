@@ -1,4 +1,4 @@
 # hidehic0's dotofiles
-Very ordinary dotfiles.
-However, I was a bit particular about the neovim settings.
+Very ordinary dotfiles.<br>
+However, I was a bit particular about the neovim settings.<br>
 Please take a look!
