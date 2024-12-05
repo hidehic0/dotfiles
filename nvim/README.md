@@ -1,8 +1,8 @@
-# hidehico's neovim config
+# hidehic0's neovim config
 
-<a href="https://dotfyle.com/hidehic0/nvim"><img src="https://dotfyle.com/hidehic0/nvim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/hidehic0/nvim"><img src="https://dotfyle.com/hidehic0/nvim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/hidehic0/nvim"><img src="https://dotfyle.com/hidehic0/nvim/badges/plugin-manager?style=flat" /></a>
+<a href="https://dotfyle.com/hidehic0/dotfiles-nvim"><img src="https://dotfyle.com/hidehic0/dotfiles-nvim/badges/plugins?style=flat" /></a>
+<a href="https://dotfyle.com/hidehic0/dotfiles-nvim"><img src="https://dotfyle.com/hidehic0/dotfiles-nvim/badges/leaderkey?style=flat" /></a>
+<a href="https://dotfyle.com/hidehic0/dotfiles-nvim"><img src="https://dotfyle.com/hidehic0/dotfiles-nvim/badges/plugin-manager?style=flat" /></a>
 
 
 ## Install Instructions
@@ -12,18 +12,16 @@
 Clone the repository and install the plugins:
 
 ```sh
-git clone git@github.com:hidehic0/nvim ~/.config/hidehic0/nvim
+git clone git@github.com:hidehic0/dotfiles ~/.config/hidehic0/dotfiles
 ```
 
 Open Neovim with this config:
 
 ```sh
-NVIM_APPNAME=hidehic0/nvim/ nvim
+NVIM_APPNAME=hidehic0/dotfiles/nvim nvim
 ```
 
 ## Plugins
-This was created by dotfyle's auto-generation
-Some plugins are missing
 
 ### colorscheme
 
@@ -50,8 +48,8 @@ Some plugins are missing
 ### lsp
 
 + [nvimdev/lspsaga.nvim](https://dotfyle.com/plugins/nvimdev/lspsaga.nvim)
-+ [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
 + [neovim/nvim-lspconfig](https://dotfyle.com/plugins/neovim/nvim-lspconfig)
++ [nvimtools/none-ls.nvim](https://dotfyle.com/plugins/nvimtools/none-ls.nvim)
 ### media
 
 + [3rd/image.nvim](https://dotfyle.com/plugins/3rd/image.nvim)
@@ -76,8 +74,8 @@ Some plugins are missing
 + [nvim-lualine/lualine.nvim](https://dotfyle.com/plugins/nvim-lualine/lualine.nvim)
 ### syntax
 
-+ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 + [kylechui/nvim-surround](https://dotfyle.com/plugins/kylechui/nvim-surround)
++ [nvim-treesitter/nvim-treesitter](https://dotfyle.com/plugins/nvim-treesitter/nvim-treesitter)
 ### tabline
 
 + [akinsho/bufferline.nvim](https://dotfyle.com/plugins/akinsho/bufferline.nvim)
