@@ -1,0 +1,14 @@
+atcoder-cli-nodejs/
+configstore/ 
+environment.d/
+glib-2.0/
+nixpkgs/
+gh/
+lazydocker/
+neofetch/
+ruff/
+stylua/
+zed/
+qiita-cli/
+lazygit/
+git/
