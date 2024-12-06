@@ -12,6 +12,9 @@
     pkgs.sheldon
     pkgs.lazygit
     pkgs.deno
+    pkgs.pypy310
+    pkgs.fzf
+    pkgs.ruff
   ];
 
   home.file = {

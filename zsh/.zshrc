@@ -19,3 +19,11 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # 補完で選んでいるところを色付ける設定
 zstyle ':completion:*' menu true
 zstyle ':completion:*:rm:*' menu false
+
+# fzfでディレクトリを移動する関数
+cfd() {
+  local dir
+  dir=$(find . -name "*" -type d | fzf)
+  
+  cd "$dir"
+}
