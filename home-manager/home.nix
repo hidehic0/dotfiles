@@ -16,6 +16,7 @@
     pkgs.fzf
     pkgs.ruff
     pkgs.lazydocker
+    pkgs.lua-language-server
   ];
 
   home.file = {
