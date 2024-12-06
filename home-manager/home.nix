@@ -15,6 +15,7 @@
     pkgs.pypy310
     pkgs.fzf
     pkgs.ruff
+    pkgs.lazydocker
   ];
 
   home.file = {
