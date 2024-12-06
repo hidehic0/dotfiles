@@ -10,6 +10,8 @@
     pkgs.gh
     pkgs.neovim
     pkgs.sheldon
+    pkgs.lazygit
+    pkgs.deno
   ];
 
   home.file = {
