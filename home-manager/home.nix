@@ -17,6 +17,7 @@
     pkgs.ruff
     pkgs.lazydocker
     pkgs.lua-language-server
+    pkgs.marksman
   ];
 
   home.file = {
