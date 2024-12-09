@@ -27,3 +27,6 @@ cfd() {
   
   cd "$dir"
 }
+
+# alias
+alias dark_nvim='NVIM_APPNAME=dark_nvim nvim'
