@@ -30,3 +30,6 @@ cfd() {
 
 # alias
 alias dark_nvim='NVIM_APPNAME=dark_nvim nvim'
+
+# rust path
+. "$HOME/.cargo/env"

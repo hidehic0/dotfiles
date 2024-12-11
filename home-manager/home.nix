@@ -18,6 +18,7 @@
     pkgs.lazydocker
     pkgs.lua-language-server
     pkgs.marksman
+    pkgs.delta
   ];
 
   home.file = {

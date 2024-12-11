@@ -1,0 +1,3 @@
+[[plugins]]
+repo = "smoka7/hop.nvim"
+on_cmd = ["HopWord"]
