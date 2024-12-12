@@ -19,6 +19,7 @@
     pkgs.lua-language-server
     pkgs.marksman
     pkgs.delta
+    pkgs.black
   ];
 
   home.file = {
