@@ -14,14 +14,14 @@ return {
         config = function()
           -- insert keybindings
           vim.cmd([[
-inoremap <silent><expr> <TAB>
-      \ pum#visible() ? '<Cmd>call pum#map#insert_relative(+1)<CR>' :
-      \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
-      \ '<TAB>' : ddc#map#manual_complete()
-inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
-inoremap <C-e>   <Cmd>call pum#map#cancel()<CR>
+    inoremap <silent><expr> <TAB>
+          \ pum#visible() ? '<Cmd>call pum#map#insert_relative(+1)<CR>' :
+          \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
+          \ '<TAB>' : ddc#map#manual_complete()
+    inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
+    inoremap <C-e>   <Cmd>call pum#map#cancel()<CR>
 
-cnoremap <Tab>   <Cmd>call pum#map#insert_relative(+1)<CR>
+    cnoremap <Tab>   <Cmd>call pum#map#insert_relative(+1)<CR>
     cnoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
           ]])
         end,
@@ -39,9 +39,7 @@ cnoremap <Tab>   <Cmd>call pum#map#insert_relative(+1)<CR>
         "TextChangedP",
         "CmdlineChanged",
       })
-      patch_global("cmdlineSources", {
-        "cmdline",
-      })
+
       patch_global("sources", { "lsp" })
       patch_global("cmdlineSources", {
         [":"] = {
