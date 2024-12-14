@@ -37,6 +37,11 @@ return {
           },
           goto_next_start = {
             ["]m"] = "@function.outer",
+            ["]["] = "@class.outer",
+          },
+          goto_next_end = {
+            ["[m"] = "@function.outer",
+            ["[]"] = "@class.outer",
           },
         },
       })
