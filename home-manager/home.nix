@@ -21,6 +21,7 @@
     pkgs.delta
     pkgs.black
     pkgs.tree-sitter
+    pkgs.hugo
   ];
 
   home.file = {
