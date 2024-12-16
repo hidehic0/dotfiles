@@ -20,6 +20,7 @@
     pkgs.marksman
     pkgs.delta
     pkgs.black
+    pkgs.tree-sitter
   ];
 
   home.file = {
