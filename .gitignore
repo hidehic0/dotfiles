@@ -12,3 +12,4 @@ zed/
 qiita-cli/
 lazygit/
 git/
+nvim/lazy-lock.json
