@@ -1,13 +1,13 @@
 return {
   {
     "mfussenegger/nvim-lint",
-    event="VeryLazy",
-    config= function()
+    event = "VeryLazy",
+    config = function()
       require("lint").linters_by_ft = {
-        python = {"ruff"},
-        lua = {"luac"},
-        cpp = {"clang-format"},
-        zsh = {"zsh"}
+        python = { "ruff" },
+        lua = { "luac" },
+        cpp = { "clangd" },
+        zsh = { "zsh" }
       }
     end
   }
