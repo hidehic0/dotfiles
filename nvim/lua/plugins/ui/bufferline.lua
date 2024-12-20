@@ -2,7 +2,7 @@ return {
   {
     "akinsho/bufferline.nvim",
     dependencies = "nvim-tree/nvim-web-devicons",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "BufReadPost", "BufAdd", "BufNewFile" },
     config = function()
       --      vim.keymap.set("n", "g", "t", "<Cmd>BufferLineCycleNext<CR>", {})
       --     vim.keymap.set("n", "g", "T", "<Cmd>BufferLineCyclePrev<CR>", {})
