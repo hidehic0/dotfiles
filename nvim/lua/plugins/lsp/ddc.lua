@@ -13,7 +13,7 @@ return {
       "Shougo/ddc-ui-pum",
       "Shougo/ddc-source-cmdline",
     },
-    event = "InsertEnter",
+    event = { "InsertEnter", "CmdlineEnter" },
     config = function()
       local patch_global = vim.fn["ddc#custom#patch_global"]
       patch_global("ui", { "pum" })
