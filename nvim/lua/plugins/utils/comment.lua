@@ -1,6 +1,7 @@
 return {
   {
     "numToStr/Comment.nvim",
+    event = { "CursorHold", "CursorHoldI" },
     opts = {
       -- ad
       opleader = {
