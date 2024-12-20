@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = "VeryLazy",
+    event = { "CursorHold", "CursorHoldI" },
     config = function()
       require("conform").setup({
         format_by_ft = {

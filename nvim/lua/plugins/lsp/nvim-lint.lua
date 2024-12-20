@@ -1,7 +1,7 @@
 return {
   {
     "mfussenegger/nvim-lint",
-    event = "VeryLazy",
+    event = { "CursorHold", "CursorHoldI" },
     config = function()
       require("lint").linters_by_ft = {
         python = { "ruff" },
