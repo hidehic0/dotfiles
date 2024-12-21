@@ -7,6 +7,7 @@
   home.stateVersion = "24.11";
   home.packages = [
     pkgs.emacs
+    pkgs.vim
     pkgs.gh
     pkgs.neovim
     pkgs.sheldon
