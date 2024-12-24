@@ -10,6 +10,7 @@
     pkgs.vim
     pkgs.gh
     pkgs.neovim
+    pkgs.tmux
     pkgs.sheldon
     pkgs.lazygit
     pkgs.deno
