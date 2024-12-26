@@ -9,6 +9,7 @@ exec "wl-paste -pw wl-copy"
 exec --no-startup-id "fcitx5 -rd"
 exec xsettingsd
 exec pulseaudio --start 
+exec mako
 
 bar {
   swaybar_command waybar
