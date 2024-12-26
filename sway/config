@@ -40,7 +40,7 @@ bindsym $mod+Shift+t exec swaylock
 font pango:noto sans CJK JP 12
 
 # app start keybinds
-bindsym $mod+Return exec wezterm
+bindsym $mod+Return exec alacritty
 bindsym $mod+F2 exec "vivaldi --gtk-version=4"
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+d exec  ~/rofi_start.sh
