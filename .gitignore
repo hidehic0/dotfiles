@@ -11,6 +11,7 @@ stylua/
 zed/
 qiita-cli/
 git/
+mozc/
 nvim/lazy-lock.json
 Kvantum
 Mousepad
@@ -46,3 +47,4 @@ user-dirs.dirs
 user-dirs.locale
 xarchiver
 tmux**.log
+mozc
