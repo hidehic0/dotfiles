@@ -10,11 +10,9 @@
     pkgs.vim
     pkgs.gh
     pkgs.neovim
-    pkgs.tmux
     pkgs.sheldon
     pkgs.lazygit
     pkgs.deno
-    pkgs.pypy310
     pkgs.fzf
     pkgs.ruff
     pkgs.lazydocker
@@ -24,6 +22,7 @@
     pkgs.black
     pkgs.tree-sitter
     pkgs.hugo
+
   ];
 
   home.file = {
