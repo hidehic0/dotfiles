@@ -40,6 +40,13 @@ M.keys = {
     mods = "LEADER",
     action = act.ActivatePaneDirection("Down")
   },
+  --  pane create keybinds
+  { key = "%", mods = "LEADER|SHIFT", action = act({ SplitVertical = { domain = "CurrentPaneDomain" } }) },
+  { key = '"', mods = "LEADER|SHIFT", action = act({ SplitHorizontal = { domain = "CurrentPaneDomain" } }) },
+  -- { key = "%",
+  --   mods = "LEADER",
+  --   actions = act.SplitHorizontal { domain = 'CurrentPaneDomain' }
+  -- }
 }
 
 return M
