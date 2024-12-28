@@ -2,8 +2,7 @@
 import = ["/home/hidehico/.config/alacritty/themes/themes/one_dark.toml"]
 
 [font.normal]
-family= "Hack Nerd Font"
-style = "Regular"
+family = "HackGen35ConsoleNF"
 
 [font]
 size = 12
