@@ -31,7 +31,7 @@ M.keys = {
     action = act.ActivatePaneDirection("Right")
   },
   {
-    key = "u",
+    key = "k",
     mods = "LEADER",
     action = act.ActivatePaneDirection("Up")
   },
