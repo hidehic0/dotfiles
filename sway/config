@@ -82,7 +82,7 @@ bindsym $mod+ctrl+9 move container to workspace number $ws9
 bindsym $mod+Ctrl+0 move container to workspace number $ws10
 
 # set wallpaper
-output "*" background "/usr/share/backgrounds/bluemountain.jpg" fill
+output "*" background "/usr/share/backgrounds/archlinux/simple.png" fill
 
 for_window [app_id=".*"] border pixel 0
 # include /etc/sway/config.d/*.conf
