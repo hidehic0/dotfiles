@@ -36,3 +36,4 @@ alias dark_nvim='NVIM_APPNAME=dark_nvim nvim'
 
 # pypy path
 alias pypy3="$HOME/pypy3.10-v7.3.17-linux64/bin/pypy3"
+
