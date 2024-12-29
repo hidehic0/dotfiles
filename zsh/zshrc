@@ -1,13 +1,14 @@
 SPLIT_FILES="/home/hidehico/.config/zsh/zsh.d"
 
+# sheldonの設定
+eval "$(sheldon source)"
+
 # hist settings
 source "$SPLIT_FILES/hist.zsh"
 
 # p10k settings
 source "$SPLIT_FILES/p10k.zsh"
 
-# sheldonの設定
-eval "$(sheldon source)"
 
 # 補完で選んでいるところを色付ける設定
 zstyle ':completion:*' menu true
