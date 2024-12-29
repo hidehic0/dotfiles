@@ -10,10 +10,6 @@ source "$SPLIT_FILES/hist.zsh"
 source "$SPLIT_FILES/p10k.zsh"
 
 
-# 補完で選んでいるところを色付ける設定
-zstyle ':completion:*' menu true
-zstyle ':completion:*:rm:*' menu false
-
 # rust path
 . "$HOME/.cargo/env"
 
