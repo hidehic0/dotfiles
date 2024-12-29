@@ -35,7 +35,6 @@ use = ["{{ name }}.zsh"]
 
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
-apply = ["fpath"]
 
 # For example:
 #
