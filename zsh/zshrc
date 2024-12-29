@@ -22,15 +22,11 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 zstyle ':completion:*' menu true
 zstyle ':completion:*:rm:*' menu false
 
-# fzfでディレクトリを移動する関数
-cfd() {
-  local dir
-  dir=$(find . -name "*" -type d | fzf)
-  
-  cd "$dir"
-}
 # rust path
 . "$HOME/.cargo/env"
 
 # alias import
 source "$SPLIT_FILES/alias.zsh"
+
+# function import
+source "$SPLIT_FILES/func.zsh"
