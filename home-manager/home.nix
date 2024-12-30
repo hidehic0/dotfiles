@@ -22,6 +22,7 @@
     pkgs.black
     pkgs.tree-sitter
     pkgs.hugo
+    pkgs.online-judge-tools
 
   ];
 
