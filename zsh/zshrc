@@ -18,3 +18,5 @@ source "$SPLIT_FILES/func.zsh"
 # paths import
 source "$SPLIT_FILES/paths.zsh"
 
+# utils config import
+source "$SPLIT_FILES/utils.zsh"
