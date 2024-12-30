@@ -23,7 +23,7 @@
     pkgs.tree-sitter
     pkgs.hugo
     pkgs.online-judge-tools
-
+    pkgs.ruby
   ];
 
   home.file = {
