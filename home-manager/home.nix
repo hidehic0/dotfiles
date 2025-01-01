@@ -9,7 +9,6 @@
     pkgs.emacs
     pkgs.vim
     pkgs.gh
-    pkgs.neovim
     pkgs.sheldon
     pkgs.lazygit
     pkgs.deno
