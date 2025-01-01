@@ -1,7 +1,7 @@
 return {
   {
     "mfussenegger/nvim-lint",
-    event = { "CursorHold", "CursorHoldI" },
+    event = { "BufWritePost" },
     config = function()
       require("lint").linters_by_ft = {
         python = { "ruff" },
@@ -9,6 +9,12 @@ return {
         cpp = { "clangd" },
         zsh = { "zsh" }
       }
+
+      vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+        callback = function()
+          require("lint").try_lint()
+        end,
+      })
     end
   }
 }
