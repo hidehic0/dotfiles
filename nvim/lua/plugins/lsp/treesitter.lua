@@ -1,10 +1,11 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    event = {"BufReadPre"},
+    event = { "BufReadPre" },
     build = ":TSUpdate",
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
+      'nvim-treesitter/nvim-treesitter-refactor',
     },
     config = function()
       require("nvim-treesitter.configs").setup({
@@ -44,6 +45,14 @@ return {
             ["[]"] = "@class.outer",
           },
         },
+        refactor = {
+          smart_rename = {
+            enable = true,
+            keymaps = {
+              smart_rename = "grr",
+            },
+          },
+        }
       })
     end,
   },
