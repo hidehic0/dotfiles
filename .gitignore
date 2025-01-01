@@ -1,7 +1,6 @@
 configstore/ 
 environment.d/
 glib-2.0/
-nixpkgs/
 gh/
 lazydocker/
 neofetch/
