@@ -1,7 +1,8 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = { "CursorHold", "CursorHoldI" },
+    event = { "BufWritePre" },
+    cmd = { "ConformInfo" },
     config = function()
       require("conform").setup({
         format_by_ft = {
