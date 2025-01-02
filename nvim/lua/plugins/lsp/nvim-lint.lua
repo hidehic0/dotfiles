@@ -6,7 +6,7 @@ return {
       require("lint").linters_by_ft = {
         python = { "ruff" },
         lua = { "luac" },
-        cpp = { "clangd" },
+        cpp = { "cppcheck" },
         zsh = { "zsh" }
       }
 
