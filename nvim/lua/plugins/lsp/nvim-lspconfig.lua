@@ -36,6 +36,8 @@ return {
         },
       })
       lspconfig["ruff"].setup({})
+
+
       lspconfig["bashls"].setup({
         capabilities = capabilities,
         filetypes = { "sh", "bash", "zsh" }, -- シェルスクリプト用のファイルタイプを指定

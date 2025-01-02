@@ -1,7 +1,7 @@
 return {
   {
     "mfussenegger/nvim-lint",
-    event = { "BufWritePost" },
+    event = { "InsertLeave", "TextChanged" },
     config = function()
       require("lint").linters_by_ft = {
         python = { "ruff" },
@@ -10,7 +10,7 @@ return {
         zsh = { "zsh" }
       }
 
-      vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+      vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
         callback = function()
           require("lint").try_lint()
         end,
