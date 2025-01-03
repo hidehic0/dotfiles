@@ -4,7 +4,6 @@ return {
     event = { "InsertLeave", "TextChanged" },
     config = function()
       require("lint").linters_by_ft = {
-        python = { "ruff" },
         lua = { "luac" },
         cpp = { "cppcheck" },
         zsh = { "zsh" }
