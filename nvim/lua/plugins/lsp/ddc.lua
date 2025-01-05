@@ -7,24 +7,34 @@ return {
       "Shougo/ddc-ui-native",
       "tani/ddc-fuzzy",
       "Shougo/ddc-source-lsp",
-      -- "Shougo/ddc-sorter_rank",
       "Shougo/ddc-converter_remove_overlap",
       "Shougo/pum.vim",
       "Shougo/ddc-ui-pum",
       "Shougo/ddc-source-cmdline",
+      "LumaKernel/ddc-source-file"
+
     },
-    event = { "InsertEnter", "CmdlineEnter" },
+    event = {
+      "CmdlineEnter",
+      "CmdlineChanged",
+      "InsertEnter",
+      "TextChangedI",
+      "TextChangedP",
+      "TextChangedT",
+    },
     config = function()
       local patch_global = vim.fn["ddc#custom#patch_global"]
       patch_global("ui", { "pum" })
       patch_global("autoCompleteEvents", {
+        "CmdlineEnter",
+        "CmdlineChanged",
         "InsertEnter",
         "TextChangedI",
         "TextChangedP",
-        "CmdlineChanged",
+        "TextChangedT",
       })
 
-      patch_global("sources", { "lsp" })
+      patch_global("sources", { "lsp", "file" })
       patch_global("cmdlineSources", {
         [":"] = {
           "cmdline",
@@ -45,7 +55,7 @@ return {
           converters = { "converter_fuzzy", "converter_remove_overlap" },
         },
         lsp = {
-          mark = "lsp",
+          mark = "[LSP]",
           dup = "keep",
           forceCompletionPattern = "\\.\\w*|:\\w*|->\\w*",
           sorters = { "sorter_lsp-kind", "sorter_fuzzy" },
@@ -53,6 +63,9 @@ return {
         cmdline = {
           mark = "[CMD]",
         },
+        file = {
+          mark = "[F]"
+        }
       })
 
       vim.cmd([[
@@ -82,6 +95,7 @@ return {
             silent! cunmap <C-e>
         endfunction
       ]])
+      vim.fn["ddc#enable_terminal_completion"]()
       vim.fn["ddc#enable"]()
     end,
   },
