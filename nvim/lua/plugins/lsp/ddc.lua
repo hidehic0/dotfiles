@@ -31,7 +31,6 @@ return {
     },
     config = function()
       local patch_global = vim.fn["ddc#custom#patch_global"]
-      local patch_filetype = vim.fn["ddc#custom#patch_filetype"]
       patch_global("ui", { "pum" })
       patch_global("autoCompleteEvents", {
         "CmdlineEnter",
@@ -68,7 +67,7 @@ return {
           mark = "[LSP]",
           dup = "force",
           forceCompletionPattern = "\\.\\w*|:\\w*|->\\w*",
-          sorters = { "sorter_lsp-kind" },
+          sorters = { "sorter_lsp-kind", "sorter_fuzzy" },
         },
         cmdline = {
           mark = "[CMD]",
