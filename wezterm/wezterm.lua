@@ -10,6 +10,6 @@ config.webgpu_preferred_adapter = wezterm.gui.enumerate_gpus()[1]
 config.leader = { key = "b", mods = "CTRL", timeout_milliseconds = 1000 }
 config.keys = keymaps.keys
 config.enable_wayland = true
-config.use_ime = false
+config.use_ime = true
 
 return config
