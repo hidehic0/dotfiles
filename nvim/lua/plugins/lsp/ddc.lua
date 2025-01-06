@@ -44,12 +44,6 @@ return {
 
       patch_global("sources", { "lsp", "file" })
 
-      -- lua config
-      patch_filetype("lua", {
-        sources = {
-          "lsp", "nvim-lua"
-        }
-      })
 
       patch_global("cmdlineSources", {
         [":"] = {
@@ -74,7 +68,7 @@ return {
           mark = "[LSP]",
           dup = "force",
           forceCompletionPattern = "\\.\\w*|:\\w*|->\\w*",
-          sorters = { "sorter_lsp-kind", "sorter_fuzzy" },
+          sorters = { "sorter_lsp-kind" },
         },
         cmdline = {
           mark = "[CMD]",
@@ -82,10 +76,6 @@ return {
         file = {
           mark = "[F]",
           forceCompletionPattern = [[\S/\S*]],
-        },
-        ["nvim-lua"] = {
-          mark = "",
-          forceCompletionPattern = "\\.\\w*",
         },
       })
 
