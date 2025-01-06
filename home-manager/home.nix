@@ -1,36 +1,52 @@
-{ config, pkgs, ... }:
-
 {
-  home.username = "hidehico";
-  home.homeDirectory = "/home/hidehico";
-
-  home.stateVersion = "24.11";
-  home.packages = [
-    pkgs.emacs
-    pkgs.vim
-    pkgs.gh
-    pkgs.sheldon
-    pkgs.lazygit
-    pkgs.deno
-    pkgs.fzf
-    pkgs.ruff
-    pkgs.lazydocker
-    pkgs.lua-language-server
-    pkgs.marksman
-    pkgs.delta
-    pkgs.black
-    pkgs.tree-sitter
-    pkgs.hugo
-    pkgs.online-judge-tools
-    pkgs.ruby
-  ];
-
-  home.file = {
+  inputs,
+  lib,
+  config,
+  pkgs,
+  ...
+}:
+let 
+  username = "hidehico";
+in {
+  nixpkgs = {
+    config = {
+      allowUnfree=false;
+    };
   };
 
-  home.sessionVariables = {
-  };
+  home = {
+    username = "hidehico";
+    homeDirectory = "/home/hidehico";
 
+    stateVersion = "24.11";
+    packages = with pkgs;
+    [
+      black
+      delta
+      deno
+      emacs
+      fzf
+      gh
+      hugo
+      lazydocker
+      lazygit
+      lua-language-server
+      marksman
+      online-judge-tools
+      ruby
+      ruff
+      sheldon
+      tree-sitter
+      vim
+    ];
+
+    file = {
+    };
+
+    sessionVariables = {
+    };
+
+    enableNixpkgsReleaseCheck = false;
+  };
   programs.home-manager.enable = true;
-  home.enableNixpkgsReleaseCheck = false;
 }
