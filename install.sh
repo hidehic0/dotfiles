@@ -9,4 +9,6 @@ home-manager switch
 
 # シムリンクを貼る
 rm ~/.zshrc
+rm ~/.xprofile
 ln -s ~/.config/zsh/zshrc ~/.zshrc
+ln -s ~/.config/.xprofile ~/.xprofile

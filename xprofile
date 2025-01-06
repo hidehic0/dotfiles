@@ -1,0 +1,8 @@
+#! /usr/bin/bash
+
+export XDG_SESSION_TYPE=wayland
+export QT_QPA_PLATFORM="wayland;xcb"
+
+GTK_IM_MODULE=fcitx5
+QT_IM_MODULE=fcitx5
+XMODIFIERS=@im=fcitx5
