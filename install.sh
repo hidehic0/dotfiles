@@ -12,4 +12,4 @@ if [-e ~/.zshrc]
   rm ~/.zshrc
 end
 
-ln -s /zsh/.zshrc ~/.zshrc
+ln -s ./zsh/zshrc ~/.zshrc
