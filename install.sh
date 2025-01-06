@@ -8,8 +8,5 @@ nix-channel --update
 home-manager switch
 
 # シムリンクを貼る
-if [-e ~/.zshrc]
-  rm ~/.zshrc
-end
-
-ln -s ./zsh/zshrc ~/.zshrc
+rm ~/.zshrc
+ln -s ~/.config/zsh/zshrc ~/.zshrc
