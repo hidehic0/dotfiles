@@ -38,6 +38,7 @@ in {
       sheldon
       tree-sitter
       vim
+      isort
     ];
 
     file = {
