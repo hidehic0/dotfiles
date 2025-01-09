@@ -1,5 +1,25 @@
 return {
   {
+    "matsui54/denops-popup-preview.vim",
+    lazy = false,
+    dependencies = {
+      "vim-denops/denops.vim",
+    },
+    config = function()
+      vim.fn["popup_preview#enable"]()
+    end
+  },
+  {
+    "matsui54/denops-signature_help",
+    lazy = false,
+    dependencies = {
+      "vim-denops/denops.vim",
+    },
+    config = function()
+      vim.fn["signature_help#enable"]()
+    end
+  },
+  {
     "Shougo/ddc.vim",
     dependencies = {
       -- denops
@@ -18,8 +38,7 @@ return {
 
       -- filters
       "Shougo/ddc-converter_remove_overlap",
-      "Shougo/ddc-filter-sorter_rank"
-
+      "Shougo/ddc-filter-sorter_rank",
     },
     event = {
       "CmdlineEnter",
@@ -42,7 +61,6 @@ return {
       })
 
       patch_global("sources", { "lsp", "file" })
-
 
       patch_global("cmdlineSources", {
         [":"] = {

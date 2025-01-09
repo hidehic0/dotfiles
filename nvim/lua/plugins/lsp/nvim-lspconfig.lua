@@ -10,8 +10,11 @@ return {
     config = function()
       -- lspのセットアップ
       local capabilities = require("ddc_source_lsp").make_client_capabilities()
-      require("ddc_source_lsp").make_client_capabilities()
       local lspconfig = require("lspconfig")
+
+      lspconfig["denols"].setup({
+        capabilities = capabilities,
+      })
 
       lspconfig["lua_ls"].setup({
         capabilities = capabilities,
