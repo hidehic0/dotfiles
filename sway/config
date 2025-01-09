@@ -5,7 +5,6 @@ bindsym $mod+Shift+q kill
 set $mybind bindsym --to-code
 
 # startup apps
-exec "wl-paste -pw wl-copy"
 exec --no-startup-id "fcitx5 -rd"
 exec xsettingsd
 exec pulseaudio --start 
