@@ -86,3 +86,8 @@ output "*" background "/usr/share/backgrounds/archlinux/simple.png" fill
 for_window [app_id=".*"] border pixel 0
 # include /etc/sway/config.d/*.conf
 
+# floating settings
+for_window [title="Bitwarden - Vivaldi" app_id="vivaldi"] {
+  floating enable
+}
+
