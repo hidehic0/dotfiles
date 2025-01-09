@@ -39,6 +39,7 @@ in {
       tree-sitter
       vim
       isort
+      mise
     ];
 
     file = {
