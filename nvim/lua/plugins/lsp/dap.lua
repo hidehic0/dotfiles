@@ -56,7 +56,7 @@ return {
   },
   {
     "mfussenegger/nvim-dap-python",
-    ft = "python",
+    event = "VeryLazy",
     config = function()
       require("dap-python").setup("/home/hidehico/pypy3.10-v7.3.17-linux64/bin/pypy3") -- debugpyのパスを指定
     end,
