@@ -60,14 +60,12 @@ return {
       patch_global("sourceOptions", {
         _ = {
           matchers = { "matcher_fuzzy" },
-          sorters = { "sorter_rank" },
+          sorters = { "sorter_fuzzy" },
           converters = { "converter_fuzzy" },
         },
         lsp = {
           mark = "[LSP]",
-          dup = "force",
-          forceCompletionPattern = "\\.\\w*|:\\w*|->\\w*",
-          sorters = { "sorter_lsp-kind", "sorter_fuzzy" },
+          keywordPattern = [[\k+]],
         },
         cmdline = {
           mark = "[CMD]",
@@ -80,14 +78,13 @@ return {
 
 
       vim.cmd([[
-        set wildoptions+=pum
         inoremap <silent><expr> <TAB>
           \ pum#visible() ? '<Cmd>call pum#map#insert_relative(+1)<CR>' :
           \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
           \ '<TAB>' : ddc#map#manual_complete()
         inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
         inoremap <C-e>   <Cmd>call pum#map#cancel()<CR>
-        inoremap <C-y>   <Cmd>call pum#map#confirm()<CR>
+         inoremap <C-y>   <Cmd>call pum#map#confirm()<CR>
         nnoremap :       <Cmd>call CommandlinePre()<CR>:
 
         function! CommandlinePre() abort
