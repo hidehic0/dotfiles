@@ -18,8 +18,10 @@ return {
 
       -- filters
       "Shougo/ddc-converter_remove_overlap",
-      "Shougo/ddc-filter-sorter_rank"
+      "Shougo/ddc-filter-sorter_rank",
 
+      -- preview plugins
+      "matsui54/denops-popup-preview.vim"
     },
     event = {
       "CmdlineEnter",
