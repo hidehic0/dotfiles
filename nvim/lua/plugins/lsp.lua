@@ -10,6 +10,17 @@ return {
     end,
   },
   {
+    "nvimdev/lspsaga.nvim",
+    event = "LspAttach",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("plugins.config.lspsaga")
+    end,
+  },
+  {
     "matsui54/denops-popup-preview.vim",
     dependencies = {
       "vim-denops/denops.vim",
