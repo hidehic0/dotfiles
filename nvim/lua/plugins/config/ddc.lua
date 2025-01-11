@@ -1,35 +1,56 @@
 local patch_global = vim.fn["ddc#custom#patch_global"]
 
 patch_global("ui", "pum")
-patch_global("autoCompleteEvents",{
-  'InsertEnter', 'TextChangedI', 'TextChangedP', 'CmdlineChanged',
+patch_global("autoCompleteEvents", {
+  "InsertEnter",
+  "TextChangedI",
+  "TextChangedP",
+  "CmdlineChanged",
 })
 
-patch_global("sources", {"lsp"})
+patch_global("sources", { "lsp" })
+patch_global("cmdlineSources", {
+  [":"] = {
+    "cmdline",
+    "around",
+  },
+  ["/"] = {
+    "around",
+  },
+  ["?"] = {
+    "around",
+  },
+})
 
-patch_global("sourceOptions",{
+patch_global("sourceOptions", {
   _ = {
-    sorters = {"sorter_fuzzy"},
-    matchers = {"matcher_fuzzy"},
-    converters = {"converter_fuzzy"}
+    sorters = { "sorter_fuzzy" },
+    matchers = { "matcher_fuzzy" },
+    converters = { "converter_fuzzy" },
   },
   lsp = {
     mark = "[LSP]",
-    forceCompletionPattern= [[\.\w*|:\w*|->\w*]],
-  }
+    forceCompletionPattern = [[\.\w*|:\w*|->\w*]],
+  },
+  cmdline = {
+    mark = "[CMD]",
+  },
+  around = {
+    mark = "A",
+  },
 })
 
 vim.fn["ddc#custom#patch_global"]("sourceParams", {
-    lsp = {
-        snippetEngine = vim.fn["denops#callback#register"](function(body)
-            vim.fn["vsnip#anonymous"](body)
-        end),
-        enableResolveItem = true,
-        enableAdditionalTextEdit = true,
-    },
+  lsp = {
+    snippetEngine = vim.fn["denops#callback#register"](function(body)
+      vim.fn["vsnip#anonymous"](body)
+    end),
+    enableResolveItem = true,
+    enableAdditionalTextEdit = true,
+  },
 })
 
-vim.cmd[[
+vim.cmd([[
 inoremap <silent><expr> <TAB>
 \ pum#visible() ? '<Cmd>call pum#map#insert_relative(+1)<CR>' :
 \ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
@@ -51,6 +72,6 @@ silent! cunmap <Tab>
 silent! cunmap <S-Tab>
 silent! cunmap <C-e>
 endfunction
-]]
+]])
 
 vim.fn["ddc#enable"]()
