@@ -7,7 +7,7 @@ return {
     },
     config = function()
       require("plugins/config/nvim-lspconfig")
-    end
+    end,
   },
   {
     "Shougo/ddc.vim",
@@ -35,7 +35,21 @@ return {
     },
     config = function()
       require("plugins/config/ddc")
-    end
+    end,
+  },
+  {
+    "mfussenegger/nvim-lint",
+    event = "VeryLazy",
+    config = function()
+      require("plugins.config.nvim-lint")
+    end,
+  },
+  {
+    "stevearc/conform.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("plugins.config.conform")
+    end,
   },
   {
     "nvim-treesitter/nvim-treesitter",
