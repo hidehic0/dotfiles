@@ -1,8 +1,14 @@
 return {
   {
-    'windwp/nvim-autopairs',
+    "windwp/nvim-autopairs",
     event = "InsertEnter",
     config = true,
-    opts = {}
-  }
+    opts = {},
+  },
+  {
+    "kylechui/nvim-surround",
+    event = "VeryLazy",
+    version = "*",
+    opts = {},
+  },
 }
