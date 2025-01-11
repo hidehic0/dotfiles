@@ -10,6 +10,26 @@ return {
     end,
   },
   {
+    "matsui54/denops-popup-preview.vim",
+    dependencies = {
+      "vim-denops/denops.vim",
+    },
+    event = "VimEnter",
+    config = function()
+      vim.fn["popup_preview#enable"]()
+    end,
+  },
+  {
+    "matsui54/denops-signature_help",
+    dependencies = {
+      "vim-denops/denops.vim",
+    },
+    event = "VimEnter",
+    config = function()
+      vim.fn["signature_help#enable"]()
+    end,
+  },
+  {
     "Shougo/ddc.vim",
     dependencies = {
       -- denops
