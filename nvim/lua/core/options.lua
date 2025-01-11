@@ -1,6 +1,7 @@
-vim.cmd[[
-set autoindent
-set tabstop=2
-set shiftwidth=2
-set noexpandtab
-]]
+vim.opt.swapfile = false
+vim.opt.relativenumber = true
+vim.opt.number = true
+vim.cmd([["set guifont='HackGen Console NF'"]])
+vim.opt.signcolumn = "yes"
+vim.cmd([[set shadafile="NONE"]])
+vim.opt.termguicolors = true
