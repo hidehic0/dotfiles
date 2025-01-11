@@ -1,5 +1,3 @@
--- vim.opt.cursorcolumn = true
--- vim.opt.cursorline = true
 vim.opt.swapfile = false
 vim.opt.relativenumber = true
 vim.opt.number = true
@@ -8,4 +6,6 @@ vim.opt.signcolumn = "yes"
 vim.cmd([[set shadafile="NONE"]])
 vim.opt.termguicolors = true
 
-vim.cmd([[set timeoutlen=800]])
+vim.opt_local.expandtab = true
+vim.opt_local.shiftwidth = 2
+vim.opt_local.softtabstop = 2

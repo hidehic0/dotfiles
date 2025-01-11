@@ -1,4 +1,4 @@
 require("core.keymaps")
+require("core.lazyvim")
 require("core.options")
-require("lazyvim")
-require("core.lang_conf")
+require("core.indent")

@@ -28,18 +28,20 @@ in {
       fzf
       gh
       hugo
+      isort
       lazydocker
       lazygit
       lua-language-server
+      lua54Packages.luacheck
       marksman
+      mise
       online-judge-tools
       ruby
       ruff
+      selene
       sheldon
       tree-sitter
       vim
-      isort
-      mise
     ];
 
     file = {

@@ -22,17 +22,9 @@ local opts = {
     cache = {
       enabled = true,
     },
-    rtp = {
-      disabled_plugins = { "gzip", "zipPlugin", "netrwPlugin" }, -- 不要なプラグインの無効化
-    },
-  },
-  ui = {
-    notify = false, -- Lazyの通知を無効にする
   },
 }
 
 require("lazy").setup({
-  { import = "plugins.lsp" },
-  { import = "plugins.utils" },
-  { import = "plugins.ui" },
+  { import = "plugins" },
 }, opts)
