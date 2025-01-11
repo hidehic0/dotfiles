@@ -72,6 +72,18 @@ return {
     end,
   },
   {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "mfussenegger/nvim-dap-python",
+      "nvim-neotest/nvim-nio",
+    },
+    event = "VeryLazy",
+    config = function()
+      require("plugins.config.nvim-dap")
+    end,
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     event = { "VeryLazy" },
     build = ":TSUpdateSync",
