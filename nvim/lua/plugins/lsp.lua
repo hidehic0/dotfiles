@@ -52,6 +52,7 @@ return {
       "Shougo/ddc-source-lsp",
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
+      "Shougo/ddc-source-shell-native",
       -- sorters
       "tani/ddc-fuzzy",
       -- snip

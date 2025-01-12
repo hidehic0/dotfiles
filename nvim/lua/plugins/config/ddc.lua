@@ -48,6 +48,9 @@ vim.fn["ddc#custom#patch_global"]("sourceParams", {
     enableResolveItem = true,
     enableAdditionalTextEdit = true,
   },
+  ["shell-native"] = {
+    shell = "zsh",
+  },
 })
 
 vim.cmd([[
@@ -74,4 +77,5 @@ silent! cunmap <C-e>
 endfunction
 ]])
 
+vim.fn["ddc#enable_terminal_completion"]()
 vim.fn["ddc#enable"]()

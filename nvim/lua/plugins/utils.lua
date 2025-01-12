@@ -11,4 +11,11 @@ return {
     version = "*",
     opts = {},
   },
+  {
+    "Shougo/deol.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("plugins.config.deol")
+    end,
+  },
 }
