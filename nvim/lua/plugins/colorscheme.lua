@@ -1,10 +1,9 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "EdenEast/nightfox.nvim",
     event = { "BufReadPre", "BufWinEnter", "BufEnter" },
     config = function()
-      require("plugins/config/catppuccin")
-    end
-  }
+      require("plugins.config.nightfox")
+    end,
+  },
 }
