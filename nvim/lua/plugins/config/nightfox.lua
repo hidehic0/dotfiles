@@ -4,4 +4,4 @@ require("nightfox").setup({
     terminal_colors = false,
   },
 })
-vim.cmd("colorscheme duskfox")
+vim.cmd("colorscheme nightfox")
