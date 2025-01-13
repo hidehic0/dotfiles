@@ -1,6 +1,5 @@
 local patch_global = vim.fn["ddc#custom#patch_global"]
 
-patch_global("ui", "pum")
 patch_global("autoCompleteEvents", {
   "InsertEnter",
   "TextChangedI",
@@ -8,7 +7,7 @@ patch_global("autoCompleteEvents", {
   "CmdlineChanged",
 })
 
-patch_global("sources", { "lsp" })
+patch_global("sources", { "lsp", "skkeleton" })
 patch_global("cmdlineSources", {
   [":"] = {
     "cmdline",
@@ -38,6 +37,14 @@ patch_global("sourceOptions", {
   around = {
     mark = "A",
   },
+  skkeleton = {
+    mark = "あ",
+    matchers = {},
+    sorters = {},
+    converters = {},
+    isVolatile = true,
+    minAutoCompleteLength = 1,
+  },
 })
 
 vim.fn["ddc#custom#patch_global"]("sourceParams", {
@@ -52,6 +59,8 @@ vim.fn["ddc#custom#patch_global"]("sourceParams", {
     shell = "zsh",
   },
 })
+
+patch_global("ui", "pum")
 
 vim.cmd([[
 inoremap <silent><expr> <TAB>

@@ -18,4 +18,14 @@ return {
       require("plugins.config.deol")
     end,
   },
+  {
+    "vim-skk/skkeleton",
+    dependencies = {
+      "vim-denops/denops.vim",
+    },
+    event = "VimEnter",
+    config = function()
+      require("plugins.config.skkeleton")
+    end,
+  },
 }
