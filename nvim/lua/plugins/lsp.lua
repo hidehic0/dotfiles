@@ -98,7 +98,10 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    event = { "VeryLazy" },
-    build = ":TSUpdateSync",
+    event = { "VimEnter" },
+    build = ":TSUpdate",
+    config = function()
+      require("plugins.config.treesitter")
+    end,
   },
 }
