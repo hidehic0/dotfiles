@@ -1,7 +1,4 @@
 require("nightfox").setup({
-  options = {
-    transparent = true,
-    terminal_colors = false,
-  },
+  options = {},
 })
 vim.cmd("colorscheme nightfox")

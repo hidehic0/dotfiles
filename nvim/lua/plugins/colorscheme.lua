@@ -5,5 +5,13 @@ return {
     config = function()
       require("plugins.config.nightfox")
     end,
+    enabled = false,
+  },
+  {
+    "navarasu/onedark.nvim",
+    event = { "BufReadPre", "BufWinEnter", "BufEnter" },
+    config = function()
+      require("plugins.config.onedark")
+    end,
   },
 }
