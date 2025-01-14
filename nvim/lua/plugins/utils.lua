@@ -28,4 +28,10 @@ return {
       require("plugins.config.skkeleton")
     end,
   },
+  {
+    "Shougo/ddu.vim",
+    dependencies = {
+      "vim-denops/denops.vim",
+    },
+  },
 }
