@@ -38,7 +38,9 @@ return {
       -- sources
       "Shougo/ddu-source-file",
       "Shougo/ddu-source-file_rec",
+      "Shougo/ddu-source-line",
       "shun/ddu-source-rg",
+      "uga-rosa/ddu-source-lsp",
       -- kinds
       "Shougo/ddu-kind-file",
       "Shougo/ddu-kind-word",
