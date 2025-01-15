@@ -36,6 +36,7 @@ return {
       -- ui
       "Shougo/ddu-ui-ff",
       -- sources
+      "Shougo/ddu-source-action",
       "Shougo/ddu-source-file",
       "Shougo/ddu-source-file_rec",
       "Shougo/ddu-source-line",
