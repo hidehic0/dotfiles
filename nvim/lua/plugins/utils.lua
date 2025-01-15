@@ -30,8 +30,26 @@ return {
   },
   {
     "Shougo/ddu.vim",
+    event = "VeryLazy",
     dependencies = {
       "vim-denops/denops.vim",
+      -- ui
+      "Shougo/ddu-ui-ff",
+      -- sources
+      "Shougo/ddu-source-file",
+      "Shougo/ddu-source-file_rec",
+      "shun/ddu-source-rg",
+      -- kinds
+      "Shougo/ddu-kind-file",
+      "Shougo/ddu-kind-word",
+      -- filters
+      "yuki-yano/ddu-filter-fzf",
+      -- converters
+      "uga-rosa/ddu-filter-converter_devicon",
     },
+
+    config = function()
+      require("plugins.config.ddu")
+    end,
   },
 }
