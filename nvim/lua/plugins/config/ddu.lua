@@ -23,6 +23,7 @@ vim.fn["ddu#custom#patch_global"]({
       sorters = { "sorter_fzf" },
       converters = { "converter_devicon" },
       ignoreCase = true,
+      smartCase = true,
     },
   },
 
