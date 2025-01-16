@@ -91,14 +91,14 @@ return {
       "mfussenegger/nvim-dap-python",
       "nvim-neotest/nvim-nio",
     },
-    event = "VeryLazy",
+    event = "LspAttach",
     config = function()
       require("plugins.config.nvim-dap")
     end,
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    event = { "VimEnter" },
+    event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     config = function()
       require("plugins.config.treesitter")
