@@ -12,10 +12,10 @@ return {
     opts = {},
   },
   {
-    "Shougo/deol.nvim",
+    "Shougo/ddt.vim",
     event = "VeryLazy",
     config = function()
-      require("plugins.config.deol")
+      require("plugins.config.ddt")
     end,
   },
   {
@@ -49,6 +49,8 @@ return {
       "yuki-yano/ddu-filter-fzf",
       -- converters
       "uga-rosa/ddu-filter-converter_devicon",
+      -- commands
+      "Shougo/ddu-commands.vim",
     },
 
     config = function()
