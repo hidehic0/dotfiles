@@ -9,6 +9,7 @@ exec --no-startup-id "fcitx5 -rd"
 exec xsettingsd
 exec pulseaudio --start 
 exec mako
+exec wl-paste --watch cliphist store
 
 bar {
   swaybar_command waybar
@@ -51,6 +52,8 @@ bindsym $mod+Return exec wezterm
 bindsym $mod+F2 exec "vivaldi --gtk-version=4"
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+d exec  ~/rofi_start.sh
+bindsym $mod+v exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
+
 
 # set windows names
 set $ws1 "1"
