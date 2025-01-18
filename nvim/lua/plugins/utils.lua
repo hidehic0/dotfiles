@@ -14,6 +14,9 @@ return {
   {
     "Shougo/ddt.vim",
     event = "VeryLazy",
+    dependencies = {
+      "Shougo/ddt-ui-terminal",
+    },
     config = function()
       require("plugins.config.ddt")
     end,

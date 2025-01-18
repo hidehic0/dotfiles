@@ -13,9 +13,10 @@ vim.fn["ddt#custom#patch_global"]({
     },
   },
 })
-
-vim.keymap.set("n", "<C-t>", "<Cmd>call ddt#start()<CR>", {
+local keyopts = {
   noremap = true,
   silent = true,
   nowait = true,
-})
+}
+
+vim.keymap.set("n", "<C-t>", "<Cmd>call ddt#start()<CR>", keyopts)
