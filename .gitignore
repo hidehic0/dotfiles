@@ -59,3 +59,5 @@ test_nvim/
 waybar/
 Bitwarden/
 keepassxc
+fcitx/dbus/
+fcitx/dbus
