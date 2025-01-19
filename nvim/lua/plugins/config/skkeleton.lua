@@ -8,5 +8,5 @@ vim.fn["skkeleton#config"]({
     "/usr/share/skk/SKK-JISYO.jinmei",
     "/usr/share/skk/SKK-JISYO.propernoun",
   },
-  completionRankFile = "~/.skk/rank.json",
+  completionRankFile = "~/.cache/skkeleton/rank.json",
 })

@@ -86,6 +86,5 @@ silent! cunmap <C-e>
 endfunction
 ]])
 
-vim.fn["skkeleton#config"]({ completionRankFile = "~/.skk/rank.json" })
 vim.fn["ddc#enable_terminal_completion"]()
 vim.fn["ddc#enable"]()
