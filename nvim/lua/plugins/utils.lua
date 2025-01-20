@@ -60,4 +60,11 @@ return {
       require("plugins.config.ddu")
     end,
   },
+  {
+    "vim-denops/denops.vim",
+    event = "VimEnter",
+    config = function() 
+      vim.cmd[[let g:denops_server_addr = '127.0.0.1:32123']]
+    end
+  }
 }

@@ -23,7 +23,6 @@ in {
     [
       black
       delta
-      deno
       emacs
       fzf
       gh

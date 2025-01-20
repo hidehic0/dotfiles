@@ -1,5 +1,5 @@
 vim.fn["ddt#custom#patch_global"]({
-  ui = "terminal",
+  -- ui = "terminal",
   uiParams = {
     terminal = {
       command = { "zsh" },
@@ -13,10 +13,11 @@ vim.fn["ddt#custom#patch_global"]({
     },
   },
 })
-local keyopts = {
-  noremap = true,
-  silent = true,
-  nowait = true,
-}
 
-vim.keymap.set("n", "<C-t>", "<Cmd>call ddt#start()<CR>", keyopts)
+-- local keyopts = {
+--   noremap = true,
+--   silent = true,
+--   nowait = true,
+-- }
+
+vim.keymap.set("n", "<C-t>", "<Cmd>call ddt#start(#{ui: 'terminal'})<CR>")
