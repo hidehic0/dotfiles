@@ -1,2 +1,3 @@
 #!/bin/zsh
-acc submit main.py -- --guess-python-interpreter pypy  
+
+acc submit main.py -- --guess-python-interpreter pypy

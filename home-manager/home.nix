@@ -39,6 +39,8 @@ in {
       ruff
       selene
       sheldon
+      shellcheck
+      shfmt
       tree-sitter
       vim
     ];
