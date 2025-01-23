@@ -4,5 +4,5 @@
 	"default-task-dirname-format": "{tasklabel}",
 	"default-test-dirname-format": "tests",
 	"default-task-choice": "inquire",
-	"default-template": "/home/hidehico/Docments/library"
+	"default-template": "/home/hidehico/Docments/library/code"
 }
