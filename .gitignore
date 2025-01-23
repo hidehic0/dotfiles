@@ -62,3 +62,5 @@ keepassxc
 fcitx/dbus/
 fcitx/dbus
 wofi/
+qBittorrent/
+QtProject.conf
