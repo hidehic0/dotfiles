@@ -9,6 +9,7 @@ config.font = wezterm.font_with_fallback({ "Hack Nerd Font", "HackGen35ConsoleNF
 config.webgpu_preferred_adapter = wezterm.gui.enumerate_gpus()[1]
 
 config.leader = { key = "b", mods = "CTRL", timeout_milliseconds = 1000 }
+config.disable_default_mouse_bindings = true
 config.keys = keymaps.keys
 config.enable_wayland = false
 

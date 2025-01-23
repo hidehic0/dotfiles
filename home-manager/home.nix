@@ -10,7 +10,7 @@ let
 in {
   nixpkgs = {
     config = {
-      allowUnfree=false;
+      allowUnfree=true;
     };
   };
 
