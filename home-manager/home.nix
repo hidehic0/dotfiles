@@ -43,6 +43,7 @@ in {
       shfmt
       tree-sitter
       vim
+      zoxide
     ];
 
     file = {
