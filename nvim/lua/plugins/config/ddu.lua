@@ -113,9 +113,9 @@ patch_local("lsp_r", {
 })
 
 -- keymaps
-vim.keymap.set("n", "<leader>ff", [[<CMD>call ddu#start(#{name: "file_rec"})<CR>]])
-vim.keymap.set("n", "<leader>fg", [[<CMD>call ddu#start(#{name: "rg"})<CR>]])
-vim.keymap.set("n", "<leader>fl", [[<CMD>call ddu#start(#{name: "lines"})<CR>]])
+vim.keymap.set("n", "<leader>ff", [[<CMD>call ddu#start(#{name: "file_rec"})<CR>]], { desc = "start ddu file_rec" })
+vim.keymap.set("n", "<leader>fg", [[<CMD>call ddu#start(#{name: "rg"})<CR>]], { desc = "start ddu ripgrep" })
+vim.keymap.set("n", "<leader>fl", [[<CMD>call ddu#start(#{name: "lines"})<CR>]], { desc = "start ddu line search" })
 
 -- autocmds
 vim.api.nvim_create_autocmd("FileType", {

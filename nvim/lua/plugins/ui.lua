@@ -29,7 +29,7 @@ return {
   {
     "stevearc/oil.nvim",
     cmd = "Oil",
-    keys = { { "<leader>e", "<CMD>Oil --float<CR>" } },
+    keys = { { "<leader>e", "<CMD>Oil --float<CR>", desc = "start oil" } },
     config = function()
       require("plugins.config.oil")
     end,
@@ -41,5 +41,14 @@ return {
     config = function()
       require("plugins.config.bufferline")
     end,
+  },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      triggers = {
+        { "<leader>", mode = "n" },
+      },
+    },
   },
 }
