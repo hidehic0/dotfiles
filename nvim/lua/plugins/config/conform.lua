@@ -5,6 +5,7 @@ require("conform").setup({
     zsh = { "shfmt" },
     bash = { "shfmt" },
     sh = { "shfmt" },
+    yaml = { "yamlfmt" },
   },
   format_on_save = {
     -- These options will be passed to conform.format()

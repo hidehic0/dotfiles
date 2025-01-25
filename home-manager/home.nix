@@ -50,6 +50,7 @@ in {
       shfmt
       tree-sitter
       vim
+      yamlfmt
       zoxide
     ];
 
