@@ -63,6 +63,9 @@ return {
   {
     "vim-denops/denops.vim",
     event = "VimEnter",
-    config = function() end,
+  },
+  {
+    "tpope/vim-fugitive",
+    event = "VeryLazy",
   },
 }
