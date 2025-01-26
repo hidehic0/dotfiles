@@ -21,6 +21,3 @@ alias ls="lsd"
 alias lsa="lsd -a"
 alias lsl="lsd -l"
 alias lsla="lsd -la"
-
-# diff alias
-alias diff="delta"
