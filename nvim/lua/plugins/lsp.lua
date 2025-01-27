@@ -1,3 +1,4 @@
+vim.g.copilot_no_tab_map = true
 return {
   {
     "neovim/nvim-lspconfig",
@@ -71,9 +72,10 @@ return {
       "Shougo/ddc-ui-pum",
       "Shougo/pum.vim",
       -- sources
-      "Shougo/ddc-source-lsp",
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
+      "Shougo/ddc-source-copilot",
+      "Shougo/ddc-source-lsp",
       "Shougo/ddc-source-shell-native",
       -- sorters
       "tani/ddc-fuzzy",
@@ -125,5 +127,10 @@ return {
     config = function()
       require("plugins.config.treesitter")
     end,
+  },
+  {
+    "github/copilot.vim",
+    event = { "InsertEnter" },
+    cmd = { "Copilot" },
   },
 }
