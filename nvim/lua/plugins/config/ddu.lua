@@ -26,6 +26,11 @@ vim.fn["ddu#custom#patch_global"]({
       smartCase = true,
     },
   },
+  sourceParams = {
+    rg = {
+      args = { "--vimgrep", "--json", "--column", "--no-heading", "--color", "never" },
+    },
+  },
 
   -- kind settings
   kindOptions = {
