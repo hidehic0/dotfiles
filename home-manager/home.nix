@@ -30,6 +30,7 @@ in {
       black
       delta
       emacs
+      fish
       fzf
       gh
       hugo
