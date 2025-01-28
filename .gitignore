@@ -69,3 +69,5 @@ Yubico/
 github-copilot
 go/telemetry/local
 Electron
+sheldon/sheldon.zsh
+**/*.zwc
