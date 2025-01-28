@@ -3,13 +3,9 @@ vim.fn["ddt#custom#patch_global"]({
   uiParams = {
     terminal = {
       command = { "zsh" },
-      split = "floating",
+      split = "",
       promptPattern = [[\f\+>]],
       startInsert = true,
-      winCol = 37,
-      winRow = 7,
-      winWidth = 120,
-      winHeight = 35,
     },
   },
 })
