@@ -51,6 +51,7 @@ in {
       shfmt
       tree-sitter
       vim
+      vim-startuptime
       yamlfmt
       zoxide
     ];
