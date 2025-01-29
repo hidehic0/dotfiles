@@ -2,17 +2,16 @@
 構成
 
 * os
-archlinux
+  * archlinux
 * package manager
-pacman + home-manager dotfilesで使うツールは大体home-managerで管理しています
+  * pacman + home-manager dotfilesで使うツールは大体home-managerで管理しています
 * window manager
 hyprland
 * shell
-zsh
-20ms前後で起動します
+  * zsh   20ms前後で起動します
 * editor
-neovim
-主要なプラグイン
+  * neovim</br>
+  主要なプラグイン
   * lazy.nvim
   * ddc.vim
   * ddu.vim
