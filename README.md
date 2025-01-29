@@ -6,7 +6,7 @@
 * package manager
   * pacman + home-manager dotfilesで使うツールは大体home-managerで管理しています
 * window manager
-hyprland
+  * hyprland
 * shell
   * zsh   20ms前後で起動します
 * editor
