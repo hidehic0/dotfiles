@@ -10,9 +10,9 @@ let
 in {
   nixpkgs = {
     overlays = [
-      (import (builtins.fetchTarball {
-        url = "https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz";
-      }))
+      # (import (builtins.fetchTarball {
+      #   url = "https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz";
+      # }))
     ];
     config = {
       allowUnfree=true;
@@ -27,6 +27,7 @@ in {
     packages = with pkgs;
     [
       aria2
+      bitwarden-cli
       black
       delta
       emacs
@@ -41,7 +42,6 @@ in {
       lua54Packages.luacheck
       marksman
       mise
-      neovim
       online-judge-tools
       ruby
       ruff

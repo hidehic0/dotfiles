@@ -1,6 +1,6 @@
 require("lint").linters_by_ft = {
   lua = { "luacheck" },
-  python = { "ruff" },
+  -- python = { "ruff" },
   zsh = { "shellcheck" },
   bash = { "shellcheck" },
   sh = { "shellcheck" },
