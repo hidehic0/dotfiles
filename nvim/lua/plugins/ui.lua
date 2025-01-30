@@ -51,4 +51,33 @@ return {
       },
     },
   },
+  {
+    "isakbm/gitgraph.nvim",
+    opts = {
+      format = {
+        timestamp = "%H:%M:%S %Y-%m-%d",
+        fields = { "hash", "timestamp", "author", "branch_name", "tag" },
+      },
+      hooks = {
+        on_select_commit = function(commit)
+          print("selected commit:", commit.hash)
+        end,
+        on_select_range_commit = function(from, to)
+          print("selected range:", from.hash, to.hash)
+        end,
+      },
+    },
+    keys = {
+      {
+        "<leader>gl",
+        function()
+          vim.cmd("vsplit")
+          vim.cmd("wincmd l")
+          vim.cmd("vertical resize 95")
+          require("gitgraph").draw({}, { max_count = 5000, all = true })
+        end,
+        desc = "GitGraph - Draw",
+      },
+    },
+  },
 }
