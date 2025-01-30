@@ -7,7 +7,7 @@ patch_global("autoCompleteEvents", {
   "CmdlineChanged",
 })
 
-patch_global("sources", { "copilot", "lsp", "skkeleton" })
+patch_global("sources", { "lsp", "skkeleton" })
 patch_global("cmdlineSources", {
   [":"] = {
     "cmdline",
