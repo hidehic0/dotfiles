@@ -115,11 +115,18 @@ patch_local("lsp_r", {
   },
 })
 
-patch_local("lsp_d", {
+patch_local("lsp_e", {
   sources = {
     { name = "lsp_diagnostic", params = {
       buffer = 0,
     } },
+  },
+})
+
+patch_local("lsp_d", {
+  sync = true,
+  sources = {
+    name = "lsp_definition",
   },
 })
 
@@ -128,6 +135,7 @@ vim.keymap.set("n", "<leader>ff", [[<CMD>call ddu#start(#{name: "file_rec"})<CR>
 vim.keymap.set("n", "<leader>fg", [[<CMD>call ddu#start(#{name: "rg"})<CR>]], { desc = "start ddu ripgrep" })
 vim.keymap.set("n", "<leader>fr", [[<CMD>call ddu#start(#{name: "lines"})<CR>]], { desc = "start ddu line search" })
 vim.keymap.set("n", "<leader>flr", [[<CMD>call ddu#start(#{name: "lsp_r"})<CR>]])
+vim.keymap.set("n", "<leader>fle", [[<CMD>call ddu#start(#{name: "lsp_e"})<CR>]])
 vim.keymap.set("n", "<leader>fld", [[<CMD>call ddu#start(#{name: "lsp_d"})<CR>]])
 
 -- autocmds
