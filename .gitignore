@@ -72,3 +72,4 @@ Electron
 sheldon/sheldon.zsh
 **/*.zwc
 systemd/user
+clamtk
