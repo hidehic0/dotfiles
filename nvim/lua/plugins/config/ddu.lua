@@ -130,6 +130,26 @@ patch_local("lsp_d", {
   },
 })
 
+patch_local("filer", {
+  ui = "filer",
+  sources = {
+    { name = "file" },
+  },
+  sourceOptions = {
+    _ = {
+      columns = { "filename" },
+      sorters = {
+        "sorter_alpha",
+      },
+    },
+  },
+  kindOptions = {
+    file = {
+      defaultAction = "open",
+    },
+  },
+})
+
 -- keymaps
 vim.keymap.set("n", "<leader>ff", [[<CMD>call ddu#start(#{name: "file_rec"})<CR>]], { desc = "start ddu file_rec" })
 vim.keymap.set("n", "<leader>fg", [[<CMD>call ddu#start(#{name: "rg"})<CR>]], { desc = "start ddu ripgrep" })
@@ -151,6 +171,28 @@ vim.api.nvim_create_autocmd("FileType", {
       opts
     )
     vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
+    vim.keymap.set("n", "i", [[<Cmd>call ddu#ui#do_action("openFilterWindow")<CR>]], opts)
+    vim.keymap.set("n", "a", [[<Cmd>call ddu#ui#do_action("chooseAction")<CR>]], opts)
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "ddu-filer",
+  callback = function()
+    -- vim.fn["ddu#ui#do_action#togglePreview"]()
+    local opts = { noremap = true, silent = true, buffer = true }
+    vim.keymap.set("n", "q", [[<CMD>call ddu#ui#do_action("quit")<CR>]], opts)
+    vim.cmd([[
+    nnoremap <buffer><silent><expr> <CR>
+    \ ddu#ui#get_item()->get('isTree', v:false) ?
+    \ "<Cmd>call ddu#ui#do_action('itemAction', {'name': 'narrow'})<CR>" :
+    \ "<Cmd>call ddu#ui#do_action('itemAction', {'name': 'open', 'params': {'command': 'drop'}})<CR>"
+    ]])
+    vim.keymap.set(
+      "n",
+      "..",
+      "<Cmd>call ddu#ui#do_action('itemAction', {'name': 'narrow', 'params': {'path': '..'}})<CR>"
+    )
     vim.keymap.set("n", "i", [[<Cmd>call ddu#ui#do_action("openFilterWindow")<CR>]], opts)
     vim.keymap.set("n", "a", [[<Cmd>call ddu#ui#do_action("chooseAction")<CR>]], opts)
   end,

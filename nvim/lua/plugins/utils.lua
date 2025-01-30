@@ -38,6 +38,7 @@ return {
       "vim-denops/denops.vim",
       -- ui
       "Shougo/ddu-ui-ff",
+      "Shougo/ddu-ui-filer",
       -- sources
       "Shougo/ddu-source-action",
       "Shougo/ddu-source-file",
@@ -54,6 +55,10 @@ return {
       "uga-rosa/ddu-filter-converter_devicon",
       -- commands
       "Shougo/ddu-commands.vim",
+      -- columns
+      "Shougo/ddu-column-filename",
+      -- sorters
+      "Shougo/ddu-filter-sorter_alpha",
     },
 
     config = function()
