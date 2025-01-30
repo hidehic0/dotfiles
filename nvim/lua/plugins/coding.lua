@@ -74,7 +74,7 @@ return {
       -- sources
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
-      "Shougo/ddc-source-copilot",
+      -- "Shougo/ddc-source-copilot",
       "Shougo/ddc-source-lsp",
       "Shougo/ddc-source-shell-native",
       -- sorters
@@ -128,9 +128,9 @@ return {
       require("plugins.config.treesitter")
     end,
   },
-  {
-    "github/copilot.vim",
-    event = { "InsertEnter" },
-    cmd = { "Copilot" },
-  },
+  -- {
+  --   "github/copilot.vim",
+  --   event = { "InsertEnter" },
+  --   cmd = { "Copilot" },
+  -- },
 }
