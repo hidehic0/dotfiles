@@ -107,6 +107,11 @@ return {
         [[<CMD>Gin commit<CR>]],
         desc = "Git commit",
       },
+      {
+        "<leader>gl",
+        "<CMD>vsplit | wincmd l | GinLog --graph<CR>",
+        desc = "show Git Log",
+      },
     },
   },
 }
