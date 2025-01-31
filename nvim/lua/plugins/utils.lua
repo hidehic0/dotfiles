@@ -93,12 +93,12 @@ return {
         desc = "show Git diff cached",
       },
       {
-        "<leader>p",
+        "<leader>gp",
         [[<CMD>lua vim.notify("run Git pull")|Gin pull<CR>]],
         desc = "run Git pull",
       },
       {
-        "<leader>P",
+        "<leader>gP",
         [[<CMD>lua vim.notify("run Git push")|Gin push<CR>]],
         desc = "run Git push",
       },
