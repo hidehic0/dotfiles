@@ -109,7 +109,7 @@ return {
       },
       {
         "<leader>gl",
-        "<CMD>vsplit | wincmd l | GinLog --graph<CR>",
+        "<CMD>vsplit | wincmd l | GinLog --graph --oneline<CR>",
         desc = "show Git Log",
       },
     },
