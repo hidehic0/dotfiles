@@ -19,4 +19,6 @@ jobs:
           ls
       - name: plugin install
         run: |
-          NVIM_APPNAME=nvim ./nvim-linux-x86_64/bin/nvim --headless +"Lazy! sync" +qa
+          mkdir .config
+          cp -r nvim .config/nvim
+          ./nvim-linux-x86_64/bin/nvim --headless -c 'lua require("lazy").sync({wait = true})' -c 'qall'
