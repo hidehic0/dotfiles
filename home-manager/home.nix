@@ -54,6 +54,7 @@ in {
       vim-startuptime
       yamlfmt
       zoxide
+      zsync
     ];
 
     file = {
