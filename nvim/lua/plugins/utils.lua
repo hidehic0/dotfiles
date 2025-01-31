@@ -94,12 +94,12 @@ return {
       },
       {
         "<leader>gp",
-        [[<CMD>lua vim.notify("run Git pull")|Gin pull<CR>]],
+        [[<CMD>lua vim.notify("run Git pull") <CR><CMD> Gin pull<CR>]],
         desc = "run Git pull",
       },
       {
         "<leader>gP",
-        [[<CMD>lua vim.notify("run Git push")|Gin push<CR>]],
+        [[<CMD>lua vim.notify("run Git push") <CR><CMD> Gin push<CR>]],
         desc = "run Git push",
       },
       {
