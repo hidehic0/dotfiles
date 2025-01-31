@@ -6,6 +6,8 @@ jobs:
     container: archlinux:latest
     steps:
       - uses: actions/checkout@v4
+      - name: install wget
+        run: "pacman -S neovim wget curl git\npacman -R neovim \n"
       - name: install nvim
         run: |
           wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.appimage
