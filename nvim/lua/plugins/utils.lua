@@ -73,15 +73,4 @@ return {
       vim.cmd([[let g:denops_server_addr = '127.0.0.1:32123']])
     end,
   },
-  {
-    "tpope/vim-fugitive",
-    event = "VeryLazy",
-    keys = {
-      { "<Leader>ga", "<CMD>Git add -A<CR>", desc = "run Git add" },
-      { "<Leader>gp", "<CMD>Git pull<CR>", desc = "run Git pull" },
-      { "<Leader>gP", "<CMD>Git push<CR>", desc = "run Git push" },
-      { "<Leader>gc", "<CMD>Git commit<CR>", desc = "run Git commit" },
-      { "<Leader>gd", "<CMD>Git diff --cached<CR>", desc = "check Git diff" },
-    },
-  },
 }
