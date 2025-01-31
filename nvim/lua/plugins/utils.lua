@@ -77,7 +77,36 @@ return {
     "lambdalisue/vim-gin",
     dependencies = {
       "vim-denops/denops.vim",
+      "monaqa/tree-sitter-unifieddiff",
     },
     event = "VeryLazy",
+    keys = {
+      { "<leader>ga", "<CMD>Gin add -A<CR>", desc = "run Git add" },
+      {
+        "<leader>gd",
+        [[ <CMD>split | GinDiff ++processor=delta\ --no-gitconfig\ --color-only<CR> ]],
+        desc = "show Git diff",
+      },
+      {
+        "<leader>gD",
+        [[ <CMD>split | GinDiff ++processor=delta\ --no-gitconfig\ --color-only --cached<CR> ]],
+        desc = "show Git diff cached",
+      },
+      {
+        "<leader>p",
+        [[<CMD>lua vim.notify("run Git pull")|Gin pull<CR>]],
+        desc = "run Git pull",
+      },
+      {
+        "<leader>P",
+        [[<CMD>lua vim.notify("run Git push")|Gin push<CR>]],
+        desc = "run Git push",
+      },
+      {
+        "<leader>gc",
+        [[<CMD>Gin commit<CR>]],
+        desc = "Git commit",
+      },
+    },
   },
 }
