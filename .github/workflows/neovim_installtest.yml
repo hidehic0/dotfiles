@@ -21,4 +21,4 @@ jobs:
         run: |
           mkdir .config
           cp -r nvim .config/nvim
-          ./nvim-linux-x86_64/bin/nvim --headless +"Lazy! sync" +qa
+          ./nvim-linux-x86_64/bin/nvim --headless -c "qall"
