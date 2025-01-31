@@ -8,9 +8,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: install wget
         run: |
-          pacman -Syyu
-          pacman -S neovim wget curl git
-          pacman -R neovim
+          pacman --noconfirm -Syyu
+          pacman --noconfirm -S neovim wget curl git
+          pacman --noconfirm -R neovim
       - name: install nvim
         run: |
           wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.appimage
