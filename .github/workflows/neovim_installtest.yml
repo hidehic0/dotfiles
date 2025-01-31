@@ -1,0 +1,18 @@
+name: nvim install test
+on:
+  push:
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: install nvim
+        run: |
+        wget https://github.com/neovim/neovim/releases/download/nightly/nvim-linux-x86_64.appimage
+        chmod +x nvim-linux-x86_64.appimage
+
+      - name: plugin install
+        run: |
+          NVIM_APPNAME=nvim ./nvim-linux-x86_64.appimage
