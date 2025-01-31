@@ -73,4 +73,11 @@ return {
       vim.cmd([[let g:denops_server_addr = '127.0.0.1:32123']])
     end,
   },
+  {
+    "lambdalisue/vim-gin",
+    dependencies = {
+      "vim-denops/denops.vim",
+    },
+    event = "VeryLazy",
+  },
 }
