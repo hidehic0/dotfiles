@@ -74,14 +74,44 @@ return {
     end,
   },
   {
-    "tpope/vim-fugitive",
+    "lambdalisue/vim-gin",
+    dependencies = {
+      "vim-denops/denops.vim",
+      "monaqa/tree-sitter-unifieddiff",
+    },
     event = "VeryLazy",
     keys = {
-      { "<Leader>ga", "<CMD>Git add -A<CR>", desc = "run Git add" },
-      { "<Leader>gp", "<CMD>Git pull<CR>", desc = "run Git pull" },
-      { "<Leader>gP", "<CMD>Git push<CR>", desc = "run Git push" },
-      { "<Leader>gc", "<CMD>Git commit<CR>", desc = "run Git commit" },
-      { "<Leader>gd", "<CMD>Git diff --cached<CR>", desc = "check Git diff" },
+      { "<leader>ga", "<CMD>Gin add -A<CR>", desc = "run Git add" },
+      {
+        "<leader>gd",
+        [[ <CMD>split | GinDiff ++processor=delta\ --no-gitconfig\ --color-only<CR> ]],
+        desc = "show Git diff",
+      },
+      {
+        "<leader>gD",
+        [[ <CMD>split | GinDiff ++processor=delta\ --no-gitconfig\ --color-only --cached<CR> ]],
+        desc = "show Git diff cached",
+      },
+      {
+        "<leader>gp",
+        [[<CMD>lua vim.notify("run Git pull") <CR><CMD> Gin pull<CR>]],
+        desc = "run Git pull",
+      },
+      {
+        "<leader>gP",
+        [[<CMD>lua vim.notify("run Git push") <CR><CMD> Gin push<CR>]],
+        desc = "run Git push",
+      },
+      {
+        "<leader>gc",
+        [[<CMD>Gin commit<CR>]],
+        desc = "Git commit",
+      },
+      {
+        "<leader>gl",
+        "<CMD>vsplit | wincmd l | GinLog --graph --oneline<CR>",
+        desc = "show Git Log",
+      },
     },
   },
 }
