@@ -32,16 +32,7 @@ vim.fn["ddu#custom#patch_global"]({
 
   -- kind settings
   kindOptions = {
-    file = {
-      defaultAction = "open",
-    },
-    line = {
-      defaultAction = "open",
-    },
-    rg = {
-      defaultAction = "open",
-    },
-    lsp = {
+    _ = {
       defaultAction = "open",
     },
     lsp_codeAction = {
@@ -107,6 +98,19 @@ patch_local("lines", {
   },
 })
 
+patch_local("buffer", {
+  sources = {
+    {
+      name = "buffer",
+    },
+  },
+  uiParams = {
+    ff = {
+      floatingTitle = "Buffer Search :)",
+    },
+  },
+})
+
 patch_local("lsp_r", {
   sources = {
     {
@@ -154,6 +158,7 @@ patch_local("filer", {
 vim.keymap.set("n", "<leader>ff", [[<CMD>call ddu#start(#{name: "file_rec"})<CR>]], { desc = "start ddu file_rec" })
 vim.keymap.set("n", "<leader>fg", [[<CMD>call ddu#start(#{name: "rg"})<CR>]], { desc = "start ddu ripgrep" })
 vim.keymap.set("n", "<leader>fr", [[<CMD>call ddu#start(#{name: "lines"})<CR>]], { desc = "start ddu line search" })
+vim.keymap.set("n", "<leader>fb", [[<CMD>call ddu#start(#{name: "buffer"})<CR>]], { desc = "start ddu buffer search" })
 vim.keymap.set("n", "<leader>flr", [[<CMD>call ddu#start(#{name: "lsp_r"})<CR>]])
 vim.keymap.set("n", "<leader>fle", [[<CMD>call ddu#start(#{name: "lsp_e"})<CR>]])
 vim.keymap.set("n", "<leader>fld", [[<CMD>call ddu#start(#{name: "lsp_d"})<CR>]])

@@ -44,6 +44,7 @@ return {
       "Shougo/ddu-source-file",
       "Shougo/ddu-source-file_rec",
       "Shougo/ddu-source-line",
+      "shun/ddu-source-buffer",
       "shun/ddu-source-rg",
       "uga-rosa/ddu-source-lsp",
       -- kinds
