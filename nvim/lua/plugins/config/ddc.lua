@@ -1,4 +1,5 @@
-local patch_global = vim.fn["ddc#custom#patch_global"]
+local fn = require("artemis").fn
+local patch_global = fn.ddc.custom.patch_global
 
 patch_global("autoCompleteEvents", {
   "InsertEnter",
@@ -52,7 +53,7 @@ patch_global("sourceOptions", {
   },
 })
 
-vim.fn["ddc#custom#patch_global"]("sourceParams", {
+patch_global("sourceParams", {
   lsp = {
     snippetEngine = vim.fn["denops#callback#register"](function(body)
       vim.fn["vsnip#anonymous"](body)
@@ -68,11 +69,9 @@ vim.fn["ddc#custom#patch_global"]("sourceParams", {
 patch_global("ui", "pum")
 
 -- pum config
-vim.fn["pum#set_option"]({
-  auto_select = false,
+fn.pum.set_option({
   border = "rounded",
   max_width = 40,
-  preview_delay = 100,
 })
 
 vim.cmd([[
@@ -99,5 +98,5 @@ silent! cunmap <C-e>
 endfunction
 ]])
 
-vim.fn["ddc#enable_terminal_completion"]()
-vim.fn["ddc#enable"]()
+fn.ddc.enable_terminal_completion()
+fn.ddc.enable()
