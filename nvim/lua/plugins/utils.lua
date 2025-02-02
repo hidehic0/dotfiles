@@ -1,5 +1,9 @@
 return {
   {
+    "tani/vim-artemis",
+    event = "VimEnter",
+  },
+  {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
     config = true,

@@ -1,4 +1,6 @@
-vim.fn["ddu#custom#patch_global"]({
+local fn = require("artemis").fn
+
+fn.ddu.custom.patch_global({
   -- ui settings
   ui = "ff",
 
@@ -53,7 +55,7 @@ vim.fn["ddu#custom#patch_global"]({
 })
 
 -- custom sources
-local patch_local = vim.fn["ddu#custom#patch_local"]
+local patch_local = fn.ddu.custom.patch_local
 
 patch_local("file_rec", {
   sources = {
