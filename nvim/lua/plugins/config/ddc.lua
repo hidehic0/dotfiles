@@ -67,6 +67,14 @@ vim.fn["ddc#custom#patch_global"]("sourceParams", {
 
 patch_global("ui", "pum")
 
+-- pum config
+vim.fn["pum#set_option"]({
+  auto_select = false,
+  border = "rounded",
+  max_width = 40,
+  preview_delay = 100,
+})
+
 vim.cmd([[
 inoremap <silent><expr> <TAB>
 \ pum#visible() ? '<Cmd>call pum#map#insert_relative(+1)<CR>' :
