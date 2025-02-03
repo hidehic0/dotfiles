@@ -35,3 +35,5 @@ endfunction
 
 fn.ddc.enable_terminal_completion()
 fn.ddc.enable()
+
+vim.notify("ddc.vim loaded successfully")
