@@ -119,4 +119,19 @@ return {
       },
     },
   },
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {
+      modes = {
+        char = {
+          enabled = true,
+          multi_line = false,
+          search = { wrap = false },
+          highlight = { backdrop = true, groups = { label = "", backdrop = "" } },
+          jump = { register = false },
+        },
+      },
+    },
+  },
 }
