@@ -22,18 +22,18 @@ lspconfig["lua_ls"].setup({
   },
 })
 
-lspconfig["pylsp"].setup({
+lspconfig["pyright"].setup({
   capabilities = capabilities,
-  -- settings = {
-  --   pyright = {
-  --     disableOrganizeImports = true,
-  --   },
-  --   python = {
-  --     analysis = {
-  --       ignore = { "*" },
-  --     },
-  --   },
-  -- },
+  settings = {
+    pyright = {
+      disableOrganizeImports = true,
+    },
+    python = {
+      analysis = {
+        ignore = { "*" },
+      },
+    },
+  },
 })
 
 lspconfig["clangd"].setup({

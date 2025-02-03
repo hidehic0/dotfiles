@@ -43,7 +43,6 @@ in {
       marksman
       mise
       online-judge-tools
-      python312Packages.python-lsp-server
       ruby
       ruff
       selene
