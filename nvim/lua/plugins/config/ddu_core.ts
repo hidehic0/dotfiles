@@ -16,14 +16,26 @@ export class Config extends BaseConfig {
       ui: "ff",
       uiParams: {
         ff: {
+          // auto action
           startAutoAction: true,
           autoAction: { name: "preview", delay: 0 },
+          // floating configs
+          split: "floating",
+          winCol: 20,
+          winWidth: 70,
+          winHeight: 30,
+          winRow: 8,
+          // preview configs
           floatingBorder: "rounded",
           previewFloating: true,
           previewFloatingBorder: "rounded",
           previewFloatingTitle: "Preview",
+          previewSplit: "vertical",
+          previewWidth: 70,
+          previewCol: 93,
+          previewRow: 8,
+          previewHeight: 30,
           prompt: "ddu.vim",
-          split: "floating",
         },
       },
 
