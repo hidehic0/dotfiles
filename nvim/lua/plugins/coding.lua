@@ -81,6 +81,9 @@ return {
       "tani/ddc-fuzzy",
       -- snip
       "hrsh7th/vim-vsnip",
+      -- converters
+      "Shougo/ddc-filter-converter_remove_overlap",
+      "Shougo/ddc-filter-converter_truncate_abbr",
     },
     event = {
       "CmdlineEnter",

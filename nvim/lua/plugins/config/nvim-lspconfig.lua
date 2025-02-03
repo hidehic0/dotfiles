@@ -41,3 +41,11 @@ lspconfig["clangd"].setup({
 })
 
 lspconfig["ruff"].setup({})
+
+vim.g.markdown_fenced_languages = {
+  "ts=typescript",
+}
+
+lspconfig["denols"].setup({
+  capabilities = capabilities,
+})

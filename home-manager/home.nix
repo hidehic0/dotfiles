@@ -50,6 +50,7 @@ in {
       shellcheck
       shfmt
       tree-sitter
+      typescript-language-server
       vim
       vim-startuptime
       yamlfmt

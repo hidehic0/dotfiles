@@ -6,6 +6,7 @@ require("conform").setup({
     bash = { "shfmt" },
     sh = { "shfmt" },
     yaml = { "yamlfmt" },
+    typescript = { "deno_fmt" },
   },
   format_on_save = {
     -- These options will be passed to conform.format()
