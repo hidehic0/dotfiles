@@ -7,6 +7,7 @@ vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua"
 fn.pum.set_option({
   border = "rounded",
   max_width = 40,
+  direction = "below",
 })
 
 vim.cmd([[
