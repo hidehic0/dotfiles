@@ -29,7 +29,11 @@ export class Config extends BaseConfig {
         _: {
           sorters: ["sorter_fuzzy"],
           matchers: ["matcher_fuzzy"],
-          converters: ["converter_fuzzy"],
+          converters: [
+            "converter_fuzzy",
+            "converter_truncate_abbr",
+            "converter_remove_overlap",
+          ],
         },
         lsp: {
           mark: "[LSP]",
