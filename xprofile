@@ -3,6 +3,6 @@
 export XDG_SESSION_TYPE=wayland
 export QT_QPA_PLATFORM="wayland;xcb"
 
-GTK_IM_MODULE=fcitx
+# GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
