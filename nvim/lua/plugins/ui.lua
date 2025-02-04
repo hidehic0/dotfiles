@@ -20,6 +20,9 @@ return {
           ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
           ["vim.lsp.util.stylize_markdown"] = true,
         },
+        progress = {
+          enabled = false,
+        },
       },
       messages = {
         enabled = false,
@@ -63,5 +66,10 @@ return {
         desc = "Diagnostics (Trouble)",
       },
     },
+  },
+  {
+    "git@github.com:j-hui/fidget.nvim.git",
+    event = "VeryLazy",
+    opts = {},
   },
 }
