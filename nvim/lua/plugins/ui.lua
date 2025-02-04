@@ -72,4 +72,11 @@ return {
     event = "VeryLazy",
     opts = {},
   },
+  {
+    "git@github.com:folke/todo-comments.nvim.git",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "VeryLazy",
+    opts = {},
+    keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
+  },
 }
