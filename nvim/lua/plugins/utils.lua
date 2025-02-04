@@ -36,6 +36,10 @@ return {
     end,
   },
   {
+    "vim-jp/vimdoc-ja",
+    event = "VeryLazy",
+  },
+  {
     "Shougo/ddu.vim",
     event = "VeryLazy",
     dependencies = {
@@ -48,6 +52,7 @@ return {
       "Shougo/ddu-source-file",
       "Shougo/ddu-source-file_rec",
       "Shougo/ddu-source-line",
+      "matsui54/ddu-source-help",
       "shun/ddu-source-buffer",
       "shun/ddu-source-rg",
       "uga-rosa/ddu-source-lsp",

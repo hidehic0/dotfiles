@@ -21,8 +21,8 @@ export class Config extends BaseConfig {
           autoAction: { name: "preview", delay: 0 },
           // floating configs
           split: "floating",
-          winCol: 20,
-          winWidth: 70,
+          winCol: 2,
+          winWidth: "&columns / 2 - 3",
           winHeight: 35,
           winRow: 6,
           // preview configs
@@ -31,8 +31,8 @@ export class Config extends BaseConfig {
           previewFloatingBorder: "rounded",
           previewFloatingTitle: "Preview",
           previewSplit: "vertical",
-          previewWidth: 70,
-          previewCol: 93,
+          previewWidth: "&columns / 2 - 3",
+          previewCol: "&columns / 2",
           previewRow: 6,
           previewHeight: 35,
           prompt: "ddu.vim",
@@ -58,6 +58,9 @@ export class Config extends BaseConfig {
             "--color",
             "never",
           ],
+        },
+        help: {
+          helplang: "ja",
         },
       },
 
