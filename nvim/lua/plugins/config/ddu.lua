@@ -85,6 +85,14 @@ patch_local("register", {
   },
 })
 
+patch_local("branch", {
+  sources = {
+    {
+      name = "git_branch",
+    },
+  },
+})
+
 patch_local("lsp_r", {
   sources = {
     {
@@ -134,6 +142,7 @@ vim.keymap.set("n", "<leader>fg", [[<CMD>call ddu#start(#{name: "rg"})<CR>]], { 
 vim.keymap.set("n", "<leader>fr", [[<CMD>call ddu#start(#{name: "lines"})<CR>]], { desc = "start ddu line search" })
 vim.keymap.set("n", "<leader>fb", [[<CMD>call ddu#start(#{name: "buffer"})<CR>]], { desc = "start ddu buffer search" })
 vim.keymap.set("n", "<leader>fh", [[<CMD>call ddu#start(#{name: "help"})<CR>]], { desc = "start ddu help search" })
+vim.keymap.set("n", "<leader>fs", [[<CMD>call ddu#start(#{name: "branch"})<CR>]], { desc = "start ddu branch search" })
 vim.keymap.set(
   "n",
   "<leader>ft",

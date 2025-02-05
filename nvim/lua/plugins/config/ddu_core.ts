@@ -47,6 +47,13 @@ export class Config extends BaseConfig {
           ignoreCase: true,
           smartCase: true,
         },
+        git_branch: {
+          columns: [
+            "git_branch_head",
+            "git_branch_name",
+            "git_branch_author",
+          ],
+        },
       },
       sourceParams: {
         rg: {
@@ -71,6 +78,7 @@ export class Config extends BaseConfig {
         register: {
           defaultAction: "yank",
         },
+        git_branch: { "defaultAction": "switch" },
         word: {
           defaultAction: "yank",
         },
