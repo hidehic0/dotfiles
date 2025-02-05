@@ -1,6 +1,6 @@
 return {
   {
-    "EdenEast/nightfox.nvim",
+    "git@github.com:EdenEast/nightfox.nvim",
     event = { "BufReadPre", "BufWinEnter", "BufEnter" },
     config = function()
       require("plugins.config.nightfox")
@@ -8,7 +8,7 @@ return {
     enabled = false,
   },
   {
-    "navarasu/onedark.nvim",
+    "git@github.com:navarasu/onedark.nvim",
     event = { "BufReadPre", "BufWinEnter", "BufEnter" },
     config = function()
       require("plugins.config.onedark")
