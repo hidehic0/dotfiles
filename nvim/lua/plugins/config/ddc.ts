@@ -34,10 +34,13 @@ export class Config extends BaseConfig {
             "converter_truncate_abbr",
             "converter_remove_overlap",
           ],
+          enabledIf: "!skkeleton#is_enabled()",
         },
         lsp: {
           mark: "[LSP]",
-          forceCompletionPattern: "\.\w*|:\w*|->\w*",
+          matchers: ["matcher_fuzzy", "matcher_prefix"],
+          forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
+          dup: "force",
         },
         cmdline: {
           mark: "[CMD]",
@@ -52,6 +55,7 @@ export class Config extends BaseConfig {
           converters: [],
           isVolatile: true,
           minAutoCompleteLength: 1,
+          enabledIf: "skkeleton#is_enabled()",
         },
       },
       sourceParams: {

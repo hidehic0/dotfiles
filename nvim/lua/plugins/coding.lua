@@ -84,6 +84,8 @@ return {
       -- converters
       "Shougo/ddc-filter-converter_remove_overlap",
       "Shougo/ddc-filter-converter_truncate_abbr",
+      -- filters
+      "Shougo/ddc-filter-matcher_prefix",
     },
     event = {
       "CmdlineEnter",
