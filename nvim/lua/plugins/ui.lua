@@ -79,4 +79,12 @@ return {
     opts = {},
     keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
   },
+  {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
+    config = function()
+      require("plugins.config.snacks")
+    end,
+  },
 }

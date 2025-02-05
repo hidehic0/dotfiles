@@ -50,14 +50,7 @@ export class Config extends BaseConfig {
       },
       sourceParams: {
         rg: {
-          args: [
-            "--vimgrep",
-            "--json",
-            "--column",
-            "--no-heading",
-            "--color",
-            "never",
-          ],
+          args: ["--column", "--no-heading", "--color", "never"],
         },
         help: {
           helplang: "ja",
