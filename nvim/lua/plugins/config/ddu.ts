@@ -90,6 +90,103 @@ export class Config extends BaseConfig {
         },
       },
     });
+
+    // 通常のファイル検索
+    args.contextBuilder.patchLocal("file_rec", {
+      sources: [
+        {
+          name: "file_rec",
+        },
+      ],
+      uiParams: {
+        ff: {
+          floatingTitle: "File Rec :)",
+        },
+      },
+    });
+
+    // ripgrepを使用した、live grep検索
+    args.contextBuilder.patchLocal("rg", {
+      sources: [
+        {
+          name: "rg",
+          options: {
+            volatile: true,
+          },
+        },
+      ],
+      uiParams: {
+        ff: {
+          floatingTitle: "LIVE GREP :)",
+        },
+      },
+    });
+
+    // 行の内容で検索します
+    args.contextBuilder.patchLocal("lines", {
+      sources: [
+        {
+          name: "line",
+        },
+      ],
+      uiParams: {
+        ff: {
+          floatingTitle: "Line Search :)",
+        },
+      },
+    });
+
+    // ヘルプ検索
+    args.contextBuilder.patchLocal("help", {
+      sources: [
+        {
+          name: "help",
+        },
+      ],
+      uiParams: {
+        ff: {
+          floatingTitle: "󰋗 Help Search",
+        },
+      },
+    });
+
+    // バッファー検索
+    args.contextBuilder.patchLocal("buffer", {
+      sources: [
+        {
+          name: "buffer",
+        },
+      ],
+      uiParams: {
+        ff: {
+          floatingTitle: "Buffer Search :)",
+        },
+      },
+    });
+
+    // レジスタ検索
+    args.contextBuilder.patchLocal("register", {
+      sources: [
+        {
+          name: "register",
+        },
+      ],
+      uiParams: {
+        ff: {
+          floatingTitle: "Register Search :)",
+        },
+      },
+    });
+
+    // ブランチ移動
+    args.contextBuilder.patchLocal("branch", {
+      sources: [
+        {
+          name: "git_branch",
+        },
+      ],
+    });
+
     return Promise.resolve();
   }
 }
