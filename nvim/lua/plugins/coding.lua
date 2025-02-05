@@ -1,28 +1,28 @@
 vim.g.copilot_no_tab_map = true
 return {
   {
-    "neovim/nvim-lspconfig",
+    "git@github.com:neovim/nvim-lspconfig",
     event = { "BufReadPre", "BufNewFile" },
     dependencies = {
-      "Shougo/ddc-source-lsp",
+      "git@github.com:Shougo/ddc-source-lsp",
     },
     config = function()
       require("plugins/config/nvim-lspconfig")
     end,
   },
   {
-    "nvimdev/lspsaga.nvim",
+    "git@github.com:nvimdev/lspsaga.nvim",
     event = "LspAttach",
     dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "nvim-tree/nvim-web-devicons",
+      "git@github.com:nvim-treesitter/nvim-treesitter",
+      "git@github.com:nvim-tree/nvim-web-devicons",
     },
     config = function()
       require("plugins.config.lspsaga")
     end,
   },
   {
-    "zbirenbaum/neodim",
+    "git@github.com:zbirenbaum/neodim",
     event = "LspAttach",
     config = function()
       require("neodim").setup({
@@ -44,9 +44,9 @@ return {
     end,
   },
   {
-    "matsui54/denops-popup-preview.vim",
+    "git@github.com:matsui54/denops-popup-preview.vim",
     dependencies = {
-      "vim-denops/denops.vim",
+      "git@github.com:vim-denops/denops.vim",
     },
     event = "VimEnter",
     config = function()
@@ -54,9 +54,9 @@ return {
     end,
   },
   {
-    "matsui54/denops-signature_help",
+    "git@github.com:matsui54/denops-signature_help",
     dependencies = {
-      "vim-denops/denops.vim",
+      "git@github.com:vim-denops/denops.vim",
     },
     event = "VimEnter",
     config = function()
@@ -64,26 +64,26 @@ return {
     end,
   },
   {
-    "Shougo/ddc.vim",
+    "git@github.com:Shougo/ddc.vim",
     dependencies = {
       -- denops
-      "vim-denops/denops.vim",
+      "git@github.com:vim-denops/denops.vim",
       -- ui
-      "Shougo/ddc-ui-pum",
-      "Shougo/pum.vim",
+      "git@github.com:Shougo/ddc-ui-pum",
+      "git@github.com:Shougo/pum.vim",
       -- sources
-      "Shougo/ddc-source-around",
-      "Shougo/ddc-source-cmdline",
+      "git@github.com:Shougo/ddc-source-around",
+      "git@github.com:Shougo/ddc-source-cmdline",
       -- "Shougo/ddc-source-copilot",
-      "Shougo/ddc-source-lsp",
-      "Shougo/ddc-source-shell-native",
+      "git@github.com:Shougo/ddc-source-lsp",
+      "git@github.com:Shougo/ddc-source-shell-native",
       -- sorters
-      "tani/ddc-fuzzy",
+      "git@github.com:tani/ddc-fuzzy",
       -- snip
-      "hrsh7th/vim-vsnip",
+      "git@github.com:hrsh7th/vim-vsnip",
       -- converters
-      "Shougo/ddc-filter-converter_remove_overlap",
-      "Shougo/ddc-filter-converter_truncate_abbr",
+      "git@github.com:Shougo/ddc-filter-converter_remove_overlap",
+      "git@github.com:Shougo/ddc-filter-converter_truncate_abbr",
     },
     event = {
       "CmdlineEnter",
@@ -98,25 +98,25 @@ return {
     end,
   },
   {
-    "mfussenegger/nvim-lint",
+    "git@github.com:mfussenegger/nvim-lint",
     event = "VeryLazy",
     config = function()
       require("plugins.config.nvim-lint")
     end,
   },
   {
-    "stevearc/conform.nvim",
+    "git@github.com:stevearc/conform.nvim",
     event = "VeryLazy",
     config = function()
       require("plugins.config.conform")
     end,
   },
   {
-    "mfussenegger/nvim-dap",
+    "git@github.com:mfussenegger/nvim-dap",
     dependencies = {
-      "rcarriga/nvim-dap-ui",
-      "mfussenegger/nvim-dap-python",
-      "nvim-neotest/nvim-nio",
+      "git@github.com:rcarriga/nvim-dap-ui",
+      "git@github.com:mfussenegger/nvim-dap-python",
+      "git@github.com:nvim-neotest/nvim-nio",
     },
     event = "LspAttach",
     config = function()
@@ -124,7 +124,7 @@ return {
     end,
   },
   {
-    "nvim-treesitter/nvim-treesitter",
+    "git@github.com:nvim-treesitter/nvim-treesitter",
     event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
     config = function()
