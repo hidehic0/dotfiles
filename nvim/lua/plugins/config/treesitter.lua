@@ -8,4 +8,15 @@ require("nvim-treesitter.configs").setup({
   incremental_selection = {
     enable = true,
   },
+  refactor = {
+    navigation = {
+      enable = true,
+    },
+    smart_rename = {
+      enable = true,
+      keymaps = {
+        smart_rename = "grr",
+      },
+    },
+  },
 })
