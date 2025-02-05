@@ -1,13 +1,13 @@
 return {
   {
-    "git@github.com:nvim-lualine/lualine.nvim",
+    "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     config = function()
       require("lualine").setup({})
     end,
   },
   {
-    "git@github.com:folke/noice.nvim",
+    "folke/noice.nvim",
     event = "VeryLazy",
     dependencies = {
       "MunifTanjim/nui.nvim",
@@ -30,7 +30,7 @@ return {
     },
   },
   {
-    "git@github.com:stevearc/oil.nvim",
+    "stevearc/oil.nvim",
     cmd = "Oil",
     keys = { { "<leader>e", "<CMD>Oil --float<CR>", desc = "start oil" } },
     config = function()
@@ -38,7 +38,7 @@ return {
     end,
   },
   {
-    "git@github.com:akinsho/bufferline.nvim",
+    "akinsho/bufferline.nvim",
     event = "VimEnter",
     dependencies = "nvim-tree/nvim-web-devicons",
     config = function()
@@ -46,7 +46,7 @@ return {
     end,
   },
   {
-    "git@github.com:folke/which-key.nvim",
+    "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {
       triggers = {
@@ -55,7 +55,7 @@ return {
     },
   },
   {
-    "git@github.com:folke/trouble.nvim",
+    "folke/trouble.nvim",
     event = "VeryLazy",
     opts = {},
     cmd = "Trouble",
