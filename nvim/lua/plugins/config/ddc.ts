@@ -8,6 +8,11 @@ import { type DdcItem } from "jsr:@shougo/ddc-vim@~9.1.0/types";
 export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
     const default_sources = ["lsp", "skkeleton"];
+    const default_converters = [
+      "converter_fuzzy",
+      "converter_truncate_abbr",
+      "converter_remove_overlap",
+    ];
     const search_sources = ["around"];
 
     args.contextBuilder.patchGlobal({
@@ -29,16 +34,13 @@ export class Config extends BaseConfig {
         _: {
           sorters: ["sorter_fuzzy"],
           matchers: ["matcher_fuzzy"],
-          converters: [
-            "converter_fuzzy",
-            "converter_truncate_abbr",
-            "converter_remove_overlap",
-          ],
+          converters: default_converters,
           enabledIf: "!skkeleton#is_enabled()",
         },
         lsp: {
           mark: "[LSP]",
           matchers: ["matcher_fuzzy", "matcher_prefix"],
+          converters: ["converter_kind_labels"].concat(default_converters),
           forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
           dup: "force",
         },
@@ -65,6 +67,37 @@ export class Config extends BaseConfig {
           },
           enableResolveItem: true,
           enableAdditionalTextEdit: true,
+        },
+      },
+      filterParams: {
+        converter_kind_labels: {
+          kindLabels: {
+            Text: "󰉿 text",
+            Method: "󰆧 method",
+            Function: "󰊕 function",
+            Constructor: " constructor",
+            Field: "󰜢 field",
+            Variable: "󰀫 variable",
+            Class: "󰠱 class",
+            Interface: " interface",
+            Module: " module",
+            Property: "󰜢 property",
+            Unit: "󰑭 unit",
+            Value: "󰎠 value",
+            Enum: " enum",
+            Keyword: "󰌋 keyword",
+            Snippet: " snippet",
+            Color: "󰏘 color",
+            File: "󰈙 file",
+            Reference: "󰈇 reference",
+            Folder: "󰉋 folder",
+            EnumMember: " enum member",
+            Constant: "󰏿 constant",
+            Struct: "󰙅 struct",
+            Event: " event",
+            Operator: "󰆕 operator",
+            TypeParameter: " type parameter",
+          },
         },
       },
     });
