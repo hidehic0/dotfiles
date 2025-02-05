@@ -69,8 +69,6 @@ return {
       "Shougo/ddu-column-filename",
       -- sorters
       "Shougo/ddu-filter-sorter_alpha",
-      -- other
-      "matsui54/ddu-vim-ui-select",
     },
 
     config = function()

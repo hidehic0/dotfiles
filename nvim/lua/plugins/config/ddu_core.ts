@@ -68,9 +68,6 @@ export class Config extends BaseConfig {
           defaultAction: "do",
           quit: true,
         },
-        ui_select: {
-          "defaultAction": "select",
-        },
       },
 
       filterParams: {
