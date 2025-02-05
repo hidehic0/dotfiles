@@ -1,34 +1,34 @@
 return {
   {
-    "tani/vim-artemis",
+    "git@github.com:tani/vim-artemis",
     event = "VimEnter",
   },
   {
-    "windwp/nvim-autopairs",
+    "git@github.com:windwp/nvim-autopairs",
     event = "InsertEnter",
     config = true,
     opts = {},
   },
   {
-    "kylechui/nvim-surround",
+    "git@github.com:kylechui/nvim-surround",
     event = "VeryLazy",
     version = "*",
     opts = {},
   },
   {
-    "Shougo/ddt.vim",
+    "git@github.com:Shougo/ddt.vim",
     event = "VeryLazy",
     dependencies = {
-      "Shougo/ddt-ui-terminal",
+      "git@github.com:Shougo/ddt-ui-terminal",
     },
     config = function()
       require("plugins.config.ddt")
     end,
   },
   {
-    "vim-skk/skkeleton",
+    "git@github.com:vim-skk/skkeleton",
     dependencies = {
-      "vim-denops/denops.vim",
+      "git@github.com:vim-denops/denops.vim",
     },
     event = "VimEnter",
     config = function()
@@ -36,39 +36,39 @@ return {
     end,
   },
   {
-    "vim-jp/vimdoc-ja",
+    "git@github.com:vim-jp/vimdoc-ja",
     event = "VeryLazy",
   },
   {
-    "Shougo/ddu.vim",
+    "git@github.com:Shougo/ddu.vim",
     event = "VeryLazy",
     dependencies = {
-      "vim-denops/denops.vim",
+      "git@github.com:vim-denops/denops.vim",
       -- ui
-      "Shougo/ddu-ui-ff",
-      "Shougo/ddu-ui-filer",
+      "git@github.com:Shougo/ddu-ui-ff",
+      "git@github.com:Shougo/ddu-ui-filer",
       -- sources
-      "Shougo/ddu-source-action",
-      "Shougo/ddu-source-file",
-      "Shougo/ddu-source-file_rec",
-      "Shougo/ddu-source-line",
-      "matsui54/ddu-source-help",
-      "shun/ddu-source-buffer",
-      "shun/ddu-source-rg",
-      "uga-rosa/ddu-source-lsp",
+      "git@github.com:Shougo/ddu-source-action",
+      "git@github.com:Shougo/ddu-source-file",
+      "git@github.com:Shougo/ddu-source-file_rec",
+      "git@github.com:Shougo/ddu-source-line",
+      "git@github.com:matsui54/ddu-source-help",
+      "git@github.com:shun/ddu-source-buffer",
+      "git@github.com:shun/ddu-source-rg",
+      "git@github.com:uga-rosa/ddu-source-lsp",
       -- kinds
-      "Shougo/ddu-kind-file",
-      "Shougo/ddu-kind-word",
+      "git@github.com:Shougo/ddu-kind-file",
+      "git@github.com:Shougo/ddu-kind-word",
       -- filters
-      "yuki-yano/ddu-filter-fzf",
+      "git@github.com:yuki-yano/ddu-filter-fzf",
       -- converters
-      "uga-rosa/ddu-filter-converter_devicon",
+      "git@github.com:uga-rosa/ddu-filter-converter_devicon",
       -- commands
-      "Shougo/ddu-commands.vim",
+      "git@github.com:Shougo/ddu-commands.vim",
       -- columns
-      "Shougo/ddu-column-filename",
+      "git@github.com:Shougo/ddu-column-filename",
       -- sorters
-      "Shougo/ddu-filter-sorter_alpha",
+      "git@github.com:Shougo/ddu-filter-sorter_alpha",
     },
 
     config = function()
@@ -76,18 +76,18 @@ return {
     end,
   },
   {
-    "vim-denops/denops.vim",
-    dependencies = { "vim-denops/denops-shared-server.vim" },
+    "git@github.com:vim-denops/denops.vim",
+    dependencies = { "git@github.com:vim-denops/denops-shared-server.vim" },
     event = "VimEnter",
     config = function()
       vim.cmd([[let g:denops_server_addr = '127.0.0.1:32123']])
     end,
   },
   {
-    "lambdalisue/vim-gin",
+    "git@github.com:lambdalisue/vim-gin",
     dependencies = {
-      "vim-denops/denops.vim",
-      "monaqa/tree-sitter-unifieddiff",
+      "git@github.com:vim-denops/denops.vim",
+      "git@github.com:monaqa/tree-sitter-unifieddiff",
     },
     event = "VeryLazy",
     keys = {
@@ -125,7 +125,7 @@ return {
     },
   },
   {
-    "folke/flash.nvim",
+    "git@github.com:folke/flash.nvim",
     event = "VeryLazy",
     opts = {
       modes = {
