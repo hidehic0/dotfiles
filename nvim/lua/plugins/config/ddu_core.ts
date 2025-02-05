@@ -68,6 +68,12 @@ export class Config extends BaseConfig {
           defaultAction: "do",
           quit: true,
         },
+        register: {
+          defaultAction: "yank",
+        },
+        word: {
+          defaultAction: "yank",
+        },
       },
 
       filterParams: {

@@ -72,6 +72,19 @@ patch_local("buffer", {
   },
 })
 
+patch_local("register", {
+  sources = {
+    {
+      name = "register",
+    },
+  },
+  uiParams = {
+    ff = {
+      floatingTitle = "Register Search :)",
+    },
+  },
+})
+
 patch_local("lsp_r", {
   sources = {
     {
@@ -121,6 +134,12 @@ vim.keymap.set("n", "<leader>fg", [[<CMD>call ddu#start(#{name: "rg"})<CR>]], { 
 vim.keymap.set("n", "<leader>fr", [[<CMD>call ddu#start(#{name: "lines"})<CR>]], { desc = "start ddu line search" })
 vim.keymap.set("n", "<leader>fb", [[<CMD>call ddu#start(#{name: "buffer"})<CR>]], { desc = "start ddu buffer search" })
 vim.keymap.set("n", "<leader>fh", [[<CMD>call ddu#start(#{name: "help"})<CR>]], { desc = "start ddu help search" })
+vim.keymap.set(
+  "n",
+  "<leader>ft",
+  [[<CMD>call ddu#start(#{name: "register"})<CR>]],
+  { desc = "start ddu register search" }
+)
 vim.keymap.set("n", "<leader>flr", [[<CMD>call ddu#start(#{name: "lsp_r"})<CR>]])
 vim.keymap.set("n", "<leader>fle", [[<CMD>call ddu#start(#{name: "lsp_e"})<CR>]])
 vim.keymap.set("n", "<leader>fld", [[<CMD>call ddu#start(#{name: "lsp_d"})<CR>]])
@@ -134,10 +153,15 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set(
       "n",
       "q",
-      [[<Cmd>call ddu#ui#do_action("togglePreview")<CR><CMD>call ddu#ui#do_action("quit")<CR>]],
+      [[<Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><CMD>call ddu#ui#do_action("quit")<CR>]],
       opts
     )
-    vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
+    vim.keymap.set(
+      "n",
+      "<CR>",
+      [[<CMD>call ddu#ui#do_action("itemAction")<CR><Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><CMD>call ddu#ui#do_action("quit")<CR>]],
+      opts
+    )
     vim.keymap.set("n", "i", [[<Cmd>call ddu#ui#do_action("openFilterWindow")<CR>]], opts)
     vim.keymap.set("n", "a", [[<Cmd>call ddu#ui#do_action("chooseAction")<CR>]], opts)
   end,
