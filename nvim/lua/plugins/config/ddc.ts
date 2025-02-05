@@ -109,6 +109,7 @@ export class Config extends BaseConfig {
             Class: "Structure",
             Interface: "Structure",
             Keyword: "Statement",
+            Text: "String",
           },
         },
       },
