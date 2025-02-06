@@ -136,6 +136,13 @@ return {
       require("plugins.config.treesitter")
     end,
   },
+  {
+    "tani/dmacro.nvim",
+    event = { "VeryLazy" },
+    config = function()
+      vim.keymap.set({ "i", "n" }, "<C-.>", "<Plug>(dmacro-play-macro)")
+    end,
+  },
   -- {
   --   "github/copilot.vim",
   --   event = { "InsertEnter" },
