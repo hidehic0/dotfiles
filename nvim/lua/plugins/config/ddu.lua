@@ -16,7 +16,7 @@ set_keymap("<leader>fg", "rg", "start ddu ripgrep")
 set_keymap("<leader>fr", "lines", "start ddu line search")
 set_keymap("<leader>fb", "buffer", "start ddu buffer search")
 set_keymap("<leader>fh", "help", "start ddu help search")
-set_keymap("<leader>fs", "branch", "start ddu branch search")
+set_keymap("<leader>fs", "git_branch", "start ddu branch search")
 set_keymap("<leader>ft", "patch_local", "start patch_local search")
 
 -- autocmds

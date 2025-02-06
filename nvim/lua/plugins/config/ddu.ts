@@ -182,7 +182,7 @@ export class Config extends BaseConfig {
     });
 
     // ブランチ移動
-    args.contextBuilder.patchLocal("branch", {
+    args.contextBuilder.patchLocal("git_branch", {
       sources: [
         {
           name: "git_branch",
