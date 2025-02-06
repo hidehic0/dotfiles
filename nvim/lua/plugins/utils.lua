@@ -57,6 +57,7 @@ return {
       "matsui54/ddu-source-help",
       "shun/ddu-source-buffer",
       "shun/ddu-source-rg",
+      "staticWagomU/ddu-source-patch_local",
       "uga-rosa/ddu-source-lsp",
       -- kinds
       "Shougo/ddu-kind-file",

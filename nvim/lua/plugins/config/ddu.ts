@@ -45,7 +45,7 @@ export class Config extends BaseConfig {
           sorters: ["sorter_fzf"],
           converters: ["converter_devicon"],
           ignoreCase: true,
-          smartCase: true,
+          // smartCase: true,
         },
         git_branch: {
           columns: [
@@ -79,6 +79,9 @@ export class Config extends BaseConfig {
           defaultAction: "yank",
         },
         git_branch: { "defaultAction": "switch" },
+        patch_local: {
+          defaultAction: "start",
+        },
         word: {
           defaultAction: "yank",
         },
@@ -185,6 +188,26 @@ export class Config extends BaseConfig {
           name: "git_branch",
         },
       ],
+
+      uiParams: {
+        ff: {
+          floatingTitle: "Branch Search :)",
+        },
+      },
+    });
+
+    // patch_localを検索してスタート
+    args.contextBuilder.patchLocal("patch_local", {
+      sources: [
+        { name: "patch_local" },
+      ],
+      uiParams: {
+        ff: {
+          floatingTitle: "PatchLocal Search :)",
+          winCol: 5,
+          winWidth: "&columns - 10",
+        },
+      },
     });
 
     return Promise.resolve();
