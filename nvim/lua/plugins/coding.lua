@@ -1,4 +1,5 @@
 vim.g.copilot_no_tab_map = true
+---@type LazySpec
 return {
   {
     "neovim/nvim-lspconfig",
