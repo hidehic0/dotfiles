@@ -3,7 +3,7 @@ require("nvim-treesitter.configs").setup({
     enable = true,
   },
   indent = {
-    enable = true,
+    enable = false,
   },
   incremental_selection = {
     enable = true,
@@ -19,4 +19,5 @@ require("nvim-treesitter.configs").setup({
       },
     },
   },
+  yati = { enable = true, default_lazy = true },
 })

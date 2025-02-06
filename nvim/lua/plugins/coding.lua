@@ -130,9 +130,10 @@ return {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
       "nvim-treesitter/nvim-treesitter-refactor",
+      "yioneko/nvim-yati",
     },
     event = { "BufReadPre", "BufNewFile" },
-    build = { ":TSUpdate" },
+    build = { ":TSUpdateSync" },
     config = function()
       require("plugins.config.treesitter")
     end,
