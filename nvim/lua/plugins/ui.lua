@@ -69,12 +69,12 @@ return {
     },
   },
   {
-    "git@github.com:j-hui/fidget.nvim.git",
+    "j-hui/fidget.nvim",
     event = "VeryLazy",
     opts = {},
   },
   {
-    "git@github.com:folke/todo-comments.nvim.git",
+    "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     event = "VeryLazy",
     opts = {},
