@@ -1,10 +1,10 @@
 vim.fn["ddt#custom#patch_global"]({
-  -- ui = "terminal",
+  nvimServer = "~/.cache/nvim/server.pipe",
   uiParams = {
     terminal = {
       command = { "zsh" },
       split = "",
-      promptPattern = [[\f\+>]],
+      promptPattern = vim.fn.has("win32") == 1 and "\\f\\+>" or "\\w*%% %?",
       startInsert = true,
     },
   },
