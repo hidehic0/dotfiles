@@ -54,6 +54,7 @@ return {
       "Shougo/ddu-source-file_rec",
       "Shougo/ddu-source-line",
       "Shougo/ddu-source-register",
+      "kuuote/ddu-source-git_status",
       "kyoh86/ddu-source-git_branch",
       "kyoh86/ddu-source-lazy_nvim",
       "matsui54/ddu-source-help",
@@ -68,6 +69,7 @@ return {
       "yuki-yano/ddu-filter-fzf",
       -- converters
       "uga-rosa/ddu-filter-converter_devicon",
+      "kyoh86/ddu-filter-converter_hl_dir",
       -- commands
       "Shougo/ddu-commands.vim",
       -- columns

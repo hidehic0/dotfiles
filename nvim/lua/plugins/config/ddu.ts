@@ -79,6 +79,9 @@ export class Config extends BaseConfig {
           defaultAction: "yank",
         },
         git_branch: { "defaultAction": "switch" },
+        git_status: {
+          defaultAction: "open",
+        },
         patch_local: {
           defaultAction: "start",
         },
@@ -206,6 +209,30 @@ export class Config extends BaseConfig {
       uiParams: {
         ff: {
           floatingTitle: "Branch Search :)",
+        },
+      },
+    });
+
+    // gitで変更があった部分
+    args.contextBuilder.patchLocal("git_status", {
+      sources: [
+        {
+          name: "git_status",
+        },
+      ],
+
+      sourceOptions: {
+        git_status: {
+          converters: [
+            "converter_devicon",
+            "converter_hl_dir",
+          ],
+        },
+      },
+
+      uiParams: {
+        ff: {
+          floatingTitle: "Git Status Search :)",
         },
       },
     });
