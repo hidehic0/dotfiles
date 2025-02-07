@@ -144,4 +144,14 @@ return {
       },
     },
   },
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    event = "VeryLazy",
+    config = function()
+      require("plugins.config.fzf")
+    end,
+  },
 }
