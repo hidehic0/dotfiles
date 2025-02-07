@@ -20,4 +20,5 @@ require("nvim-treesitter.configs").setup({
     },
   },
   yati = { enable = true, default_lazy = true },
+  ts_context_commentstring = { enable = true },
 })

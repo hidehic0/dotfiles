@@ -131,6 +131,7 @@ return {
     dependencies = {
       "nvim-treesitter/nvim-treesitter-refactor",
       "yioneko/nvim-yati",
+      "JoosepAlviste/nvim-ts-context-commentstring",
     },
     event = { "BufReadPre", "BufNewFile" },
     build = { ":TSUpdateSync" },
@@ -144,6 +145,16 @@ return {
     config = function()
       vim.keymap.set({ "i", "n" }, "<C-.>", "<Plug>(dmacro-play-macro)")
     end,
+  },
+
+  {
+    "numToStr/Comment.nvim",
+    event = "VeryLazy",
+    opts = {
+      pre_hook = function()
+        return require("ts_context_commentstring.internal").calculate_commentstring()
+      end,
+    },
   },
   -- {
   --   "github/copilot.vim",
