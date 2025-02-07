@@ -7,7 +7,7 @@ vim.fn["ddu#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua"
 --- @param name string
 --- @param desc string
 local function set_keymap(key, name, desc)
-  vim.keymap.set("n", key, string.format("[[<CMD>call ddu#start(#{name: '%s'})<CR>]]", name), { desc = desc })
+  vim.keymap.set("n", key, "<CMD>Ddu -name=" .. name .. "<CR>", { desc = desc })
 end
 
 -- keymaps
