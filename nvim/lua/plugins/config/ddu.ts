@@ -181,6 +181,20 @@ export class Config extends BaseConfig {
       },
     });
 
+    // lazy.nvim
+    args.contextBuilder.patchLocal("lazy_nvim", {
+      sources: [
+        {
+          name: "lazy_nvim",
+        },
+      ],
+      kindOptions: {
+        file: {
+          defaultAction: "cd",
+        },
+      },
+    });
+
     // ブランチ移動
     args.contextBuilder.patchLocal("git_branch", {
       sources: [
