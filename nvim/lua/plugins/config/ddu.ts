@@ -236,6 +236,21 @@ export class Config extends BaseConfig {
         },
       },
     });
+    // git log
+
+    args.contextBuilder.patchLocal("git_log", {
+      sources: [
+        {
+          name: "git_log",
+        },
+      ],
+
+      uiParams: {
+        ff: {
+          floatingTitle: "Git Log Search :)",
+        },
+      },
+    });
 
     // patch_localを検索してスタート
     args.contextBuilder.patchLocal("patch_local", {

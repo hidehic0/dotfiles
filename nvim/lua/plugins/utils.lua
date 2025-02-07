@@ -56,6 +56,7 @@ return {
       "Shougo/ddu-source-register",
       "kuuote/ddu-source-git_status",
       "kyoh86/ddu-source-git_branch",
+      "kyoh86/ddu-source-git_log",
       "kyoh86/ddu-source-lazy_nvim",
       "matsui54/ddu-source-help",
       "shun/ddu-source-buffer",
