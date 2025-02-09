@@ -1,6 +1,3 @@
-[general]
-import = ["/home/hidehico/.config/alacritty/themes/themes/one_dark.toml"]
-
 [font.normal]
 family = "HackGen35ConsoleNF"
 
