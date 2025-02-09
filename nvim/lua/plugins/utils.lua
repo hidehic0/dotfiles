@@ -175,4 +175,11 @@ return {
       vim.cmd([[hi default CursorWord cterm=underline gui=underline]])
     end,
   },
+  {
+    "kevinhwang91/nvim-hlslens",
+    event = "VeryLazy",
+    config = function()
+      require("plugins.config.hlslens")
+    end,
+  },
 }
