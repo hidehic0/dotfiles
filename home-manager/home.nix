@@ -27,7 +27,6 @@ in {
     packages = with pkgs;
     [
       aria2
-      bitwarden-cli
       black
       delta
       emacs
@@ -45,7 +44,6 @@ in {
       online-judge-tools
       ruby
       ruff
-      selene
       sheldon
       shellcheck
       shfmt
@@ -55,7 +53,6 @@ in {
       vim-startuptime
       yamlfmt
       zoxide
-      zsync
     ];
 
     file = {
