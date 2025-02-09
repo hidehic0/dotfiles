@@ -1,11 +1,11 @@
 vim.diagnostic.config({
   virtual_text = true, -- エラーメッセージを表示する
-  signs = true, -- エラーサインを表示する
-  underline = true, -- エラー箇所に下線を引く
+  signs = true,        -- エラーサインを表示する
+  underline = true,    -- エラー箇所に下線を引く
 })
 
 require("lint").linters_by_ft = {
-  lua = { "luacheck" },
+  -- lua = { "luacheck" },
   -- python = { "ruff" },
   zsh = { "shellcheck" },
   bash = { "shellcheck" },
