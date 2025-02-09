@@ -182,4 +182,15 @@ return {
       require("plugins.config.hlslens")
     end,
   },
+  {
+    "lambdalisue/vim-kensaku",
+    event = "VeryLazy",
+    dependencies = {
+      "vim-denops/denops.vim",
+      "lambdalisue/vim-kensaku-search",
+    },
+    config = function()
+      vim.keymap.set("c", "<CR>", "<Plug>(kensaku-search-replace)<CR>")
+    end,
+  },
 }
