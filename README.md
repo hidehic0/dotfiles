@@ -1,6 +1,4 @@
 # dotfiles
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhidehic0%2Fdotfiles.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhidehic0%2Fdotfiles?ref=badge_shield)
-
 構成
 
 * os
@@ -25,7 +23,3 @@
 みたいな感じです</br>
 やけにシェルの設定が多いのは、powerlevel10kの設定を直置きしてるからです</br>
 おそらく、他の人のpcでも動くと思います</br>
-
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhidehic0%2Fdotfiles.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhidehic0%2Fdotfiles?ref=badge_large)
