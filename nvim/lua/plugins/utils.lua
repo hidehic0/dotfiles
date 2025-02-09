@@ -165,4 +165,14 @@ return {
     },
     opts = {},
   },
+  {
+    "xiyaowong/nvim-cursorword",
+    event = "VeryLazy",
+    config = function()
+      vim.g.cursorword_disable_at_startup = true
+      vim.g.cursorword_min_width = 3
+      vim.g.cursorword_max_width = 20
+      vim.cmd([[hi default CursorWord cterm=underline gui=underline]])
+    end,
+  },
 }
