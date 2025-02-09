@@ -157,4 +157,12 @@ return {
       require("plugins.config.fzf")
     end,
   },
+  {
+    "lewis6991/gitsigns.nvim",
+    event = "VeryLazy",
+    keys = {
+      { "<leader>gb", "<CMD>Gitsigns blame<CR>", desc = "Show blame" },
+    },
+    opts = {},
+  },
 }
