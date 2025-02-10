@@ -75,9 +75,10 @@ return {
       -- sources
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
-      -- "Shougo/ddc-source-copilot",
       "Shougo/ddc-source-lsp",
+      "Shougo/ddc-source-rg",
       "Shougo/ddc-source-shell-native",
+      -- "Shougo/ddc-source-copilot",
       -- sorters
       "tani/ddc-fuzzy",
       -- snip
