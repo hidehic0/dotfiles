@@ -52,6 +52,7 @@ return {
     opts = {
       triggers = {
         { "<leader>", mode = "n" },
+        { "z", mode = "n" },
       },
     },
   },
