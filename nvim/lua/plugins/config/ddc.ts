@@ -36,6 +36,7 @@ export class Config extends BaseConfig {
           matchers: ["matcher_fuzzy"],
           converters: default_converters,
           enabledIf: "!skkeleton#is_enabled()",
+          ignoreCase: true,
         },
         lsp: {
           mark: "[LSP]",
