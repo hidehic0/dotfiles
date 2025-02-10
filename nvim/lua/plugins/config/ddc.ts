@@ -26,7 +26,7 @@ export class Config extends BaseConfig {
 
       sources: default_sources,
       cmdlineSources: {
-        ":": ["cmdline"].concat(search_sources),
+        ":": ["cmdline", "cmdline_history"].concat(search_sources),
         "/": search_sources,
         "?": search_sources,
       },
@@ -47,6 +47,10 @@ export class Config extends BaseConfig {
         },
         cmdline: {
           mark: "[CMD]",
+        },
+        cmdline_history: {
+          mark: "[Hist]",
+          maxItems: 2,
         },
         around: {
           mark: "[A]",
