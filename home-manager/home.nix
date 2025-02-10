@@ -7,6 +7,7 @@
 }:
 let 
   username = "hidehico";
+  unstable = import <nixpkgs-unstable> {};
 in {
   nixpkgs = {
     overlays = [
@@ -24,7 +25,7 @@ in {
     homeDirectory = "/home/hidehico";
 
     stateVersion = "24.11";
-    packages = with pkgs;
+    packages = with unstable;
     [
       aria2
       black
