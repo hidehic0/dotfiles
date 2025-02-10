@@ -81,4 +81,5 @@ return {
     opts = {},
     keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
   },
+  { "MeanderingProgrammer/render-markdown.nvim", event = "VeryLazy" },
 }
