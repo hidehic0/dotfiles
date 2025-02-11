@@ -103,6 +103,28 @@ export class Config extends BaseConfig {
       },
     });
 
+    // ファイラ
+    args.contextBuilder.patchLocal("filer", {
+      sources: [
+        {
+          name: "file",
+        },
+      ],
+      sourceOptions: {
+        file: {
+          converters: [
+            "converter_devicon",
+            "converter_hl_dir",
+          ],
+        },
+      },
+      uiParams: {
+        ff: {
+          floatingTitle: "File Rec :)",
+        },
+      },
+    });
+
     // 通常のファイル検索
     args.contextBuilder.patchLocal("file_rec", {
       sources: [
