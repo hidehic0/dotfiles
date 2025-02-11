@@ -54,6 +54,12 @@ export class Config extends BaseConfig {
             "git_branch_author",
           ],
         },
+        git_status: {
+          converters: [
+            "converter_devicon",
+            "converter_hl_dir",
+          ],
+        },
       },
       sourceParams: {
         rg: {
@@ -221,23 +227,14 @@ export class Config extends BaseConfig {
         },
       ],
 
-      sourceOptions: {
-        git_status: {
-          converters: [
-            "converter_devicon",
-            "converter_hl_dir",
-          ],
-        },
-      },
-
       uiParams: {
         ff: {
           floatingTitle: "Git Status Search :)",
         },
       },
     });
-    // git log
 
+    // git log
     args.contextBuilder.patchLocal("git_log", {
       sources: [
         {
