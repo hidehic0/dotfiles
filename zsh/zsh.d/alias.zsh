@@ -21,6 +21,3 @@ alias ls="lsd"
 alias lsa="lsd -a"
 alias lsl="lsd -l"
 alias lsla="lsd -la"
-
-# nvim sub
-alias nvim_sub="NVIM_APPNAME=sub_nvim nvim"
