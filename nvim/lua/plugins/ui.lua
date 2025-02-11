@@ -33,7 +33,7 @@ return {
   {
     "stevearc/oil.nvim",
     cmd = "Oil",
-    keys = { { "<leader>e", "<CMD>Oil --float<CR>", desc = "start oil" } },
+    -- keys = { { "<leader>e", "<CMD>Oil --float<CR>", desc = "start oil" } },
     config = function()
       require("plugins.config.oil")
     end,

@@ -12,6 +12,7 @@ end
 
 -- keymaps
 set_keymap("<leader>ff", "file_rec", "start ddu file_rec")
+set_keymap("<leader>e", "filer", "start ddu filer")
 set_keymap("<leader>fg", "rg", "start ddu ripgrep")
 set_keymap("<leader>fr", "lines", "start ddu line search")
 set_keymap("<leader>fb", "buffer", "start ddu buffer search")
