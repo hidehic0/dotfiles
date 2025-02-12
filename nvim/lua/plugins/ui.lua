@@ -4,6 +4,7 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     config = function()
+      vim.opt.laststatus = 3
       require("lualine").setup({})
     end,
   },
