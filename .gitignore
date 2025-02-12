@@ -10,7 +10,7 @@ zed/
 qiita-cli/
 git/
 mozc/
-nvim/lazy-lock.json
+# nvim/lazy-lock.json
 Kvantum
 Mousepad
 btop
