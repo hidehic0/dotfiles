@@ -16,3 +16,10 @@ if [ ! -f "$HOME/.local/lib/zsh/gh_comp.zsh" ]; then
 fi
 
 source "$HOME/.local/lib/zsh/gh_comp.zsh"
+
+# jj vcs
+if [ ! -f "$HOME/.local/lib/zsh/jj_comp.zsh" ]; then
+  jj util completion zsh >>~/.local/lib/zsh/jj_comp.zsh
+fi
+
+source "$HOME/.local/lib/zsh/gh_comp.zsh"
