@@ -36,6 +36,11 @@ use = ["{{ name }}.zsh"]
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
+[plugins.fzf-tab]
+github = "Aloxaf/fzf-tab"
+use = ["fzf-tab.zsh"]
+# apply = ["defer"]
+
 # For example:
 #
 # [plugins.base16]

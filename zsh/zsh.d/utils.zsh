@@ -2,7 +2,10 @@
 autoload -Uz compinit
 compinit
 
-zstyle ':completion:*' menu select
+zstyle ':completion:*' menu-select true
+zstyle ':completion:*:default' menu 'select'
+zstyle ':fzf-tab:*' fzf-command fzf
+zstyle ':fzf-tab:*' fzf-preview 'echo {}'
 
 # zoxide
 eval "$(zoxide init zsh)"
