@@ -30,10 +30,10 @@ unset sheldon_cache sheldon_toml
 zsh-defer source $ZSHRC_DIR/lazy.zsh
 
 # hist settings
-source "$SPLIT_FILES/hist.zsh"
+zsh-defer source "$SPLIT_FILES/hist.zsh"
 
 # utils config import
-source "$SPLIT_FILES/utils.zsh"
+zsh-defer source "$SPLIT_FILES/utils.zsh"
 
 # p10k settings
 source "$SPLIT_FILES/p10k.zsh"
