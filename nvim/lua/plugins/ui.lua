@@ -16,6 +16,9 @@ return {
       "rcarriga/nvim-notify",
     },
     opts = {
+      presets = {
+        command_palette = true,
+      },
       lsp = {
         signature = { enabled = false },
         override = {
