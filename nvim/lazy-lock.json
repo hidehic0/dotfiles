@@ -46,6 +46,7 @@
   "denops-shared-server.vim": { "branch": "main", "commit": "829a7e7c9d1d534f71f471c3a4a312457ddecb63" },
   "denops-signature_help": { "branch": "main", "commit": "4a539c62988012ad9300568f0d0b4b2efe49008a" },
   "denops.vim": { "branch": "main", "commit": "4ff8f353ee54ee67288c1099242444ccb0ab5b69" },
+  "dial.nvim": { "branch": "master", "commit": "34bbd9c387c358190e61ce71017faad3dffa7a74" },
   "dmacro.nvim": { "branch": "main", "commit": "25ab1df31d216c4ff7554c262f92b5c0c6b743f0" },
   "fidget.nvim": { "branch": "main", "commit": "d9ba6b7bfe29b3119a610892af67602641da778e" },
   "flash.nvim": { "branch": "main", "commit": "f899265876ecdcf7352dbc9f0adf87068cedefbb" },

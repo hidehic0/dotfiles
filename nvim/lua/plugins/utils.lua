@@ -193,4 +193,14 @@ return {
       vim.keymap.set("c", "<CR>", "<Plug>(kensaku-search-replace)<CR>")
     end,
   },
+  {
+    "monaqa/dial.nvim",
+    event = "VeryLazy",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("plugins.config.dial")
+    end,
+  },
 }
