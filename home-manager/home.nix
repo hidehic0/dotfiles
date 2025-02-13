@@ -40,6 +40,7 @@ in {
       lazygit
       lua-language-server
       lua54Packages.luacheck
+      markdownlint-cli2
       marksman
       mise
       online-judge-tools

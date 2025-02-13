@@ -49,3 +49,7 @@ vim.g.markdown_fenced_languages = {
 lspconfig["denols"].setup({
   capabilities = capabilities,
 })
+
+lspconfig["marksman"].setup({
+  capabilities = capabilities,
+})
