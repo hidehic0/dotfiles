@@ -91,4 +91,14 @@ return {
     event = "VeryLazy",
     opts = {},
   },
+  {
+    "petertriho/nvim-scrollbar",
+    event = "VeryLazy",
+    dependencies = {
+      "kevinhwang91/nvim-hlslens",
+    },
+    config = function()
+      require("plugins.config.scrollbar")
+    end,
+  },
 }
