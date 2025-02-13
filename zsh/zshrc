@@ -30,7 +30,7 @@ unset sheldon_cache sheldon_toml
 zsh-defer source $ZSHRC_DIR/lazy.zsh
 
 # hist settings
-zsh-defer source "$SPLIT_FILES/hist.zsh"
+source "$SPLIT_FILES/hist.zsh"
 
 # utils config import
 zsh-defer source "$SPLIT_FILES/utils.zsh"
