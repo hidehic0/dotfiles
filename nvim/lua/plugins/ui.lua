@@ -86,4 +86,9 @@ return {
     keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
   },
   { "MeanderingProgrammer/render-markdown.nvim", event = "VeryLazy" },
+  {
+    "nvim-zh/colorful-winsep.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
 }
