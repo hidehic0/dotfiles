@@ -1,5 +1,6 @@
 # rust path
 . "$HOME/.cargo/env"
+PATH="$PATH:$HOME/.cargo/bin"
 
 # fpath
 fpath=(/home/hidehico/.local/share/sheldon/repos/github.com/zsh-users/zsh-completions/src $fpath)
