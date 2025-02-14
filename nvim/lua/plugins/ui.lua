@@ -108,4 +108,5 @@ return {
       require("plugins.config.scrollbar")
     end,
   },
+  { "folke/zen-mode.nvim", event = "VeryLazy", opts = {} },
 }
