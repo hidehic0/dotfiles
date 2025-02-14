@@ -134,6 +134,7 @@ return {
       "nvim-treesitter/nvim-treesitter-refactor",
       "yioneko/nvim-yati",
       "JoosepAlviste/nvim-ts-context-commentstring",
+      { "andersevenrud/nvim_context_vt", event = "VeryLazy", opts = {} },
     },
     event = { "BufReadPre", "BufNewFile" },
     build = { ":TSUpdateSync" },
