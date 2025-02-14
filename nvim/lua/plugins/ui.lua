@@ -3,9 +3,16 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
+    dependencies = {
+      { "yavorski/lualine-macro-recording.nvim" },
+    },
     config = function()
-      vim.opt.laststatus = 3
-      require("lualine").setup({})
+      require("lualine").setup({
+        sections = {
+          -- add to section of your choice
+          lualine_c = { "macro_recording", "%S" },
+        },
+      })
     end,
   },
   {
