@@ -5,12 +5,13 @@ return {
     event = "VeryLazy",
     dependencies = {
       { "yavorski/lualine-macro-recording.nvim" },
+      "pnx/lualine-lsp-status",
     },
     config = function()
       require("lualine").setup({
         sections = {
           -- add to section of your choice
-          lualine_c = { "macro_recording", "%S" },
+          lualine_c = { "lsp-status", "macro_recording", "%S" },
         },
       })
     end,
