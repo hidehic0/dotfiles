@@ -7,7 +7,7 @@ import { type DdcItem } from "jsr:@shougo/ddc-vim@~9.1.0/types";
 
 export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
-    const default_sources = ["lsp", "rg", "skkeleton"];
+    const default_sources = ["copilot", "lsp", "rg", "skkeleton"];
     const default_converters = [
       "converter_fuzzy",
       "converter_truncate_abbr",
@@ -67,6 +67,9 @@ export class Config extends BaseConfig {
         rg: {
           mark: "[rg]",
           minAutoCompleteLength: 4,
+        },
+        copilot: {
+          mark: "",
         },
       },
       sourceParams: {

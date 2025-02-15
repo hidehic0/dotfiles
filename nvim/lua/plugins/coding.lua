@@ -79,7 +79,7 @@ return {
       "Shougo/ddc-source-lsp",
       "Shougo/ddc-source-rg",
       "Shougo/ddc-source-shell-native",
-      -- "Shougo/ddc-source-copilot",
+      "Shougo/ddc-source-copilot",
       -- sorters
       "tani/ddc-fuzzy",
       -- snip
@@ -159,9 +159,9 @@ return {
       end,
     },
   },
-  -- {
-  --   "github/copilot.vim",
-  --   event = { "InsertEnter" },
-  --   cmd = { "Copilot" },
-  -- },
+  {
+    "github/copilot.vim",
+    event = { "InsertEnter" },
+    cmd = { "Copilot" },
+  },
 }
