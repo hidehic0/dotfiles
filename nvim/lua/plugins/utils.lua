@@ -146,6 +146,15 @@ return {
         },
       },
     },
+    keys = {
+      {
+        "<leader>j",
+        function()
+          require("flash").jump()
+        end,
+        desc = "Flash",
+      },
+    },
   },
   {
     "ibhagwan/fzf-lua",
