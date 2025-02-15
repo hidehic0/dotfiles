@@ -8,7 +8,7 @@ vim.opt.termguicolors = true
 
 -- statusline
 vim.opt.laststatus = 3
-vim.o.cmdheight = 0
+-- vim.o.cmdheight = 0
 vim.o.showmode = false
 vim.o.cursorline = false
 
