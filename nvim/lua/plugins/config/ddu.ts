@@ -8,7 +8,7 @@ import {
   type DduOptions,
 } from "jsr:@shougo/ddu-vim@~9.5.0/types";
 import { type Params as FfParams } from "jsr:@shougo/ddu-ui-ff@~2.0.0";
-import { type Params as FilerParams } from "jsr:@shougo/ddu-ui-filer@~1.5.0";
+import { type Params as FilerParams } from "jsr:@shougo/ddu-ui-filer@~2.0.0";
 
 export class Config extends BaseConfig {
   override config(args: ConfigArguments): Promise<void> {
