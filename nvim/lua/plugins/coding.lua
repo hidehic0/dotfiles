@@ -163,5 +163,11 @@ return {
     "github/copilot.vim",
     event = { "InsertEnter" },
     cmd = { "Copilot" },
+    config = function()
+      vim.keymap.set("i", "<C-CR>", 'copilot#Accept("\\<CR>")', {
+        expr = true,
+        replace_keycodes = false,
+      })
+    end,
   },
 }
