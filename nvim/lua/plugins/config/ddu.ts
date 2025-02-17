@@ -84,6 +84,10 @@ export class Config extends BaseConfig {
         register: {
           defaultAction: "yank",
         },
+        emoji: {
+          defaultAction: "yank",
+          quit: true,
+        },
         git_branch: { "defaultAction": "switch" },
         git_status: {
           defaultAction: "open",
@@ -269,6 +273,13 @@ export class Config extends BaseConfig {
           floatingTitle: "Git Log Search :)",
         },
       },
+    });
+
+    // 絵文字検索
+    args.contextBuilder.patchLocal("emoji", {
+      sources: [
+        { name: "emoji" },
+      ],
     });
 
     // patch_localを検索してスタート

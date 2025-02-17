@@ -49,6 +49,7 @@ return {
       "Shougo/ddu-ui-ff",
       "Shougo/ddu-ui-filer",
       -- sources
+      "4513ECHO/ddu-source-emoji",
       "Shougo/ddu-source-action",
       "Shougo/ddu-source-file",
       "Shougo/ddu-source-file_rec",
@@ -220,7 +221,7 @@ return {
   },
   {
     "rmagatti/auto-session",
-    lazy = false,
+    event = "VimEnter",
     ---@module "auto-session"
     ---@type AutoSession.Config
     opts = {
