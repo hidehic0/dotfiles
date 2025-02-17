@@ -218,4 +218,14 @@ return {
     ft = { "markdown" },
     build = "cd app && yarn install",
   },
+  {
+    "rmagatti/auto-session",
+    lazy = false,
+    ---@module "auto-session"
+    ---@type AutoSession.Config
+    opts = {
+      suppressed_dirs = { "~/" },
+      args_allow_files_auto_save = true,
+    },
+  },
 }
