@@ -1,8 +1,14 @@
 require("bufferline").setup({
   options = {
     -- mode = "tabs",
+    themable = true,
     color_icons = true,
     diagnostics = "nvim_lsp",
+    diagnostics_update_on_event = true,
+    diagnostics_indicator = function(count, level)
+      local icon = level:match("error") and " " or " "
+      return " " .. icon .. count
+    end,
   },
 })
 

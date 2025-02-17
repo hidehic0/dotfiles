@@ -53,7 +53,7 @@ return {
   {
     "akinsho/bufferline.nvim",
     event = "VimEnter",
-    dependencies = "nvim-tree/nvim-web-devicons",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("plugins.config.bufferline")
     end,
