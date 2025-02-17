@@ -7,13 +7,13 @@ import { type DdcItem } from "jsr:@shougo/ddc-vim@~9.1.0/types";
 
 export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
-    const default_sources = ["copilot", "lsp", "rg", "skkeleton"];
+    const default_sources = ["copilot", "lsp", "mocword", "rg", "skkeleton"];
     const default_converters = [
       "converter_fuzzy",
       "converter_truncate_abbr",
       "converter_remove_overlap",
     ];
-    const search_sources = ["rg", "around"];
+    const search_sources = ["rg", "mocword", "around"];
 
     args.contextBuilder.patchGlobal({
       ui: "pum",
@@ -54,6 +54,10 @@ export class Config extends BaseConfig {
         },
         around: {
           mark: "[A]",
+        },
+        mocword: {
+          mark: "[MocWord]",
+          minAutoCompleteLength: 3,
         },
         skkeleton: {
           mark: "あ",
