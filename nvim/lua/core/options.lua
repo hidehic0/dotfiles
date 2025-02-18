@@ -13,3 +13,5 @@ vim.o.showmode = false
 vim.o.cursorline = false
 
 vim.cmd([[let &grepprg='rg --vimgrep']])
+
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"

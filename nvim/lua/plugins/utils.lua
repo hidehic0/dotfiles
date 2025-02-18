@@ -229,4 +229,11 @@ return {
       args_allow_files_auto_save = true,
     },
   },
+  {
+    "folke/snacks.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("plugins.config.snacks")
+    end,
+  },
 }
