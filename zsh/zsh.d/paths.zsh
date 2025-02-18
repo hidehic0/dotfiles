@@ -11,3 +11,5 @@ eval "$(/home/hidehico/.nix-profile/bin/mise activate zsh)"
 # go path
 GOPATH="$HOME/go"
 PATH="$PATH:$GOPATH/bin"
+
+export MOCWORD_DATA=~/.local/lib/mocword/mocword.sqlite
