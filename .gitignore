@@ -46,7 +46,7 @@ user-dirs.locale
 xarchiver
 tmux**.log
 mozc
-waybar
+# waybar
 viewnior
 manjaro
 alacritty/alacritty-theme
@@ -56,7 +56,7 @@ obsidian
 atcoder-cli-nodejs/session.json
 modem-manager-gui
 test_nvim/
-waybar/
+# waybar/
 Bitwarden/
 keepassxc
 fcitx/dbus/
