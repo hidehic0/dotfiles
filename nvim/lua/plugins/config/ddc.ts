@@ -58,6 +58,7 @@ export class Config extends BaseConfig {
         mocword: {
           mark: "[MocWord]",
           minAutoCompleteLength: 3,
+          maxItems: 5,
         },
         skkeleton: {
           mark: "あ",
