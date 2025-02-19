@@ -11,3 +11,5 @@ require("snacks").setup({
   scope = { enabled = true },
   scroll = { enabled = true },
 })
+
+vim.g.snacks_animate = false
