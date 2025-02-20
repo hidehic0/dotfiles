@@ -102,7 +102,7 @@ export class Config extends BaseConfig {
 
       filterParams: {
         matcher_fzf: {
-          highlightMatched: "Search",
+          highlightMatched: "Title",
         },
       },
     });
