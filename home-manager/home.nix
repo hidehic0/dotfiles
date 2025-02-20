@@ -30,6 +30,7 @@ in {
       aria2
       black
       delta
+      deno
       emacs
       fish
       fzf
