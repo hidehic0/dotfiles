@@ -39,6 +39,11 @@ github = "zsh-users/zsh-completions"
 [plugins.fzf-tab]
 github = "Aloxaf/fzf-tab"
 use = ["fzf-tab.zsh"]
+
+[plugins._nix]
+github = "nix-community/nix-zsh-completions"
+use = ["_*"]
+apply = ["fpath"]
 # apply = ["defer"]
 
 # For example:
