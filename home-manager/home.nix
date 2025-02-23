@@ -50,6 +50,7 @@ in {
       sheldon
       shellcheck
       shfmt
+      taplo
       tree-sitter
       typescript-language-server
       vim
