@@ -1,6 +1,4 @@
 bin_dir="/home/hidehico/.config/zsh/bin"
-# pypy path
-alias pypy3="$HOME/pypy3.10-v7.3.17-linux64/bin/pypy3"
 
 # quicktest command
 alias qcp="$bin_dir/quicktest.sh"
