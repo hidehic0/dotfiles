@@ -22,6 +22,8 @@ lspconfig["lua_ls"].setup({
   },
 })
 
+local python_venv_path = vim.fn.system("which python"):gsub("\n", "")
+
 lspconfig["pyright"].setup({
   capabilities = capabilities,
   settings = {
@@ -32,6 +34,7 @@ lspconfig["pyright"].setup({
       analysis = {
         ignore = { "*" },
       },
+      pythonPath = python_venv_path,
     },
   },
 })
