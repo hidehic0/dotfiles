@@ -7,7 +7,14 @@ import { type DdcItem } from "jsr:@shougo/ddc-vim@~9.2.0/types";
 
 export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
-    const default_sources = ["copilot", "lsp", "mocword", "rg", "skkeleton"];
+    const default_sources = [
+      "copilot",
+      "lsp",
+      "file",
+      "mocword",
+      "rg",
+      "skkeleton",
+    ];
     const default_converters = [
       "converter_fuzzy",
       "converter_truncate_abbr",
@@ -26,7 +33,7 @@ export class Config extends BaseConfig {
 
       sources: default_sources,
       cmdlineSources: {
-        ":": ["cmdline", "cmdline_history"].concat(search_sources),
+        ":": ["cmdline", "file", "cmdline_history"].concat(search_sources),
         "/": search_sources,
         "?": search_sources,
       },
@@ -54,6 +61,11 @@ export class Config extends BaseConfig {
         },
         around: {
           mark: "[A]",
+        },
+        file: {
+          mark: "[F]",
+          isVolatile: true,
+          forceCompletionPattern: "\S/\S*",
         },
         mocword: {
           mark: "[MocWord]",

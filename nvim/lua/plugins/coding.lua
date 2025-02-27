@@ -73,6 +73,7 @@ return {
       "Shougo/ddc-ui-pum",
       "hidehic0/pum.vim",
       -- sources
+      "LumaKernel/ddc-source-file",
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
       "Shougo/ddc-source-cmdline_history",
