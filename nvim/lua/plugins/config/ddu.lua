@@ -41,7 +41,15 @@ vim.api.nvim_create_autocmd("FileType", {
       [[<Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><CMD>call ddu#ui#do_action("quit")<CR>]],
       opts
     )
-    vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
+    -- vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
+    vim.keymap.set("n", "<CR>", function()
+      local item = fn.ddu.ui.get_item()
+      if item.isTree then
+        fn.ddu.ui.do_action("itemAction", { name = "narrow" })
+      else
+        fn.ddu.ui.do_action("itemAction")
+      end
+    end, opts)
     vim.keymap.set("n", "i", [[<Cmd>call ddu#ui#do_action("openFilterWindow")<CR>]], opts)
     vim.keymap.set(
       "n",
