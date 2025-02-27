@@ -1,7 +1,9 @@
 vim.diagnostic.config({
-  virtual_text = true, -- エラーメッセージを表示する
-  signs = true, -- エラーサインを表示する
-  underline = true, -- エラー箇所に下線を引く
+  severity_sort = true,
+  virtual_text = false,
+  virtual_lines = {
+    only_current_line = true,
+  },
 })
 
 require("lint").linters_by_ft = {
