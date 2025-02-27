@@ -34,7 +34,7 @@ in {
       black
       delta
       deno
-      emacs
+      emacs30
       fish
       fzf
       gh
