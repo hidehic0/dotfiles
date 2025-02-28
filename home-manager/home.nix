@@ -46,7 +46,7 @@ in {
       lua54Packages.luacheck
       markdownlint-cli2
       marksman
-      mise
+      # mise
       online-judge-tools
       ruby
       ruff
