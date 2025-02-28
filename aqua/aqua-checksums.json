@@ -1,6 +1,11 @@
 {
   "checksums": [
     {
+      "id": "github_release/github.com/BurntSushi/ripgrep/14.1.1/ripgrep-14.1.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "4CF9F2741E6C465FFDB7C26F38056A59E2A2544B51F7CC128EF28337EEAE4D8E",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.0.2/stylua-linux-x86_64-musl.zip",
       "checksum": "A9E1436424414B73976DDC27FFDAAB61CDC18595F32A3A7F5C661E0F327E1BA7",
       "algorithm": "sha256"

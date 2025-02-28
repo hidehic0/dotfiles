@@ -29,5 +29,6 @@ packages:
   - name: tamasfe/taplo@0.9.3
   - name: tree-sitter/tree-sitter@v0.25.2
   - name: x-motemen/ghq@v1.7.1
+  - name: BurntSushi/ripgrep@14.1.1
 checksum:
   enabled: true
