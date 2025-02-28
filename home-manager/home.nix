@@ -35,7 +35,7 @@ in {
       # delta
       deno
       emacs30
-      fish
+      # fish
       # fzf
       # gh
       # hugo
