@@ -291,6 +291,25 @@ export class Config extends BaseConfig {
       ],
     });
 
+    // lsp_callHierarchy
+    args.contextBuilder.patchLocal("lsp_callHierarchy", {
+      sources: [
+        { name: "lsp_callHierarchy" },
+      ],
+    });
+
+    // lsp_documentSymbol
+    args.contextBuilder.patchLocal("lsp_documentSymbol", {
+      sources: [
+        { name: "lsp_documentSymbol" },
+      ],
+      sourceOptions: {
+        _: {
+          converters: ["converter_lsp_symbol"],
+        },
+      },
+    });
+
     // patch_localを検索してスタート
     args.contextBuilder.patchLocal("patch_local", {
       sources: [
