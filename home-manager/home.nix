@@ -39,7 +39,7 @@ in {
       # fzf
       # gh
       # hugo
-      isort
+      # isort
       # lazydocker
       # lazygit
       lua-language-server
