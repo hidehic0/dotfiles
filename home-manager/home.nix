@@ -34,7 +34,7 @@ in {
       # black
       # delta
       # deno
-      emacs30
+      # emacs30
       # fish
       # fzf
       # gh
@@ -44,7 +44,7 @@ in {
       # lazygit
       # lua-language-server
       # lua54Packages.luacheck
-      markdownlint-cli2
+      # markdownlint-cli2
       # marksman
       # mise
       # online-judge-tools
