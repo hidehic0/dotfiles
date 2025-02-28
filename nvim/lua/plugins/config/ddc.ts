@@ -9,6 +9,7 @@ export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
     const default_sources = [
       "copilot",
+      "vsnip",
       "lsp",
       "file",
       "mocword",
@@ -87,6 +88,9 @@ export class Config extends BaseConfig {
         },
         copilot: {
           mark: "",
+        },
+        vsnip: {
+          mark: "[snip]",
         },
       },
       sourceParams: {

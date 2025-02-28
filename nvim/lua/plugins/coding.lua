@@ -82,6 +82,7 @@ return {
       "Shougo/ddc-source-mocword",
       "Shougo/ddc-source-rg",
       "Shougo/ddc-source-shell-native",
+      "uga-rosa/ddc-source-vsnip",
       -- sorters
       "tani/ddc-fuzzy",
       -- snip

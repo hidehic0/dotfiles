@@ -3,6 +3,9 @@ local patch_global = fn.ddc.custom.patch_global
 
 vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua", "plugins", "config", "ddc.ts"))
 
+-- vsnip
+vim.g.vsnip_snippet_dir = "~/.config/nvim/vsnip"
+
 -- pum config
 fn.pum.set_option({
   max_width = 40,

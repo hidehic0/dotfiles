@@ -1,9 +1,0 @@
-{
-  "for loop snippet": {
-    "prefix": "forin",
-    "body":[
-      "for i in range($1):",
-      "    $2"
-  ]
-  }
-}

@@ -1,0 +1,10 @@
+{
+  "QueryLoop":{
+    "prefix":"queryloop",
+    "body":[
+      "while Q:",
+      "    $0",
+      "    Q-=1"
+    ]
+  }
+}
