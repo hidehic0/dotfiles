@@ -31,5 +31,6 @@ packages:
   - name: x-motemen/ghq@v1.7.1
   - name: BurntSushi/ripgrep@14.1.1
   - name: lsd-rs/lsd@v1.1.5
+  - name: sharkdp/bat@v0.25.0
 checksum:
   enabled: true
