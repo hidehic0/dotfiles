@@ -37,8 +37,8 @@ in {
       emacs30
       fish
       fzf
-      gh
-      hugo
+      # gh
+      # hugo
       isort
       lazydocker
       lazygit

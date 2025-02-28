@@ -15,4 +15,4 @@ PATH="$PATH:$GOPATH/bin"
 export MOCWORD_DATA=~/.local/lib/mocword/mocword.sqlite
 
 # aqua
-export PATH="~/.local/share/aquaproj-aqua/bin:$PATH"
+export PATH="$HOME/.local/share/aquaproj-aqua/bin:$PATH"
