@@ -15,14 +15,20 @@ export FZF_DEFAULT_OPTS="--ignore-case"
 
 # github cli
 if [ ! -e "$HOME/.local/lib/zsh/gh_comp.zsh" ]; then
-  gh completion -s zsh >>~/.local/lib/zsh/gh_comp.zsh
+  gh completion -s zsh >~/.local/lib/zsh/gh_comp.zsh
 fi
 
 source "$HOME/.local/lib/zsh/gh_comp.zsh"
 
 # jj vcs
 if [ ! -e "$HOME/.local/lib/zsh/jj_comp.zsh" ]; then
-  jj util completion zsh >>~/.local/lib/zsh/jj_comp.zsh
+  jj util completion zsh >~/.local/lib/zsh/jj_comp.zsh
 fi
 
 source "$HOME/.local/lib/zsh/jj_comp.zsh"
+
+# aqua
+if [ ! -e "$HOME/.local/lib/zsh/aqua_comp.zsh" ]; then
+  aqua completion zsh >~/.local/lib/zsh/aqua_comp.zsh
+fi
+source "$HOME/.local/lib/zsh/aqua_comp.zsh"
