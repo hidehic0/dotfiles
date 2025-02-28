@@ -31,8 +31,8 @@ in {
     packages = with unstable;
     [
       aria2
-      black
-      delta
+      # black
+      # delta
       deno
       emacs30
       fish
@@ -40,26 +40,26 @@ in {
       # gh
       # hugo
       isort
-      lazydocker
-      lazygit
+      # lazydocker
+      # lazygit
       lua-language-server
       lua54Packages.luacheck
       markdownlint-cli2
-      marksman
+      # marksman
       # mise
       # online-judge-tools
       ruby
-      ruff
-      sheldon
-      shellcheck
-      shfmt
-      taplo
-      tree-sitter
-      typescript-language-server
-      vim
-      vim-startuptime
-      yamlfmt
-      zoxide
+      # ruff
+      # sheldon
+      # shellcheck
+      # shfmt
+      # taplo
+      # tree-sitter
+      # typescript-language-server
+      # vim
+      # vim-startuptime
+      # yamlfmt
+      # zoxide
     ];
 
     file = {

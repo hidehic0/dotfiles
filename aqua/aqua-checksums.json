@@ -1,8 +1,73 @@
 {
   "checksums": [
     {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.7/zoxide-0.9.7-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "EE53A42C11FE8A175EF7B136BB91F588AEF76E1AE7133E58A695B1199588EE7E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/artempyanykh/marksman/2024-12-18/marksman-linux-x64",
+      "checksum": "B9CB666C643DFD9B699811FDFC445ED4C56BE65C1D878C21D46847F0D7B0E475",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.9.8/ruff-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "DC24AD1FD3AF5C3EE9101D3BC5F04B648F3037DD206FFEE7088F52CA5FA4C10E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "B7EA845004762358A00EF9127DD9FD723E333C7E4B9CB1DA220C3909372310EE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/google/yamlfmt/v0.16.0/yamlfmt_0.16.0_Linux_x86_64.tar.gz",
+      "checksum": "7819FA7C7E994D239009D30CBD58897149D7E7DD5847AEDF7ABD19C332298033",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Linux_x86_64.tar.gz",
+      "checksum": "461CACF618E1020DFF1D7896248C1C1F2267D5C25FB529755E4B9C43C5D1D4A5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.47.2/lazygit_0.47.2_Linux_x86_64.tar.gz",
+      "checksum": "52791ABA3AC96CA13BCE17EC154FD8A9994A4B76DE3CC7982D2C5BFEE05E221A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/junegunn/fzf/v0.60.2/fzf-0.60.2-linux_amd64.tar.gz",
       "checksum": "F459D9C0676EDFCD4A717EFC48EA7768D395D5745872D34AE338452017381839",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz",
+      "checksum": "6C881AB0698E4E6EA235245F22832860544F17BA386442FE7E9D629F8CBEDF87",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mvdan/sh/v3.10.0/shfmt_v3.10.0_linux_amd64",
+      "checksum": "1F57A384D59542F8FAC5F503DA1F3EA44242F46DFF969569E80B524D64B71DBC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/psf/black/25.1.0/black_linux",
+      "checksum": "8D293A7FDBDE23ECD06042AB0F0AC14E8BE770F31F9BB4BCAD434B607040CC3B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rossmacarthur/sheldon/0.8.1/sheldon-0.8.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "7B3567371EADF5BA7AB3F7057DBA66260045D47CCD670FCF690EE4E8D4FE3BB7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-linux-x86_64.gz",
+      "checksum": "889EFCFA067B179FDA488427D3B13CE2D679537DA8B9ED8138BA415DB7DA2A5E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tree-sitter/tree-sitter/v0.25.2/tree-sitter-linux-x64.gz",
+      "checksum": "ED15106A3200236A199E2AD1B5E07C91F1F4B9B2B44A34859E5C5A18B66ECABE",
       "algorithm": "sha256"
     },
     {
