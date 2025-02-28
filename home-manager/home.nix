@@ -42,8 +42,8 @@ in {
       # isort
       # lazydocker
       # lazygit
-      lua-language-server
-      lua54Packages.luacheck
+      # lua-language-server
+      # lua54Packages.luacheck
       markdownlint-cli2
       # marksman
       # mise
