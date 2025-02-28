@@ -30,5 +30,6 @@ packages:
   - name: tree-sitter/tree-sitter@v0.25.2
   - name: x-motemen/ghq@v1.7.1
   - name: BurntSushi/ripgrep@14.1.1
+  - name: lsd-rs/lsd@v1.1.5
 checksum:
   enabled: true
