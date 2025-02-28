@@ -8,6 +8,7 @@ require("conform").setup({
     yaml = { "yamlfmt" },
     typescript = { "deno_fmt" },
     toml = { "taplo" },
+    json = { "gojq" },
   },
   format_on_save = {
     -- These options will be passed to conform.format()

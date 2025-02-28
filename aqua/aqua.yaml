@@ -33,5 +33,6 @@ packages:
   - name: lsd-rs/lsd@v1.1.5
   - name: sharkdp/bat@v0.25.0
   - name: sharkdp/hyperfine@v1.19.0
+  - name: itchyny/gojq@v0.12.17
 checksum:
   enabled: true
