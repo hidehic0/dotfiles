@@ -30,7 +30,7 @@ in {
     stateVersion = "24.11";
     packages = with unstable;
     [
-      aria2
+      # aria2
       # black
       # delta
       deno
