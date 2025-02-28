@@ -2,8 +2,9 @@
 autoload -Uz compinit
 compinit
 
-zstyle ':completion:*' menu-select true
-zstyle ':completion:*:default' menu 'select'
+# zstyle ':completion:*' menu-select true
+zstyle ':completion::complete:*' gain-privileges 1
+# zstyle ':completion:*:default' menu 'select'
 zstyle ':fzf-tab:*' fzf-command fzf
 zstyle ':fzf-tab:*' fzf-preview 'echo {}'
 
@@ -32,3 +33,5 @@ if [ ! -e "$HOME/.local/lib/zsh/aqua_comp.zsh" ]; then
   aqua completion zsh >~/.local/lib/zsh/aqua_comp.zsh
 fi
 source "$HOME/.local/lib/zsh/aqua_comp.zsh"
+
+eval "$(mise activate zsh)"

@@ -47,7 +47,7 @@ in {
       markdownlint-cli2
       marksman
       # mise
-      online-judge-tools
+      # online-judge-tools
       ruby
       ruff
       sheldon
