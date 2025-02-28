@@ -91,6 +91,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sharkdp/hyperfine/v1.19.0/hyperfine-v1.19.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "825287143F397774093539CA2458854AB3735C0E8A1AAF075C22EDCE7D261556",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-linux-x86_64.gz",
       "checksum": "889EFCFA067B179FDA488427D3B13CE2D679537DA8B9ED8138BA415DB7DA2A5E",
       "algorithm": "sha256"
