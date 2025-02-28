@@ -33,7 +33,7 @@ in {
       # aria2
       # black
       # delta
-      deno
+      # deno
       emacs30
       # fish
       # fzf
@@ -48,7 +48,7 @@ in {
       # marksman
       # mise
       # online-judge-tools
-      ruby
+      # ruby
       # ruff
       # sheldon
       # shellcheck
