@@ -2,13 +2,7 @@ import {
   BaseConfig,
   type ConfigArguments,
 } from "jsr:@shougo/ddu-vim@~10.0.0/config";
-import {
-  type ActionArguments,
-  ActionFlags,
-  type DduOptions,
-} from "jsr:@shougo/ddu-vim@~10.0.0/types";
 import { type Params as FfParams } from "jsr:@shougo/ddu-ui-ff@~2.0.0";
-import { type Params as FilerParams } from "jsr:@shougo/ddu-ui-filer@~2.0.0";
 
 export class Config extends BaseConfig {
   override config(args: ConfigArguments): Promise<void> {
@@ -36,7 +30,7 @@ export class Config extends BaseConfig {
           previewRow: 6,
           previewHeight: 35,
           prompt: "ddu.vim",
-        },
+        } satisfies Partial<FfParams>,
       },
 
       sourceOptions: {
@@ -279,6 +273,21 @@ export class Config extends BaseConfig {
     args.contextBuilder.patchLocal("emoji", {
       sources: [
         { name: "emoji" },
+      ],
+    });
+
+    // LSP
+    // lsp_definition
+    args.contextBuilder.patchLocal("lsp_definition", {
+      sources: [
+        { name: "lsp_definition" },
+      ],
+    });
+
+    // lsp_codeAction
+    args.contextBuilder.patchLocal("lsp_codeAction", {
+      sources: [
+        { name: "lsp_codeAction" },
       ],
     });
 
