@@ -34,4 +34,12 @@ if [ ! -e "$HOME/.local/lib/zsh/aqua_comp.zsh" ]; then
 fi
 source "$HOME/.local/lib/zsh/aqua_comp.zsh"
 
+# mise
 eval "$(mise activate zsh)"
+
+# sheldon
+if [ ! -e "$HOME/.local/lib/zsh/sheldon_comp.zsh" ]; then
+  sheldon completions --shell zsh >~/.local/lib/zsh/sheldon_comp.zsh
+fi
+
+source "$HOME/.local/lib/zsh/sheldon_comp.zsh"
