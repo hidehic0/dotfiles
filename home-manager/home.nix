@@ -36,7 +36,7 @@ in {
       deno
       emacs30
       fish
-      fzf
+      # fzf
       # gh
       # hugo
       isort

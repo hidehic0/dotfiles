@@ -13,6 +13,6 @@ packages:
   - name: x-motemen/ghq@v1.7.1
   - name: cli/cli@v2.67.0
   - name: gohugoio/hugo@v0.145.0
+  - name: junegunn/fzf@v0.60.2
 checksum:
   enabled: true
-  require_checksum: true
