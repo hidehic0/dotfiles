@@ -34,5 +34,6 @@ packages:
   - name: sharkdp/bat@v0.25.0
   - name: sharkdp/hyperfine@v1.19.0
   - name: itchyny/gojq@v0.12.17
+  - name: aristocratos/btop@v1.4.0
 checksum:
   enabled: true
