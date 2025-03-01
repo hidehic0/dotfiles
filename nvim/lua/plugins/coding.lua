@@ -49,7 +49,7 @@ return {
     dependencies = {
       "vim-denops/denops.vim",
     },
-    event = "VimEnter",
+    event = "VeryLazy",
     config = function()
       vim.fn["popup_preview#enable"]()
     end,
@@ -59,10 +59,14 @@ return {
     dependencies = {
       "vim-denops/denops.vim",
     },
-    event = "VimEnter",
+    event = "VeryLazy",
     config = function()
       vim.fn["signature_help#enable"]()
     end,
+  },
+  {
+    "hrsh7th/vim-vsnip",
+    event = "VeryLazy",
   },
   {
     "Shougo/ddc.vim",
@@ -85,8 +89,6 @@ return {
       "uga-rosa/ddc-source-vsnip",
       -- sorters
       "tani/ddc-fuzzy",
-      -- snip
-      "hrsh7th/vim-vsnip",
       -- converters
       "Shougo/ddc-filter-converter_remove_overlap",
       "Shougo/ddc-filter-converter_truncate_abbr",

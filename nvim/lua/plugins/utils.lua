@@ -162,7 +162,7 @@ return {
     dependencies = {
       "nvim-tree/nvim-web-devicons",
     },
-    event = "VeryLazy",
+    cmd = "FzfLua",
     config = function()
       require("plugins.config.fzf")
     end,
@@ -206,9 +206,9 @@ return {
   {
     "monaqa/dial.nvim",
     event = "VeryLazy",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
+    -- dependencies = {
+    --   "nvim-lua/plenary.nvim",
+    -- },
     config = function()
       require("plugins.config.dial")
     end,

@@ -2,7 +2,7 @@
 return {
   {
     "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
+    event = { "BufReadPre", "BufNewFile" },
     dependencies = {
       { "yavorski/lualine-macro-recording.nvim" },
       "pnx/lualine-lsp-status",
@@ -52,7 +52,7 @@ return {
   },
   {
     "akinsho/bufferline.nvim",
-    event = "VimEnter",
+    event = { "VeryLazy" },
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("plugins.config.bufferline")
@@ -93,7 +93,7 @@ return {
     opts = {},
     keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
   },
-  { "MeanderingProgrammer/render-markdown.nvim", event = "VeryLazy" },
+  { "MeanderingProgrammer/render-markdown.nvim", ft = { "markdown" } },
   {
     "nvim-zh/colorful-winsep.nvim",
     event = "VeryLazy",
@@ -101,7 +101,7 @@ return {
   },
   {
     "petertriho/nvim-scrollbar",
-    event = "VeryLazy",
+    event = "WinNew",
     dependencies = {
       "kevinhwang91/nvim-hlslens",
     },
@@ -113,6 +113,7 @@ return {
   {
     "HiPhish/rainbow-delimiters.nvim",
     event = "VeryLazy",
+    priority = 1,
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
     },
