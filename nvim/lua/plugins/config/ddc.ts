@@ -1,9 +1,9 @@
 import {
   BaseConfig,
   type ConfigArguments,
-} from "jsr:@shougo/ddc-vim@~9.3.0/config";
+} from "jsr:@shougo/ddc-vim@~9.4.0/config";
 
-import { type DdcItem } from "jsr:@shougo/ddc-vim@~9.3.0/types";
+import { type DdcItem } from "jsr:@shougo/ddc-vim@~9.4.0/types";
 
 export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
