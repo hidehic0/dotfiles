@@ -20,7 +20,7 @@ packages:
   - name: gohugoio/hugo@v0.145.0
   - name: google/yamlfmt@v0.16.0
   - name: jesseduffield/lazydocker@v0.24.1
-  - name: jesseduffield/lazygit@v0.47.2
+  - name: jesseduffield/lazygit@v0.48.0
   - name: junegunn/fzf@v0.60.2
   - name: koalaman/shellcheck@v0.10.0
   - name: mvdan/sh@v3.10.0
