@@ -1,8 +1,8 @@
 {
-	"oj-path": "/home/hidehico/.nix-profile/bin/oj",
-	"default-contest-dirname-format": "{ContestID}",
-	"default-task-dirname-format": "{tasklabel}",
-	"default-test-dirname-format": "tests",
-	"default-task-choice": "inquire",
-	"default-template": "/home/hidehico/Docments/library/code"
+  "default-contest-dirname-format": "{ContestID}",
+  "default-task-choice": "inquire",
+  "default-task-dirname-format": "{tasklabel}",
+  "default-template": "/home/hidehico/Docments/library/code",
+  "default-test-dirname-format": "tests",
+  "oj-path": "/home/hidehico/.local/share/mise/installs/python/pypy3.10-7.3.17/bin/oj"
 }
