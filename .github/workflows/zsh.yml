@@ -3,13 +3,16 @@ on:
   push:
   pull_request:
 jobs:
-  call-aqua: # 🔹 aqua.yml を呼び出すジョブ
-    uses: hidehic0/dotfiles/.github/workflows/aqua.yml@main # ✅ jobs の直下で uses を使う
   zsh_install_test:
     needs: call-aqua # 🔹 Aqua のセットアップが終わってから実行
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: aquaproj/aqua-installer@v3.1.1
+        with:
+          aqua_version: v2.45.0
+        env:
+          AQUA_CONFIG: aqua/aqua.yaml
       - name: Install zsh
         run: |
           sudo apt-get update
