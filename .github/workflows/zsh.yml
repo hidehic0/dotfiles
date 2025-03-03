@@ -3,12 +3,13 @@ on:
   push:
   pull_request:
 jobs:
+  call-aqua: # 🔹 aqua.yml を呼び出すジョブ
+    uses: hidehic0/dotfiles/.github/workflows/aqua.yml@main # ✅ jobs の直下で uses を使う
   zsh_install_test:
+    needs: call-aqua # 🔹 Aqua のセットアップが終わってから実行
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Call Aqua Workflow
-        uses: hidehic0/dotfiles/.github/workflows/aqua.yml@main # 正しく呼び出す
       - name: Install zsh
         run: |
           sudo apt-get update
