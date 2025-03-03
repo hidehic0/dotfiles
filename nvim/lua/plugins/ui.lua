@@ -62,9 +62,12 @@ return {
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {
+      preset = "modern",
       triggers = {
         { "<leader>", mode = "n" },
-        { "z", mode = "n" },
+        { "z", mode = { "n", "x" } },
+        { "g", mode = { "n", "x" } },
+        { "<C-w>", mode = "n" },
       },
     },
   },
