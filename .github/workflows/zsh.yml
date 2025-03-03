@@ -1,3 +1,4 @@
+name: Main Workflow
 on:
   push:
   pull_request:
@@ -6,15 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: hidehic0/dotfiles/.github/workflows/aqua.yml@main
-      - name: install zsh
+      - name: Call Aqua Workflow
+        uses: hidehic0/dotfiles/.github/workflows/aqua.yml@main # 正しく呼び出す
+      - name: Install zsh
         run: |
           sudo apt-get update
           sudo apt-get install zsh
-      - name: copy zsh & sheldon config
+      - name: Copy zsh & sheldon config
         run: |
           cp -r ${{ github.workspace }}/zsh/ ~/.config/zsh/
           cp -r ${{ github.workspace }}/sheldon/ ~/.config/sheldon/
           ln -s ~/.config/zsh/zshrc ~/.zshrc
-      - name: install test
+      - name: Install test
         run: zsh -i -c exit
