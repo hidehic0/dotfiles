@@ -13,3 +13,4 @@ require("snacks").setup({
 })
 
 vim.g.snacks_animate = false
+Snacks.indent.enable()
