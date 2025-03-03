@@ -11,6 +11,12 @@ jobs:
         uses: actions/checkout@v4
       - name: copy neovim config
         run: cp -r ${{ github.workspace }}/nvim/ ~/.config/nvim/
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATEKEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
       - name: install neovim
         uses: rhysd/action-setup-vim@v1
         with:
