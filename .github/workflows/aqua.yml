@@ -1,5 +1,7 @@
 on:
   push:
+    branches:
+      - main
   pull_request:
 jobs:
   run_aqua_install:
