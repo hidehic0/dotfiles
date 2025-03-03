@@ -4,7 +4,6 @@ on:
   pull_request:
 jobs:
   zsh_install_test:
-    needs: call-aqua # 🔹 Aqua のセットアップが終わってから実行
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
