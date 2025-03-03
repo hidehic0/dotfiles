@@ -21,7 +21,7 @@ packages:
   - name: google/yamlfmt@v0.16.0
   - name: jesseduffield/lazydocker@v0.24.1
   - name: jesseduffield/lazygit@v0.48.0
-  - name: junegunn/fzf@v0.60.2
+  - name: junegunn/fzf@v0.60.3
   - name: koalaman/shellcheck@v0.10.0
   - name: mvdan/sh@v3.10.0
   - name: psf/black@25.1.0
