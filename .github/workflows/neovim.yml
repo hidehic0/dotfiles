@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  run_aqua_install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: copy neovim config
+        run: cp -r ${{ github.workspace }}/nvim/ ~/.config/nvim/
+      - name: install neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+          version: nightly
+      - name: install test
+        run: nvim --headless "+Lazy! sync" +qa
