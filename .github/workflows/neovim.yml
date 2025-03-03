@@ -4,7 +4,7 @@ on:
       - main
   pull_request:
 jobs:
-  run_aqua_install:
+  neovim_install_test:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
