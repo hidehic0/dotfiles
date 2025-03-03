@@ -7,7 +7,7 @@ cfd() {
 }
 
 # cdしたら自動でls
-function custom_cd() {
-  \cd $@ && ls
-}
-alias cd='custom_cd'
+# function custom_cd() {
+#   \cd $@ && ls
+# }
+# alias cd='custom_cd'
