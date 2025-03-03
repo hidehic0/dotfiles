@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/workflows/aqua.yml
+      - uses: hidehic0/dotfiles/.github/workflows/aqua.yml@main
       - name: install zsh
         run: |
           sudo apt-get update
