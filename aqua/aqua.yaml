@@ -23,7 +23,7 @@ packages:
   - name: jesseduffield/lazygit@v0.48.0
   - name: junegunn/fzf@v0.60.3
   - name: koalaman/shellcheck@v0.10.0
-  - name: mvdan/sh@v3.10.0
+  - name: mvdan/sh@v3.11.0
   - name: psf/black@25.1.0
   - name: rossmacarthur/sheldon@0.8.1
   - name: tamasfe/taplo@0.9.3
