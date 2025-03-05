@@ -13,6 +13,8 @@ require("lint").linters_by_ft = {
   bash = { "shellcheck" },
   sh = { "shellcheck" },
   markdown = { "markdownlint-cli2" },
+  ts = { "eslint_d" },
+  tsx = { "eslint_d" },
 }
 require("lint").try_lint()
 
