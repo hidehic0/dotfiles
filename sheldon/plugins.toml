@@ -40,6 +40,11 @@ github = "zsh-users/zsh-completions"
 github = "Aloxaf/fzf-tab"
 use = ["fzf-tab.zsh"]
 
+[plugins.git-sync]
+github = "caarlos0-graveyard/zsh-git-sync"
+apply = ["defer"]
+use = ["{{ name }}.plugin.zsh"]
+
 [plugins._nix]
 github = "nix-community/nix-zsh-completions"
 use = ["_*"]
