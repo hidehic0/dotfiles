@@ -1,0 +1,28 @@
+[user]
+	name = hidehic0
+	email = hidehico.ooba@gmail.com
+	signingkey = 91358AE025B140F2
+[init]
+	defaultBranch = main
+
+[core]
+    pager = delta
+	editor = nvim
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true  # use n and N to move between diff sections
+    dark = true      # or light = true, or omit for auto-detection
+
+[merge]
+    conflictstyle = zdiff3
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[push]
+	autoSetupRemote = true
+[alias]
+	sync = !zsh -i -c git-sync
