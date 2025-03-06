@@ -56,3 +56,10 @@ lspconfig["denols"].setup({
 lspconfig["marksman"].setup({
   capabilities = capabilities,
 })
+
+lspconfig["nimls"].setup({
+  capabilities = capabilities,
+  cmd = { "nimlsp", "--stdin ", "--trace" }, -- `nimlsp` の実行コマンド
+  filetypes = { "nim" }, -- Nimファイルに適用
+  root_dir = lspconfig.util.root_pattern("*.nim", ".git"),
+})
