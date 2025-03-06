@@ -45,6 +45,10 @@ github = "caarlos0-graveyard/zsh-git-sync"
 # apply = ["defer"]
 use = ["{{ name }}.plugin.zsh"]
 
+[plugins.git-completion]
+remote = "https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-completion.zsh"
+apply = ["fpath"]
+
 # [plugins._nix]
 # github = "nix-community/nix-zsh-completions"
 # use = ["_*"]
