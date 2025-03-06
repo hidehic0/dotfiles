@@ -45,10 +45,10 @@ github = "caarlos0-graveyard/zsh-git-sync"
 # apply = ["defer"]
 use = ["{{ name }}.plugin.zsh"]
 
-[plugins._nix]
-github = "nix-community/nix-zsh-completions"
-use = ["_*"]
-apply = ["fpath"]
+# [plugins._nix]
+# github = "nix-community/nix-zsh-completions"
+# use = ["_*"]
+# apply = ["fpath"]
 # apply = ["defer"]
 
 # For example:
