@@ -41,7 +41,9 @@ silent! cunmap <C-e>
 endfunction
 ]])
 
-vim.cmd("LspStart")
+pcall(function()
+  vim.cmd("LspStart")
+end)
 
 fn.ddc.enable_terminal_completion()
 fn.ddc.enable()
