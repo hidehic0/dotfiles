@@ -3,7 +3,7 @@ vim.g.copilot_no_tab_map = true
 return {
   {
     "neovim/nvim-lspconfig",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "VimEnter" },
     dependencies = {
       "Shougo/ddc-source-lsp",
     },
@@ -141,7 +141,7 @@ return {
       "JoosepAlviste/nvim-ts-context-commentstring",
       { "andersevenrud/nvim_context_vt", event = "VeryLazy", opts = {} },
     },
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "VeryLazy" },
     build = { ":TSUpdateSync" },
     config = function()
       require("plugins.config.treesitter")

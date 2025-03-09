@@ -2,7 +2,7 @@
 return {
   {
     "nvim-lualine/lualine.nvim",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "BufReadPost", "BufAdd", "BufNewFile" },
     dependencies = {
       { "yavorski/lualine-macro-recording.nvim" },
       "pnx/lualine-lsp-status",
@@ -73,9 +73,8 @@ return {
   },
   {
     "folke/trouble.nvim",
-    event = "VeryLazy",
     opts = {},
-    cmd = "Trouble",
+    cmd = { "Trouble", "TroubleToggle", "TroubleRefresh" },
     keys = {
       {
         "<leader>x",
