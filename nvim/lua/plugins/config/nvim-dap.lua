@@ -1,5 +1,5 @@
 local dap, dapui = require("dap"), require("dapui")
-require("dap-python").setup("/home/hidehico/.local/share/mise/installs/python/pypy3.10-7.3.12/bin/python")
+require("dap-python").setup("/home/hidehico/.local/share/mise/installs/python/pypy3.10-7.3.17/bin/python")
 
 -- キーマッピング設定
 vim.keymap.set("n", "<F5>", function()
