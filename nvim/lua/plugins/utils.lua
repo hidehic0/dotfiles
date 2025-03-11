@@ -226,4 +226,9 @@ return {
       require("plugins.config.snacks")
     end,
   },
+  {
+    "pocco81/auto-save.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
 }
