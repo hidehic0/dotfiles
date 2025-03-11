@@ -9,6 +9,7 @@ require("conform").setup({
     typescript = { "deno_fmt" },
     toml = { "taplo" },
     json = { "gojq" },
+    nim = { "nimpretty" },
   },
   format_on_save = {
     -- These options will be passed to conform.format()

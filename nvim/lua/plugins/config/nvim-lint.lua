@@ -4,6 +4,7 @@ vim.diagnostic.config({
   virtual_lines = {
     only_current_line = true,
   },
+  update_in_insert = true,
 })
 
 require("lint").linters_by_ft = {
