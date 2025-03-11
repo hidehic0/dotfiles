@@ -1,6 +1,6 @@
 # compinit
-autoload -Uz compinit
-compinit
+# autoload -Uz compinit
+# compinit
 
 # zstyle ':completion:*' menu-select true
 zstyle ':completion::complete:*' gain-privileges 1
