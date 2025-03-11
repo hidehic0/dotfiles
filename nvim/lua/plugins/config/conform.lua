@@ -18,4 +18,4 @@ require("conform").setup({
   -- },
 })
 
-vim.keymap.set({ "n" }, "<leader>s", require("conform").format, { buffer = true, desc = "format" })
+vim.keymap.set({ "n" }, "<leader>s", require("conform").format, { noremap = true, silent = true, desc = "format" })
