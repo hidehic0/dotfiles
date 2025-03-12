@@ -1,12 +1,17 @@
+#!/bin/zsh
 # compinit
 # autoload -Uz compinit
 # compinit
 
-# zstyle ':completion:*' menu-select true
+setopt globdots
+
 zstyle ':completion::complete:*' gain-privileges 1
-# zstyle ':completion:*:default' menu 'select'
 zstyle ':fzf-tab:*' fzf-command fzf
 zstyle ':fzf-tab:*' fzf-preview 'echo {}'
+zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':completion:*' menu no
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd -1 --color=always $realpath'
 
 # zoxide
 eval "$(zoxide init zsh)"
@@ -19,20 +24,20 @@ if [ ! -e "$HOME/.local/lib/zsh/gh_comp.zsh" ]; then
   gh completion -s zsh >~/.local/lib/zsh/gh_comp.zsh
 fi
 
-source "$HOME/.local/lib/zsh/gh_comp.zsh"
+zsh-defer source "$HOME/.local/lib/zsh/gh_comp.zsh"
 
 # jj vcs
 if [ ! -e "$HOME/.local/lib/zsh/jj_comp.zsh" ]; then
   jj util completion zsh >~/.local/lib/zsh/jj_comp.zsh
 fi
 
-source "$HOME/.local/lib/zsh/jj_comp.zsh"
+zsh-defer source "$HOME/.local/lib/zsh/jj_comp.zsh"
 
 # aqua
 if [ ! -e "$HOME/.local/lib/zsh/aqua_comp.zsh" ]; then
   aqua completion zsh >~/.local/lib/zsh/aqua_comp.zsh
 fi
-source "$HOME/.local/lib/zsh/aqua_comp.zsh"
+zsh-defer source "$HOME/.local/lib/zsh/aqua_comp.zsh"
 
 # mise
 eval "$(mise activate zsh)"
@@ -42,4 +47,4 @@ if [ ! -e "$HOME/.local/lib/zsh/sheldon_comp.zsh" ]; then
   sheldon completions --shell zsh >~/.local/lib/zsh/sheldon_comp.zsh
 fi
 
-source "$HOME/.local/lib/zsh/sheldon_comp.zsh"
+zsh-defer source "$HOME/.local/lib/zsh/sheldon_comp.zsh"
