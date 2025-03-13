@@ -4,20 +4,25 @@
 * os
   * archlinux
 * package manager
-  * pacman + home-manager dotfilesで使うツールは大体home-managerで管理しています
+  * pacman + aqua + mise + npm 
+    * 言語は、mise 
+    * go製ツール,rust製ツールは、aqua
+    * node製ツールは、npm 
+    * シェルとかは、pacman
+    * このような形で管理しています
 * window manager
   * hyprland
 * shell
-  * zsh   20ms前後で起動します
+  * zsh   14ms前後で起動します
 * editor
   * neovim</br>
   主要なプラグイン
-  * lazy.nvim
-  * ddc.vim
-  * ddu.vim
-  * ddt.vim 
-  * nvim-lspconfig
-  * noice.nvim
+      * lazy.nvim
+      * ddc.vim
+      * ddu.vim
+      * ddt.vim 
+      * nvim-lspconfig
+      * noice.nvim
 
 </br>
 みたいな感じです</br>
