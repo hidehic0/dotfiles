@@ -19,3 +19,6 @@ alias ls="lsd"
 alias lsa="lsd -a"
 alias lsl="lsd -l"
 alias lsla="lsd -la"
+
+# clean cache alias
+alias clean_cache="$bin_dir/clean_cache.zsh"
