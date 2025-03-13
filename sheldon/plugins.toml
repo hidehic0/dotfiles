@@ -53,6 +53,15 @@ use = ["{{ name }}.plugin.zsh"]
 remote = "https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-completion.zsh"
 apply = ["fpath"]
 
+[plugins.defer_configs]
+local = "~/.config/zsh/zsh.d"
+use = ["utils.zsh", "alias.zsh", "func.zsh", "paths.zsh"]
+apply = ["defer"]
+
+[plugins.nondefer_configs]
+local = "~/.config/zsh/zsh.d"
+use = ["p10k.zsh","hist.zsh"]
+
 # [plugins._nix]
 # github = "nix-community/nix-zsh-completions"
 # use = ["_*"]
