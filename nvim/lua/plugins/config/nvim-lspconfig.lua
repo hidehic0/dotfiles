@@ -45,6 +45,7 @@ local configs = {
     filetypes = { "nim" }, -- Nimファイルに適用
     root_dir = lspconfig.util.root_pattern("*.nim", ".git"),
   },
+  gopls = {},
 }
 
 local default_options = {

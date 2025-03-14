@@ -39,5 +39,6 @@ packages:
   - name: tamasfe/taplo@0.9.3
   - name: tree-sitter/tree-sitter@v0.25.3
   - name: x-motemen/ghq@v1.7.1
+  - name: golang.org/x/tools/gopls@v0.18.1
 checksum:
   enabled: true

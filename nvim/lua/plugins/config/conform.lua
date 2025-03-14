@@ -10,6 +10,7 @@ require("conform").setup({
     toml = { "taplo" },
     json = { "gojq" },
     nim = { "nimpretty" },
+    go = { "gofmt" },
   },
   -- format_on_save = {
   --   -- These options will be passed to conform.format()
