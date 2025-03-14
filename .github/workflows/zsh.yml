@@ -10,7 +10,7 @@ jobs:
         with:
           aqua_version: v2.45.1
         env:
-          AQUA_CONFIG: aqua/aqua.yaml
+          AQUA_CONFIG: aqua.yaml
       - name: Install zsh
         run: |
           sudo apt-get update
