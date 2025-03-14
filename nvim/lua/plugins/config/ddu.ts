@@ -16,7 +16,7 @@ export class Config extends BaseConfig {
       uiParams: {
         ff: {
           // auto action
-          // startAutoAction: true,
+          startAutoAction: true,
           autoAction: { name: "preview", delay: 0 },
           // floating configs
           split: "floating",
