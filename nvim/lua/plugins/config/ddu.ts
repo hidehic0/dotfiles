@@ -8,10 +8,15 @@ export class Config extends BaseConfig {
   override config(args: ConfigArguments): Promise<void> {
     args.contextBuilder.patchGlobal({
       ui: "ff",
+      uiOptions: {
+        _: {
+          filterPrompt: "Search: ",
+        },
+      },
       uiParams: {
         ff: {
           // auto action
-          startAutoAction: true,
+          // startAutoAction: true,
           autoAction: { name: "preview", delay: 0 },
           // floating configs
           split: "floating",
@@ -29,7 +34,7 @@ export class Config extends BaseConfig {
           previewCol: "&columns / 2",
           previewRow: 6,
           previewHeight: 35,
-          prompt: "ddu.vim",
+          // prompt: "ddu.vim",
         } satisfies Partial<FfParams>,
       },
 
@@ -73,14 +78,12 @@ export class Config extends BaseConfig {
         },
         action: {
           defaultAction: "do",
-          quit: true,
         },
         register: {
           defaultAction: "yank",
         },
         emoji: {
           defaultAction: "yank",
-          quit: true,
         },
         git_branch: { "defaultAction": "switch" },
         git_status: {

@@ -1,4 +1,7 @@
 local fn = require("artemis").fn
+local customAction = fn.ddu.custom.action
+local doAction = fn.ddu.ui.do_action
+
 vim.fn["ddu#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua", "plugins", "config", "ddu.ts"))
 
 -- helpers
@@ -20,6 +23,12 @@ set_keymap("<leader>fh", "help", "start ddu help search")
 set_keymap("<leader>fs", "git_branch", "start ddu branch search")
 set_keymap("<leader>ft", "patch_local", "start patch_local search")
 
+-- custom actions
+customAction("ui", "ff", "close-ui-ff", function()
+  doAction("closePreviewWindow")
+  doAction("quit")
+end)
+
 -- autocmds
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "ddu-ff",
@@ -29,7 +38,7 @@ vim.api.nvim_create_autocmd("FileType", {
 
     local function map_action(key, name, args)
       vim.keymap.set("n", key, function()
-        fn.ddu.ui.do_action(name, args)
+        doAction(name, args)
       end, opts)
     end
 
@@ -39,12 +48,7 @@ vim.api.nvim_create_autocmd("FileType", {
       map_action(key, "itemAction", { name = name, quit = true })
     end
 
-    vim.keymap.set(
-      "n",
-      "q",
-      [[<Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><CMD>call ddu#ui#do_action("quit")<CR>]],
-      opts
-    )
+    vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("close-ui-ff")<CR>]], opts)
     -- vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
     vim.keymap.set("n", "<CR>", function()
       local item = fn.ddu.ui.get_item()
