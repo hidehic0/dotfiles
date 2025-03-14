@@ -55,7 +55,7 @@ apply = ["fpath"]
 
 [plugins.defer_configs]
 local = "~/.config/zsh/zsh.d"
-use = ["utils.zsh", "alias.zsh", "func.zsh", "paths.zsh"]
+use = ["utils.zsh", "alias.zsh", "func.zsh", "paths.zsh", "completion.zsh"]
 apply = ["defer"]
 
 [plugins.nondefer_configs]
