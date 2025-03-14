@@ -27,12 +27,16 @@ vim.api.nvim_create_autocmd("FileType", {
     -- vim.fn["ddu#ui#do_action#togglePreview"]()
     local opts = { noremap = true, silent = true, buffer = true }
 
+    local function map_action(key, name, args)
+      vim.keymap.set("n", key, function()
+        fn.ddu.ui.do_action(name, args)
+      end, opts)
+    end
+
     --- @param key string
     --- @param name string
-    local function map_action(key, name)
-      vim.keymap.set("n", key, function()
-        fn.ddu.ui.do_action("itemAction", { name = name, quit = true })
-      end, opts)
+    local function map_item_action(key, name)
+      map_action(key, "itemAction", { name = name, quit = true })
     end
 
     vim.keymap.set(
@@ -57,8 +61,11 @@ vim.api.nvim_create_autocmd("FileType", {
       [[<Cmd>call ddu#ui#do_action("chooseAction")<CR><Cmd>call ddu#ui#do_action("openFilterWindow")<CR>]],
       opts
     )
-    map_action("d", "delete")
-    map_action("o", "newFile")
-    map_action("O", "newDirectory")
+    map_action("j", "cursorNext", { loop = true })
+    map_action("k", "cursorPrevious", { loop = true })
+
+    map_item_action("d", "delete")
+    map_item_action("o", "newFile")
+    map_item_action("O", "newDirectory")
   end,
 })
