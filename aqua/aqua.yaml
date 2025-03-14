@@ -10,33 +10,34 @@ registries:
   - type: standard
     ref: v4.326.1 # renovate: depName=aquaproj/aqua-registry
 packages:
+  - name: BurntSushi/ripgrep@14.1.1
   - name: JohnnyMorganz/StyLua@v2.0.2
   - name: LuaLS/lua-language-server@3.13.9
   - name: ajeetdsouza/zoxide@v0.9.7
+  - name: aristocratos/btop@v1.4.0
   - name: artempyanykh/marksman@2024-12-18
   - name: astral-sh/ruff@0.10.0
+  - name: charmbracelet/vhs@v0.9.0
   - name: cli/cli@v2.68.1
   - name: dandavison/delta@0.18.2
   - name: gohugoio/hugo@v0.145.0
   - name: google/yamlfmt@v0.16.0
+  - name: itchyny/gojq@v0.12.17
   - name: jesseduffield/lazydocker@v0.24.1
   - name: jesseduffield/lazygit@v0.48.0
+  - name: jorgerojas26/lazysql@v0.3.5
   - name: junegunn/fzf@v0.60.3
   - name: koalaman/shellcheck@v0.10.0
+  - name: lsd-rs/lsd@v1.1.5
   - name: mvdan/sh@v3.11.0
   - name: psf/black@25.1.0
+  - name: rhysd/vim-startuptime@v1.3.2
   - name: rossmacarthur/sheldon@0.8.1
+  - name: sharkdp/bat@v0.25.0
+  - name: sharkdp/fd@v10.2.0
+  - name: sharkdp/hyperfine@v1.19.0
   - name: tamasfe/taplo@0.9.3
   - name: tree-sitter/tree-sitter@v0.25.3
   - name: x-motemen/ghq@v1.7.1
-  - name: BurntSushi/ripgrep@14.1.1
-  - name: lsd-rs/lsd@v1.1.5
-  - name: sharkdp/bat@v0.25.0
-  - name: sharkdp/hyperfine@v1.19.0
-  - name: itchyny/gojq@v0.12.17
-  - name: aristocratos/btop@v1.4.0
-  - name: rhysd/vim-startuptime@v1.3.2
-  - name: sharkdp/fd@v10.2.0
-  - name: charmbracelet/vhs@v0.9.0
 checksum:
   enabled: true
