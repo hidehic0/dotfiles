@@ -34,6 +34,7 @@ export class Config extends BaseConfig {
           previewCol: "&columns / 2",
           previewRow: 6,
           previewHeight: 35,
+          previewFocusable: false,
           // prompt: "ddu.vim",
         } satisfies Partial<FfParams>,
       },
