@@ -22,3 +22,5 @@ alias lsla="lsd -la"
 
 # clean cache alias
 alias clean_cache="$bin_dir/clean_cache.zsh"
+# package update
+alias package_update="$bin_dir/package_update.zsh"
