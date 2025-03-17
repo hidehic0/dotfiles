@@ -39,6 +39,10 @@ return {
     },
     event = "VeryLazy",
     config = function()
+      vim.g.signature_help_config = {
+        contentsStyle = "full",
+        viewStyle = "floating",
+      }
       vim.fn["signature_help#enable"]()
     end,
   },
