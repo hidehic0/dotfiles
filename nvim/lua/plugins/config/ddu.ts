@@ -1,7 +1,7 @@
 import {
   BaseConfig,
   type ConfigArguments,
-} from "jsr:@shougo/ddu-vim@~10.1.0/config";
+} from "jsr:@shougo/ddu-vim@~10.3.0/config";
 import { type Params as FfParams } from "jsr:@shougo/ddu-ui-ff@~2.0.0";
 
 export class Config extends BaseConfig {
