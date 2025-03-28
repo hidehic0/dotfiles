@@ -1,9 +1,6 @@
 vim.diagnostic.config({
   severity_sort = true,
-  virtual_text = false,
-  virtual_lines = {
-    only_current_line = true,
-  },
+  virtual_text = { current_line = false },
   update_in_insert = true,
 })
 
