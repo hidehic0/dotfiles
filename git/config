@@ -26,3 +26,4 @@
 	autoSetupRemote = true
 [alias]
 	sync = !zsh -i -c git-sync
+  discard = "!git restore --source=HEAD --staged --worktree . && git clean -f && echo 'All changes discarded.'"
