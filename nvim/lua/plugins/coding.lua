@@ -110,7 +110,8 @@ return {
       "mfussenegger/nvim-dap-python",
       "nvim-neotest/nvim-nio",
     },
-    event = "VeryLazy",
+    -- event = "VeryLazy",
+    keys = { { "<F5>", "<CMD>DapContinue<CR>", desc = "Start/Continue Debugging" } },
     config = function()
       require("plugins.config.nvim-dap")
     end,

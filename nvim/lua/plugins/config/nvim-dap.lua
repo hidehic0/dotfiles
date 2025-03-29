@@ -2,9 +2,7 @@ local dap, dapui = require("dap"), require("dapui")
 require("dap-python").setup("/home/hidehico/.local/share/mise/installs/python/pypy3.10-7.3.17/bin/python")
 
 -- キーマッピング設定
-vim.keymap.set("n", "<F5>", function()
-  dap.continue()
-end, { desc = "Start/Continue Debugging" })
+-- vim.keymap.set("n", "<F5>", "<CMD>DapContinue<CR>", { desc = "Start/Continue Debugging" })
 vim.keymap.set("n", "<F10>", function()
   dap.step_over()
 end, { desc = "Step Over" })
