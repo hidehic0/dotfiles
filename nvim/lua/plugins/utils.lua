@@ -1,10 +1,6 @@
 ---@type LazySpec
 return {
   {
-    "tani/vim-artemis",
-    event = "VimEnter",
-  },
-  {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
     config = true,
@@ -79,6 +75,8 @@ return {
       "Shougo/ddu-column-filename",
       -- sorters
       "Shougo/ddu-filter-sorter_alpha",
+      -- helper
+      "tani/vim-artemis",
     },
 
     config = function()
@@ -87,11 +85,7 @@ return {
   },
   {
     "vim-denops/denops.vim",
-    dependencies = { "vim-denops/denops-shared-server.vim" },
     event = "VimEnter",
-    config = function()
-      vim.cmd([[let g:denops_server_addr = '127.0.0.1:32123']])
-    end,
   },
   {
     "lambdalisue/vim-gin",

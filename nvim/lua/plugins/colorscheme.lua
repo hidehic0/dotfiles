@@ -9,7 +9,7 @@ return {
   },
   {
     "navarasu/onedark.nvim",
-    event = { "BufReadPre", "BufWinEnter", "BufEnter" },
+    event = { "VimEnter" },
     config = function()
       require("plugins.config.onedark")
     end,

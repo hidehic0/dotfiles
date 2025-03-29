@@ -76,6 +76,9 @@ return {
       "Shougo/ddc-filter-converter_truncate_abbr",
       -- filters
       "Shougo/ddc-filter-matcher_prefix",
+
+    -- helper
+    "tani/vim-artemis",
     },
     event = {
       "CmdlineEnter",
