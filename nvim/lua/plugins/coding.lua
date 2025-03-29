@@ -3,7 +3,7 @@ vim.g.copilot_no_tab_map = true
 return {
   {
     "neovim/nvim-lspconfig",
-    event = { "VimEnter" },
+    event = { "BufReadPost", "BufWritePost", "BufNewFile", "VeryLazy" },
     dependencies = {
       "Shougo/ddc-source-lsp",
     },
@@ -122,8 +122,16 @@ return {
       "yioneko/nvim-yati",
       "JoosepAlviste/nvim-ts-context-commentstring",
       { "andersevenrud/nvim_context_vt", event = "VeryLazy", opts = {} },
+      {
+        "HiPhish/rainbow-delimiters.nvim",
+        config = function()
+          if vim.fn.expand("%:p") ~= "" then
+            vim.cmd.edit({ bang = true })
+          end
+        end,
+      },
     },
-    event = { "VeryLazy" },
+    event = { "BufReadPost", "BufWritePost", "BufNewFile", "VeryLazy" },
     build = { ":TSUpdateSync" },
     config = function()
       require("plugins.config.treesitter")

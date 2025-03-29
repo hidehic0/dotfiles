@@ -113,16 +113,4 @@ return {
     end,
   },
   { "folke/zen-mode.nvim", event = "VeryLazy", opts = {} },
-  {
-    "HiPhish/rainbow-delimiters.nvim",
-    event = "VeryLazy",
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-    },
-    config = function()
-      if vim.fn.expand("%:p") ~= "" then
-        vim.cmd.edit({ bang = true })
-      end
-    end,
-  },
 }

@@ -43,6 +43,7 @@ return {
   {
     "Shougo/ddu.vim",
     event = "VeryLazy",
+    priority = 0,
     dependencies = {
       "vim-denops/denops.vim",
       -- ui
