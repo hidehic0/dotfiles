@@ -77,8 +77,8 @@ return {
       -- filters
       "Shougo/ddc-filter-matcher_prefix",
 
-    -- helper
-    "tani/vim-artemis",
+      -- helper
+      "tani/vim-artemis",
     },
     event = {
       "CmdlineEnter",
@@ -114,7 +114,10 @@ return {
       "nvim-neotest/nvim-nio",
     },
     -- event = "VeryLazy",
-    keys = { { "<F5>", "<CMD>DapContinue<CR>", desc = "Start/Continue Debugging" } },
+    keys = {
+      { "<F5>", "<CMD>DapContinue<CR>", desc = "Start/Continue Debugging" },
+      { "<leader>b", "<CMD>DapToggleBreakpoint<CR>", desc = "Toggle Breakpoint" },
+    },
     config = function()
       require("plugins.config.nvim-dap")
     end,
