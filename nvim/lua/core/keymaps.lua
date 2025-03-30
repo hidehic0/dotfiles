@@ -4,7 +4,7 @@ vim.g.maplocalleader = " "
 -- jj をescにする設定
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = true, silent = true })
 -- クリップボードの設定
-vim.opt.clipboard:append({ "unnamedplus" })
+vim.opt.clipboard = "unnamedplus"
 -- xでレジスタを汚さないようにする設定
 vim.api.nvim_set_keymap("n", "x", '"_x', { noremap = true, silent = true })
 
