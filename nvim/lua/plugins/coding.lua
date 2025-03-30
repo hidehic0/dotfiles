@@ -57,7 +57,7 @@ return {
       "vim-denops/denops.vim",
       -- ui
       "Shougo/ddc-ui-pum",
-      "hidehic0/pum.vim",
+      "Shougo/pum.vim",
       -- sources
       "LumaKernel/ddc-source-file",
       "Shougo/ddc-source-around",
