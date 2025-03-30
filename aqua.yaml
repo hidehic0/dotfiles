@@ -26,7 +26,7 @@ packages:
   - name: jesseduffield/lazydocker@v0.24.1
   - name: jesseduffield/lazygit@v0.48.0
   - name: jorgerojas26/lazysql@v0.3.7
-  - name: junegunn/fzf@v0.60.3
+  - name: junegunn/fzf@v0.61.0
   - name: koalaman/shellcheck@v0.10.0
   - name: lsd-rs/lsd@v1.1.5
   - name: mvdan/sh@v3.11.0
