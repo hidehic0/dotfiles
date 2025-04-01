@@ -1,8 +1,8 @@
 {
-  "default-contest-dirname-format": "{ContestID}",
-  "default-task-choice": "inquire",
-  "default-task-dirname-format": "{tasklabel}",
-  "default-template": "~/Docments/library/code",
-  "default-test-dirname-format": "tests",
-  "oj-path": "~/.local/share/mise/installs/python/pypy3.10-7.3.17/bin/oj"
+	"default-contest-dirname-format": "{ContestID}",
+	"default-task-choice": "inquire",
+	"default-task-dirname-format": "{tasklabel}",
+	"default-template": "main",
+	"default-test-dirname-format": "tests",
+	"oj-path": "/home/hidehic0/.local/share/mise/installs/python/pypy3.10-7.3.17/bin/oj"
 }
