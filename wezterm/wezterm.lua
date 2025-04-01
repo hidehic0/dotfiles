@@ -6,7 +6,10 @@ config.disable_default_key_bindings = true
 config.automatically_reload_config = true
 config.use_ime = false
 
-config.font = wezterm.font("FiraCode Nerd Font")
+config.font = wezterm.font_with_fallback {
+  'FiraCode Nerd Font',          -- メインのプログラミングフォント
+  'Noto Sans CJK JP',            -- 追加のフォールバック（必要に応じて）
+}
 config.harfbuzz_features = { "ss02", "cv02", "ss03", "ss05", "zero", "ss09", "ss06" }
 config.webgpu_preferred_adapter = wezterm.gui.enumerate_gpus()[1]
 
