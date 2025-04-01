@@ -1,5 +1,7 @@
 local dap, dapui = require("dap"), require("dapui")
-require("dap-python").setup("/home/hidehico/.local/share/mise/installs/python/pypy3.10-7.3.17/bin/python")
+
+local python_venv_path = vim.fn.system("which python"):gsub("\n", "")
+require("dap-python").setup(python_venv_path)
 
 -- キーマッピング設定
 -- vim.keymap.set("n", "<F5>", "<CMD>DapContinue<CR>", { desc = "Start/Continue Debugging" })
