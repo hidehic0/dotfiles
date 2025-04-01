@@ -1,4 +1,4 @@
-bin_dir="/home/hidehico/.config/zsh/bin"
+bin_dir="$HOME/.config/zsh/bin"
 
 # quicktest command
 alias qcp="$bin_dir/quicktest.sh"
