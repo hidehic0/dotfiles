@@ -328,4 +328,6 @@ label:focus {
 
 #custom-notification {
   font-family: "FiraCode Nerd Font";
+  padding: 0 5px;
+  background-color: #751c9c;
 }
