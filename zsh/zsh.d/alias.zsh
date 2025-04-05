@@ -27,3 +27,7 @@ alias package_update="$bin_dir/package_update.zsh"
 
 # rm and cp
 alias rmcp='(){rm $2 && cp $1 $2}'
+
+# cd alias
+alias cdp="cd .."
+alias cdb="cd -"
