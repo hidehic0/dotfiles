@@ -24,3 +24,6 @@ alias lsla="lsd -la"
 alias clean_cache="$bin_dir/clean_cache.zsh"
 # package update
 alias package_update="$bin_dir/package_update.zsh"
+
+# rm and cp
+alias rmcp='(){rm $2 && cp $1 $2}'
