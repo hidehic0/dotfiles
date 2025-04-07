@@ -12,7 +12,7 @@ registries:
 packages:
   - name: BurntSushi/ripgrep@14.1.1
   - name: JohnnyMorganz/StyLua@v2.0.2
-  - name: LuaLS/lua-language-server@3.13.9
+  - name: LuaLS/lua-language-server@3.14.0
   - name: ajeetdsouza/zoxide@v0.9.7
   - name: aristocratos/btop@v1.4.0
   - name: artempyanykh/marksman@2024-12-18
