@@ -218,7 +218,7 @@ return {
     "folke/snacks.nvim",
     event = "VeryLazy",
     config = function()
-      require("plugins.config.snacks")
+      -- require("plugins.config.snacks")
     end,
   },
 }
