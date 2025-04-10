@@ -23,9 +23,9 @@ local opts = {
       enabled = true,
     },
   },
-  git = {
-    url_format = "git@github.com:%s.git", -- SSH経由でクローンする
-  },
+  -- git = {
+  --   url_format = "git@github.com:%s.git", -- SSH経由でクローンする
+  -- },
 }
 
 require("lazy").setup({

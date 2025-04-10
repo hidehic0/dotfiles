@@ -60,7 +60,11 @@ apply = ["defer"]
 
 [plugins.nondefer_configs]
 local = "~/.config/zsh/zsh.d"
-use = ["p10k.zsh","hist.zsh"]
+use = ["p10k.zsh", "hist.zsh"]
+
+[plugins.tokens]
+local = "~/"
+use = ["tokens.zsh"] # github_tokenなどを置く
 
 # [plugins._nix]
 # github = "nix-community/nix-zsh-completions"
