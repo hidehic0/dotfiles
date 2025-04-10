@@ -17,32 +17,32 @@ return {
       })
     end,
   },
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      -- "rcarriga/nvim-notify",
-    },
-    opts = {
-      presets = {
-        command_palette = true,
-      },
-      lsp = {
-        signature = { enabled = false },
-        override = {
-          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-          ["vim.lsp.util.stylize_markdown"] = true,
-        },
-        progress = {
-          enabled = false,
-        },
-      },
-      messages = {
-        enabled = false,
-      },
-    },
-  },
+  -- {
+  --   "folke/noice.nvim",
+  --   event = "VeryLazy",
+  --   dependencies = {
+  --     "MunifTanjim/nui.nvim",
+  --     -- "rcarriga/nvim-notify",
+  --   },
+  --   opts = {
+  --     presets = {
+  --       command_palette = true,
+  --     },
+  --     lsp = {
+  --       signature = { enabled = false },
+  --       override = {
+  --         ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+  --         ["vim.lsp.util.stylize_markdown"] = true,
+  --       },
+  --       progress = {
+  --         enabled = false,
+  --       },
+  --     },
+  --     messages = {
+  --       enabled = false,
+  --     },
+  --   },
+  -- },
   {
     "stevearc/oil.nvim",
     cmd = "Oil",
@@ -113,4 +113,22 @@ return {
     end,
   },
   { "folke/zen-mode.nvim", event = "VeryLazy", opts = {} },
+  {
+    "rcarriga/nvim-notify",
+    event = "VeryLazy",
+    config = function()
+      require("notify").setup({
+        stages = "slide",
+        fps = 144,
+        icons = {
+          ERROR = " ERROR",
+          WARN = " WARN",
+          INFO = " INFO",
+          DEBUG = " DEBUG",
+          TRACE = "✎ TRACE",
+        },
+      })
+      vim.notify = require("notify")
+    end,
+  },
 }
