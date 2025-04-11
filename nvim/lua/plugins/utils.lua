@@ -227,11 +227,4 @@ return {
     ft = { "markdown" },
     build = "cd app && yarn install",
   },
-  {
-    "folke/snacks.nvim",
-    event = "VeryLazy",
-    config = function()
-      -- require("plugins.config.snacks")
-    end,
-  },
 }
