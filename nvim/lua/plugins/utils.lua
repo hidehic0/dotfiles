@@ -3,7 +3,6 @@ return {
   {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
-    config = true,
     opts = {},
   },
   {
@@ -97,10 +96,6 @@ return {
     },
   },
   {
-    "vim-denops/denops.vim",
-    event = "VimEnter",
-  },
-  {
     "lambdalisue/vim-gin",
     dependencies = {
       "vim-denops/denops.vim",
@@ -177,15 +172,19 @@ return {
   },
   {
     "lewis6991/gitsigns.nvim",
-    event = "VeryLazy",
+    event = "VimEnter",
     keys = {
-      { "<leader>gb", "<CMD>Gitsigns blame<CR>", desc = "Show blame" },
+      { "<leader>gb", "<CMD>Gitsigns blame<CR>", desc = "Show Git blame" },
     },
-    opts = {},
+    config = function()
+      vim.defer_fn(function()
+        require("gitsigns").setup()
+      end, 3000)
+    end,
   },
   {
     "xiyaowong/nvim-cursorword",
-    event = "VeryLazy",
+    event = "CursorMoved",
     config = function()
       vim.g.cursorword_disable_at_startup = true
       vim.g.cursorword_min_width = 3
@@ -195,14 +194,14 @@ return {
   },
   {
     "kevinhwang91/nvim-hlslens",
-    event = "VeryLazy",
+    event = "CmdlineEnter",
     config = function()
       require("plugins.config.hlslens")
     end,
   },
   {
     "lambdalisue/vim-kensaku",
-    event = "VeryLazy",
+    event = "CmdlineEnter",
     dependencies = {
       "vim-denops/denops.vim",
       "lambdalisue/vim-kensaku-search",
@@ -213,13 +212,39 @@ return {
   },
   {
     "monaqa/dial.nvim",
-    event = "VeryLazy",
+    -- event = "VeryLazy",
     -- dependencies = {
     --   "nvim-lua/plenary.nvim",
     -- },
     config = function()
       require("plugins.config.dial")
     end,
+    keys = {
+      {
+        "<C-a>",
+        function()
+          require("dial.map").manipulate("increment", "normal")
+        end,
+      },
+      {
+        "<C-x>",
+        function()
+          require("dial.map").manipulate("decrement", "normal")
+        end,
+      },
+      {
+        "g<C-a>",
+        function()
+          require("dial.map").manipulate("increment", "gnormal")
+        end,
+      },
+      {
+        "g<C-x>",
+        function()
+          require("dial.map").manipulate("decrement", "gnormal")
+        end,
+      },
+    },
   },
   {
     "iamcco/markdown-preview.nvim",

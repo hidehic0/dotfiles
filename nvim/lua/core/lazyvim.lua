@@ -28,6 +28,22 @@ local opts = {
   -- },
 }
 
-require("lazy").setup({
-  { import = "plugins" },
-}, opts)
+local function merge_lists(l)
+  local result = {}
+  for _, p in pairs(l) do
+    for _, v in pairs(p) do
+      table.insert(result, v)
+    end
+  end
+  return result
+end
+
+require("lazy").setup(
+  merge_lists({
+    require("plugins.colorscheme"),
+    require("plugins.ui"),
+    require("plugins.utils"),
+    require("plugins.coding"),
+  }),
+  opts
+)

@@ -3,7 +3,7 @@ vim.g.copilot_no_tab_map = true
 return {
   {
     "neovim/nvim-lspconfig",
-    event = { "BufReadPost", "BufWritePost", "BufNewFile", "VeryLazy" },
+    event = "VimEnter",
     dependencies = {
       "Shougo/ddc-source-lsp",
     },
@@ -47,10 +47,6 @@ return {
     end,
   },
   {
-    "hrsh7th/vim-vsnip",
-    event = "VeryLazy",
-  },
-  {
     "Shougo/ddc.vim",
     dependencies = {
       -- denops
@@ -76,6 +72,8 @@ return {
       "Shougo/ddc-filter-converter_truncate_abbr",
       -- filters
       "Shougo/ddc-filter-matcher_prefix",
+      -- snip
+      "hrsh7th/vim-vsnip",
 
       -- helper
       "tani/vim-artemis",
@@ -138,7 +136,7 @@ return {
         end,
       },
     },
-    event = { "BufReadPost", "BufWritePost", "BufNewFile", "VeryLazy" },
+    event = "VeryLazy",
     build = { ":TSUpdateSync" },
     config = function()
       require("plugins.config.treesitter")
@@ -146,7 +144,7 @@ return {
   },
   {
     "tani/dmacro.nvim",
-    event = { "VeryLazy" },
+    event = { "CursorMoved", "InsertEnter" },
     config = function()
       vim.keymap.set({ "i", "n" }, "<C-.>", "<Plug>(dmacro-play-macro)")
     end,

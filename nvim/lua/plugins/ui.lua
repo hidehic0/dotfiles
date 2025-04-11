@@ -3,7 +3,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     -- event = { "BufReadPost", "BufAdd", "BufNewFile" },
-    event = "VeryLazy",
+    event = "VimEnter",
     dependencies = {
       { "yavorski/lualine-macro-recording.nvim" },
       "pnx/lualine-lsp-status",
@@ -53,7 +53,7 @@ return {
   },
   {
     "akinsho/bufferline.nvim",
-    event = { "VeryLazy" },
+    event = "VeryLazy",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("plugins.config.bufferline")
@@ -99,20 +99,17 @@ return {
   { "MeanderingProgrammer/render-markdown.nvim", ft = { "markdown" } },
   {
     "nvim-zh/colorful-winsep.nvim",
-    event = "VeryLazy",
+    event = "WinNew",
     opts = {},
   },
   {
     "petertriho/nvim-scrollbar",
-    event = "WinNew",
-    dependencies = {
-      "kevinhwang91/nvim-hlslens",
-    },
+    event = "VeryLazy",
     config = function()
       require("plugins.config.scrollbar")
     end,
   },
-  { "folke/zen-mode.nvim", event = "VeryLazy", opts = {} },
+  { "folke/zen-mode.nvim", opts = {}, cmd = "ZenMode" },
   {
     "rcarriga/nvim-notify",
     event = "VeryLazy",
