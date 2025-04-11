@@ -42,8 +42,9 @@ export class Config extends BaseConfig {
         _: {
           matchers: ["matcher_fzf"],
           sorters: ["sorter_fzf"],
-          converters: ["converter_devicon"],
+          // converters: ["converter_devicon"],
           ignoreCase: true,
+          columns: ["devicon_filename"],
           // smartCase: true,
         },
         git_branch: {
@@ -55,9 +56,11 @@ export class Config extends BaseConfig {
         },
         git_status: {
           converters: [
-            "converter_devicon",
+            // "converter_devicon",
             "converter_hl_dir",
           ],
+
+          columns: ["devicon_filename"],
         },
       },
       sourceParams: {
@@ -114,9 +117,10 @@ export class Config extends BaseConfig {
       sourceOptions: {
         file: {
           converters: [
-            "converter_devicon",
+            // "converter_devicon",
             "converter_hl_dir",
           ],
+          columns: ["devicon_filename"],
         },
       },
       uiParams: {
