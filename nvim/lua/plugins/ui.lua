@@ -131,4 +131,7 @@ return {
       vim.notify = require("notify")
     end,
   },
+  { "Sam-programs/cmdline-hl.nvim", event = "VeryLazy", opts = {
+    ghost_text = false,
+  } },
 }
