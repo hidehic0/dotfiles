@@ -11,17 +11,17 @@ return {
       require("plugins/config/nvim-lspconfig")
     end,
   },
-  {
-    "nvimdev/lspsaga.nvim",
-    event = "LspAttach",
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function()
-      require("plugins.config.lspsaga")
-    end,
-  },
+  -- {
+  --   "nvimdev/lspsaga.nvim",
+  --   event = "LspAttach",
+  --   dependencies = {
+  --     "nvim-treesitter/nvim-treesitter",
+  --     "nvim-tree/nvim-web-devicons",
+  --   },
+  --   config = function()
+  --     require("plugins.config.lspsaga")
+  --   end,
+  -- },
   {
     "matsui54/denops-popup-preview.vim",
     dependencies = {
@@ -171,5 +171,10 @@ return {
         replace_keycodes = false,
       })
     end,
+  },
+  {
+    "Bekaboo/dropbar.nvim",
+    event = "LspAttach",
+    opts = {},
   },
 }
