@@ -34,6 +34,7 @@ export class Config extends BaseConfig {
           previewCol: "&columns / 2",
           previewRow: 6,
           previewHeight: 35,
+          previewFocusable: false,
           // prompt: "ddu.vim",
         } satisfies Partial<FfParams>,
       },
@@ -42,9 +43,9 @@ export class Config extends BaseConfig {
         _: {
           matchers: ["matcher_fzf"],
           sorters: ["sorter_fzf"],
-          // converters: ["converter_devicon"],
+          converters: ["converter_devicon"],
           ignoreCase: true,
-          columns: ["devicon_filename"],
+          // columns: ["devicon_filename"],
           // smartCase: true,
         },
         git_branch: {
