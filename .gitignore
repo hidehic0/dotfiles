@@ -69,7 +69,6 @@ go/telemetry/local
 Electron
 sheldon/sheldon.zsh
 **/*.zwc
-systemd/user
 clamtk
 Bitwarden CLI
 nvim/]

@@ -1,0 +1,9 @@
+[Unit]
+Description=Start Waybar
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/waybar
+
+[Install]
+WantedBy=default.target
