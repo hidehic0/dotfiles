@@ -22,6 +22,7 @@ set_keymap("<leader>fb", "buffer", "start ddu buffer search")
 set_keymap("<leader>fh", "help", "start ddu help search")
 set_keymap("<leader>fs", "git_branch", "start ddu branch search")
 set_keymap("<leader>ft", "patch_local", "start patch_local search")
+set_keymap("<leader>ca", "lsp_codeAction", "open code actions")
 
 -- custom actions
 customAction("ui", "ff", "close-ui-ff", function()
