@@ -37,7 +37,7 @@ return {
   },
   {
     "Shougo/ddu.vim",
-    -- event = "VeryLazy",
+    event = "VeryLazy",
     -- priority = 0,
     dependencies = {
       "vim-denops/denops.vim",
@@ -81,19 +81,10 @@ return {
       "nvim-tree/nvim-web-devicons",
     },
     config = function()
-      require("plugins.config.ddu")
+      vim.defer_fn(function()
+        require("plugins.config.ddu")
+      end, 3500)
     end,
-    keys = {
-      { "<leader>ff", "<CMD>Ddu -name=file_rec<CR>", desc = "start ddu file_rec" },
-      { "<leader>e", "<CMD>Ddu -name=filer<CR>", desc = "start ddu filer" },
-      { "<leader>fg", "<CMD>Ddu -name=rg<CR>", desc = "start ddu ripgrep" },
-      { "<leader>fr", "<CMD>Ddu -name=lines<CR>", desc = "start ddu line search" },
-      { "<leader>fb", "<CMD>Ddu -name=buffer<CR>", desc = "start ddu buffer search" },
-      { "<leader>fh", "<CMD>Ddu -name=help<CR>", desc = "start ddu help search" },
-      { "<leader>fs", "<CMD>Ddu -name=git_branch<CR>", desc = "start ddu branch search" },
-      { "<leader>ft", "<CMD>Ddu -name=patch_local<CR>", desc = "start patch_local search" },
-      { "<leader>ca", "<CMD>Ddu -name=lsp_codeAction<CR>", desc = "open code actions" },
-    },
   },
   {
     "lambdalisue/vim-gin",
