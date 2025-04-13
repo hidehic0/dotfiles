@@ -42,3 +42,4 @@ packages:
   - name: golang.org/x/tools/gopls@v0.18.1
   - name: XAMPPRocky/tokei@v12.1.2
   - name: high-moctane/mocword@v0.2.0
+  - name: rhysd/actionlint@v1.7.7

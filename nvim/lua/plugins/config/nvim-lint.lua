@@ -13,6 +13,7 @@ require("lint").linters_by_ft = {
   markdown = { "markdownlint-cli2" },
   ts = { "eslint_d" },
   tsx = { "eslint_d" },
+  ["yaml.ghaction"] = { "actionlint" },
 }
 require("lint").try_lint()
 
