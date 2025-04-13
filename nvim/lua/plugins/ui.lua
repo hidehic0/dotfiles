@@ -84,11 +84,11 @@ return {
       },
     },
   },
-  {
-    "j-hui/fidget.nvim",
-    event = "VeryLazy",
-    opts = {},
-  },
+  -- {
+  --   "j-hui/fidget.nvim",
+  --   event = "VeryLazy",
+  --   opts = {},
+  -- },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -113,6 +113,9 @@ return {
   {
     "rcarriga/nvim-notify",
     event = "VeryLazy",
+    dependencies = {
+      "mrded/nvim-lsp-notify",
+    },
     config = function()
       require("notify").setup({
         stages = "slide",
@@ -126,6 +129,8 @@ return {
         },
       })
       vim.notify = require("notify")
+
+      require("lsp-notify").setup({})
     end,
   },
   { "Sam-programs/cmdline-hl.nvim", event = "VeryLazy", opts = {
