@@ -71,6 +71,12 @@ export class Config extends BaseConfig {
         help: {
           helplang: "ja",
         },
+        file_rec: {
+          ignoredDirectories: [
+            ".git",
+            "node_modules",
+          ],
+        },
       },
 
       kindOptions: {
