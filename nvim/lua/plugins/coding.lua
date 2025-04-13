@@ -127,19 +127,25 @@ return {
       "yioneko/nvim-yati",
       "JoosepAlviste/nvim-ts-context-commentstring",
       { "andersevenrud/nvim_context_vt", event = "VeryLazy", opts = {} },
-      {
-        "HiPhish/rainbow-delimiters.nvim",
-        config = function()
-          if vim.fn.expand("%:p") ~= "" then
-            vim.cmd.edit({ bang = true })
-          end
-        end,
-      },
     },
     event = "VeryLazy",
     build = { ":TSUpdateSync" },
     config = function()
       require("plugins.config.treesitter")
+    end,
+  },
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    event = "VeryLazy",
+    config = function()
+      vim.defer_fn(function()
+        if vim.fn.expand("%:p") ~= "" then
+          vim.cmd.edit({ bang = true })
+        end
+      end, 1000)
     end,
   },
   {

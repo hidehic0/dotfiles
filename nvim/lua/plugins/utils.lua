@@ -201,7 +201,7 @@ return {
   },
   {
     "lambdalisue/vim-kensaku",
-    event = "CmdlineEnter",
+    event = "VimEnter",
     dependencies = {
       "vim-denops/denops.vim",
       "lambdalisue/vim-kensaku-search",
