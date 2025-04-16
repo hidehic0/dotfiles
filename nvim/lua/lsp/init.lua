@@ -9,3 +9,4 @@ vim.lsp.config("*", {
 
 config_helper(servers)
 vim.lsp.enable(servers)
+vim.lsp.start(servers)
