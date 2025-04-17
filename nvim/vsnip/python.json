@@ -1,10 +1,22 @@
 {
-  "QueryLoop":{
-    "prefix":"queryloop",
-    "body":[
+  "ListMap": {
+    "body": [
+      "list(map($0, ))"
+    ],
+    "prefix": "listmap"
+  },
+  "QueryLoop": {
+    "body": [
       "while Q:",
       "    $0",
       "    Q-=1"
-    ]
+    ],
+    "prefix": "queryloop"
+  },
+  "ReverseRange": {
+    "body": [
+      "reversed(range($0))"
+    ],
+    "prefix": "reverserange"
   }
 }
