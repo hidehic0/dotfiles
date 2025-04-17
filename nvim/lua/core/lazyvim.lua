@@ -14,6 +14,13 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+local gh_token = os.getenv("GITHUB_TOKEN")
+local format = "https://" .. gh_token .. "@github.com/%s.git"
+
+if gh_token == nil then
+  format = "https://github.com/%s.git"
+end
+
 local opts = {
   defaults = {
     lazy = true,
@@ -23,9 +30,9 @@ local opts = {
       enabled = true,
     },
   },
-  -- git = {
-  --   url_format = "git@github.com:%s.git", -- SSH経由でクローンする
-  -- },
+  git = {
+    url_format = format,
+  },
 }
 
 local function merge_lists(l)
