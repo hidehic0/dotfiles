@@ -236,6 +236,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.11.6/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "FA9A4F229431F1971C4B1D35567237706384104AF464D1D34013077E75B0DFF3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.11.6/ruff-aarch64-pc-windows-msvc.zip",
+      "checksum": "A5B28D8F4EB6A46BDD000F11579FCB074AB3BE1E3D9140C225B7111CD7F6708F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.11.6/ruff-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "05E42F4293649535FD381C6AF6527AF98868703F6072711022B76FFFEFCB669F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.11.6/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "5AF295E50F2A7DB9767964BFE1AF1CD9B61004B4E7FCB9E29059FB7AA561AD21",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.11.6/ruff-x86_64-pc-windows-msvc.zip",
+      "checksum": "9FBE8BC77738D2F231D580E315C54BC615B1BEC22A6DF4201E1D9A821F842AE3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.11.6/ruff-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "E5D91AC0472FA84942FD82CC9289637C9EC5A4669B8B2E2BE6F61983707C8973",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/charmbracelet/vhs/v0.9.0/vhs_0.9.0_Darwin_arm64.tar.gz",
       "checksum": "19075AE64C1C4145BE3DE0591BA6893D94BE549DDC155DF29AE14373E515E743",
       "algorithm": "sha256"
@@ -561,6 +591,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Darwin_arm64.tar.gz",
+      "checksum": "55D8FF53D9BD36EE088393154442D3B93DB787118BE5AD0AE80C200D76311EC2",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Darwin_x86_64.tar.gz",
       "checksum": "7B4C73C7B1B62B9702A701AC0A8A1D8913602173362E8EE96D4FC03EF556AD10",
       "algorithm": "sha256"
@@ -573,6 +608,11 @@
     {
       "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Linux_x86_64.tar.gz",
       "checksum": "461CACF618E1020DFF1D7896248C1C1F2267D5C25FB529755E4B9C43C5D1D4A5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Windows_arm64.zip",
+      "checksum": "8D965FF79409802FF620F744F91CB932BE52B25C2A5ED7AA5131387645151EB8",
       "algorithm": "sha256"
     },
     {
@@ -1093,6 +1133,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.346.0/registry.yaml",
       "checksum": "A3A3FAF2B88527DC275D9BCB5B34503C3FC82D3871F12E3303EA1D11302A81EAC948C427363CEFBEACC47E797E170A76EB7585440AED45E3A39C3C935749B047",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.346.1/registry.yaml",
+      "checksum": "8729CB962D4AE00656849A90215E5E81137305B6EB3D370DDFE84B18840BF5438C23E098F09898E3CE6465BBEEAF10F669E88575BDD64DE70959A2C14B3054BF",
       "algorithm": "sha512"
     }
   ]
