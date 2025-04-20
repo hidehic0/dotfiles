@@ -1,0 +1,8 @@
+[Unit]
+Description=fcitx5 start script
+[Service]
+Type=oneshot
+ExecStart=/home/%u/.config/.bin/scripts/fcitx5_start.sh
+RemainAfterExit=yes
+[Install]
+WantedBy=default.target
