@@ -501,6 +501,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.6/hugo_0.146.6_darwin-universal.tar.gz",
+      "checksum": "33128EC8EC50CF9BDC6A6C62BE729A0CEF199BC5FC9BCDB294ED0B3C6DC629F5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.6/hugo_0.146.6_linux-amd64.tar.gz",
+      "checksum": "16D724D9AB598FC51E50A788F668B36006860C0BD4B2CDC1F0692B20B189C312",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.6/hugo_0.146.6_linux-arm64.tar.gz",
+      "checksum": "FCBD675202B8CF435C5E3B09E4A96C683B4F1A6ED6C360CCE1DAD160EE9C1613",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.6/hugo_0.146.6_windows-amd64.zip",
+      "checksum": "F112667E1897BCC3649B6DE9C2AACA0F85165A970A182DD9CD725B9DDBC24494",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.6/hugo_0.146.6_windows-arm64.zip",
+      "checksum": "A61188C6D67070EDB1FD4CED56BB9D24DAB5314B20CC12882EFED85F5D46B962",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/google/yamlfmt/v0.16.0/yamlfmt_0.16.0_Darwin_arm64.tar.gz",
       "checksum": "FCFFB2EFDFDD27FB5BB658A8156972FDA14F0864F336C181705B98EEE5F6C139",
       "algorithm": "sha256"
@@ -1184,6 +1209,11 @@
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.348.0/registry.yaml",
       "checksum": "2CB850244C66476EEB5F909A5608A1ACF9C4E55497D9628BE38251269CDE128854C014B191394F837103C1F67646696F331CC861B94E56E2807B0E572B02C4B0",
       "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.349.0/registry.yaml",
+      "checksum": "29BB57D2E54FB65CE11B1D101FD32E481AF95F7D326FFC86B04D697B2897AC3A",
+      "algorithm": "sha256"
     }
   ]
 }
