@@ -736,6 +736,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.2/fzf-0.61.2-darwin_amd64.tar.gz",
+      "checksum": "954C98308533999AAE84886267F3B5FDB287E8715CABE7D6AB17B44DA18E5367",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.2/fzf-0.61.2-darwin_arm64.tar.gz",
+      "checksum": "FA56BA0AF787CCC97D69F5406A2DDF31C134824275F01C2ACF3A3812A061A74F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.2/fzf-0.61.2-linux_amd64.tar.gz",
+      "checksum": "9457EEA5B9B4A47A261C5963C9EFD8DCD04283A15F940B5AA0577E96425514F2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.2/fzf-0.61.2-linux_arm64.tar.gz",
+      "checksum": "CEB6CD5C7CF4DFFEB1A944875CB1C32BB2427DCB7DF1D750FC9542B7C8C64CAF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.2/fzf-0.61.2-windows_amd64.zip",
+      "checksum": "698B95435D3D77273613046F6D1BD435B8BA1002C50E254DF35E4987E09BE9AE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.2/fzf-0.61.2-windows_arm64.zip",
+      "checksum": "7D9941C30BA3A486385CAA5D4ED505B984E65F80D5B42C677E18AD87D8011174",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.aarch64.tar.xz",
       "checksum": "BBD2F14826328EEE7679DA7221F2BC3AFB011F6A928B848C80C321F6046DDF81",
       "algorithm": "sha256"
@@ -1144,6 +1174,11 @@
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.347.0/registry.yaml",
       "checksum": "5A0D2C17AA3210E35DEADFC19452F7410A795510AB11424950838DE7B800F48386B68C4D2126F2BACFF87F347C840DDA02B7AB2FFF9E2BCDC5EBBD603FABFB55",
       "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.347.3/registry.yaml",
+      "checksum": "1D39E38FCD03787431709E0600E3E40897CBBA0E8241D96B7CA1AEEA52EE80D8",
+      "algorithm": "sha256"
     }
   ]
 }
