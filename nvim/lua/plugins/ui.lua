@@ -136,4 +136,14 @@ return {
   { "Sam-programs/cmdline-hl.nvim", event = "VeryLazy", opts = {
     ghost_text = false,
   } },
+  {
+    "DanilaMihailov/beacon.nvim",
+    event = "VeryLazy",
+    opts = {
+      fps = 144,
+      speed = 1,
+      min_jump = 4,
+      highlight = { bg = "blue", ctermbg = 15 },
+    },
+  },
 }
