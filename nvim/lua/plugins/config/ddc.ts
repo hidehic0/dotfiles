@@ -34,7 +34,9 @@ export class Config extends BaseConfig {
 
       sources: default_sources,
       cmdlineSources: {
-        ":": ["cmdline", "file", "cmdline_history"].concat(search_sources),
+        ":": ["cmdline", "file", "cmdline_history", "skkeleton"].concat(
+          search_sources,
+        ),
         "/": search_sources,
         "?": search_sources,
       },
