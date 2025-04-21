@@ -52,6 +52,7 @@ export class Config extends BaseConfig {
           converters: ["converter_kind_labels"].concat(default_converters),
           forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
           dup: "force",
+          minAutoCompleteLength: 1,
         },
         cmdline: {
           mark: "[CMD]",
