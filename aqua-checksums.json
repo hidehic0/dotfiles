@@ -551,6 +551,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.7/hugo_0.146.7_darwin-universal.tar.gz",
+      "checksum": "8E51C27B62CD145CF03C4E0512566A0F50E2BEEF9294E8D0D02820E0AA5BA538",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.7/hugo_0.146.7_linux-amd64.tar.gz",
+      "checksum": "6DBBACBF3E54C0744E46FA87A04CEACED5976024D926611ADED43536C96F3635",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.7/hugo_0.146.7_linux-arm64.tar.gz",
+      "checksum": "2EC61F9A7DBEA1A04B84E896DB7E5C21E9443CEEA09258FB214770316D9F240D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.7/hugo_0.146.7_windows-amd64.zip",
+      "checksum": "AE6D0D1044368C3E3B1622962D821D1C010D20364023A26C760DE8751AFBC523",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.146.7/hugo_0.146.7_windows-arm64.zip",
+      "checksum": "BB37AAF50B6C09B8A9135720311EE3852E77B14D7F7CB94F4480679DD85273FC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/google/yamlfmt/v0.16.0/yamlfmt_0.16.0_Darwin_arm64.tar.gz",
       "checksum": "FCFFB2EFDFDD27FB5BB658A8156972FDA14F0864F336C181705B98EEE5F6C139",
       "algorithm": "sha256"
@@ -813,6 +838,36 @@
     {
       "id": "github_release/github.com/junegunn/fzf/v0.61.2/fzf-0.61.2-windows_arm64.zip",
       "checksum": "7D9941C30BA3A486385CAA5D4ED505B984E65F80D5B42C677E18AD87D8011174",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.3/fzf-0.61.3-darwin_amd64.tar.gz",
+      "checksum": "9B4925091323F4F80DA542C135915590BE0DECBF5BEFED035B267F5864793E3D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.3/fzf-0.61.3-darwin_arm64.tar.gz",
+      "checksum": "41A16BE1D20A941DF345AD3E6350967C28B7DFF2A7C3605A3190127299989F4E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.3/fzf-0.61.3-linux_amd64.tar.gz",
+      "checksum": "6A4F4B211B6B8944C7320F66DB468D731888AA86B19D5B0CCDF28FA0D0E06E47",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.3/fzf-0.61.3-linux_arm64.tar.gz",
+      "checksum": "0A15108BBF20F563E620CB7527515B7DB6FCF6ECFEC2A2540A58585B9F02C3C6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.3/fzf-0.61.3-windows_amd64.zip",
+      "checksum": "DC864AC6264073D194AB6A6C647271BF31F438ADE13EB7E473B86CD30BCEEA45",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.61.3/fzf-0.61.3-windows_arm64.zip",
+      "checksum": "7CF17B27419119C4A5E4C60381E157C0D351CC8C3F1A319A984AB907F723CFAC",
       "algorithm": "sha256"
     },
     {
@@ -1243,6 +1298,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.350.0/registry.yaml",
       "checksum": "38D4D5F60BD64FDD6B26ABB8887FCD7C90E6FAB8D60356BD15B0922D7990502E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.351.0/registry.yaml",
+      "checksum": "611B310198411DFC178E224E334B7DAF50A36E905EFE18A7BD94F111137C9AAF",
       "algorithm": "sha256"
     }
   ]
