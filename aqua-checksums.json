@@ -56,6 +56,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-linux-aarch64.zip",
+      "checksum": "D4DF7A455242C4EFB0E5614F99CB55168C0057485201AE71E1BE31C5FCD5A923",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-linux-x86_64-musl.zip",
+      "checksum": "7919A621CECC5BE5E66EA01C03038511FA5CB88F6277CCAD9CA3460D66B5D82A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-macos-aarch64.zip",
+      "checksum": "050D6EA19F05E655474598606405CF5054C322B9C759A4B7DC368701325ACDB3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-macos-x86_64.zip",
+      "checksum": "4C1C6DBC22120D921D4C24C5ED486789AAD6005520C7C4A64B4DAA5741768A8E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-windows-x86_64.zip",
+      "checksum": "10561C051AA37C2E5DB1B94B8E8A0F16DE24C066B5AACEE22414095F78EABF87",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/LuaLS/lua-language-server/3.13.9/lua-language-server-3.13.9-linux-x64.tar.gz",
       "checksum": "17642B2154446C0A15C7F6D335242F071D6910CE1E76C7CD95A29B64DFAE1348",
       "algorithm": "sha256"
@@ -1213,6 +1238,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.349.0/registry.yaml",
       "checksum": "29BB57D2E54FB65CE11B1D101FD32E481AF95F7D326FFC86B04D697B2897AC3A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.350.0/registry.yaml",
+      "checksum": "38D4D5F60BD64FDD6B26ABB8887FCD7C90E6FAB8D60356BD15B0922D7990502E",
       "algorithm": "sha256"
     }
   ]
