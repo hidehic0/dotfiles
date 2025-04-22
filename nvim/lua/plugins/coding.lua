@@ -1,24 +1,15 @@
 vim.g.copilot_no_tab_map = true
 ---@type LazySpec
 return {
-  -- {
-  --   "neovim/nvim-lspconfig",
-  --   event = "VimEnter",
-  --   dependencies = {
-  --     "Shougo/ddc-source-lsp",
-  --   },
-  --   config = function()
-  --     require("plugins/config/nvim-lspconfig")
-  --   end,
-  -- },
   {
-    dir = "~/.config/nvim/lua/lsp",
+    "neovim/nvim-lspconfig",
     event = "VimEnter",
     dependencies = {
       "Shougo/ddc-source-lsp",
     },
     config = function()
-      require("lsp.init")
+      vim.lsp.config("*", { capabilities = require("ddc_source_lsp").make_client_capabilities() })
+      vim.lsp.enable({ "lua_ls", "pylsp", "ruff", "clangd", "denols", "marksman" })
     end,
   },
   -- {
