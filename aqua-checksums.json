@@ -376,6 +376,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.71.0/gh_2.71.0_linux_amd64.tar.gz",
+      "checksum": "C85EF9D7B35F0A13A656E352091005CD0A766E5E3A6006E821B810486C81CACD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.71.0/gh_2.71.0_linux_arm64.tar.gz",
+      "checksum": "7AB87C3AFBABA4F98C13573DBAE5CE003034155F49906F05BCD5B535F54F87C6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.71.0/gh_2.71.0_macOS_amd64.zip",
+      "checksum": "949D944F78551BFCE087F23E2653DDDEB74155647A45000AFE51581B5B104CE9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.71.0/gh_2.71.0_macOS_arm64.zip",
+      "checksum": "8CD76C85A94032BB8B54480B5D4CB464DE6AEF83CB333C3190BE953D19A5AA8E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.71.0/gh_2.71.0_windows_amd64.zip",
+      "checksum": "D5A20A079172E50697853ABCA0FF6527E6FB9C341CFE4CD6340A1EDA027A4876",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.71.0/gh_2.71.0_windows_arm64.zip",
+      "checksum": "B3660632CA249F6046C80D8E99003C37027557F0E7ECE40DE51EF107EE6746D1",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-aarch64-apple-darwin.tar.gz",
       "checksum": "6BA38DCE9F91EE1B9A24AA4AEDE1DB7195258FE176C3F8276AE2D4457D8170A0",
       "algorithm": "sha256"
@@ -1303,6 +1333,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.351.0/registry.yaml",
       "checksum": "611B310198411DFC178E224E334B7DAF50A36E905EFE18A7BD94F111137C9AAF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.352.0/registry.yaml",
+      "checksum": "FD3611C5F8573883CDEC2F6843F9BF319F42687BA77DCCF19490FAE725D7822C",
       "algorithm": "sha256"
     }
   ]
