@@ -185,4 +185,26 @@ return {
   { "kosayoda/nvim-lightbulb", event = "LspAttach", opts = {
     autocmd = { enabled = true },
   } },
+  {
+    "nvim-neotest/neotest",
+    cmd = "Neotest",
+    keys = { { "<leader>st", "<CMD>Neotest summary<CR>", desc = "open neotest" } },
+    dependencies = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-neotest/neotest-python",
+    },
+    config = function()
+      require("neotest").setup({
+        log_level = vim.log.levels.DEBUG,
+        adapters = {
+          require("neotest-python")({
+            runner = "unittest",
+            python = vim.fn.trim(vim.fn.system("which python")),
+          }),
+        },
+      })
+    end,
+  },
 }
