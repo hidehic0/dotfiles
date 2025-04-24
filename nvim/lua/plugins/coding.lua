@@ -146,7 +146,7 @@ return {
         if vim.fn.expand("%:p") ~= "" then
           vim.cmd.edit({ bang = true })
         end
-      end, 1000)
+      end, 300)
     end,
   },
   {
