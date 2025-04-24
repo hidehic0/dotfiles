@@ -13,3 +13,6 @@ uv = "0.6.16"
 "npm:typescript-language-server" = "latest"
 "npm:@devcontainers/cli" = "latest"
 "npm:eslint" = "latest"
+
+[settings]
+experimental = true
