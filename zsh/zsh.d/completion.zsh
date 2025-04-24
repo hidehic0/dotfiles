@@ -24,3 +24,10 @@ if [ ! -e $HOME/.local/lib/zsh/sheldon_comp.zsh ]; then
 fi
 
 zsh-defer source "$HOME/.local/lib/zsh/sheldon_comp.zsh"
+
+# uv
+if [ ! -e $HOME/.local/lib/zsh/uv_comp.zsh ]; then
+  uv generate-shell-completion zsh >~/.local/lib/zsh/uv_comp.zsh
+fi
+
+zsh-defer source "$HOME/.local/lib/zsh/uv_comp.zsh"
