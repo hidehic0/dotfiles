@@ -9,7 +9,7 @@ return {
     },
     config = function()
       vim.lsp.config("*", { capabilities = require("ddc_source_lsp").make_client_capabilities() })
-      vim.lsp.enable({ "lua_ls", "pylsp", "ruff", "clangd", "denols", "marksman" })
+      vim.lsp.enable({ "lua_ls", "pyright", "ruff", "clangd", "denols", "marksman" })
     end,
   },
   -- {
