@@ -22,3 +22,7 @@ vim.filetype.add({
     [".*/.github/workflows/.*%.yaml"] = "yaml.ghaction",
   },
 })
+
+-- copilot
+vim.g.copilot_no_tab_map = true
+vim.g.copilot_enabled = false -- 有効化関連
