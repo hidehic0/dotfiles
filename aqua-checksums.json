@@ -666,6 +666,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.0/hugo_0.147.0_darwin-universal.tar.gz",
+      "checksum": "A4B3F73547A43843B272F9634ACE89D07645C841B40E56186893D04EC72AB363",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.0/hugo_0.147.0_linux-amd64.tar.gz",
+      "checksum": "C8B17CD9F603279E6B92BA51729778F9B280350B22DB3991DE921AD464576E8C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.0/hugo_0.147.0_linux-arm64.tar.gz",
+      "checksum": "F29B9BEB3F4E37C357D8F5716BA7D2F6AAFF1962151177487F3F298EBAAAE48B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.0/hugo_0.147.0_windows-amd64.zip",
+      "checksum": "819651DBAFBD62B8F35FEACD14B70660F2F0DEC43A92BF4DB816EE4F488AD448",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.0/hugo_0.147.0_windows-arm64.zip",
+      "checksum": "B02862209EFE1078E3D96B0D65B47A494A66F91A166F0E7FC86BBF75F73FB4DB",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/google/yamlfmt/v0.16.0/yamlfmt_0.16.0_Darwin_arm64.tar.gz",
       "checksum": "FCFFB2EFDFDD27FB5BB658A8156972FDA14F0864F336C181705B98EEE5F6C139",
       "algorithm": "sha256"
