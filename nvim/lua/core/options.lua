@@ -6,6 +6,10 @@ vim.cmd([[set guifont="FiraCode Nerd Font"]])
 vim.cmd([[set shadafile="NONE"]])
 vim.opt.termguicolors = true
 
+-- exrc
+vim.opt.exrc = true
+vim.opt.secure = true
+
 -- statusline
 vim.opt.laststatus = 3
 -- vim.o.cmdheight = 0
