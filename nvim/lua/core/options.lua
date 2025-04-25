@@ -30,3 +30,14 @@ vim.filetype.add({
 -- copilot
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_enabled = false -- 有効化関連
+
+-- lsp
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local client = vim.lsp.get_client_by_id(args.data.client_id)
+
+    if client:supports_method("textDocument/documentColor") then
+      vim.lsp.document_color.enable(true, args.buf)
+    end
+  end,
+})
