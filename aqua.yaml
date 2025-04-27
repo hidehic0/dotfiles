@@ -5,7 +5,7 @@ registries:
   - type: standard
     ref: v4.353.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-  - name: BurntSushi/ripgrep@14.1.1
+  - name: BurntSushi/ripgrep@14.1.0
   - name: JohnnyMorganz/StyLua@v2.1.0
   - name: LuaLS/lua-language-server@3.14.0
   - name: ajeetdsouza/zoxide@v0.9.7
