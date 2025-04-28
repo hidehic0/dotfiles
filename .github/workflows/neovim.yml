@@ -1,8 +1,7 @@
 on:
   push:
-    branches:
-      - main
-  pull_request:
+    paths:
+      - nvim/
 jobs:
   neovim_install_test:
     runs-on: ubuntu-latest

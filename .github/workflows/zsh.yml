@@ -1,6 +1,7 @@
 on:
   push:
-  pull_request:
+    paths:
+      - zsh/
 jobs:
   zsh_install_test:
     runs-on: ubuntu-latest
