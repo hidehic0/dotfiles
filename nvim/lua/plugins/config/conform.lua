@@ -11,6 +11,7 @@ require("conform").setup({
     json = { "gojq" },
     nim = { "nimpretty" },
     go = { "gofmt" },
+    markdown = { "markdownlint-cli2" },
   },
   format_on_save = {
     -- These options will be passed to conform.format()
