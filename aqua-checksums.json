@@ -376,6 +376,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/mise/v2025.4.12/mise-v2025.4.12-linux-arm64-musl.tar.gz",
+      "checksum": "5F1497A4523E1FE4E0A82F58489E483411ECAA0F8C0D58897CFA139385375D53",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2025.4.12/mise-v2025.4.12-linux-x64-musl.tar.gz",
+      "checksum": "20BC444978F89263F2B14102390BFA365B1266A7B5148E63C8158FCE275BCF10",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2025.4.12/mise-v2025.4.12-macos-arm64.tar.gz",
+      "checksum": "1B726479AA8BC8F9FF1B61916B6F91322430153E8EAA8B84EB0523B9F95D1CC0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2025.4.12/mise-v2025.4.12-macos-x64.tar.gz",
+      "checksum": "D48659D52001DCEC01E28B3E2CA4FC7DE8F962F89B10A15586A6C88BB3686C19",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Darwin_arm64.tar.gz",
       "checksum": "55D8FF53D9BD36EE088393154442D3B93DB787118BE5AD0AE80C200D76311EC2",
       "algorithm": "sha256"
