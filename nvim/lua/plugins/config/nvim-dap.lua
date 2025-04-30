@@ -3,6 +3,31 @@ local dap, dapui = require("dap"), require("dapui")
 local python_venv_path = vim.fn.system("which python"):gsub("\n", "")
 require("dap-python").setup(python_venv_path)
 
+dap.adapters.codelldb = {
+  type = "server",
+  port = "${port}",
+  executable = {
+    command = "codelldb", -- or if not in $PATH: "/absolute/path/to/codelldb"
+    args = { "--port", "${port}" },
+
+    -- On windows you may have to uncomment this:
+    -- detached = false,
+  },
+}
+
+dap.configurations.cpp = {
+  {
+    name = "Launch file",
+    type = "codelldb",
+    request = "launch",
+    program = function()
+      return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+    end,
+    cwd = "${workspaceFolder}",
+    stopOnEntry = false,
+  },
+}
+
 -- キーマッピング設定
 -- vim.keymap.set("n", "<F5>", "<CMD>DapContinue<CR>", { desc = "Start/Continue Debugging" })
 vim.keymap.set("n", "<F10>", function()
