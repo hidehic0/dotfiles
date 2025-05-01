@@ -17,6 +17,8 @@ function ensure_zcompiled {
 
 ensure_zcompiled ~/.config/zsh/zshrc
 
+eval "$(~/.local/bin/mise activate zsh)"
+
 # sheldonの設定
 export SHELDON_CONFIG_DIR="$HOME/.config/sheldon"
 sheldon_cache="$SHELDON_CONFIG_DIR/sheldon.zsh"

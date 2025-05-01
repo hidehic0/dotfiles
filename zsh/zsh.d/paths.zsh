@@ -6,11 +6,11 @@ PATH="$PATH:$HOME/.cargo/bin"
 fpath=(/home/hidehico/.local/share/sheldon/repos/github.com/zsh-users/zsh-completions/src $fpath)
 
 # mise path
-if [ ! -e $HOME/.local/lib/zsh/mise_active.zsh ]; then
-  mise activate zsh >~/.local/lib/zsh/mise_active.zsh
-fi
-
-zsh-defer source "$HOME/.local/lib/zsh/mise_active.zsh"
+# if [ ! -e $HOME/.local/lib/zsh/mise_active.zsh ]; then
+#   mise activate zsh >~/.local/lib/zsh/mise_active.zsh
+# fi
+#
+# zsh-defer source "$HOME/.local/lib/zsh/mise_active.zsh"
 
 # go path
 GOPATH="$HOME/go"
