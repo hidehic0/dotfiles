@@ -8,11 +8,11 @@ rust = "1.86.0"
 uv = "0.7.2"
 
 "npm:atcoder-cli" = "2.2.0"
-"npm:markdownlint-cli2" = "latest"
-"npm:pyright" = "latest"
-"npm:typescript-language-server" = "latest"
-"npm:@devcontainers/cli" = "latest"
-"npm:eslint" = "latest"
+"npm:markdownlint-cli2" = "0.17.2"
+"npm:pyright" = "1.1.400"
+"npm:typescript-language-server" = "4.3.4"
+"npm:@devcontainers/cli" = "0.75.0"
+"npm:eslint" = "9.25.1"
 
 [settings]
 experimental = true
