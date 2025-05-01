@@ -7,7 +7,7 @@ python = "3.13.3"
 rust = "1.86.0"
 uv = "0.7.2"
 
-"npm:atcoder-cli" = "latest"
+"npm:atcoder-cli" = "2.1.0"
 "npm:markdownlint-cli2" = "latest"
 "npm:pyright" = "latest"
 "npm:typescript-language-server" = "latest"
