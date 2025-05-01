@@ -1,23 +1,24 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": true,
-  "extends": [
-    "config:recommended",
-    "github>Omochice/renovate-config:deno",
-    "github>aquaproj/aqua-renovate-config#2.7.5"
-  ],
   "customManagers": [
     {
       "customType": "regex",
       "datasourceTemplate": "npm",
       "depNameTemplate": "{{depName}}",
       "fileMatch": [
-        "\\.mise\\.toml$"
+        "\\.mise\\.toml$",
+        "mise/config\\.toml$"
       ],
       "matchStrings": [
         "\"npm:(?<depName>[^\"]+)\"\\s*=\\s*\"(?<currentValue>[^\"]+)\""
       ],
       "versioningTemplate": "npm"
     }
+  ],
+  "extends": [
+    "config:recommended",
+    "github>Omochice/renovate-config:deno",
+    "github>aquaproj/aqua-renovate-config#2.7.5"
   ]
 }
