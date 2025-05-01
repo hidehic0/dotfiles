@@ -20,12 +20,5 @@
     "config:recommended",
     "github>Omochice/renovate-config:deno",
     "github>aquaproj/aqua-renovate-config#2.7.5"
-  ],
-  "pipx": {
-    "enabled": true,
-    "fileMatch": [
-      "\\.mise\\.toml$",
-      "mise/config\\.toml$"
-    ]
-  }
+  ]
 }
