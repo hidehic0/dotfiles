@@ -6,8 +6,9 @@
     "github>Omochice/renovate-config:deno",
     "github>aquaproj/aqua-renovate-config#2.7.5"
   ],
-  "regexManagers": [
+  "customManagers": [
     {
+      "customType": "regex",
       "datasourceTemplate": "npm",
       "depNameTemplate": "{{depName}}",
       "fileMatch": [
