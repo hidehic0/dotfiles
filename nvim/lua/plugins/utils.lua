@@ -243,4 +243,16 @@ return {
     ft = { "markdown" },
     build = "cd app && yarn install",
   },
+  {
+    "m4xshen/hardtime.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    event = "VeryLazy",
+    config = function()
+      require("hardtime").setup({
+        disabled_filetypes = { "ddu-ff" },
+        timeout = 10000,
+        enabled = vim.g.hardtime_enabled,
+      })
+    end,
+  },
 }
