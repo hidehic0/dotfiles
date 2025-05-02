@@ -1,3 +1,4 @@
+#!/bin/zsh
 bin_dir="$HOME/.config/zsh/bin"
 
 # quicktest command
@@ -31,3 +32,16 @@ alias rmcp='(){rm $2 && cp $1 $2}'
 # cd alias
 alias cdp="cd .."
 alias cdb="cd -"
+
+# atcoder-cli
+atc() {
+  acc new $1
+}
+
+catc() {
+  if [ -d $1 ]; then
+    cd $1
+  else
+    atc $1
+  fi
+}
