@@ -36,6 +36,7 @@ alias cdb="cd -"
 # atcoder-cli
 atc() {
   acc new $1
+  cd $1
 }
 
 catc() {
