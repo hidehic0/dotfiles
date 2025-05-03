@@ -24,3 +24,7 @@ pcmanfm
 linux-zen-headers
 nvidia-dkms
 swayosd-git
+nvidia-prime
+nvidia-settings
+nvidia-utils
+nvtop
