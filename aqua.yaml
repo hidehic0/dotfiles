@@ -31,7 +31,7 @@ packages:
   - name: sharkdp/bat@v0.25.0
   - name: sharkdp/fd@v10.2.0
   - name: sharkdp/hyperfine@v1.19.0
-  - name: tamasfe/taplo@0.9.3
+  # - name: tamasfe/taplo@0.9.3
   - name: tree-sitter/tree-sitter@v0.25.3
   - name: x-motemen/ghq@v1.8.0
   - name: golang.org/x/tools/gopls@v0.18.1
@@ -39,3 +39,4 @@ packages:
   - name: high-moctane/mocword@v0.2.0
   - name: rhysd/actionlint@v1.7.7
   - name: jdx/mise@v2025.4.12
+  - name: tamasfe/taplo/full@0.9.3
