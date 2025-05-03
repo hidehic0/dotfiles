@@ -113,9 +113,6 @@ return {
   {
     "rcarriga/nvim-notify",
     event = "VeryLazy",
-    dependencies = {
-      "mrded/nvim-lsp-notify",
-    },
     config = function()
       require("notify").setup({
         stages = "slide",
@@ -129,8 +126,6 @@ return {
         },
       })
       vim.notify = require("notify")
-
-      require("lsp-notify").setup({})
     end,
   },
   { "Sam-programs/cmdline-hl.nvim", event = "VeryLazy", opts = {
@@ -175,5 +170,10 @@ return {
 
       require("ibl").setup({ indent = { highlight = highlight } })
     end,
+  },
+  {
+    "j-hui/fidget.nvim",
+    event = "LspAttach",
+    opts = {},
   },
 }
