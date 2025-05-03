@@ -14,3 +14,6 @@ eval "$(zoxide init zsh)"
 
 # fzf
 export FZF_DEFAULT_OPTS="--ignore-case"
+
+# zshrc.local
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
