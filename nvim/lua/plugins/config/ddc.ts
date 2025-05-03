@@ -9,8 +9,8 @@ export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
     const default_sources = [
       "copilot",
-      "vsnip",
       "lsp",
+      "vsnip",
       "file",
       "mocword",
       "rg",
