@@ -1,0 +1,5 @@
+[tasks]
+install = "uv sync && mise generate git-pre-commit --write --task=pre-commit"
+
+[tasks.pre-commit]
+run = "./pre_commit.bash"
