@@ -746,16 +746,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-darwin-aarch64.gz",
-      "checksum": "39B84D62D6A47855B2C64148CDE9C9CA5721BF422B8C9FE9C92776860BADDE5F",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-darwin-x86_64.gz",
-      "checksum": "6B4180FE0518E3E68B9A421DBE50F62EDE308767972C4C70C6BBE6651EA98641",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-full-darwin-aarch64.gz",
       "checksum": "0FB943582243A67520B06328A86979D5969FB7236066BF80876DEAE8FDDA3A70",
       "algorithm": "sha256"
@@ -778,21 +768,6 @@
     {
       "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-full-windows-x86_64.zip",
       "checksum": "8E24648E698CB5C6443DE240C36A82287D00CD5B98406F6CB18B06D9DDD46BA6",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-linux-aarch64.gz",
-      "checksum": "7C07379D3288FB5C26B1C29BBEDEC4F8D8F602D776BCC3A1578176733B6A857C",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-linux-x86_64.gz",
-      "checksum": "889EFCFA067B179FDA488427D3B13CE2D679537DA8B9ED8138BA415DB7DA2A5E",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.9.3/taplo-windows-x86_64.zip",
-      "checksum": "F87EDCBD6853AD37D7B9E4D8BA336D282529FDDF54912B01530E09C2872FDBBD",
       "algorithm": "sha256"
     },
     {
