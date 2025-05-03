@@ -83,7 +83,7 @@ return {
     config = function()
       vim.defer_fn(function()
         require("plugins.config.ddu")
-      end, 3500)
+      end, 500)
     end,
   },
   {
