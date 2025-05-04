@@ -126,16 +126,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/aristocratos/btop/v1.4.2/btop-aarch64-linux-musl.tbz",
-      "checksum": "99C70299296B4E9D0A5001F402C278572D3C03CA4CA0CAAD38BA005524BD6618",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/aristocratos/btop/v1.4.2/btop-x86_64-linux-musl.tbz",
-      "checksum": "03869E0007874BFCA7D995501568B68C0D2E2BE770F2268859F876DC3EDFF657",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/artempyanykh/marksman/2024-12-18/marksman-linux-arm64",
       "checksum": "B8D6972A56F3F9B7BBBF7C77EF8998E3B66FA82FB03C01398E224144486C9E73",
       "algorithm": "sha256"

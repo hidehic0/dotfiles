@@ -1,4 +1,5 @@
 #!/bin/zsh
 
-aqua update-checksum
+aqua update-checksum --prune
 zsh -i -c exit
+git add -A
