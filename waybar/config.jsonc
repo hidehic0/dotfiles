@@ -115,8 +115,9 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
+        "format": "{usage}% ", /* アイコンを右に配置 */
+        "tooltip": true, /* 詳細情報をツールチップで表示 */
+        "format-alt": "{load1} " /* 代替フォーマットで1分間の負荷を表示 */
     },
     "memory": {
         "format": "{}% "

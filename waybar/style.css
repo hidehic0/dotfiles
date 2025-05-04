@@ -1,7 +1,11 @@
 /* 全体のウィンドウ背景 */
 window#waybar {
-    background: linear-gradient(135deg, rgba(30, 32, 48, 0.6), rgba(50, 55, 70, 0.4));
+    background: rgba(30, 32, 48, 0.9); /* フラットなダークカラー */
     color: #e0e0e0;
+    border-radius: 10px;
+    font-family: "JetBrains Mono", sans-serif; /* モダンなフォント */
+    font-size: 13px;
+    transition: opacity 0.3s ease; /* スムーズな透明度アニメーション */
 }
 
 /* 隠れるときの半透明表示 */
@@ -16,6 +20,11 @@ button {
     background: transparent;
     color: #e0e0e0;
     padding: 0 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* ワークスペーススタイル */
@@ -25,17 +34,24 @@ button {
     color: #e0e0e0;
     margin: 0 2px;
     border-radius: 8px;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
-#workspaces button:hover,
-#workspaces button.focused {
-    background: linear-gradient(45deg, #00ddeb, #ff79c6);
+#workspaces button:hover {
+    background: #00ddeb; /* ホバー時に鮮やかなシアン */
     color: #1a1a1a;
+}
+
+#workspaces button.focused {
+    background: #00ddeb;
+    color: #1a1a1a;
+    border-bottom: 2px solid #ffffff; /* フォーカス時に下線で強調 */
 }
 
 #workspaces button.urgent {
     background: #ff5555;
     color: #ffffff;
+    transition: opacity 0.5s ease;
 }
 
 /* 各モジュールの共通スタイル */
@@ -53,21 +69,40 @@ button {
 #language,
 #keyboard-state,
 #power-profiles-daemon {
-    padding: 0 8px;
+    padding: 0 10px;
     margin: 0 4px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.1); /* フラットな半透明背景 */
     color: #e0e0e0;
+    transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* モジュールごとの色分け */
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover,
+#tray:hover,
+#custom-media:hover,
+#language:hover,
+#keyboard-state:hover,
+#power-profiles-daemon:hover {
+    background: rgba(255, 255, 255, 0.2); /* ホバー時に明るく */
+}
+
+/* モジュールごとのスタイル */
 #clock {
-    background: linear-gradient(45deg, #6272a4, #b48ead);
+    background: #6272a4; /* フラットなダークブルー */
     color: #ffffff;
 }
 
-#battery.charging, #battery.plugged {
-    background: linear-gradient(45deg, #50fa7b, #8be9fd);
+#battery.charging,
+#battery.plugged {
+    background: #50fa7b; /* フラットなグリーン */
     color: #1a1a1a;
 }
 
@@ -76,47 +111,47 @@ button {
     color: #ffffff;
 }
 
-#power-profiles-daemon.performance {
-    background: linear-gradient(45deg, #ff5555, #ff79c6);
-    color: #ffffff;
-}
-
-#power-profiles-daemon.balanced {
-    background: linear-gradient(45deg, #8be9fd, #50fa7b);
-    color: #1a1a1a;
-}
-
-#power-profiles-daemon.power-saver {
-    background: linear-gradient(45deg, #50fa7b, #6272a4);
-    color: #ffffff;
-}
-
+/* CPU使用率をおしゃれに */
 #cpu {
-    background: linear-gradient(45deg, #50fa7b, #8be9fd);
+    background: #50fa7b; /* 鮮やかなグリーン */
     color: #1a1a1a;
+    border-left: 3px solid #1a1a1a; /* 左にアクセントライン */
+    padding-left: 12px;
 }
 
+#cpu:hover {
+    background: #40e069; /* ホバー時に少し暗いグリーン */
+}
+
+/* メモリも同様に */
 #memory {
-    background: linear-gradient(45deg, #bd93f9, #ff79c6);
+    background: #bd93f9; /* フラットなパープル */
     color: #1a1a1a;
+    border-left: 3px solid #1a1a1a; /* 左にアクセントライン */
+    padding-left: 12px;
+}
+
+#memory:hover {
+    background: #ad83e9; /* ホバー時に少し暗いパープル */
 }
 
 #disk {
-    background: linear-gradient(45deg, #ff79c6, #ffb86c);
+    background: #ff79c6;
     color: #1a1a1a;
 }
 
 #network {
-    background: linear-gradient(45deg, #8be9fd, #6272a4);
-    color: #ffffff;
+    background: #8be9fd;
+    color: #1a1a1a;
 }
 
 #network.disconnected {
     background: #ff5555;
+    color: #ffffff;
 }
 
 #pulseaudio {
-    background: linear-gradient(45deg, #f1fa8c, #50fa7b);
+    background: #f1fa8c;
     color: #1a1a1a;
 }
 
@@ -126,7 +161,7 @@ button {
 }
 
 #temperature {
-    background: linear-gradient(45deg, #ffb86c, #ff79c6);
+    background: #ffb86c;
     color: #1a1a1a;
 }
 
@@ -137,14 +172,71 @@ button {
 
 #tray > .needs-attention {
     background: #ff5555;
+    color: #ffffff;
 }
 
 #language {
-    background: linear-gradient(45deg, #50fa7b, #8be9fd);
+    background: #50fa7b;
     color: #1a1a1a;
 }
 
 #keyboard-state {
-    background: linear-gradient(45deg, #8be9fd, #bd93f9);
+    background: #8be9fd;
     color: #1a1a1a;
+}
+
+#power-profiles-daemon.performance {
+    background: #ff5555;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.balanced {
+    background: #8be9fd;
+    color: #1a1a1a;
+}
+
+#power-profiles-daemon.power-saver {
+    background: #50fa7b;
+    color: #1a1a1a;
+}
+
+/* swayncのボタン（通知）スタイル */
+#custom-notification {
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* 他のモジュールと統一感のある半透明背景 */
+    color: #e0e0e0;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+#custom-notification:hover {
+    background: rgba(255, 255, 255, 0.2); /* ホバー時に明るく */
+}
+
+/* 通知がある場合 */
+#custom-notification.notification {
+    background: #ff79c6; /* ピンクで目立つ */
+    color: #1a1a1a;
+}
+
+/* DND（Do Not Disturb）モード */
+#custom-notification.dnd-notification,
+#custom-notification.dnd-none {
+    background: #6272a4; /* ダークブルーで落ち着いた印象 */
+    color: #ffffff;
+}
+
+/* 通知抑制（inhibited）状態 */
+#custom-notification.inhibited-notification,
+#custom-notification.dnd-inhibited-notification {
+    background: #ffb86c; /* オレンジで注意を引く */
+    color: #1a1a1a;
+}
+
+/* 通知なしの通常状態 */
+#custom-notification.none,
+#custom-notification.inhibited-none {
+    background: rgba(255, 255, 255, 0.1); /* デフォルトの半透明 */
+    color: #e0e0e0;
 }
