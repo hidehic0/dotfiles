@@ -1,9 +1,3 @@
-vim.diagnostic.config({
-  severity_sort = true,
-  virtual_text = { current_line = false },
-  update_in_insert = true,
-})
-
 require("lint").linters_by_ft = {
   -- lua = { "luacheck" },
   -- python = { "ruff" },
