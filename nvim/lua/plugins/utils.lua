@@ -161,7 +161,7 @@ return {
     config = function()
       vim.defer_fn(function()
         require("gitsigns").setup()
-      end, 3000)
+      end, 5000)
     end,
   },
   {
