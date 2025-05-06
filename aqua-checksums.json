@@ -256,28 +256,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.1/hugo_0.147.1_darwin-universal.tar.gz",
-      "checksum": "C20C3BA0BFCFCB73A565DD62CA1B1E764A73C3E62734C74CB93ADDD6FF14C973",
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.2/hugo_0.147.2_darwin-universal.tar.gz",
+      "checksum": "F3FA4EEE8071E181315ED82A6E175D652C25305919ADBDEF3B5B0918E376EC83",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.1/hugo_0.147.1_linux-amd64.tar.gz",
-      "checksum": "292B1903655EADDB81A7A4D0477A2031CB425A0819F649A2D2D997DDE549AE9E",
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.2/hugo_0.147.2_linux-amd64.tar.gz",
+      "checksum": "3224F7B61E7DD564A2E86EB5723543E0035DEBBFD321CDBBBE9CC6FB2EF6A161",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.1/hugo_0.147.1_linux-arm64.tar.gz",
-      "checksum": "383195D254C0202320A96A53ECB13716B8EB130B98A273D7035D04282D2F6BC6",
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.2/hugo_0.147.2_linux-arm64.tar.gz",
+      "checksum": "C807F4194838A0815DE28B4FBEC11FCC6A004346427FC97AE8558BA905B02899",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.1/hugo_0.147.1_windows-amd64.zip",
-      "checksum": "9FB60F480AF457BA1E03CB3D5F80A0D3BDEAE25476B22E3C2A79FE1F9DBC927D",
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.2/hugo_0.147.2_windows-amd64.zip",
+      "checksum": "49633F5669D6F90DB9A34155CF4A6E7A308E9EE5473BA15EFC84236463A65DAE",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.1/hugo_0.147.1_windows-arm64.zip",
-      "checksum": "955081B126BDA6C9BFD005A9FBF077CD9485315C6DED8C9FC5BD36129BA3BB1F",
+      "id": "github_release/github.com/gohugoio/hugo/v0.147.2/hugo_0.147.2_windows-arm64.zip",
+      "checksum": "9D2AF4899D3BCBBE0CEC6A801BF7D55F5EDCBD1638C947956934C8A1E431074B",
       "algorithm": "sha256"
     },
     {
