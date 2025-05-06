@@ -144,6 +144,7 @@ export class Config extends BaseConfig {
             Constructor: "Function",
             Field: "Identifier",
             Variable: "Identifier",
+            Keyword: "Conditional",
             Class: "Structure",
             Interface: "Structure",
           },
