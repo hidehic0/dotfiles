@@ -28,3 +28,4 @@ nvidia-prime
 nvidia-settings
 nvidia-utils
 nvtop
+hypridle
