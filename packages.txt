@@ -29,3 +29,5 @@ nvidia-settings
 nvidia-utils
 nvtop
 hypridle
+hyprpaper
+archlinux-wallpaper
