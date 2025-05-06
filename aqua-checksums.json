@@ -176,6 +176,21 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/bitwarden/clients/cli-v2025.4.0/bw-linux-2025.4.0.zip",
+      "checksum": "10A9C1389CC18AF474E2D78CBBDACB497805E8BDF926767C07A8504BE412C60E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/bitwarden/clients/cli-v2025.4.0/bw-macos-2025.4.0.zip",
+      "checksum": "C8AAEE0FB65582EC8B76A4529B7267FE6F09C87791F24FE4D623179CD76E0BF2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/bitwarden/clients/cli-v2025.4.0/bw-windows-2025.4.0.zip",
+      "checksum": "E24EF9F560A74CAA459DDFFBC422DE6DDB4B77C0296A02BC9DDA2A1859AECE0F",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/charmbracelet/vhs/v0.9.0/vhs_0.9.0_Darwin_arm64.tar.gz",
       "checksum": "19075AE64C1C4145BE3DE0591BA6893D94BE549DDC155DF29AE14373E515E743",
       "algorithm": "sha256"

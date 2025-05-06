@@ -39,3 +39,4 @@ packages:
   - name: rhysd/actionlint@v1.7.7
   - name: jdx/mise@v2025.5.1
   - name: tamasfe/taplo/full@0.9.3
+  - name: bitwarden/clients@cli-v2025.4.0
