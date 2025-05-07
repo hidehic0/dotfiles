@@ -10,10 +10,10 @@ export class Config extends BaseConfig {
     const default_sources = [
       "copilot",
       "lsp",
+      "rg",
       "vsnip",
       "file",
-      "mocword",
-      "rg",
+      // "mocword",
       "skkeleton",
     ];
     const default_converters = [
@@ -87,7 +87,7 @@ export class Config extends BaseConfig {
         },
         rg: {
           mark: "[rg]",
-          minAutoCompleteLength: 4,
+          minAutoCompleteLength: 1,
         },
         copilot: {
           mark: "",
