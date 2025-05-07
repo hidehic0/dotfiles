@@ -29,6 +29,7 @@ export class Config extends BaseConfig {
         "InsertEnter",
         "TextChangedI",
         "TextChangedP",
+        "CmdlineEnter",
         "CmdlineChanged",
       ],
 
@@ -88,6 +89,7 @@ export class Config extends BaseConfig {
         rg: {
           mark: "[rg]",
           minAutoCompleteLength: 1,
+          maxItems: 5,
         },
         copilot: {
           mark: "",
@@ -104,6 +106,7 @@ export class Config extends BaseConfig {
           enableResolveItem: true,
           enableAdditionalTextEdit: true,
         },
+        shell_native: { shell: "zsh" },
       },
       filterParams: {
         converter_fuzzy: {
