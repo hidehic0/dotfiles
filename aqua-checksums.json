@@ -351,36 +351,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/itchyny/gojq/v0.12.17/gojq_v0.12.17_darwin_amd64.zip",
-      "checksum": "CB1EA2394ACBA162AAF5D8BC735151696746D616CC1FC142BD6E9258D48A4D7E",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/itchyny/gojq/v0.12.17/gojq_v0.12.17_darwin_arm64.zip",
-      "checksum": "435491A0899BD1F89A9E441529D7DD2099AA41D533D13CBFE534B59A8E0948D5",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/itchyny/gojq/v0.12.17/gojq_v0.12.17_linux_amd64.tar.gz",
-      "checksum": "CD876631B9B3368DD98AD1CCB361474387DE03E0925EA26D73539DD054AA39CB",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/itchyny/gojq/v0.12.17/gojq_v0.12.17_linux_arm64.tar.gz",
-      "checksum": "12E9DE5DD1C8665F67AFE17BC93F433554C38EB50CD66CE945AEA1E9E98C7ED4",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/itchyny/gojq/v0.12.17/gojq_v0.12.17_windows_amd64.zip",
-      "checksum": "0AE274DEF1F1CC822A71D92DD85D8B13679EEA0EBD022321D72D766D0C298FA5",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/itchyny/gojq/v0.12.17/gojq_v0.12.17_windows_arm64.zip",
-      "checksum": "A97F0771FDA5A63131B0CD328E3FD76E70A5D62F3466C12F8D46775E651017BF",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/jdx/mise/v2025.5.1/mise-v2025.5.1-linux-arm64-musl.tar.gz",
       "checksum": "64EF75D32C52A85B3BA91B4EB67EE2297550EA80B12E9868996474C5EAD11679",
       "algorithm": "sha256"
@@ -483,6 +453,31 @@
     {
       "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.7/lazysql_Windows_x86_64.zip",
       "checksum": "AAAFF8E80F814983BE9C7620C64D8922BFD0E632C8365ED449688AD52552B93A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-amd64",
+      "checksum": "5942C9B0934E510EE61EB3E30273F1B3FE2590DF93933A93D7C58B81D19C8FF5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-linux-arm64",
+      "checksum": "4DD2D8A0661DF0B22F1BB9A1F9830F06B6F3B8F7D91211A1EF5D7C4F06A8B4A5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-macos-amd64",
+      "checksum": "4155822BBF5EA90F5C79CF254665975EB4274D426D0709770C21774DE5407443",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-macos-arm64",
+      "checksum": "0BBE619E663E0DE2C550BE2FE0D240D076799D6F8A652B70FA04AEA8A8362E8A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7.1/jq-windows-amd64.exe",
+      "checksum": "7451FBBF37FEFFB9BF262BD97C54F0DA558C63F0748E64152DD87B0A07B6D6AB",
       "algorithm": "sha256"
     },
     {

@@ -8,7 +8,7 @@ require("conform").setup({
     yaml = { "yamlfmt" },
     typescript = { "deno_fmt" },
     toml = { "taplo" },
-    json = { "gojq" },
+    json = { "jq" },
     nim = { "nimpretty" },
     go = { "gofmt" },
     markdown = { "markdownlint-cli2" },
