@@ -183,6 +183,7 @@ return {
     config = function()
       require("tiny-inline-diagnostic").setup({
         options = {
+          overwrite_events = { "DiagnosticChanged" },
           multilines = {
             enabled = true,
             always_show = true,
