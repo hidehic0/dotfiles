@@ -43,7 +43,7 @@ return {
       "vim-denops/denops.vim",
       -- ui
       "Shougo/ddu-ui-ff",
-      "Shougo/ddu-ui-filer",
+      -- "Shougo/ddu-ui-filer",
       -- sources
       "4513ECHO/ddu-source-emoji",
       "Shougo/ddu-source-action",
@@ -53,10 +53,10 @@ return {
       "Shougo/ddu-source-register",
       "kuuote/ddu-source-git_status",
       "kyoh86/ddu-source-git_branch",
-      "kyoh86/ddu-source-git_log",
+      -- "kyoh86/ddu-source-git_log",
       "kyoh86/ddu-source-lazy_nvim",
       "matsui54/ddu-source-help",
-      "shun/ddu-source-buffer",
+      -- "shun/ddu-source-buffer",
       "shun/ddu-source-rg",
       "staticWagomU/ddu-source-patch_local",
       "uga-rosa/ddu-source-lsp",
@@ -74,7 +74,7 @@ return {
       "Shougo/ddu-column-filename",
       "tamago3keran/ddu-column-devicon_filename",
       -- sorters
-      "Shougo/ddu-filter-sorter_alpha",
+      -- "Shougo/ddu-filter-sorter_alpha",
       -- helper
       "tani/vim-artemis",
       -- utils

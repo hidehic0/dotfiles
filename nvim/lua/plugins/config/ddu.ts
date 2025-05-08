@@ -197,18 +197,18 @@ export class Config extends BaseConfig {
     });
 
     // バッファー検索
-    args.contextBuilder.patchLocal("buffer", {
-      sources: [
-        {
-          name: "buffer",
-        },
-      ],
-      uiParams: {
-        ff: {
-          floatingTitle: "Buffer Search :)",
-        },
-      },
-    });
+    // args.contextBuilder.patchLocal("buffer", {
+    //   sources: [
+    //     {
+    //       name: "buffer",
+    //     },
+    //   ],
+    //   uiParams: {
+    //     ff: {
+    //       floatingTitle: "Buffer Search :)",
+    //     },
+    //   },
+    // });
 
     // レジスタ検索
     args.contextBuilder.patchLocal("register", {
@@ -269,19 +269,19 @@ export class Config extends BaseConfig {
     });
 
     // git log
-    args.contextBuilder.patchLocal("git_log", {
-      sources: [
-        {
-          name: "git_log",
-        },
-      ],
-
-      uiParams: {
-        ff: {
-          floatingTitle: "Git Log Search :)",
-        },
-      },
-    });
+    // args.contextBuilder.patchLocal("git_log", {
+    //   sources: [
+    //     {
+    //       name: "git_log",
+    //     },
+    //   ],
+    //
+    //   uiParams: {
+    //     ff: {
+    //       floatingTitle: "Git Log Search :)",
+    //     },
+    //   },
+    // });
 
     // 絵文字検索
     args.contextBuilder.patchLocal("emoji", {
