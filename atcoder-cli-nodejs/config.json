@@ -1,6 +1,6 @@
 {
 	"default-contest-dirname-format": "{ContestID}",
-	"default-task-choice": "inquire",
+	"default-task-choice": "all",
 	"default-task-dirname-format": "{tasklabel}",
 	"default-template": "main",
 	"default-test-dirname-format": "tests",
