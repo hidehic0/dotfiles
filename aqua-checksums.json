@@ -126,6 +126,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/aquaproj/aqua-registry-updater/v0.1.5/aqua-registry-updater_linux_amd64.tar.gz",
+      "checksum": "EE3C2FB8DFF51875958243C78462C56F6049783FD17F34A54CCAD8DB251531BF",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/artempyanykh/marksman/2024-12-18/marksman-linux-arm64",
       "checksum": "B8D6972A56F3F9B7BBBF7C77EF8998E3B66FA82FB03C01398E224144486C9E73",
       "algorithm": "sha256"

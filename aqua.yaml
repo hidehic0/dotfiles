@@ -41,3 +41,4 @@ packages:
   - name: tamasfe/taplo/full@0.9.3
   - name: bitwarden/clients@cli-v2025.4.0
   - name: jqlang/jq@jq-1.7.1
+  - name: aquaproj/aqua-registry-updater@v0.1.5

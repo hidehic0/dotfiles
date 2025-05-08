@@ -13,8 +13,8 @@ fi
 zsh-defer source "$HOME/.local/lib/zsh/mise_active.zsh"
 
 # go path
-GOPATH="$HOME/go"
-PATH="$PATH:$GOPATH/bin"
+# GOPATH="$HOME/go"
+# PATH="$PATH:$GOPATH/bin"
 
 export MOCWORD_DATA=~/.local/lib/mocword/mocword.sqlite
 
