@@ -183,6 +183,7 @@ return {
     config = function()
       require("tiny-inline-diagnostic").setup({
         options = {
+          enable_on_insert = true,
           overwrite_events = { "DiagnosticChanged" },
           multilines = {
             enabled = true,
@@ -190,7 +191,12 @@ return {
           },
         },
       })
-      vim.diagnostic.config({ virtual_text = false }) -- Only if needed in your configuration, if you already have native LSP diagnostics
+      vim.diagnostic.config({
+        virtual_text = false,
+        severity_sort = true,
+        update_in_insert = true,
+        underline = true,
+      }) -- Only if needed in your configuration, if you already have native LSP diagnostics
     end,
   },
 }
