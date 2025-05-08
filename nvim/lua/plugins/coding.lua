@@ -59,7 +59,7 @@ return {
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
       "Shougo/ddc-source-cmdline_history",
-      "Shougo/ddc-source-copilot",
+      -- "Shougo/ddc-source-copilot",
       "Shougo/ddc-source-lsp",
       "Shougo/ddc-source-mocword",
       "Shougo/ddc-source-rg",
