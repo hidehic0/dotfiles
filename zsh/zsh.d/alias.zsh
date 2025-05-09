@@ -12,6 +12,9 @@ alias acsc="$bin_dir/acc_submit_cpp.sh"
 alias git_push="$bin_dir/git_commands/push_cur_branch.zsh"
 alias git_pull="$bin_dir/git_commands/pull_cur_branch.zsh"
 
+# pacman alias
+alias pacman_search="$bin_dir/pacman_search.zsh"
+
 # rank mirrors
 alias rank_mirror='curl -s "https://archlinux.org/mirrorlist/?country=JP&country=AU&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 - | wl-copy'
 
