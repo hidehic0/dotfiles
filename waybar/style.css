@@ -68,6 +68,8 @@ button:hover {
 #custom-media,
 #language,
 #keyboard-state,
+#custom-notification,
+#custom-power,
 #power-profiles-daemon {
     padding: 0 10px;
     margin: 0 4px;
@@ -90,6 +92,8 @@ button:hover {
 #custom-media:hover,
 #language:hover,
 #keyboard-state:hover,
+#custom-notification:hover,
+#custom-power:hover,
 #power-profiles-daemon:hover {
     background: rgba(255, 255, 255, 0.2); /* ホバー時に明るく */
 }
@@ -210,10 +214,6 @@ button:hover {
     transition: background 0.2s ease, color 0.2s ease;
 }
 
-#custom-notification:hover {
-    background: rgba(255, 255, 255, 0.2); /* ホバー時に明るく */
-}
-
 /* 通知がある場合 */
 #custom-notification.notification {
     background: #ff79c6; /* ピンクで目立つ */
@@ -239,4 +239,14 @@ button:hover {
 #custom-notification.inhibited-none {
     background: rgba(255, 255, 255, 0.1); /* デフォルトの半透明 */
     color: #e0e0e0;
+}
+
+/* custom-powerのスタイル */
+#custom-power {
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1); /* デフォルトの半透明背景 */
+    color: #e0e0e0;
+    transition: background 0.2s ease, color 0.2s ease;
 }
