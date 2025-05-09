@@ -591,6 +591,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/nim-lang/langserver/v1.12.0/nimlangserver-linux-amd64.tar.gz",
+      "checksum": "AF541E3177257ABE9E0631FB4B1D2509CF32508CE36DFAE7B0011E5536BE9AC7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/nim-lang/langserver/v1.12.0/nimlangserver-linux-arm64.tar.gz",
+      "checksum": "BE42C20CDE11FBE842EF0E0C4AF43C123A52B902B093D911C686D1A0F60B322B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/psf/black/25.1.0/black_linux",
       "checksum": "8D293A7FDBDE23ECD06042AB0F0AC14E8BE770F31F9BB4BCAD434B607040CC3B",
       "algorithm": "sha256"
