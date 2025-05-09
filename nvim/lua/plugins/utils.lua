@@ -258,11 +258,4 @@ return {
     },
   },
   { "wakatime/vim-wakatime", event = "VeryLazy" },
-  {
-    "Wansmer/symbol-usage.nvim",
-    event = "LspAttach",
-    config = function()
-      require("plugins.config.symbol-usage")
-    end,
-  },
 }
