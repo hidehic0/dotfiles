@@ -22,7 +22,7 @@ blueman
 swaync
 pcmanfm
 linux-zen-headers
-nvidia-dkms
+nvidia-open-dkms
 swayosd-git
 nvidia-prime
 nvidia-settings
