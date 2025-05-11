@@ -96,7 +96,14 @@ return {
     opts = {},
     keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
   },
-  { "MeanderingProgrammer/render-markdown.nvim", ft = { "markdown" } },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    ft = { "markdown" },
+    opts = { latex = {
+
+      render_modes = false,
+    } },
+  },
   {
     "nvim-zh/colorful-winsep.nvim",
     event = "WinNew",
