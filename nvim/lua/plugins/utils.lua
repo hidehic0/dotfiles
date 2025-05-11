@@ -247,13 +247,16 @@ return {
     end,
   },
   {
-    "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim",
     event = "VeryLazy",
     ft = "markdown",
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       workspaces = {
         { name = "main", path = "~/Docments/obsidian_storage/main" },
+      },
+      daily_notes = {
+        folder = "dailies",
       },
     },
   },
