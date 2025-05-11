@@ -124,6 +124,7 @@ return {
           DEBUG = " DEBUG",
           TRACE = "✎ TRACE",
         },
+        timeout = 1500,
       })
       vim.notify = require("notify")
     end,
