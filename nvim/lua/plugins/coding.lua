@@ -56,6 +56,7 @@ return {
       "Shougo/pum.vim",
       -- sources
       "LumaKernel/ddc-source-file",
+      "Shougo/ddc-source-codeium",
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
       "Shougo/ddc-source-cmdline_history",
@@ -165,15 +166,27 @@ return {
       end,
     },
   },
+  -- {
+  --   "github/copilot.vim",
+  --   event = { "InsertEnter" },
+  --   cmd = { "Copilot" },
+  --   config = function()
+  --     vim.keymap.set("i", "<C-CR>", 'copilot#Accept("\\<CR>")', {
+  --       expr = true,
+  --       replace_keycodes = false,
+  --     })
+  --   end,
+  -- },
   {
-    "github/copilot.vim",
-    event = { "InsertEnter" },
-    cmd = { "Copilot" },
+    "Exafunction/windsurf.vim",
+    event = { "VeryLazy", "InsertEnter" },
+    cmd = { "Codeium" },
     config = function()
-      vim.keymap.set("i", "<C-CR>", 'copilot#Accept("\\<CR>")', {
-        expr = true,
-        replace_keycodes = false,
-      })
+      vim.g.codeium_disable_bindings = 1
+      vim.keymap.set("i", "<C-CR>", function()
+        return vim.fn["codeium#Accept"]()
+      end, { expr = true, silent = true })
+      vim.g.codeium_enabled = true
     end,
   },
   {

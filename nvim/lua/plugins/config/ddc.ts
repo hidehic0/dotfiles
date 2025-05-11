@@ -3,16 +3,14 @@ import {
   type ConfigArguments,
 } from "jsr:@shougo/ddc-vim@~9.4.0/config";
 
-import { type DdcItem } from "jsr:@shougo/ddc-vim@~9.4.0/types";
-
 export class Config extends BaseConfig {
   override async config(args: ConfigArguments): Promise<void> {
     const default_sources = [
       // "copilot",
       "lsp",
-      "rg",
       "vsnip",
       "file",
+      "rg",
       // "mocword",
       "skkeleton",
     ];
