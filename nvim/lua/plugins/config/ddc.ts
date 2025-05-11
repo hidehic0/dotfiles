@@ -59,10 +59,13 @@ export class Config extends BaseConfig {
         },
         cmdline: {
           mark: "[CMD]",
+          minAutoCompleteLength: 1,
+          maxItems: 15,
         },
         cmdline_history: {
           mark: "[Hist]",
           maxItems: 2,
+          minAutoCompleteLength: 5,
         },
         around: {
           mark: "[A]",
