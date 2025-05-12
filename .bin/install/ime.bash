@@ -16,7 +16,7 @@ cd ..
 rm -rf yaskkserv2
 
 mkdir -p $HOME/.local/lib/yaskkserv2/
-sudo yaskkserv2_make_dictionary --dictionary-filename=$HOME/.local/lib/yaskkserv2/ /usr/share/skk/SKK-JISYO.L /usr/share/skk/SKK-JISYO.jinmei /usr/share/skk/SKK-JISYO.fullname /usr/share/skk/SKK-JISYO.geo /usr/share/skk/SKK-JISYO.propernoun /usr/share/skk/SKK-JISYO.station /usr/share/skk/SKK-JISYO.emoji.utf8
+sudo yaskkserv2_make_dictionary --dictionary-filename=/usr/local/share/dictionary.yaskkserv2 /usr/share/skk/SKK-JISYO.L /usr/share/skk/SKK-JISYO.jinmei /usr/share/skk/SKK-JISYO.fullname /usr/share/skk/SKK-JISYO.geo /usr/share/skk/SKK-JISYO.propernoun /usr/share/skk/SKK-JISYO.station
 
 mkdir -p $HOME/.local/share/fcitx5/skk
-echo "type=file,file=~/.local/share/fcitx5/skk/user.dict,mode=readwrite,complete=true\ntype=server,host=localhost,port=1178" >$HOME/.local/share/fcitx5/skk/dictionary_list
+echo "type=file,file=~/.local/share/fcitx5/skk/user.dict,mode=readwrite,complete=true\nfile=/usr/share/skk/SKK-JISYO.emoji.utf8,mode=readonly,type=file\ntype=server,host=localhost,port=1178" >$HOME/.local/share/fcitx5/skk/dictionary_list
