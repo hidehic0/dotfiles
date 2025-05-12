@@ -59,3 +59,11 @@ if ok then
 end
 
 vim.opt.cmdheight = 0
+
+-- insert modeでbackspaceが効かなくなる事があるので修正
+vim.api.nvim_create_autocmd({ "InsertEnter" }, {
+  pattern = { "*" },
+  callback = function()
+    vim.keymap.set("i", "<BS>", "<BS>", { noremap = true })
+  end,
+})
