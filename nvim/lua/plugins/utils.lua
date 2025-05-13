@@ -11,14 +11,25 @@ return {
     version = "*",
     opts = {},
   },
+  -- {
+  --   "Shougo/ddt.vim",
+  --   event = "VeryLazy",
+  --   dependencies = {
+  --     "Shougo/ddt-ui-terminal",
+  --   },
+  --   config = function()
+  --     require("plugins.config.ddt")
+  --   end,
+  -- },
   {
-    "Shougo/ddt.vim",
-    event = "VeryLazy",
+    "Shougo/deol.nvim",
     dependencies = {
-      "Shougo/ddt-ui-terminal",
+
+      "tani/vim-artemis",
     },
+    event = "VeryLazy",
     config = function()
-      require("plugins.config.ddt")
+      require("plugins.config.deol")
     end,
   },
   {
