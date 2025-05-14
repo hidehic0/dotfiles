@@ -1,33 +1,35 @@
-# github cli
-if [ ! -e $HOME/.local/lib/zsh/gh_comp.zsh ]; then
-  gh completion -s zsh >~/.local/lib/zsh/gh_comp.zsh
+# Ensure the zsh site-functions directory exists
+ZSH_COMPLETIONS_DIR="$HOME/.local/share/zsh/site-functions"
+if [ ! -d "$ZSH_COMPLETIONS_DIR" ]; then
+  mkdir -p "$ZSH_COMPLETIONS_DIR"
 fi
 
-zsh-defer source "$HOME/.local/lib/zsh/gh_comp.zsh"
-
-# jj vcs
-if [ ! -e $HOME/.local/lib/zsh/jj_comp.zsh ]; then
-  jj util completion zsh >~/.local/lib/zsh/jj_comp.zsh
+# GitHub CLI (gh)
+if [ ! -e "$ZSH_COMPLETIONS_DIR/_gh" ]; then
+  gh completion -s zsh >"$ZSH_COMPLETIONS_DIR/_gh"
 fi
 
-zsh-defer source "$HOME/.local/lib/zsh/jj_comp.zsh"
+# jj VCS (uncomment to enable)
+# if [ ! -e "$ZSH_COMPLETIONS_DIR/_jj" ]; then
+#   jj util completion zsh >"$ZSH_COMPLETIONS_DIR/_jj"
+# fi
 
 # aqua
-if [ ! -e $HOME/.local/lib/zsh/aqua_comp.zsh ]; then
-  aqua completion zsh >~/.local/lib/zsh/aqua_comp.zsh
+if [ ! -e "$ZSH_COMPLETIONS_DIR/_aqua" ]; then
+  aqua completion zsh >"$ZSH_COMPLETIONS_DIR/_aqua"
 fi
-zsh-defer source "$HOME/.local/lib/zsh/aqua_comp.zsh"
 
 # sheldon
-if [ ! -e $HOME/.local/lib/zsh/sheldon_comp.zsh ]; then
-  sheldon completions --shell zsh >~/.local/lib/zsh/sheldon_comp.zsh
+if [ ! -e "$ZSH_COMPLETIONS_DIR/_sheldon" ]; then
+  sheldon completions --shell zsh >"$ZSH_COMPLETIONS_DIR/_sheldon"
 fi
-
-zsh-defer source "$HOME/.local/lib/zsh/sheldon_comp.zsh"
 
 # uv
-if [ ! -e $HOME/.local/lib/zsh/uv_comp.zsh ]; then
-  uv generate-shell-completion zsh >~/.local/lib/zsh/uv_comp.zsh
+if [ ! -e "$ZSH_COMPLETIONS_DIR/_uv" ]; then
+  uv generate-shell-completion zsh >"$ZSH_COMPLETIONS_DIR/_uv"
 fi
 
-zsh-defer source "$HOME/.local/lib/zsh/uv_comp.zsh"
+# mise
+if [ ! -e "$ZSH_COMPLETIONS_DIR/_mise" ]; then
+  mise completion zsh >"$ZSH_COMPLETIONS_DIR/_mise"
+fi

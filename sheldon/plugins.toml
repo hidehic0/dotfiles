@@ -66,6 +66,10 @@ use = ["p10k.zsh", "hist.zsh"]
 local = "~/"
 use = ["tokens.zsh"] # github_tokenなどを置く
 
+[plugins.fpath]
+local = "~/.local/share/zsh/site-functions"
+apply = ["fpath"]
+
 # [plugins._nix]
 # github = "nix-community/nix-zsh-completions"
 # use = ["_*"]
