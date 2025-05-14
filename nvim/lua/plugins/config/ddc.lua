@@ -12,23 +12,50 @@ fn.pum.set_option({
   direction = "below",
 })
 
-vim.cmd([[
-inoremap <silent><expr> <TAB>
-\ pum#visible() ? '<Cmd>call pum#map#insert_relative(+1)<CR>' :
-\ (col('.') <= 1 <Bar><Bar> getline('.')[col('.') - 2] =~# '\s') ?
-\ '<TAB>' : ddc#map#manual_complete()
-inoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
-inoremap <C-n>   <Cmd>call pum#map#select_relative(+1)<CR>
-inoremap <C-p>   <Cmd>call pum#map#select_relative(-1)<CR>
-inoremap <C-e>   <Cmd>call pum#map#cancel()<CR>
-inoremap <C-y>   <Cmd>call pum#map#confirm()<CR>
-nnoremap :       <Cmd>call CommandlinePre()<CR>:
+local pum_next = function()
+  fn.pum.map.insert_relative(1, "loop")
+end
 
+local pum_back = function()
+  fn.pum.map.insert_relative(-1, "loop")
+end
+
+local pum_confirm = function()
+  fn.pum.map.confirm()
+end
+
+local pum_cansel = function()
+  fn.pum.map.cansel()
+end
+
+vim.keymap.set("i", "<Tab>", function()
+  if fn.pum.visible() then
+    pum_next()
+  else
+    vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n")
+  end
+end)
+
+vim.keymap.set("i", "<S-Tab>", function()
+  if fn.pum.visible() then
+    pum_back()
+  else
+    vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-d>", true, true, true), "n")
+  end
+end)
+
+vim.keymap.set("i", "<C-n>", pum_next)
+vim.keymap.set("i", "<C-p>", pum_back)
+vim.keymap.set("i", "<C-y>", pum_confirm)
+vim.keymap.set("i", "<C-e>", pum_cansel)
+
+vim.cmd([[
+nnoremap :       <Cmd>call CommandlinePre()<CR>:
 function! CommandlinePre() abort
-cnoremap <Tab>   <Cmd>call pum#map#insert_relative(+1)<CR>
-cnoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1)<CR>
-cnoremap <C-n>   <Cmd>call pum#map#select_relative(+1)<CR>
-cnoremap <C-p>   <Cmd>call pum#map#select_relative(-1)<CR>
+cnoremap <Tab>   <Cmd>call pum#map#insert_relative(+1, "loop")<CR>
+cnoremap <S-Tab> <Cmd>call pum#map#insert_relative(-1, "loop")<CR>
+cnoremap <C-n>   <Cmd>call pum#map#select_relative(+1, "loop")<CR>
+cnoremap <C-p>   <Cmd>call pum#map#select_relative(-1, "loop")<CR>
 cnoremap <C-e>   <Cmd>call pum#map#cancel()<CR>
 cnoremap <C-y>   <Cmd>call pum#map#confirm()<CR>
 autocmd User DDCCmdlineLeave ++once call CommandlinePost()
