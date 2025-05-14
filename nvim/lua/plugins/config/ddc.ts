@@ -41,7 +41,7 @@ export class Config extends BaseConfig {
       },
       sourceOptions: {
         _: {
-          sorters: ["sorter_fuzzy"],
+          // sorters: ["sorter_fuzzy"],
           matchers: ["matcher_fuzzy"],
           converters: default_converters,
           enabledIf: "!skkeleton#is_enabled()",
@@ -99,6 +99,7 @@ export class Config extends BaseConfig {
           mark: "[snip]",
         },
       },
+      postFilters: ["postfilter_score"],
       sourceParams: {
         lsp: {
           snippetEngine: async (body: string) => {
@@ -110,6 +111,10 @@ export class Config extends BaseConfig {
         shell_native: { shell: "zsh" },
       },
       filterParams: {
+        postfilter_score: {
+          excludeSources: ["skkeleton"],
+          showScore: true,
+        },
         converter_fuzzy: {
           hlGroup: "Title",
         },
