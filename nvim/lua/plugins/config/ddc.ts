@@ -97,6 +97,7 @@ export class Config extends BaseConfig {
         },
         vsnip: {
           mark: "[snip]",
+          minAutoCompleteLength: 1,
         },
       },
       postFilters: ["postfilter_score"],

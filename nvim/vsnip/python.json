@@ -1,7 +1,7 @@
 {
   "ListMap": {
     "body": [
-      "list(map($0, ))"
+      "list(map($1, $2))"
     ],
     "prefix": "listmap"
   },

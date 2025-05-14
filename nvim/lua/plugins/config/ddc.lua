@@ -25,12 +25,20 @@ local pum_confirm = function()
 end
 
 local pum_cansel = function()
-  fn.pum.map.cansel()
+  fn.pum.map.cancel()
 end
+
+-- vim.keymap.set("i", "<C-l>", function()
+--   if fn.vsnip.jumpable(1) == 1 then
+--     vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-next)", true, true, true), "n")
+--   end
+-- end)
 
 vim.keymap.set("i", "<Tab>", function()
   if fn.pum.visible() then
     pum_next()
+  elseif fn.vsnip.jumpable(1) == 1 then
+    vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-next)", true, true, true), "i")
   else
     vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n")
   end
@@ -39,6 +47,8 @@ end)
 vim.keymap.set("i", "<S-Tab>", function()
   if fn.pum.visible() then
     pum_back()
+  elseif fn.vsnip.jumpable(-1) == 1 then
+    vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-prev)", true, true, true), "i")
   else
     vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-d>", true, true, true), "n")
   end
