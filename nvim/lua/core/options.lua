@@ -2,6 +2,7 @@ vim.opt.swapfile = false
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.signcolumn = "yes"
+vim.cmd("syntax off") -- レガシーハイライト無効
 vim.cmd([[set guifont="FiraCode Nerd Font"]])
 vim.cmd([[set shadafile="NONE"]])
 vim.opt.termguicolors = true

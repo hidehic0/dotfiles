@@ -141,7 +141,7 @@ return {
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
     },
-    event = "VeryLazy",
+    event = "VimEnter",
     config = function()
       vim.defer_fn(function()
         if vim.fn.expand("%:p") ~= "" then
@@ -218,6 +218,18 @@ return {
           }),
         },
       })
+    end,
+  },
+  {
+    "m-demare/hlargs.nvim",
+    event = "LspAttach",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      vim.defer_fn(function()
+        require("hlargs").setup()
+      end, 1000)
     end,
   },
 }
