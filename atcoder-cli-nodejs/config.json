@@ -1,8 +1,9 @@
 {
-	"default-contest-dirname-format": "{ContestID}",
-	"default-task-choice": "all",
-	"default-task-dirname-format": "{tasklabel}",
-	"default-template": "main",
-	"default-test-dirname-format": "tests",
-	"oj-path": "/home/hidehic0/.local/share/mise/installs/python/pypy3.10-7.3.17/bin/oj"
+  "default-contest-dirname-format": "{ContestID}",
+  "default-task-choice": "all",
+  "default-task-dirname-format": "{tasklabel}",
+  "default-template": "main",
+  "default-test-dirname-format": "tests",
+  "oj-path": "/home/hidehic0/src/github.com/hidehic0/atcoder/.venv/bin/oj"
 }
+
