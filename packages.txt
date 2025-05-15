@@ -31,3 +31,4 @@ nvtop
 hypridle
 hyprpaper
 archlinux-wallpaper
+cliphist
