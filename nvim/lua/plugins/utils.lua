@@ -264,7 +264,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       workspaces = {
-        { name = "main", path = "~/Docments/obsidian_storage/main" },
+        { name = "main", path = "~/src/github.com/hidehic0/obsidain_vault" },
       },
       daily_notes = {
         folder = "dailies",
