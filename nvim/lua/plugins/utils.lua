@@ -272,4 +272,5 @@ return {
     },
   },
   { "wakatime/vim-wakatime", event = "VeryLazy" },
+  { "vyfor/cord.nvim", build = ":Cord update", event = "VeryLazy", opts = {} },
 }
