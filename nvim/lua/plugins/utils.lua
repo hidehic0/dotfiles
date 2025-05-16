@@ -259,8 +259,11 @@ return {
   },
   {
     "obsidian-nvim/obsidian.nvim",
-    event = "VeryLazy",
     ft = "markdown",
+    cmd = {
+      "Obsidian",
+      "ObsidianOpen",
+    },
     dependencies = { "nvim-lua/plenary.nvim" },
     opts = {
       workspaces = {
