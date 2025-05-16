@@ -9,7 +9,7 @@ uv = "0.7.3"
 
 # node製tools
 "npm:atcoder-cli" = "2.2.0"
-"npm:markdownlint-cli2" = "0.18.0"
+"npm:markdownlint-cli2" = "0.18.1"
 "npm:pyright" = "1.1.400"
 "npm:typescript-language-server" = "4.3.4"
 "npm:@devcontainers/cli" = "0.76.0"
