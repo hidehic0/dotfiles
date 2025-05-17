@@ -8,7 +8,7 @@ export class Config extends BaseConfig {
     const default_sources = [
       // "copilot",
       "lsp",
-      "vsnip",
+      "denippet",
       "file",
       "rg",
       // "mocword",
@@ -95,7 +95,7 @@ export class Config extends BaseConfig {
         copilot: {
           mark: "",
         },
-        vsnip: {
+        denippet: {
           mark: "[snip]",
           minAutoCompleteLength: 1,
         },
@@ -104,7 +104,7 @@ export class Config extends BaseConfig {
       sourceParams: {
         lsp: {
           snippetEngine: async (body: string) => {
-            await args.denops.call("vsnip#anonymous", body);
+            await args.denops.call("denippet#anonymous", body);
           },
           enableResolveItem: true,
           enableAdditionalTextEdit: true,
@@ -114,7 +114,7 @@ export class Config extends BaseConfig {
       filterParams: {
         postfilter_score: {
           excludeSources: ["skkeleton"],
-          showScore: true,
+          showScore: false,
         },
         converter_fuzzy: {
           hlGroup: "Title",

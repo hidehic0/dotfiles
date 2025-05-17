@@ -28,6 +28,7 @@ return {
       "vim-denops/denops.vim",
     },
     event = "VeryLazy",
+    priority = 0,
     config = function()
       vim.fn["popup_preview#enable"]()
     end,
@@ -38,6 +39,7 @@ return {
       "vim-denops/denops.vim",
     },
     event = "VeryLazy",
+    priority = 0,
     config = function()
       vim.g.signature_help_config = {
         contentsStyle = "full",
@@ -75,7 +77,7 @@ return {
       "matsui54/ddc-postfilter_score",
       "Shougo/ddc-filter-matcher_prefix",
       -- snip
-      "hrsh7th/vim-vsnip",
+      "uga-rosa/denippet.vim",
 
       -- helper
       "tani/vim-artemis",
@@ -90,6 +92,15 @@ return {
     },
     config = function()
       require("plugins/config/ddc")
+    end,
+  },
+  {
+    "uga-rosa/denippet.vim",
+    dependencies = { "vim-denops/denops.vim", "tani/vim-artemis" },
+    event = "VeryLazy",
+    priority = 0,
+    config = function()
+      require("plugins.config.denippet")
     end,
   },
   {

@@ -3,9 +3,6 @@ local patch_global = fn.ddc.custom.patch_global
 
 vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua", "plugins", "config", "ddc.ts"))
 
--- vsnip
-vim.g.vsnip_snippet_dir = "~/.config/nvim/vsnip"
-
 -- pum config
 fn.pum.set_option({
   max_width = 40,
@@ -28,17 +25,11 @@ local pum_cansel = function()
   fn.pum.map.cancel()
 end
 
--- vim.keymap.set("i", "<C-l>", function()
---   if fn.vsnip.jumpable(1) == 1 then
---     vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-next)", true, true, true), "n")
---   end
--- end)
-
 vim.keymap.set("i", "<Tab>", function()
   if fn.pum.visible() then
     pum_next()
-  elseif fn.vsnip.jumpable(1) == 1 then
-    vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-next)", true, true, true), "i")
+  elseif fn.denippet.jumpable(1) then
+    fn.denippet.jump(1)
   else
     vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Tab>", true, true, true), "n")
   end
@@ -47,8 +38,8 @@ end)
 vim.keymap.set("i", "<S-Tab>", function()
   if fn.pum.visible() then
     pum_back()
-  elseif fn.vsnip.jumpable(-1) == 1 then
-    vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>(vsnip-jump-prev)", true, true, true), "i")
+  elseif fn.denippet.jumpable(-1) then
+    fn.denippet.jump(-1)
   else
     vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-d>", true, true, true), "n")
   end
