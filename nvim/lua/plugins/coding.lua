@@ -96,7 +96,7 @@ return {
   },
   {
     "uga-rosa/denippet.vim",
-    dependencies = { "vim-denops/denops.vim", "tani/vim-artemis" },
+    dependencies = { "vim-denops/denops.vim", "tani/vim-artemis", "rafamadriz/friendly-snippets" },
     event = "VeryLazy",
     priority = 0,
     config = function()

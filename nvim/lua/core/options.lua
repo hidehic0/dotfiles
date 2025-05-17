@@ -49,11 +49,11 @@ vim.g.hardtime_enabled = true
 local ok, extui = pcall(require, "vim._extui")
 if ok then
   extui.enable({
-    enable = true, -- extuiを有効化
+    enable = true,
     msg = {
-      pos = "cmd", -- 'box'か'cmd'だがcmdheight=0だとどっちでも良い？（記事後述）
+      pos = "cmd",
       box = {
-        timeout = 5000, -- boxメッセージの表示時間 ミリ秒
+        timeout = 5000,
       },
     },
   })

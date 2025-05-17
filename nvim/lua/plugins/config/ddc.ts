@@ -52,7 +52,7 @@ export class Config extends BaseConfig {
           matchers: ["matcher_fuzzy", "matcher_prefix"],
           converters: ["converter_kind_labels"].concat(default_converters),
           forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
-          dup: "force",
+          dup: "keep",
           minAutoCompleteLength: 1,
         },
         cmdline: {
@@ -97,6 +97,7 @@ export class Config extends BaseConfig {
         },
         denippet: {
           mark: "[snip]",
+          dup: "keep",
           minAutoCompleteLength: 1,
         },
       },
