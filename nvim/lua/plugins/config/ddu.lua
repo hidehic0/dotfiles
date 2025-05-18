@@ -30,25 +30,25 @@ customAction("ui", "ff", "close-ui-ff", function()
   doAction("quit")
 end)
 
+-- vim.fn["ddu#ui#do_action#togglePreview"]()
+local opts = { noremap = true, silent = true, buffer = true }
+
+local function map_action(key, name, args)
+  vim.keymap.set("n", key, function()
+    doAction(name, args)
+  end, opts)
+end
+
+--- @param key string
+--- @param name string
+local function map_item_action(key, name)
+  map_action(key, "itemAction", { name = name, quit = true })
+end
+
 -- autocmds
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "ddu-ff",
   callback = function()
-    -- vim.fn["ddu#ui#do_action#togglePreview"]()
-    local opts = { noremap = true, silent = true, buffer = true }
-
-    local function map_action(key, name, args)
-      vim.keymap.set("n", key, function()
-        doAction(name, args)
-      end, opts)
-    end
-
-    --- @param key string
-    --- @param name string
-    local function map_item_action(key, name)
-      map_action(key, "itemAction", { name = name, quit = true })
-    end
-
     vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("close-ui-ff")<CR>]], opts)
     -- vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
     vim.keymap.set("n", "<CR>", function()
@@ -59,7 +59,8 @@ vim.api.nvim_create_autocmd("FileType", {
         fn.ddu.ui.do_action("itemAction")
       end
     end, opts)
-    vim.keymap.set("n", "i", [[<Cmd>call ddu#ui#do_action("openFilterWindow")<CR>]], opts)
+    map_action("i", "openFilterWindow")
+    map_action("/", "openFilterWindow")
     vim.keymap.set(
       "n",
       "a",
@@ -68,8 +69,30 @@ vim.api.nvim_create_autocmd("FileType", {
     )
     map_action("j", "cursorNext", { loop = true })
     map_action("k", "cursorPrevious", { loop = true })
-
     map_item_action("d", "delete")
+    map_item_action("o", "newFile")
+    map_item_action("O", "newDirectory")
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "ddu-filer",
+  callback = function()
+    map_action("i", "openFilterWindow")
+    map_action("/", "openFilterWindow")
+    map_action("j", "cursorNext", { loop = true })
+    map_action("k", "cursorPrevious", { loop = true })
+    map_action("q", "quit")
+    vim.keymap.set("n", "<CR>", function()
+      if fn.ddu.ui.get_item().isTree then
+        doAction("expandItem", { isInTree = true })
+      else
+        doAction("itemAction", { name = "open" })
+      end
+    end)
+    map_action("a", "chooseAction")
+    map_item_action("d", "delete")
+    map_item_action("r", "rename")
     map_item_action("o", "newFile")
     map_item_action("O", "newDirectory")
   end,

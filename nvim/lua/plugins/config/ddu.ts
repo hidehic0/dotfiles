@@ -3,6 +3,7 @@ import {
   type ConfigArguments,
 } from "jsr:@shougo/ddu-vim@~10.3.0/config";
 import { type Params as FfParams } from "jsr:@shougo/ddu-ui-ff@~2.0.0";
+import { type Params as FilerParams } from "jsr:@shougo/ddu-ui-filer@~2.0.0";
 
 export class Config extends BaseConfig {
   override config(args: ConfigArguments): Promise<void> {
@@ -116,25 +117,26 @@ export class Config extends BaseConfig {
 
     // ファイラ
     args.contextBuilder.patchLocal("filer", {
-      sources: [
-        {
-          name: "file",
-        },
-      ],
+      ui: "filer",
+      sources: ["file"],
       sourceOptions: {
         file: {
+          sorters: ["sorter_alpha"],
           converters: [
-            // "converter_devicon",
+            "converter_devicon",
             "converter_hl_dir",
           ],
-          columns: ["devicon_filename"],
+          columns: ["filename"],
         },
       },
       uiParams: {
-        ff: {
-          floatingTitle: "File Rec :)",
-        },
+        filer: {
+          split: "vertical",
+          winWidth: "&columns / 5 * 2",
+          sortTreesFirst: true,
+        } satisfies Partial<FilerParams>,
       },
+      actionParams: {},
     });
 
     // 通常のファイル検索

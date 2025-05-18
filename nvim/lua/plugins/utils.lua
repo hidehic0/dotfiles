@@ -54,7 +54,7 @@ return {
       "vim-denops/denops.vim",
       -- ui
       "Shougo/ddu-ui-ff",
-      -- "Shougo/ddu-ui-filer",
+      "Shougo/ddu-ui-filer",
       -- sources
       "4513ECHO/ddu-source-emoji",
       "Shougo/ddu-source-action",
@@ -85,7 +85,7 @@ return {
       "Shougo/ddu-column-filename",
       "tamago3keran/ddu-column-devicon_filename",
       -- sorters
-      -- "Shougo/ddu-filter-sorter_alpha",
+      "Shougo/ddu-filter-sorter_alpha",
       -- helper
       "tani/vim-artemis",
       -- utils
