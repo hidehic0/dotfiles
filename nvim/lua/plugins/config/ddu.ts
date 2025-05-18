@@ -211,32 +211,32 @@ export class Config extends BaseConfig {
     // });
 
     // レジスタ検索
-    args.contextBuilder.patchLocal("register", {
-      sources: [
-        {
-          name: "register",
-        },
-      ],
-      uiParams: {
-        ff: {
-          floatingTitle: "Register Search :)",
-        },
-      },
-    });
+    // args.contextBuilder.patchLocal("register", {
+    //   sources: [
+    //     {
+    //       name: "register",
+    //     },
+    //   ],
+    //   uiParams: {
+    //     ff: {
+    //       floatingTitle: "Register Search :)",
+    //     },
+    //   },
+    // });
 
     // lazy.nvim
-    args.contextBuilder.patchLocal("lazy_nvim", {
-      sources: [
-        {
-          name: "lazy_nvim",
-        },
-      ],
-      kindOptions: {
-        file: {
-          defaultAction: "cd",
-        },
-      },
-    });
+    // args.contextBuilder.patchLocal("lazy_nvim", {
+    //   sources: [
+    //     {
+    //       name: "lazy_nvim",
+    //     },
+    //   ],
+    //   kindOptions: {
+    //     file: {
+    //       defaultAction: "cd",
+    //     },
+    //   },
+    // });
 
     // ブランチ移動
     args.contextBuilder.patchLocal("git_branch", {
