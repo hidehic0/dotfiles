@@ -20,3 +20,13 @@ packages:
         src: extension/lldb/bin/lldb
     supported_envs:
       - linux # Linux のみに制限
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: primesplit
+    asset: primesplit_{{.OS}}_x86_64.{{.Format}}
+    format: tar.gz
+    files:
+      - name: primesplit
+        src: primesplit
+    supported_envs:
+      - linux

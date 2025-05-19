@@ -306,6 +306,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/primesplit/v0.1/primesplit_linux_x86_64.tar.gz",
+      "checksum": "0782DE6C187A6A2034284E8736FBC2CD683F02477BC1B06A855D6CB5AFF2352F",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/high-moctane/mocword/v0.2.0/mocword-aarch64-apple-darwin",
       "checksum": "DF923C927384782C8EBC2DF99E47E0EEBEB46687BBC65FDA6DD7A5A93C5053AF",
       "algorithm": "sha256"
