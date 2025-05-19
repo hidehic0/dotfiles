@@ -276,31 +276,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.3/hugo_0.147.3_darwin-universal.tar.gz",
-      "checksum": "E2801E5FA8FE2406FB63B2DBF554EF51F79635E1BF6E13FCD1259967554ECEDB",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.3/hugo_0.147.3_linux-amd64.tar.gz",
-      "checksum": "294D995BD3BDCBB88D851FEE61213322A53AA474125C0A6B09262E9C648CC83D",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.3/hugo_0.147.3_linux-arm64.tar.gz",
-      "checksum": "314ECC637D544834D70F0D2A1432E3AA660FEEE7D40CD4CA1D23D27D9A63DD36",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.3/hugo_0.147.3_windows-amd64.zip",
-      "checksum": "0B40A86E9921A204F7E52A92FBDA5DB08A7FBC2521C3F1C598A54CAF73E9D8C1",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/gohugoio/hugo/v0.147.3/hugo_0.147.3_windows-arm64.zip",
-      "checksum": "3F91E798874D716B389E347B17A4759CF5B2992E73AA5CD85F802DFCA3BE2C28",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/google/yamlfmt/v0.16.0/yamlfmt_0.16.0_Darwin_arm64.tar.gz",
       "checksum": "FCFFB2EFDFDD27FB5BB658A8156972FDA14F0864F336C181705B98EEE5F6C139",
       "algorithm": "sha256"
@@ -808,6 +783,11 @@
     {
       "id": "github_release/github.com/tree-sitter/tree-sitter/v0.25.4/tree-sitter-windows-x64.gz",
       "checksum": "A18D451D6E487B4B6F43453988772E693A80C6A770FC690360C6FA22DFB01785",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/vadimcn/codelldb/v1.11.4/codelldb-linux-x64.vsix",
+      "checksum": "98F7965F3DB4E6796F5A60B00D6DBF270706F4CF2F327B16776FDB6079E7A32F",
       "algorithm": "sha256"
     },
     {

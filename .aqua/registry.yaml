@@ -10,3 +10,13 @@ packages:
         src: nimlangserver
     supported_envs:
       - linux # Linux のみに制限
+  - type: github_release
+    repo_owner: vadimcn
+    repo_name: codelldb
+    asset: codelldb-linux-x64
+    format: vsix
+    files:
+      - name: lldb
+        src: extension/lldb/bin/lldb
+    supported_envs:
+      - linux # Linux のみに制限
