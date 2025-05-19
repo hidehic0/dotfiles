@@ -52,5 +52,5 @@ packages:
     registry: local
   - name: vadimcn/codelldb@v1.11.4
     registry: local
-  - name: hidehic0/primesplit@v0.1
+  - name: hidehic0/primesplit@v0.1.1
     registry: local

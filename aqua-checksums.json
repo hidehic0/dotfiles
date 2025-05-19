@@ -306,8 +306,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/primesplit/v0.1/primesplit_linux_x86_64.tar.gz",
-      "checksum": "0782DE6C187A6A2034284E8736FBC2CD683F02477BC1B06A855D6CB5AFF2352F",
+      "id": "github_release/github.com/hidehic0/primesplit/v0.1.1/primesplit_linux_x86_64.tar.gz",
+      "checksum": "85A6E9EAC65A673BF0C9BDB4EC6AFC79ED48F9A7B0A83A823995410D42961C4F",
       "algorithm": "sha256"
     },
     {
