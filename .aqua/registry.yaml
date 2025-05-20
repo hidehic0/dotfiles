@@ -23,10 +23,12 @@ packages:
   - type: github_release
     repo_owner: hidehic0
     repo_name: primesplit
-    asset: primesplit_{{.OS}}_x86_64.{{.Format}}
+    asset: primesplit_{{.OS}}_{{.Arch}}.{{.Format}}
     format: tar.gz
     files:
       - name: primesplit
         src: primesplit
     supported_envs:
       - linux
+    replacements:
+      amd64: x86_64
