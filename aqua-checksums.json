@@ -586,21 +586,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/psf/black/25.1.0/black_linux",
-      "checksum": "8D293A7FDBDE23ECD06042AB0F0AC14E8BE770F31F9BB4BCAD434B607040CC3B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/psf/black/25.1.0/black_macos",
-      "checksum": "04E170A13804A2AB7F87F9B65C856A2AFCE03DC3E97F9E4959BA700064E0DE38",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/psf/black/25.1.0/black_windows.exe",
-      "checksum": "C1A61EAD32306DEC1B7047A2A4E28059FDADCB9696705BC7505E109142282AFA",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/rhysd/actionlint/v1.7.7/actionlint_1.7.7_darwin_amd64.tar.gz",
       "checksum": "28E5DE5A05FC558474F638323D736D822FFF183D2D492F0AECB2B73CC44584F5",
       "algorithm": "sha256"
