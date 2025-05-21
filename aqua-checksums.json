@@ -586,21 +586,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/psf/black/25.1.0/black_linux",
-      "checksum": "8D293A7FDBDE23ECD06042AB0F0AC14E8BE770F31F9BB4BCAD434B607040CC3B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/psf/black/25.1.0/black_macos",
-      "checksum": "04E170A13804A2AB7F87F9B65C856A2AFCE03DC3E97F9E4959BA700064E0DE38",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/psf/black/25.1.0/black_windows.exe",
-      "checksum": "C1A61EAD32306DEC1B7047A2A4E28059FDADCB9696705BC7505E109142282AFA",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/rhysd/actionlint/v1.7.7/actionlint_1.7.7_darwin_amd64.tar.gz",
       "checksum": "28E5DE5A05FC558474F638323D736D822FFF183D2D492F0AECB2B73CC44584F5",
       "algorithm": "sha256"
@@ -831,8 +816,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.368.0/registry.yaml",
-      "checksum": "2734E65A5B18CF175970AE4873E920CFEE55EBBAD20C387AB20C20A42D8B4DDD0A576FC04F2FFF4F8DDB14B2F57EBF44618A8258ED45ACE104BA0F099341D04C",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.369.0/registry.yaml",
+      "checksum": "4409C8F01958128E65295CAB3F99F6477CF254D9F60E893B86197448FF52A87AB3FD9B5DFB82CB8155453B19A252CF771AAB77318D7506DA98A36327833DDF3A",
       "algorithm": "sha512"
     }
   ]
