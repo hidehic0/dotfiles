@@ -89,3 +89,7 @@ emacs/transient
 emacs/tutorial
 emacs/auto-save-list
 vlc
+fish/completions
+fish/fish_variables
+fish/functions
+fish/completions

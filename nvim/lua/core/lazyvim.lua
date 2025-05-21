@@ -15,10 +15,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local gh_token = os.getenv("GITHUB_TOKEN")
-local format = "https://" .. gh_token .. "@github.com/%s.git"
+local format = ""
 
 if gh_token == nil then
   format = "https://github.com/%s.git"
+else
+  format = "https://" .. gh_token .. "@github.com/%s.git"
 end
 
 local opts = {
