@@ -1,6 +1,5 @@
 vim.fn["skkeleton#initialize"]()
-vim.keymap.set("i", "<C-j>", "<Plug>(skkeleton-enable)")
-vim.keymap.set("c", "<C-j>", "<Plug>(skkeleton-enable)")
+vim.keymap.set({ "i", "c" }, "<C-j>", "<Plug>(skkeleton-enable)")
 
 vim.fn["skkeleton#config"]({
   globalDictionaries = {

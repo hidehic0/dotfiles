@@ -59,14 +59,14 @@ vim.api.nvim_create_autocmd("FileType", {
         fn.ddu.ui.do_action("itemAction")
       end
     end, opts)
-    map_action("i", "openFilterWindow")
-    map_action("/", "openFilterWindow")
     vim.keymap.set(
       "n",
       "a",
       [[<Cmd>call ddu#ui#do_action("chooseAction")<CR><Cmd>call ddu#ui#do_action("openFilterWindow")<CR>]],
       opts
     )
+    map_action("i", "openFilterWindow")
+    map_action("/", "openFilterWindow")
     map_action("j", "cursorNext", { loop = true })
     map_action("k", "cursorPrevious", { loop = true })
     map_item_action("d", "delete")
@@ -78,11 +78,6 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "ddu-filer",
   callback = function()
-    map_action("i", "openFilterWindow")
-    map_action("/", "openFilterWindow")
-    map_action("j", "cursorNext", { loop = true })
-    map_action("k", "cursorPrevious", { loop = true })
-    map_action("q", "quit")
     vim.keymap.set("n", "<CR>", function()
       if fn.ddu.ui.get_item().isTree then
         doAction("expandItem", { isInTree = true })
@@ -90,6 +85,11 @@ vim.api.nvim_create_autocmd("FileType", {
         doAction("itemAction", { name = "open" })
       end
     end)
+    map_action("i", "openFilterWindow")
+    map_action("/", "openFilterWindow")
+    map_action("j", "cursorNext", { loop = true })
+    map_action("k", "cursorPrevious", { loop = true })
+    map_action("q", "quit")
     map_action("a", "chooseAction")
     map_item_action("d", "delete")
     map_item_action("r", "rename")
