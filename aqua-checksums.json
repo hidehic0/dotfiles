@@ -391,28 +391,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.50.0/lazygit_0.50.0_Darwin_arm64.tar.gz",
-      "checksum": "A36C2432AB43CA0E65852BB1C620C58E7B4775A30711624C5B23FCA89763406E",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.51.0/lazygit_0.51.0_Darwin_arm64.tar.gz",
+      "checksum": "57FE0F03BADDF06A2D6496F48F7E8E3951F9BC5CA4681E1B8576F965618FE16F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.50.0/lazygit_0.50.0_Darwin_x86_64.tar.gz",
-      "checksum": "9D69495DA033BD03E18F231132FC73C6E2F8BE765C62BD3F5329C8EFDD58B8DB",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.51.0/lazygit_0.51.0_Darwin_x86_64.tar.gz",
+      "checksum": "B56B5F18B003230D5CB23620AD29585D9147B4DB16952E82981E6576244FACE3",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.50.0/lazygit_0.50.0_Linux_arm64.tar.gz",
-      "checksum": "3F5728D99263AE2055CE7F767D60E75FEF4FAF14B5A5511281108D91B1DFF624",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.51.0/lazygit_0.51.0_Linux_arm64.tar.gz",
+      "checksum": "93CA7AB45818DFC8879167848E629A9714718D6CCEA7643DA837EB6765E512D1",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.50.0/lazygit_0.50.0_Linux_x86_64.tar.gz",
-      "checksum": "BB2BC0AC8B1E2678C650C5AA8A6FA1595E46F8825CE7E6A3833CA95768179881",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.51.0/lazygit_0.51.0_Linux_x86_64.tar.gz",
+      "checksum": "34D5C8B6724C797CEDE489FF0EC2F7608E108BD388657205D3005FF2B5251FCE",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.50.0/lazygit_0.50.0_Windows_x86_64.zip",
-      "checksum": "FB0856002B900764B780C195EFA5358C08E58345610C5C640D145F73CE2049B8",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.51.0/lazygit_0.51.0_Windows_x86_64.zip",
+      "checksum": "0C1D57D42F07F11AB5284975A574A03E3B849389E4D43C5B495BAF4A8ACC4FD2",
       "algorithm": "sha256"
     },
     {
@@ -814,11 +814,6 @@
       "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_windows_arm64.zip",
       "checksum": "03E329E679B10A1B1A2C28A9BCB6D90AE9A39E273C0E8923071ABF8F72DB1C85",
       "algorithm": "sha256"
-    },
-    {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.369.0/registry.yaml",
-      "checksum": "4409C8F01958128E65295CAB3F99F6477CF254D9F60E893B86197448FF52A87AB3FD9B5DFB82CB8155453B19A252CF771AAB77318D7506DA98A36327833DDF3A",
-      "algorithm": "sha512"
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.370.0/registry.yaml",
