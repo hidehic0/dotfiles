@@ -134,6 +134,10 @@ return {
         timeout = 1500,
       })
       vim.notify = require("notify")
+
+      vim.api.nvim_create_user_command("NotifyDismiss", function()
+        require("notify").dismiss()
+      end, {})
     end,
   },
   -- { "Sam-programs/cmdline-hl.nvim", event = "VeryLazy", opts = {
