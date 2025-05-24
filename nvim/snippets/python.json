@@ -7,9 +7,9 @@
   },
   "QueryLoop": {
     "body": [
-      "while Q:",
-      "    $0",
-      "    Q-=1"
+      "while ${2:Q}:",
+      "\t$1",
+      "\t${3:Q}-=1"
     ],
     "prefix": "queryloop"
   },
