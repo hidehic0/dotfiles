@@ -31,6 +31,20 @@ local opts = {
     cache = {
       enabled = true,
     },
+    rtp = {
+      reset = true,
+      disabled_plugins = {
+        "editorconfig",
+        "spellfile",
+        "gzip",
+        "matchit",
+        "matchparen",
+        "tarPlugin",
+        "tohtml",
+        "tutor",
+        "zipPlugin",
+      },
+    },
   },
   git = {
     url_format = format,
