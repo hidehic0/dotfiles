@@ -8,7 +8,6 @@ return {
   {
     "kylechui/nvim-surround",
     event = "VeryLazy",
-    version = "*",
     opts = {},
   },
   -- {
@@ -165,15 +164,11 @@ return {
   },
   {
     "lewis6991/gitsigns.nvim",
-    event = "VimEnter",
+    event = { "CursorHold", "CursorHoldI" },
     keys = {
       { "<leader>gb", "<CMD>Gitsigns blame<CR>", desc = "Show Git blame" },
     },
-    config = function()
-      vim.defer_fn(function()
-        require("gitsigns").setup()
-      end, 5000)
-    end,
+    opts = {},
   },
   {
     "xiyaowong/nvim-cursorword",

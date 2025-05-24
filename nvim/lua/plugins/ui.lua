@@ -3,7 +3,9 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     -- event = { "BufReadPost", "BufAdd", "BufNewFile" },
-    event = "VimEnter",
+    -- event = "VimEnter",
+    event = "VeryLazy",
+    priority = 1000,
     dependencies = {
       { "yavorski/lualine-macro-recording.nvim" },
       "pnx/lualine-lsp-status",
