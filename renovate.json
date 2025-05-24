@@ -6,9 +6,9 @@
       "customType": "regex",
       "datasourceTemplate": "npm",
       "depNameTemplate": "{{depName}}",
-      "fileMatch": [
-        "\\.mise\\.toml$",
-        "mise/config\\.toml$"
+      "managerFilePatterns": [
+        "/\\.mise\\.toml$/",
+        "/mise/config\\.toml$/"
       ],
       "matchStrings": [
         "\"npm:(?<depName>[^\"]+)\"\\s*=\\s*\"(?<currentValue>[^\"]+)\""
