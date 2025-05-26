@@ -731,31 +731,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-darwin-aarch64.gz",
-      "checksum": "713734314C3E71894B9E77513C5349835EEFBD52908445A0D73B0C7DC469347D",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-darwin-x86_64.gz",
-      "checksum": "898122CDE3A0B1CD1CBC2D52D3624F23338218C91B5DDB71518236A4C2C10EF2",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-linux-aarch64.gz",
-      "checksum": "033681D01EEC8376C3FD38FA3703C79316F5E14BB013D859943B60A07BCCDCC3",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-linux-x86_64.gz",
-      "checksum": "8FE196B894CCF9072F98D4E1013A180306E17D244830B03986EE5E8EABEB6156",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-windows-x86_64.zip",
-      "checksum": "1615EED140039BD58E7089109883B1C434DE5D6DE8F64A993E6E8C80CA57BDF9",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/tombi-toml/tombi/v0.3.54/tombi-cli-0.3.54-aarch64-apple-darwin.gz",
       "checksum": "E2C1C2FC7F1C644EBCB7B9CA86CFB6190FEE458BC17AA2B0FFFA84DFC7039DE0",
       "algorithm": "sha256"
@@ -811,8 +786,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/vadimcn/codelldb/v1.11.4/codelldb-linux-x64.vsix",
-      "checksum": "98F7965F3DB4E6796F5A60B00D6DBF270706F4CF2F327B16776FDB6079E7A32F",
+      "id": "github_release/github.com/vadimcn/codelldb/v1.11.5/codelldb-linux-x64.vsix",
+      "checksum": "17213FAF80B47B80E5700A22FE06298F315AC48D4DD77DBBF25E65AF35C20978",
       "algorithm": "sha256"
     },
     {
