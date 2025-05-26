@@ -1,4 +1,5 @@
 require("nightfox").setup({
   options = {},
 })
-vim.cmd("colorscheme nightfox")
+
+vim.cmd("colorscheme terafox")

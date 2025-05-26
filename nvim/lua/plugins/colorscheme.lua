@@ -1,17 +1,18 @@
 return {
   {
     "EdenEast/nightfox.nvim",
-    event = { "BufReadPre", "BufWinEnter", "BufEnter" },
+    event = { "VimEnter" },
+    build = "NightfoxCompile",
     config = function()
       require("plugins.config.nightfox")
     end,
-    enabled = false,
+    enabled = true,
   },
-  {
-    "navarasu/onedark.nvim",
-    event = { "VimEnter" },
-    config = function()
-      require("plugins.config.onedark")
-    end,
-  },
+  -- {
+  --   "navarasu/onedark.nvim",
+  --   event = { "VimEnter" },
+  --   config = function()
+  --     require("plugins.config.onedark")
+  --   end,
+  -- },
 }
