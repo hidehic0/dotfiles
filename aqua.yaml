@@ -36,7 +36,7 @@ packages:
   - name: sharkdp/bat@v0.25.0
   - name: sharkdp/fd@v10.2.0
   - name: sharkdp/hyperfine@v1.19.0
-  - name: tamasfe/taplo@0.10.0
+  # - name: tamasfe/taplo@0.10.0
   - name: tree-sitter/tree-sitter@v0.25.4
   - name: x-motemen/ghq@v1.8.0
   - name: golang.org/x/tools/gopls@v0.18.1
@@ -54,3 +54,4 @@ packages:
     registry: local
   - name: hidehic0/primesplit@v0.1.1
     registry: local
+  - name: tombi-toml/tombi@v0.3.54
