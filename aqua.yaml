@@ -50,7 +50,7 @@ packages:
   - name: aquaproj/aqua-registry-updater@v0.1.5
   - name: nim-lang/langserver@v1.12.0
     registry: local
-  - name: vadimcn/codelldb@v1.11.4
+  - name: vadimcn/codelldb@v1.11.5
     registry: local
   - name: hidehic0/primesplit@v0.1.1
     registry: local
