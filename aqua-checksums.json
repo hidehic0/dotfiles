@@ -731,6 +731,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sxyazi/yazi/v25.4.8/yazi-aarch64-apple-darwin.zip",
+      "checksum": "192C6729020C000600BC3505DCB9A8402EA7C2D1EB8FF4CFD13027BD07A8D550",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v25.4.8/yazi-aarch64-unknown-linux-musl.zip",
+      "checksum": "296F64017F71F14C561D0EF5F1ADD0412547A88EC3D6E3FBDBC698C0A183549F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v25.4.8/yazi-x86_64-apple-darwin.zip",
+      "checksum": "8E34123B14EE0770339FF18E841654CBA696C1D246F47FA8A2619A8FD733DB76",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v25.4.8/yazi-x86_64-pc-windows-msvc.zip",
+      "checksum": "8454D4C9B8BA09A5F5A51F488E603230066E27CCE4DA54D3C1D91875A9748BA3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v25.4.8/yazi-x86_64-unknown-linux-musl.zip",
+      "checksum": "01128A2D9D79018721CC557976ADE57C28C61DAA47E9F7207F2CBD3D5553A734",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/tombi-toml/tombi/v0.3.55/tombi-cli-0.3.55-aarch64-apple-darwin.gz",
       "checksum": "7524B566FD3083CB7FC0975037B6A1AE793CACF6A251FEC8DA8EC27CAFDDBA21",
       "algorithm": "sha256"
