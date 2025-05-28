@@ -32,3 +32,13 @@ packages:
       - linux
     replacements:
       amd64: x86_64
+  - type: github_release
+    repo_owner: exaloop
+    repo_name: codon
+    asset: codon-{{.OS}}-x86_64.{{.Format}}
+    format: tar.gz
+    files:
+      - name: codon
+        src: codon-deploy/bin/codon
+    supported_envs:
+      - linux

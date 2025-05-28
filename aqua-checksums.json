@@ -276,6 +276,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/exaloop/codon/v0.18.2/codon-linux-x86_64.tar.gz",
+      "checksum": "74B501E7037B45563DAA4857EC132C989ECA011515904D59E8BB02F4BD8F81D2",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/google/yamlfmt/v0.17.0/yamlfmt_0.17.0_Darwin_arm64.tar.gz",
       "checksum": "1BE37D76A79CAA5073CE342DE24F7B8B2509C2A482178286F44B72835469052B",
       "algorithm": "sha256"

@@ -56,3 +56,5 @@ packages:
     registry: local
   - name: tombi-toml/tombi@v0.3.55
   - name: sxyazi/yazi@v25.4.8
+  - name: exaloop/codon@v0.18.2
+    registry: local
