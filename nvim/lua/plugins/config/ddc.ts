@@ -19,7 +19,7 @@ export class Config extends BaseConfig {
       "converter_truncate_abbr",
       "converter_remove_overlap",
     ];
-    const search_sources = ["rg", "mocword", "around"];
+    const search_sources = ["rg", "around"];
 
     args.contextBuilder.patchGlobal({
       ui: "pum",
@@ -57,13 +57,12 @@ export class Config extends BaseConfig {
         },
         cmdline: {
           mark: "[CMD]",
-          minAutoCompleteLength: 1,
-          maxItems: 15,
+          dup: "force",
         },
         cmdline_history: {
           mark: "[Hist]",
           maxItems: 2,
-          minAutoCompleteLength: 5,
+          // minAutoCompleteLength: 5,
         },
         around: {
           mark: "[A]",
