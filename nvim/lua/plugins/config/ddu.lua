@@ -49,7 +49,7 @@ end
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "ddu-ff",
   callback = function()
-    vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("close-ui-ff")<CR>]], opts)
+    vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><Cmd>bd<CR>]], opts)
     -- vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
     vim.keymap.set("n", "<CR>", function()
       local item = fn.ddu.ui.get_item()
@@ -89,7 +89,7 @@ vim.api.nvim_create_autocmd("FileType", {
     map_action("/", "openFilterWindow")
     map_action("j", "cursorNext", { loop = true })
     map_action("k", "cursorPrevious", { loop = true })
-    map_action("q", "quit")
+    vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><Cmd>bd<CR>]], opts)
     map_action("a", "chooseAction")
     map_item_action("d", "delete")
     map_item_action("r", "rename")
