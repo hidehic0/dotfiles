@@ -22,7 +22,7 @@ dunst
 epdfview
 falkon/profiles
 gconf/desktop
-gtk-3.0
+# gtk-3.0
 hexchat
 ibus/bus
 libfm
