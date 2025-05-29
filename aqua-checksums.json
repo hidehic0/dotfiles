@@ -181,18 +181,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bitwarden/clients/cli-v2025.4.0/bw-linux-2025.4.0.zip",
-      "checksum": "10A9C1389CC18AF474E2D78CBBDACB497805E8BDF926767C07A8504BE412C60E",
+      "id": "github_release/github.com/bitwarden/clients/cli-v2025.5.0/bw-linux-2025.5.0.zip",
+      "checksum": "B3B2896A54CAEDC799813E1EB076B4358F72B1201E5065A90DD34DDDCEBCCEBE",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bitwarden/clients/cli-v2025.4.0/bw-macos-2025.4.0.zip",
-      "checksum": "C8AAEE0FB65582EC8B76A4529B7267FE6F09C87791F24FE4D623179CD76E0BF2",
+      "id": "github_release/github.com/bitwarden/clients/cli-v2025.5.0/bw-macos-2025.5.0.zip",
+      "checksum": "DFA2434C4A8D8EC074F43D8AC4CA6FD75848D3264188C42CB6976BAF583F2E90",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bitwarden/clients/cli-v2025.4.0/bw-windows-2025.4.0.zip",
-      "checksum": "E24EF9F560A74CAA459DDFFBC422DE6DDB4B77C0296A02BC9DDA2A1859AECE0F",
+      "id": "github_release/github.com/bitwarden/clients/cli-v2025.5.0/bw-windows-2025.5.0.zip",
+      "checksum": "C52766350806A5FE74EEE56C1A71ACE5AA7AB012AA244B7F586C6EDA06D132F3",
       "algorithm": "sha256"
     },
     {
