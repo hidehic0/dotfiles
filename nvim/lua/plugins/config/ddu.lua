@@ -81,6 +81,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set("n", "<CR>", function()
       if fn.ddu.ui.get_item().isTree then
         doAction("expandItem", { isInTree = true })
+        doAction("clearSelectAllItems")
       else
         doAction("itemAction", { name = "open" })
       end
@@ -89,7 +90,7 @@ vim.api.nvim_create_autocmd("FileType", {
     map_action("/", "openFilterWindow")
     map_action("j", "cursorNext", { loop = true })
     map_action("k", "cursorPrevious", { loop = true })
-    vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><Cmd>bd<CR>]], opts)
+    map_action("q", "quit")
     map_action("a", "chooseAction")
     map_item_action("d", "delete")
     map_item_action("r", "rename")
