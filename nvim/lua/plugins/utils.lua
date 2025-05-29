@@ -152,15 +152,23 @@ return {
       },
     },
   },
+  -- {
+  --   "ibhagwan/fzf-lua",
+  --   dependencies = {
+  --     "nvim-tree/nvim-web-devicons",
+  --   },
+  --   cmd = "FzfLua",
+  --   config = function()
+  --     require("plugins.config.fzf")
+  --   end,
+  -- },
   {
-    "ibhagwan/fzf-lua",
+    "nvim-telescope/telescope.nvim",
     dependencies = {
-      "nvim-tree/nvim-web-devicons",
+      "nvim-lua/plenary.nvim",
     },
-    cmd = "FzfLua",
-    config = function()
-      require("plugins.config.fzf")
-    end,
+    cmd = "Telescope",
+    opts = {},
   },
   {
     "lewis6991/gitsigns.nvim",
@@ -258,14 +266,31 @@ return {
     cmd = {
       "Obsidian",
       "ObsidianOpen",
+      "ObsidianKensaku",
+      "ObsidianQuickKensaku",
     },
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "fdschmidt93/telescope-egrepify.nvim",
+      {
+        "delphinus/obsidian-kensaku.nvim",
+        branch = "feat/quick-kensaku",
+        dependencies = { "lambdalisue/kensaku.vim" },
+        opts = { picker = "egrepify" },
+      },
+    },
     opts = {
       workspaces = {
         { name = "main", path = "~/src/github.com/hidehic0/obsidain_vault" },
       },
       daily_notes = {
         folder = "dailies",
+      },
+      callbacks = {
+        post_setup = function(client)
+          require("obsidian-kensaku")(client)
+        end,
       },
     },
   },
