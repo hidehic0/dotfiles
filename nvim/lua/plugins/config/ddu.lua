@@ -49,7 +49,7 @@ end
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "ddu-ff",
   callback = function()
-    vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("closePreviewWindow")<CR><Cmd>bd<CR>]], opts)
+    vim.keymap.set("n", "q", [[<Cmd>call ddu#ui#do_action("close-ui-ff")<CR>]], opts)
     -- vim.keymap.set("n", "<CR>", [[<CMD>call ddu#ui#do_action("itemAction")<CR>]], opts)
     vim.keymap.set("n", "<CR>", function()
       local item = fn.ddu.ui.get_item()
