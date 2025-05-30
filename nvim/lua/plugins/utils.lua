@@ -68,8 +68,8 @@ return {
       "vim-denops/denops.vim",
       "yuki-yano/denops-lazy.nvim",
       -- ui
-      { "Shougo/ddu-ui-ff", commit = "effaf40" },
-      { "Shougo/ddu-ui-filer", commit = "6ad5ea3" },
+      "Shougo/ddu-ui-ff",
+      "Shougo/ddu-ui-filer",
       -- sources
       "4513ECHO/ddu-source-emoji",
       "Shougo/ddu-source-action",
