@@ -26,6 +26,7 @@ return {
     "matsui54/denops-popup-preview.vim",
     dependencies = {
       "vim-denops/denops.vim",
+      "yuki-yano/denops-lazy.nvim",
     },
     event = "InsertEnter",
     priority = 0,
@@ -38,6 +39,7 @@ return {
     "matsui54/denops-signature_help",
     dependencies = {
       "vim-denops/denops.vim",
+      "yuki-yano/denops-lazy.nvim",
     },
     event = "InsertEnter",
     priority = 0,
@@ -55,6 +57,7 @@ return {
     dependencies = {
       -- denops
       "vim-denops/denops.vim",
+      "yuki-yano/denops-lazy.nvim",
       -- ui
       "Shougo/ddc-ui-pum",
       "Shougo/pum.vim",
@@ -99,7 +102,12 @@ return {
   },
   {
     "uga-rosa/denippet.vim",
-    dependencies = { "vim-denops/denops.vim", "tani/vim-artemis", "rafamadriz/friendly-snippets" },
+    dependencies = {
+      "vim-denops/denops.vim",
+      "tani/vim-artemis",
+      "rafamadriz/friendly-snippets",
+      "yuki-yano/denops-lazy.nvim",
+    },
     event = "InsertEnter",
     config = function(spec)
       require("denops-lazy").load(spec.name)

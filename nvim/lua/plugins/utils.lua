@@ -48,6 +48,7 @@ return {
     "vim-skk/skkeleton",
     dependencies = {
       "vim-denops/denops.vim",
+      "yuki-yano/denops-lazy.nvim",
     },
     event = { "CmdlineEnter", "InsertEnter" },
     config = function(spec)
@@ -65,6 +66,7 @@ return {
     priority = 0,
     dependencies = {
       "vim-denops/denops.vim",
+      "yuki-yano/denops-lazy.nvim",
       -- ui
       { "Shougo/ddu-ui-ff", commit = "effaf40" },
       { "Shougo/ddu-ui-filer", commit = "6ad5ea3" },
@@ -216,6 +218,7 @@ return {
     dependencies = {
       "vim-denops/denops.vim",
       "lambdalisue/vim-kensaku-search",
+      "yuki-yano/denops-lazy.nvim",
     },
     config = function(spec)
       require("denops-lazy").load(spec.name)
