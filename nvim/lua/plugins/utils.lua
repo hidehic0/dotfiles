@@ -1,6 +1,19 @@
 ---@type LazySpec
 return {
   {
+    "vim-denops/denops.vim",
+    dependencies = {
+      {
+        "yuki-yano/denops-lazy.nvim",
+        opts = {
+          wait_load = false,
+        },
+      },
+    },
+    event = { "VeryLazy" },
+    priority = 1000,
+  },
+  {
     "windwp/nvim-autopairs",
     event = "InsertEnter",
     opts = {},
@@ -36,8 +49,9 @@ return {
     dependencies = {
       "vim-denops/denops.vim",
     },
-    event = "VimEnter",
-    config = function()
+    event = { "CmdlineEnter", "InsertEnter" },
+    config = function(spec)
+      require("denops-lazy").load(spec.name)
       require("plugins.config.skkeleton")
     end,
   },
@@ -48,7 +62,7 @@ return {
   {
     "Shougo/ddu.vim",
     event = "VeryLazy",
-    -- priority = 0,
+    priority = 0,
     dependencies = {
       "vim-denops/denops.vim",
       -- ui
@@ -90,7 +104,8 @@ return {
       -- utils
       "nvim-tree/nvim-web-devicons",
     },
-    config = function()
+    config = function(spec)
+      require("denops-lazy").load(spec.name)
       vim.defer_fn(function()
         require("plugins.config.ddu")
       end, 500)
@@ -197,12 +212,13 @@ return {
   },
   {
     "lambdalisue/vim-kensaku",
-    event = "VimEnter",
+    event = "CmdlineEnter",
     dependencies = {
       "vim-denops/denops.vim",
       "lambdalisue/vim-kensaku-search",
     },
-    config = function()
+    config = function(spec)
+      require("denops-lazy").load(spec.name)
       vim.keymap.set("c", "<CR>", "<Plug>(kensaku-search-replace)<CR>")
     end,
   },

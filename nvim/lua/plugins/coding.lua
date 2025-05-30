@@ -27,9 +27,10 @@ return {
     dependencies = {
       "vim-denops/denops.vim",
     },
-    event = "VeryLazy",
+    event = "InsertEnter",
     priority = 0,
-    config = function()
+    config = function(spec)
+      require("denops-lazy").load(spec.name)
       vim.fn["popup_preview#enable"]()
     end,
   },
@@ -38,9 +39,10 @@ return {
     dependencies = {
       "vim-denops/denops.vim",
     },
-    event = "VeryLazy",
+    event = "InsertEnter",
     priority = 0,
-    config = function()
+    config = function(spec)
+      require("denops-lazy").load(spec.name)
       vim.g.signature_help_config = {
         contentsStyle = "full",
         viewStyle = "floating",
@@ -90,16 +92,17 @@ return {
       "TextChangedP",
       "TextChangedT",
     },
-    config = function()
+    config = function(spec)
+      require("denops-lazy").load(spec.name)
       require("plugins/config/ddc")
     end,
   },
   {
     "uga-rosa/denippet.vim",
     dependencies = { "vim-denops/denops.vim", "tani/vim-artemis", "rafamadriz/friendly-snippets" },
-    event = "VeryLazy",
-    priority = 0,
-    config = function()
+    event = "InsertEnter",
+    config = function(spec)
+      require("denops-lazy").load(spec.name)
       require("plugins.config.denippet")
     end,
   },
