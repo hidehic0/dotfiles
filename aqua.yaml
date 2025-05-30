@@ -55,7 +55,7 @@ packages:
   - name: hidehic0/primesplit@v0.1.1
     registry: local
   - name: tombi-toml/tombi@v0.3.56
-  - name: sxyazi/yazi@v25.5.28
+  - name: sxyazi/yazi@v25.5.31
   - name: exaloop/codon@v0.18.2
     registry: local
   - name: koki-develop/gat@v0.24.0
