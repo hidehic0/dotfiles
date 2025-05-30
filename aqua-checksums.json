@@ -531,6 +531,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/koki-develop/gat/v0.24.0/gat_Darwin_arm64.tar.gz",
+      "checksum": "07F570BE6004CEDBAFD0F2237E965CD4A1D3E46ECD74DCC2447A232870AB7399",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/koki-develop/gat/v0.24.0/gat_Darwin_x86_64.tar.gz",
+      "checksum": "6717C1E73F3F3EEF9FEB932EEE219D1D4E47C47F37ECE0E9D690F852595BCD91",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/koki-develop/gat/v0.24.0/gat_Linux_arm64.tar.gz",
+      "checksum": "FA81F18C9294A97494FEA865F3230C483E4CFE083F08A77FE5AE0D8FEA90057E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/koki-develop/gat/v0.24.0/gat_Linux_x86_64.tar.gz",
+      "checksum": "EA99471DFCDBA1BC9A68F1D92A9987371DFE29B0672BF87CFF6787583E57495E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/koki-develop/gat/v0.24.0/gat_Windows_arm64.zip",
+      "checksum": "FA64B21C39412397783F4FA10E319662F915AF86AC17CD4F058114AA646BDDF0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/koki-develop/gat/v0.24.0/gat_Windows_x86_64.zip",
+      "checksum": "559D168F34FE43D0BA792D30E8FC8EF91D13763F042A4BEAE00952DA212DC2CD",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-aarch64-apple-darwin.tar.gz",
       "checksum": "D39006922BABB1A96806E8F3F3BC197276C807A625617091C43836D8924A0C07",
       "algorithm": "sha256"

@@ -49,3 +49,5 @@ catc() {
     atc $1
   fi
 }
+
+alias cat="gat"

@@ -58,3 +58,4 @@ packages:
   - name: sxyazi/yazi@v25.5.28
   - name: exaloop/codon@v0.18.2
     registry: local
+  - name: koki-develop/gat@v0.24.0
