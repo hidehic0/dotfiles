@@ -64,6 +64,7 @@ return {
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
+    priority = 0,
     opts = {
       preset = "modern",
       triggers = {
@@ -147,7 +148,7 @@ return {
   -- } },
   {
     "DanilaMihailov/beacon.nvim",
-    event = "VeryLazy",
+    event = "CursorMoved",
     opts = {
       fps = 144,
       speed = 1,
