@@ -64,6 +64,7 @@ return {
       -- sources
       "LumaKernel/ddc-source-file",
       "Shougo/ddc-source-codeium",
+      "Exafunction/windsurf.vim",
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
       "Shougo/ddc-source-cmdline_history",
@@ -179,7 +180,7 @@ return {
 
   {
     "numToStr/Comment.nvim",
-    event = "VeryLazy",
+    event = "CursorMoved",
     opts = {
       pre_hook = function()
         return require("ts_context_commentstring.internal").calculate_commentstring()
@@ -199,7 +200,7 @@ return {
   -- },
   {
     "Exafunction/windsurf.vim",
-    event = { "VeryLazy", "InsertEnter" },
+    event = { "InsertEnter" },
     cmd = { "Codeium" },
     config = function()
       vim.g.codeium_disable_bindings = 1

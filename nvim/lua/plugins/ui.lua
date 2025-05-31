@@ -45,17 +45,17 @@ return {
   --     },
   --   },
   -- },
-  {
-    "stevearc/oil.nvim",
-    cmd = "Oil",
-    -- keys = { { "<leader>e", "<CMD>Oil --float<CR>", desc = "start oil" } },
-    config = function()
-      require("plugins.config.oil")
-    end,
-  },
+  -- {
+  --   "stevearc/oil.nvim",
+  --   cmd = "Oil",
+  --   -- keys = { { "<leader>e", "<CMD>Oil --float<CR>", desc = "start oil" } },
+  --   config = function()
+  --     require("plugins.config.oil")
+  --   end,
+  -- },
   {
     "akinsho/bufferline.nvim",
-    event = "VeryLazy",
+    event = { "BufAdd", "CursorHold", "CursorHoldI" },
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
       require("plugins.config.bufferline")
@@ -192,8 +192,8 @@ return {
   },
   {
     "rachartier/tiny-inline-diagnostic.nvim",
-    event = "VeryLazy",
-    priority = 1000, -- needs to be loaded in first
+    event = "LspAttach",
+    -- priority = 1000, -- needs to be loaded in first
     config = function()
       require("tiny-inline-diagnostic").setup({
         options = {

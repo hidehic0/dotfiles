@@ -11,7 +11,7 @@ return {
       },
     },
     event = { "VeryLazy" },
-    priority = 1000,
+    priority = 0,
   },
   {
     "windwp/nvim-autopairs",
@@ -20,7 +20,7 @@ return {
   },
   {
     "kylechui/nvim-surround",
-    event = "VeryLazy",
+    event = "CursorMoved",
     opts = {},
   },
   -- {
@@ -36,7 +36,6 @@ return {
   {
     "Shougo/deol.nvim",
     dependencies = {
-
       "tani/vim-artemis",
     },
     event = "VeryLazy",
@@ -59,6 +58,7 @@ return {
   {
     "vim-jp/vimdoc-ja",
     event = "VeryLazy",
+    priority = 0,
   },
   {
     "Shougo/ddu.vim",
@@ -116,6 +116,7 @@ return {
   {
     "tpope/vim-fugitive",
     -- event = "VeryLazy",
+    cmd = { "Git" },
     keys = {
       { "<leader>ga", "<CMD>Git add -A<CR>", desc = "run Git add" },
       {
@@ -147,7 +148,7 @@ return {
   },
   {
     "folke/flash.nvim",
-    event = "VeryLazy",
+    event = "CursorMoved",
     opts = {
       modes = {
         char = {
@@ -261,12 +262,12 @@ return {
       },
     },
   },
-  {
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },
-    build = "cd app && yarn install",
-  },
+  -- {
+  --   "iamcco/markdown-preview.nvim",
+  --   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+  --   ft = { "markdown" },
+  --   build = "cd app && yarn install",
+  -- },
   {
     "m4xshen/hardtime.nvim",
     dependencies = { "MunifTanjim/nui.nvim" },
@@ -314,5 +315,5 @@ return {
     },
   },
   { "wakatime/vim-wakatime", event = "VeryLazy" },
-  { "vyfor/cord.nvim", build = ":Cord update", event = "VeryLazy", opts = {} },
+  { "vyfor/cord.nvim", build = ":Cord update", event = "VeryLazy", priority = 0, opts = {} },
 }
