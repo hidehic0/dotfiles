@@ -49,9 +49,9 @@ export class Config extends BaseConfig {
         },
         lsp: {
           mark: "[LSP]",
-          matchers: ["matcher_fuzzy", "matcher_prefix"],
+          // matchers: ["matcher_fuzzy", "matcher_prefix"],
           converters: ["converter_kind_labels"].concat(default_converters),
-          forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
+          // forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
           dup: "keep",
           minAutoCompleteLength: 1,
         },
