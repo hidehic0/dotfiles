@@ -34,3 +34,4 @@ waybar
 wayland
 xorg-xwayland
 zsh
+foot
