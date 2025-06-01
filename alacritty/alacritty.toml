@@ -1,5 +1,5 @@
 [font]
-normal = {family= "FiraCode Nerd Font" ,style = "Regular" }
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
 size = 12
 builtin_box_drawing = true
 
@@ -7,7 +7,6 @@ builtin_box_drawing = true
 term = "xterm-256color"
 
 [terminal]
-
 [terminal.shell]
 program = "/bin/zsh"
 args = ["-l", "-c", "tmux attach || tmux"]

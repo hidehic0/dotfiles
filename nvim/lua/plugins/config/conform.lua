@@ -7,7 +7,6 @@ require("conform").setup({
     sh = { "shfmt" },
     yaml = { "yamlfmt" },
     typescript = { "deno_fmt" },
-    toml = { "taplo" },
     json = { "jq" },
     nim = { "nimpretty" },
     go = { "gofmt" },

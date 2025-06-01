@@ -6,7 +6,6 @@ node = "23.11.1"
 python = "3.13.3"
 rust = "1.87.0"
 uv = "0.7.9"
-
 # node製tools
 "npm:atcoder-cli" = "2.2.0"
 "npm:markdownlint-cli2" = "0.18.1"
