@@ -68,4 +68,6 @@ font-family = "源ノ角ゴシック JP"
 
 background=black
 
+theme="Dark Pastel"
+
 window-colorspace = display-p3
