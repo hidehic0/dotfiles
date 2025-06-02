@@ -36,3 +36,4 @@ wayland
 xorg-xwayland
 zsh
 foot
+ghostty
