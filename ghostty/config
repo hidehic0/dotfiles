@@ -65,3 +65,7 @@ mouse-hide-while-typing = true
 command="tmux attach || tmux"
 
 font-family = "源ノ角ゴシック JP"
+
+background=black
+
+window-colorspace = display-p3
