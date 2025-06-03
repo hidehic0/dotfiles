@@ -45,33 +45,19 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 vim.g.hardtime_enabled = true
 
--- https://zenn.dev/kawarimidoll/articles/4da7458c102c1f
--- local ok, extui = pcall(require, "vim._extui")
--- if ok then
---   extui.enable({
---     enable = true,
---     msg = {
---       pos = "cmd",
---       box = {
---         timeout = 5000,
---       },
---     },
---   })
--- end
-
-require("vim._extui").enable({
-  enable = true, -- Whether to enable or disable the UI.
-  msg = { -- Options related to the message module.
-    ---@type 'box'|'cmd' Type of window used to place messages, either in the
-    ---cmdline or in a separate message box window with ephemeral messages.
-    pos = "cmd",
-    box = { -- Options related to the message box window.
-      timeout = 4000, -- Time a message is visible.
-    },
-  },
-})
-
 vim.opt.cmdheight = 0
+
+-- require("vim._extui").enable({
+--   enable = true, -- Whether to enable or disable the UI.
+--   msg = { -- Options related to the message module.
+--     ---@type 'box'|'cmd' Type of window used to place messages, either in the
+--     ---cmdline or in a separate message box window with ephemeral messages.
+--     pos = "cmd",
+--     box = { -- Options related to the message box window.
+--       timeout = 4000, -- Time a message is visible.
+--     },
+--   },
+-- })
 
 -- insert modeでbackspaceが効かなくなる事があるので修正
 vim.api.nvim_create_autocmd({ "InsertEnter" }, {
