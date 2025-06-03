@@ -311,6 +311,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.0/atcoderproblems-cli_linux_arm64.tar.gz",
+      "checksum": "732BFF6C8E856BCEC54661060DD12935D71C18E3EE8B15886571FAFF36B11A60",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.0/atcoderproblems-cli_linux_x86_64.tar.gz",
+      "checksum": "C7AC0BF678BB14E70B2ED90CF4FF477100165BA18BD3EE8941632E27A5E45525",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/primesplit/v0.1.1/primesplit_linux_arm64.tar.gz",
       "checksum": "864B3EEB181EE50D41D0BF5DD6E1486D767255790225BA3AA29FB250FD41380D",
       "algorithm": "sha256"

@@ -42,3 +42,15 @@ packages:
         src: codon-deploy/bin/codon
     supported_envs:
       - linux
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: atcoderproblems-cli
+    asset: atcoderproblems-cli_{{.OS}}_{{.Arch}}.{{.Format}}
+    format: tar.gz
+    files:
+      - name: atcoderproblems-cli
+        src: atcoderproblems-cli
+    supported_envs:
+      - linux
+    replacements:
+      amd64: x86_64
