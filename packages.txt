@@ -37,3 +37,4 @@ xorg-xwayland
 zsh
 foot
 ghostty
+noto-fonts-cjk
