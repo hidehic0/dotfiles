@@ -64,7 +64,7 @@ mouse-hide-while-typing = true
 
 command="tmux attach || tmux"
 
-font-family = "源ノ角ゴシック JP"
+font-family = "NotoSans CJK JP"
 
 background=black
 
