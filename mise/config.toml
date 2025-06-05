@@ -3,7 +3,7 @@ deno = "2.3.5"
 go = "1.24.3"
 nim = "2.2.4"
 node = "23.11.1"
-python = "3.13.3"
+python = "3.13.4"
 rust = "1.87.0"
 uv = "0.7.11"
 # node製tools
