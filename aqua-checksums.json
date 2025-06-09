@@ -811,33 +811,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.4/tombi-cli-0.4.4-aarch64-apple-darwin.gz",
-      "checksum": "DA07C237E4B969BEE121E0C6F5EA5080AD4A76E14DABA650FA7F4C98666246ED",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.5/tombi-cli-0.4.5-aarch64-apple-darwin.gz",
+      "checksum": "DF413876A87330964F7E0AD1CC30E2EB5DBEE63C0C7C41B3277D3E4906597740",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.4/tombi-cli-0.4.4-aarch64-pc-windows-msvc.zip",
-      "checksum": "8957275B03C9EE15FE13FB7824D2B055584F6E3DE0C1DA8C3FA322A37134F37E",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.5/tombi-cli-0.4.5-aarch64-pc-windows-msvc.zip",
+      "checksum": "34A587610D307EB2DAA06A2B2F622F286455569FD9C177FDE354AFDC0B6413BC",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.4/tombi-cli-0.4.4-aarch64-unknown-linux-musl.gz",
-      "checksum": "B2FC86FAF1597EB1BD0840C83C1291DBA0E6FD048B24401BE59540AB93E4491A",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.5/tombi-cli-0.4.5-aarch64-unknown-linux-musl.gz",
+      "checksum": "95DA8F23B95DE50028DE636EE580AC18D9DBA305822EE3EA5E6602A5FD9A88DF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.4/tombi-cli-0.4.4-x86_64-apple-darwin.gz",
-      "checksum": "636FB4E21A764AB9235A89E7941FCD09C8580DD1CA3E7D2A076FFDB967AD0340",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.5/tombi-cli-0.4.5-x86_64-apple-darwin.gz",
+      "checksum": "BED0BD901AF49420650E277E18C780A809F3ABAD4E32D3011CF15319C5FE9CCF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.4/tombi-cli-0.4.4-x86_64-pc-windows-msvc.zip",
-      "checksum": "17140CE21D234D2299A15B10C7CF55580B48B289F120F7752FD87BB6E10DC949",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.5/tombi-cli-0.4.5-x86_64-pc-windows-msvc.zip",
+      "checksum": "EFF3A642C46A6786EEAABA203D376AC2B38972DDDBE8ABFC5D8EAD7A54517F40",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.4/tombi-cli-0.4.4-x86_64-unknown-linux-musl.gz",
-      "checksum": "B4EBEBF47C1B2A426CEE0D7624739670D801791F09950BDE59CB9D95ED3C94AB",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.5/tombi-cli-0.4.5-x86_64-unknown-linux-musl.gz",
+      "checksum": "CD6CE00040C561D655BF3FFF046EC3264D405D947565E4B873794E8CDE19C855",
       "algorithm": "sha256"
     },
     {
