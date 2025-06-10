@@ -60,7 +60,7 @@ packages:
     registry: local
   - name: koki-develop/gat@v0.24.1
   - name: sassman/t-rec-rs@v0.7.9
-  - name: hidehic0/atcoderproblems-cli@v0.1.0
+  - name: hidehic0/atcoderproblems-cli@v0.1.1
     registry: local
-  - name: hidehic0/custom-completion-zsh@v0.1.0
+  - name: hidehic0/custom-completion-zsh@v0.1.1
     registry: local

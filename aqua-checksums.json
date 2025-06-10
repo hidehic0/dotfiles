@@ -311,23 +311,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.0/atcoderproblems-cli_linux_arm64.tar.gz",
-      "checksum": "732BFF6C8E856BCEC54661060DD12935D71C18E3EE8B15886571FAFF36B11A60",
+      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.1/atcoderproblems-cli_linux_arm64.tar.gz",
+      "checksum": "614BDB85E742A913C717872DDE36157AF648441B18C2329088A68F2BA199F3A6",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.0/atcoderproblems-cli_linux_x86_64.tar.gz",
-      "checksum": "C7AC0BF678BB14E70B2ED90CF4FF477100165BA18BD3EE8941632E27A5E45525",
+      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.1/atcoderproblems-cli_linux_x86_64.tar.gz",
+      "checksum": "B77AF5612F5F0B4181A10A7E54EF11127D0A644475FEA8CD850B9AAE31F74448",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.0/custom-completion-zsh_Linux_amd64.tar.gz",
-      "checksum": "B5D8D6B70612E4F322AF73098729FDE461924C033EC18B9FE1F2DF17AD365ADE",
+      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.1/custom-completion-zsh_Linux_amd64.tar.gz",
+      "checksum": "5FE37DA4114CA7374604F6BDDFD319201443BCE9F67A7BD9960AB9B362368D52",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.0/custom-completion-zsh_Linux_arm64.tar.gz",
-      "checksum": "7C6E07DC007E02FC3DFF82231C55FA7FC3F6018308BA66DBBA1019DCE764E803",
+      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.1/custom-completion-zsh_Linux_arm64.tar.gz",
+      "checksum": "7F4CC78C96CBCDD013FE3802CB306B2024E1B6B1DA9D439CD1CFEE874E46424A",
       "algorithm": "sha256"
     },
     {

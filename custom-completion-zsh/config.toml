@@ -22,3 +22,11 @@ exec = "sheldon completions --shell zsh"
 [[tool]]
 name = "uv"
 exec = "uv generate-shell-completion zsh"
+
+[[tool]]
+name = "custom-completion"
+exec = "custom-completion-zsh completion zsh"
+
+[[tool]]
+name = "atcoderproblems-cli"
+exec = "atcoderproblems-cli completion zsh"
