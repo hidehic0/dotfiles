@@ -321,6 +321,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.0/custom-completion-zsh_Linux_amd64.tar.gz",
+      "checksum": "B5D8D6B70612E4F322AF73098729FDE461924C033EC18B9FE1F2DF17AD365ADE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.0/custom-completion-zsh_Linux_arm64.tar.gz",
+      "checksum": "7C6E07DC007E02FC3DFF82231C55FA7FC3F6018308BA66DBBA1019DCE764E803",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/primesplit/v0.1.1/primesplit_linux_arm64.tar.gz",
       "checksum": "864B3EEB181EE50D41D0BF5DD6E1486D767255790225BA3AA29FB250FD41380D",
       "algorithm": "sha256"

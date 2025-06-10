@@ -6,3 +6,19 @@
 [[tool]]
 name = "mise"
 exec = "mise completion zsh"
+
+[[tool]]
+name = "gh"
+exec = "gh completion -s zsh"
+
+[[tool]]
+name = "aqua"
+exec = "aqua completion zsh"
+
+[[tool]]
+name = "sheldon"
+exec = "sheldon completions --shell zsh"
+
+[[tool]]
+name = "uv"
+exec = "uv generate-shell-completion zsh"

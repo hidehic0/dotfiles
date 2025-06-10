@@ -54,3 +54,15 @@ packages:
       - linux
     replacements:
       amd64: x86_64
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: custom-completion-zsh
+    asset: custom-completion-zsh_{{.OS}}_{{.Arch}}.{{.Format}}
+    format: tar.gz
+    files:
+      - name: custom-completion-zsh
+        src: custom-completion-zsh
+    supported_envs:
+      - linux
+    replacements:
+      linux: Linux

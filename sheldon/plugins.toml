@@ -66,7 +66,7 @@ local = "~/"
 use = ["tokens.zsh"]  # github_tokenなどを置く
 
 [plugins.fpath]
-local = "~/.local/share/zsh/site-functions"
+local = "~/.local/share/zsh/custom-completion-zsh"
 apply = ["fpath"]
 
 # [plugins._nix]
