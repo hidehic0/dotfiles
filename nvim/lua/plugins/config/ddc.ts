@@ -51,16 +51,19 @@ export class Config extends BaseConfig {
           mark: "[LSP]",
           // matchers: ["matcher_fuzzy", "matcher_prefix"],
           converters: ["converter_kind_labels"].concat(default_converters),
-          // forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
+          forceCompletionPattern: "\\.\\w*|::\\w*|->\\w*",
           dup: "keep",
           minAutoCompleteLength: 1,
+          isVolatile: true,
         },
         cmdline: {
           mark: "[CMD]",
+          isVolatile: true,
           dup: "force",
         },
         cmdline_history: {
           mark: "[Hist]",
+          isVolatile: true,
           maxItems: 2,
           // minAutoCompleteLength: 5,
         },
@@ -89,6 +92,7 @@ export class Config extends BaseConfig {
         rg: {
           mark: "[rg]",
           minAutoCompleteLength: 1,
+          isVolatile: true,
           maxItems: 5,
         },
         copilot: {
@@ -97,6 +101,7 @@ export class Config extends BaseConfig {
         denippet: {
           mark: "[snip]",
           dup: "keep",
+          isVolatile: true,
           minAutoCompleteLength: 1,
         },
       },
