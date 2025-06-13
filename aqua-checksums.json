@@ -506,31 +506,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-aarch64-apple-darwin.tar.gz",
-      "checksum": "D39006922BABB1A96806E8F3F3BC197276C807A625617091C43836D8924A0C07",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "DD84C4ADD323288FF3DC072955E4FF2364A074A68BF9F1A6FB6556AD310C723B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-x86_64-apple-darwin.tar.gz",
-      "checksum": "4245E4E8F6FC14376A1F96D210DCF7C55954AFACB831C965D2759259CBA516EF",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-x86_64-pc-windows-msvc.zip",
-      "checksum": "0260B74376CED7A699A9E86EEC1B5AA4CF1AD739C30829E0B53FC1BE4ADEABA1",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "AF10FBEF2472134C676396A27ECFFFB34ADB107DA2F95D0453A3150CED33AE47",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/mvdan/sh/v3.11.0/shfmt_v3.11.0_darwin_amd64",
       "checksum": "810A76CB7C78351E021C8025F344B12149D8426CE51609A179AF68109ED5698E",
       "algorithm": "sha256"
@@ -771,33 +746,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.7/tombi-cli-0.4.7-aarch64-apple-darwin.gz",
-      "checksum": "5574C542BB93442D202EAE3B5EF285C700290A1AA9F1BBC550FFE463AFB2D25C",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.9/tombi-cli-0.4.9-aarch64-apple-darwin.gz",
+      "checksum": "22550172111B63E15478D81DCB3E8D8AA5521FD6D0B5EF382AA29F9446586E0B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.7/tombi-cli-0.4.7-aarch64-pc-windows-msvc.zip",
-      "checksum": "650581D179A36E5B075AB7F290D1220B44FA11B0B2A9958538BA2B30961A65A5",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.9/tombi-cli-0.4.9-aarch64-pc-windows-msvc.zip",
+      "checksum": "334D4AE5C30A3E74962691CCF693F1CBF5842198DC0AEA2AC29FA05E7A2B5F53",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.7/tombi-cli-0.4.7-aarch64-unknown-linux-musl.gz",
-      "checksum": "185FA952AF9FB4CC2245B9B2E42A5A9E809F9A4D6BD9A0FC15C61CEB22ADABA1",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.9/tombi-cli-0.4.9-aarch64-unknown-linux-musl.gz",
+      "checksum": "EC892F90BC1DF4DE14162CC39E32E75A728CACD6D2DEE482C0449E43A0AB7BBA",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.7/tombi-cli-0.4.7-x86_64-apple-darwin.gz",
-      "checksum": "5602090F2BB8CD925F02E809FF34E055A0F823E71CFA908A4651FEC9582A6460",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.9/tombi-cli-0.4.9-x86_64-apple-darwin.gz",
+      "checksum": "DCC4256C7F08657E49EE22B8AAB831B388C87294B7F52D26C178E0110218BD8F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.7/tombi-cli-0.4.7-x86_64-pc-windows-msvc.zip",
-      "checksum": "DD1DD4CEAD6238C1C640EE9DB2B48B1A9FC9B773AC8EA2CE7FAAFFF3085B6875",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.9/tombi-cli-0.4.9-x86_64-pc-windows-msvc.zip",
+      "checksum": "ACFEFEAB502A76F5DF5636FEB9ADE1225DE247B6566DA9886B2B93D4E0935FE2",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.4.7/tombi-cli-0.4.7-x86_64-unknown-linux-musl.gz",
-      "checksum": "6A6B9C722AECE79B801EF004780093207351ED48B2456EC1AED94609583EC6A6",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.4.9/tombi-cli-0.4.9-x86_64-unknown-linux-musl.gz",
+      "checksum": "C9C89FC73551EEF38D06C79393E9730C1CE5C71EC9D356429BC68093312E1D7D",
       "algorithm": "sha256"
     },
     {
