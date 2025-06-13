@@ -24,5 +24,6 @@
   "sway": "~/.config/sway",
   "wezterm": "~/.config/wezterm",
   "zellij": "~/.config/zellij",
-  "foot": "~/.config/foot"
+  "foot": "~/.config/foot",
+  "libskk": "~/.config/libskk"
 }
