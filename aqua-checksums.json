@@ -96,36 +96,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.8/zoxide-0.9.8-aarch64-apple-darwin.tar.gz",
-      "checksum": "3D1EC4AF7F3D351629F500B432E6C735CAF3216AB3EAA76DBE8FFBC8F3006F5A",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.8/zoxide-0.9.8-aarch64-pc-windows-msvc.zip",
-      "checksum": "F1FB82EB558A50C43F635ABFE438BC7EE1620A9970959739CB5E9FDDF675821C",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.8/zoxide-0.9.8-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "078CC9CC8CEDB6C45EDB84C0F5BAD53518C610859C73BDB3009A52B89652C103",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.8/zoxide-0.9.8-x86_64-apple-darwin.tar.gz",
-      "checksum": "CFA865FFD1BA87DF2962F40EBD80C366F1D2B484F0C05B6DA6B0104F50822F86",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.8/zoxide-0.9.8-x86_64-pc-windows-msvc.zip",
-      "checksum": "15DBD23AE3D98E2A745D0E8E3F0292402F0A2269B47519B81A6E994BACA5DB2B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.8/zoxide-0.9.8-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "4092EE38AA1EFDE42E4EFB2F9C872DF5388198AACAE7F1A74E5EB5C3CC7F531C",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/aquaproj/aqua-registry-updater/v0.1.5/aqua-registry-updater_linux_amd64.tar.gz",
       "checksum": "EE3C2FB8DFF51875958243C78462C56F6049783FD17F34A54CCAD8DB251531BF",
       "algorithm": "sha256"
@@ -281,6 +251,21 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/eza-community/eza/v0.21.4/eza.exe_x86_64-pc-windows-gnu.tar.gz",
+      "checksum": "84C27D57AC0D12A943ABAE475484AEB56379310A754578534D3D0F71497451A6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/eza-community/eza/v0.21.4/eza_aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "DF458F76662B5AA1E87FCC0D4FF5EB1063905127ACD41E2AEE0E20FC187394DA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/eza-community/eza/v0.21.4/eza_x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "82E1DDE17D007C4903E88E9EE6E9DBD81F243616D547C71FE55CD3B0FA8739B0",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/google/yamlfmt/v0.17.0/yamlfmt_0.17.0_Darwin_arm64.tar.gz",
       "checksum": "1BE37D76A79CAA5073CE342DE24F7B8B2509C2A482178286F44B72835469052B",
       "algorithm": "sha256"
@@ -386,36 +371,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Darwin_arm64.tar.gz",
-      "checksum": "55D8FF53D9BD36EE088393154442D3B93DB787118BE5AD0AE80C200D76311EC2",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Darwin_x86_64.tar.gz",
-      "checksum": "7B4C73C7B1B62B9702A701AC0A8A1D8913602173362E8EE96D4FC03EF556AD10",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Linux_arm64.tar.gz",
-      "checksum": "C38E715F2CB56440BEC16E3744005522C1D13C47D2E3730572849DC69CEFD8AE",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Linux_x86_64.tar.gz",
-      "checksum": "461CACF618E1020DFF1D7896248C1C1F2267D5C25FB529755E4B9C43C5D1D4A5",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Windows_arm64.zip",
-      "checksum": "8D965FF79409802FF620F744F91CB932BE52B25C2A5ED7AA5131387645151EB8",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Windows_x86_64.zip",
-      "checksum": "CC54494D8CD9232D8D64CF4C2D720A045E5B969A716739424702577F55B53CF9",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/jesseduffield/lazygit/v0.52.0/lazygit_0.52.0_Darwin_arm64.tar.gz",
       "checksum": "67C155CF82EE788261306521E58A1BFEFD38143D29BD8FD814B0A05CB36FBA64",
       "algorithm": "sha256"
@@ -438,36 +393,6 @@
     {
       "id": "github_release/github.com/jesseduffield/lazygit/v0.52.0/lazygit_0.52.0_Windows_x86_64.zip",
       "checksum": "44735E93CAAE639E31A6B63B3400A05D2BFCFD167015D96F5BBE897D4F886F9F",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.7/lazysql_Darwin_arm64.tar.gz",
-      "checksum": "32227B48BB7A6CE57A52334810A91464D317C70DE7BD66926832842827647028",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.7/lazysql_Darwin_x86_64.tar.gz",
-      "checksum": "C7026A7432F3E85CCA1F4E01F865889E0B48274670A566E5DDB2F1F19EE067AF",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.7/lazysql_Linux_arm64.tar.gz",
-      "checksum": "A1C1DA858C791E2943A1C5D439E2DCF5C4F6646AB758D693BF83395E8FDB6580",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.7/lazysql_Linux_x86_64.tar.gz",
-      "checksum": "738F7C88716BF087228E86547F4F01F1A1484590DD5B6A6A6EE3069C2B1FC173",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.7/lazysql_Windows_arm64.zip",
-      "checksum": "C72578A0C4C218E5A2E98DBFE301FB1935458AC7E79D0D878E0C683F454A9469",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.7/lazysql_Windows_x86_64.zip",
-      "checksum": "AAAFF8E80F814983BE9C7620C64D8922BFD0E632C8365ED449688AD52552B93A",
       "algorithm": "sha256"
     },
     {

@@ -19,10 +19,10 @@ alias pacman_search="$bin_dir/pacman_search.zsh"
 alias rank_mirror='curl -s "https://archlinux.org/mirrorlist/?country=JP&country=AU&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 - | wl-copy'
 
 # LSDeluxe alias
-alias ls="lsd"
-alias lsa="lsd -a"
-alias lsl="lsd -l"
-alias lsla="lsd -la"
+alias ls="eza --icons=auto"
+alias lsa="eza --icons=auto -a"
+alias lsl="eza --icons=auto -l"
+alias lsla="eza --icons=auto -la"
 
 # clean cache alias
 alias clean_cache="$bin_dir/clean_cache.zsh"
