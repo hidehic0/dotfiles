@@ -20,4 +20,4 @@ export MOCWORD_DATA=~/.local/lib/mocword/mocword.sqlite
 
 # aqua
 export AQUA_GLOBAL_CONFIG=$HOME/.dotfiles/aqua.yaml
-export PATH="$HOME/.local/share/aquaproj-aqua/bin:$PATH"
+export PATH="$PATH:$HOME/.local/share/aquaproj-aqua/bin"

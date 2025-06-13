@@ -15,10 +15,10 @@ function ensure_zcompiled {
   fi
 }
 
-ensure_zcompiled ~/.config/zsh/zshrc
+ensure_zcompiled ~/.zshrc
 
 # sheldonの設定
-export SHELDON_CONFIG_DIR="$HOME/.config/sheldon"
+export SHELDON_CONFIG_DIR="$HOME/.dotfiles/sheldon"
 sheldon_cache="$SHELDON_CONFIG_DIR/sheldon.zsh"
 sheldon_toml="$SHELDON_CONFIG_DIR/plugins.toml"
 if [[ ! -r "$sheldon_cache" || "$sheldon_toml" -nt "$sheldon_cache" ]]; then

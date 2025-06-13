@@ -671,6 +671,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/rhysd/dotfiles/v0.2.3/dotfiles_darwin_amd64.zip",
+      "checksum": "E360CE0DABB4E0BEB91530F6A70914E2D4503146928C3733E351F5A3F4097CE9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/dotfiles/v0.2.3/dotfiles_darwin_arm64.zip",
+      "checksum": "29721C0060D9EA880FA96A7726BB03A715C98DCD15FB3C1B1CADDF59A591380B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/dotfiles/v0.2.3/dotfiles_linux_amd64.zip",
+      "checksum": "5DB58C07107734E2425C26CE6350332125920881D1E2C522DB99CE8F498E2075",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/dotfiles/v0.2.3/dotfiles_linux_arm64.zip",
+      "checksum": "75C4AA8D57449CDB7C9B4F8214ED8CE1B7F560EE0BEC3C64004CBE21F0A4413B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/dotfiles/v0.2.3/dotfiles_windows_amd64.exe.zip",
+      "checksum": "CA65B50816554551851BBAE28CFAD9BF1715ED80FB5FD5142B21A20FFAFB0CF3",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/rhysd/vim-startuptime/v1.3.2/vim-startuptime_1.3.2_darwin_amd64.tar.gz",
       "checksum": "050D3DE9F35537D73326A6BB0C81E9EAF229E4F63D98218A09C4CD07212760AB",
       "algorithm": "sha256"

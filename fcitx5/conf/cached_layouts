@@ -958,6 +958,11 @@ Description="キーボード - スウェーデン語 - スウェーデン語 (Sv
 Language=sv
 Label="se (svdvorak)"
 
+[keyboard-se-colemak]
+Description="キーボード - スウェーデン語 - Swedish (Colemak)"
+Language=sv
+Label="se (colemak)"
+
 [keyboard-se-mac]
 Description="キーボード - スウェーデン語 - スウェーデン語 (Macintosh)"
 Language=sv
@@ -3672,11 +3677,6 @@ Label=ja
 Description="キーボード - 日本語 - 日本語 (かな)"
 Language=ja
 Label="jp (kana)"
-
-[keyboard-jp-kana86]
-Description="キーボード - 日本語 - 日本語 (かな 86)"
-Language=ja
-Label="jp (kana86)"
 
 [keyboard-jp-OADG109A]
 Description="キーボード - 日本語 - 日本語 (OADG 109A)"
