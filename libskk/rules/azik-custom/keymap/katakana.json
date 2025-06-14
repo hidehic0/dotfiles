@@ -5,7 +5,8 @@
   ],
   "define": {
     "keymap": {
-      "[": "set-input-mode-hiragana"
+      "[": "set-input-mode-hiragana",
+      "@": "set-input-mode-hiragana"
     }
   }
 }
