@@ -19,6 +19,7 @@ return {
         "nim_langserver",
         "gopls",
         "nil_ls",
+        "ts_ls",
       })
     end,
   },
