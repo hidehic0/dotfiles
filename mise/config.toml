@@ -12,7 +12,7 @@ uv = "0.7.13"
 "npm:pyright" = "1.1.402"
 "npm:typescript-language-server" = "4.3.4"
 "npm:@devcontainers/cli" = "0.77.0"
-"npm:eslint" = "9.28.0"
+"npm:eslint" = "9.29.0"
 # python製tools
 "pipx:terminaltexteffects" = "0.12.0"
 lua = "5.4.7"
