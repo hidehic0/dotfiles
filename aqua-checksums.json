@@ -166,28 +166,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/charmbracelet/vhs/v0.9.0/vhs_0.9.0_Darwin_arm64.tar.gz",
-      "checksum": "19075AE64C1C4145BE3DE0591BA6893D94BE549DDC155DF29AE14373E515E743",
+      "id": "github_release/github.com/charmbracelet/vhs/v0.10.0/vhs_0.10.0_Darwin_arm64.tar.gz",
+      "checksum": "DC256C403305AC8BA623563D0EF3241A38024F35B27C705F79D523E9DA618012",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/charmbracelet/vhs/v0.9.0/vhs_0.9.0_Darwin_x86_64.tar.gz",
-      "checksum": "533AFFB8BE5A5C88088BD42B7EB74666223AF9A06E0505A08003089C799CB8E0",
+      "id": "github_release/github.com/charmbracelet/vhs/v0.10.0/vhs_0.10.0_Darwin_x86_64.tar.gz",
+      "checksum": "0EF1AE1F399DC837204AA737D375A44CDDB0A605BE3C32EAA659D4E6A5AD0B70",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/charmbracelet/vhs/v0.9.0/vhs_0.9.0_Linux_arm64.tar.gz",
-      "checksum": "D272DC1460D90C0BA1F69D9BFED0E29666272E76948FE905A713083A338ED08A",
+      "id": "github_release/github.com/charmbracelet/vhs/v0.10.0/vhs_0.10.0_Linux_arm64.tar.gz",
+      "checksum": "6D7300028D4641B9DC004A05CF411D40F1E12E560CC6FCA985DD90504B6652A7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/charmbracelet/vhs/v0.9.0/vhs_0.9.0_Linux_x86_64.tar.gz",
-      "checksum": "DB0B38837489930513353DBF988A8D48E9750040DBB1CD6DD1A883C6FE213962",
+      "id": "github_release/github.com/charmbracelet/vhs/v0.10.0/vhs_0.10.0_Linux_x86_64.tar.gz",
+      "checksum": "B552C3870ACA101DCAFE533CFEF32DCEB7B783400AD32642E728775C9F125407",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/charmbracelet/vhs/v0.9.0/vhs_0.9.0_Windows_x86_64.zip",
-      "checksum": "9DA16CCA61123E78C90E8FDD95F4DC9185254F7B32C87C08DE03D13E66B16ED6",
+      "id": "github_release/github.com/charmbracelet/vhs/v0.10.0/vhs_0.10.0_Windows_x86_64.zip",
+      "checksum": "7F5CFFBBD01FE4229AF0540856DDC0DA933AF0C16C05B1FBE62E0EF2097038A8",
       "algorithm": "sha256"
     },
     {
