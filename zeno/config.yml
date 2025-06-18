@@ -1,0 +1,16 @@
+snippets:
+  # snippet and keyword abbrev
+  - name: git status
+    keyword: gs
+    snippet: git status --short --branch
+  - name: git log
+    keyword: gl
+    snippet: git log --graph --oneline --all
+completions:
+  - name: cd
+    patterns:
+      - "^cd $"
+    sourceCommand: "fd -H -E .git -E .venv -t d -t l -d 1"
+    options:
+      # Added --read0 if null termination is used in `sourceCommand` output.
+      --preview: "eza -a --icons=always {} | sed '/^[.]*$/d'"

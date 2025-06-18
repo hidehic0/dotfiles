@@ -27,3 +27,4 @@ fi
 source "$sheldon_cache"
 
 unset sheldon_cache sheldon_toml
+

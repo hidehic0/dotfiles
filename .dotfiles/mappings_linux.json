@@ -25,5 +25,6 @@
   "wezterm": "~/.config/wezterm",
   "zellij": "~/.config/zellij",
   "foot": "~/.config/foot",
-  "libskk": "~/.config/libskk"
+  "libskk": "~/.config/libskk",
+  "zeno": "~/.config/zeno"
 }
