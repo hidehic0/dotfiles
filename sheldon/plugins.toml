@@ -50,7 +50,7 @@ use = ["{{ name }}.plugin.zsh"]
 
 [plugins."zeno.zsh"]
 github="yuki-yano/zeno.zsh"
-# apply = ["defer"]
+apply = ["defer"]
 use = ["zeno.zsh"]
 hooks.post = '''
 export ZENO_GIT_CAT="gat"

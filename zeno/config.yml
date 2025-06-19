@@ -6,11 +6,24 @@ snippets:
   - name: git log
     keyword: gl
     snippet: git log --graph --oneline --all
+  - name: clear
+    keyword: clr
+    snippet: clear
+  - name: "find file"
+    keyword: "ff"
+    snippet: "$(fd -H -t f -d 6 -E .git | fzf --tmux)"
+    context:
+      buffer: '.*\s'
+  - name: "find dir"
+    keyword: "fdi"
+    snippet: "$(fd -H -t d -t l -E .git -d 6 | fzf --tmux)"
+    context:
+      buffer: '.*\s'
 completions:
-  - name: cd
+  - name: path
     patterns:
       - "^cd $"
-    sourceCommand: "fd -H -E .git -E .venv -t d -t l -d 1"
+    sourceCommand: "fd --no-ignore-vcs -t d -t l -d 1"
     options:
-      # Added --read0 if null termination is used in `sourceCommand` output.
-      --preview: "eza -a --icons=always {} | sed '/^[.]*$/d'"
+      --multi: true
+    callback: "sed -e 's/^\\.\\///'"
