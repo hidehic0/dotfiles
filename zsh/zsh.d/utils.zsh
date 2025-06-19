@@ -1,19 +1,13 @@
 #!/bin/zsh
+setopt globdots
 
-zmodload zsh/complist
-bindkey -M menuselect '^[[Z' reverse-menu-complete
 zstyle ':completion::complete:*' gain-privileges 1
-zstyle ':completion:*' menu select
-
-# zeno
-# export ZENO_ENABLE_SOCK=1
-# export ZENO_GIT_CAT="gat"
-# export ZENO_GIT_TREE="eza --icons=always -T"
-#
-# bindkey ' ' zeno-auto-snippet
-# bindkey '^i' zeno-completion
-# bindkey '^g' zeno-ghq-cd
-# bindkey '^x' zeno-insert-snippet
+zstyle ':fzf-tab:*' fzf-command fzf
+zstyle ':fzf-tab:*' fzf-preview 'echo {}'
+zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':completion:*' menu no
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd -1 --color=always $realpath'
 
 # zoxide
 # eval "$(zoxide init zsh)"
