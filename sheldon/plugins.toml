@@ -39,28 +39,43 @@ use = ["{{ name }}.plugin.zsh"]
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
-# [plugins.fzf-tab]
-# github = "Aloxaf/fzf-tab"
-# use = ["fzf-tab.zsh"]
+[plugins.fzf-tab]
+github = "Aloxaf/fzf-tab"
+apply = ["defer"]
+use = ["fzf-tab.zsh"]
+hooks.post="""
+zstyle ':completion::complete:*' gain-privileges 1
+zstyle ':fzf-tab:*' fzf-command fzf
+zstyle ':fzf-tab:*' fzf-preview 'echo {}'
+zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':completion:*' menu no
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'lsd -1 --color=always $realpath'
+"""
 
 [plugins.git-sync]
 github = "caarlos0-graveyard/zsh-git-sync"
 # apply = ["defer"]
 use = ["{{ name }}.plugin.zsh"]
 
-[plugins."zeno.zsh"]
-github="yuki-yano/zeno.zsh"
-apply = ["defer"]
-use = ["zeno.zsh"]
-hooks.post = '''
-export ZENO_GIT_CAT="gat"
-export ZENO_GIT_TREE="eza --icons=always -T"
+# [plugins."zeno.zsh"]
+# github="yuki-yano/zeno.zsh"
+# apply = ["defer"]
+# use = ["zeno.zsh"]
+# hooks.post = '''
+# export ZENO_GIT_CAT="gat"
+# export ZENO_GIT_TREE="eza --icons=always -T"
+#
+# bindkey ' ' zeno-auto-snippet
+# bindkey '^i' zeno-completion
+# bindkey '^g' zeno-ghq-cd
+# bindkey '^x' zeno-insert-snippet
+# '''
 
-bindkey ' ' zeno-auto-snippet
-bindkey '^i' zeno-completion
-bindkey '^g' zeno-ghq-cd
-bindkey '^x' zeno-insert-snippet
-'''
+[plugins.abbrev-alias]
+github = "momo-lab/zsh-abbrev-alias"
+apply = ["defer"]
+use = ["{{ name }}.plugin.zsh"]
 
 [plugins.git-completion]
 remote = "https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-completion.zsh"
