@@ -30,3 +30,7 @@ exec = "custom-completion-zsh completion zsh"
 [[tool]]
 name = "atcoderproblems-cli"
 exec = "atcoderproblems-cli completion zsh"
+
+[[tool]]
+name="tailscale"
+exec ="tailscale completion zsh"

@@ -26,9 +26,8 @@ pipewire-jack
 pipewire-pulse
 qt5-wayland
 qt6-wayland
-rofi
+rofi-wayland
 swaync
-swayosd-git
 ttf-firacode-nerd 
 waybar
 wayland

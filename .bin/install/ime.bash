@@ -20,5 +20,3 @@ sudo yaskkserv2_make_dictionary --dictionary-filename=/usr/local/share/dictionar
 
 mkdir -p $HOME/.local/share/fcitx5/skk
 echo "type=file,file=~/.local/share/fcitx5/skk/user.dict,mode=readwrite,complete=true\nfile=/usr/share/skk/SKK-JISYO.emoji.utf8,mode=readonly,type=file\ntype=server,host=localhost,port=1178" >$HOME/.local/share/fcitx5/skk/dictionary_list
-
-cp -r ./fcitx5 ~/.config/fcitx5
