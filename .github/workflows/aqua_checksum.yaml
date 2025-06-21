@@ -24,6 +24,13 @@ jobs:
         with:
           aqua_version: v2.53.2
       - run: aqua update-checksum prune
+      - name: Configure GPG for non-interactive use
+        run: |
+          echo "no-tty" >> ~/.gnupg/gpg.conf
+          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
+          echo "use-agent" >> ~/.gnupg/gpg.conf
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          gpgconf --kill gpg-agent
       - name: "Commit and push changes"
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
