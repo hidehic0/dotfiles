@@ -15,7 +15,7 @@ return {
         "clangd",
         "denols",
         "marksman",
-        -- "tombi",
+        "tombi",
         "nim_langserver",
         "gopls",
         "nil_ls",

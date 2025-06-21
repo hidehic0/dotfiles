@@ -43,7 +43,7 @@ github = "zsh-users/zsh-completions"
 github = "Aloxaf/fzf-tab"
 apply = ["defer"]
 use = ["fzf-tab.zsh"]
-hooks.post="""
+hooks.post = """
 zstyle ':completion::complete:*' gain-privileges 1
 zstyle ':fzf-tab:*' fzf-command fzf
 zstyle ':fzf-tab:*' fzf-preview 'echo {}'
