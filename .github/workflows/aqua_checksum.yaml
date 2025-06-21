@@ -3,29 +3,14 @@ on:
   pull_request:
     paths:
       - aqua.yaml
+      - aqua-checksums.json
 jobs:
   update-aqua-checksums:
-    runs-on: ubuntu-latest
+    uses: aquaproj/update-checksum-workflow/.github/workflows/update-checksum.yaml@d248abb88efce715d50eb324100d9b29a20f7d18 # v1.0.4
     permissions:
       contents: write
-    steps:
-      - uses: actions/checkout@v4
-      - uses: aquaproj/aqua-installer@9ebf656952a20c45a5d66606f083ff34f58b8ce0 # v4.0.0
-        with:
-          aqua_version: v2.53.2
-      - run: aqua update-checksum prune
-      - name: "Import GPG key"
-        id: import-gpg
-        uses: crazy-max/ghaction-import-gpg@v6
-        with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.GPG_PASSPHRASE }}
-          git_user_signingkey: true
-          git_commit_gpgsign: true
-      - name: "Commit and push changes"
-        uses: stefanzweifel/git-auto-commit-action@v6
-        with:
-          commit_message: Updated Checksums
-          commit_author: "${{ steps.import-gpg.outputs.name }} <${{ steps.import-gpg.outputs.email }}>"
-          commit_user_name: ${{ steps.import-gpg.outputs.name }}
-          commit_user_email: ${{ steps.import-gpg.outputs.email }}
+    with:
+      aqua_version: v2.53.2
+      prune: true
+    secrets:
+      gh_token: ${{secrets.GH_TOKEN}}
