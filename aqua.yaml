@@ -54,7 +54,7 @@ packages:
     registry: local
   - name: hidehic0/primesplit@v0.1.1
     registry: local
-  - name: tombi-toml/tombi@v0.4.12
+  - name: tombi-toml/tombi@v0.4.13
   - name: sxyazi/yazi@v25.5.31
   - name: exaloop/codon@v0.18.2
     registry: local
