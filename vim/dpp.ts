@@ -21,8 +21,8 @@ import type {
 	Params as LocalParams,
 } from "jsr:@shougo/dpp-ext-local@~1.3.0";
 
-import type { Denops } from "jsr:@denops/std@~7.5.1";
-import * as fn from "jsr:@denops/std@~7.5.1/function";
+import type { Denops } from "jsr:@denops/std@~7.6.0";
+import * as fn from "jsr:@denops/std@~7.6.0/function";
 
 export class Config extends BaseConfig {
 	override async config(args: {
