@@ -266,33 +266,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/google/yamlfmt/v0.17.1/yamlfmt_0.17.1_Darwin_arm64.tar.gz",
-      "checksum": "B00AC8AC1B0736A323708E9073DD602117725F809976DEDEF6C6680D7D7CFF33",
+      "id": "github_release/github.com/google/yamlfmt/v0.17.2/yamlfmt_0.17.2_Darwin_arm64.tar.gz",
+      "checksum": "94BD3FB3A2C66BDAB77B58CD91BECE9E4A8A28A33CB4E0FE241E6220548F69DD",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/google/yamlfmt/v0.17.1/yamlfmt_0.17.1_Darwin_x86_64.tar.gz",
-      "checksum": "17A6DF169F88DD411E613C2F695796E0C797268C948BAD4628076483D5F58400",
+      "id": "github_release/github.com/google/yamlfmt/v0.17.2/yamlfmt_0.17.2_Darwin_x86_64.tar.gz",
+      "checksum": "E806FE1013E601788E762DC7E54858B0BB4BDC828C5B4C95125DB67CD997AC30",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/google/yamlfmt/v0.17.1/yamlfmt_0.17.1_Linux_arm64.tar.gz",
-      "checksum": "1EC4E3E24F8FC18A94DF8C34D88D3A9234AE33B6F6A8CACE8794B37D26D712BE",
+      "id": "github_release/github.com/google/yamlfmt/v0.17.2/yamlfmt_0.17.2_Linux_arm64.tar.gz",
+      "checksum": "1785B9751AF9DCA10A8A3E51EE2F6F3AA64564610DCC994D98421E28D02B56B5",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/google/yamlfmt/v0.17.1/yamlfmt_0.17.1_Linux_x86_64.tar.gz",
-      "checksum": "4552CE8575149F3F6CCE768F4F325BD1DABE11F6EE4D03FC5BBB94061E852E75",
+      "id": "github_release/github.com/google/yamlfmt/v0.17.2/yamlfmt_0.17.2_Linux_x86_64.tar.gz",
+      "checksum": "B114115B6804CFD203195D222558E4FEB38E311FFFB590C4E13642FA21BD0E37",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/google/yamlfmt/v0.17.1/yamlfmt_0.17.1_Windows_arm64.tar.gz",
-      "checksum": "A18578F26F337504AF82BCD7CCF38B59FBEA19827D5E91AFA8AC5EDEA8D9B584",
+      "id": "github_release/github.com/google/yamlfmt/v0.17.2/yamlfmt_0.17.2_Windows_arm64.tar.gz",
+      "checksum": "66B3E4B4B3AC64EC3BAE6CCECD38CB5B5BF3657BE15C2220BE89A4CA31825F6E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/google/yamlfmt/v0.17.1/yamlfmt_0.17.1_Windows_x86_64.tar.gz",
-      "checksum": "962A597E05497516DF515DFA9AFAE028311894C1096051A20902C6030C4E029E",
+      "id": "github_release/github.com/google/yamlfmt/v0.17.2/yamlfmt_0.17.2_Windows_x86_64.tar.gz",
+      "checksum": "FC6FD9328F62D7880C1EDA1889F9EBA39F42C6317761C23C27771349BA601513",
       "algorithm": "sha256"
     },
     {
