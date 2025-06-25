@@ -36,3 +36,4 @@ zsh
 foot
 ghostty
 noto-fonts-cjk
+swayidle

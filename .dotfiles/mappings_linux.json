@@ -26,5 +26,6 @@
   "zellij": "~/.config/zellij",
   "foot": "~/.config/foot",
   "libskk": "~/.config/libskk",
-  ".bin": "~/.config/.bin"
+  ".bin": "~/.config/.bin",
+  "xprofile": "~/.xinitrc"
 }

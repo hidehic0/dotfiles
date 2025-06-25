@@ -12,3 +12,5 @@ export FZF_DEFAULT_OPTS="--ignore-case"
 
 # editor
 export EDITOR=nvim
+
+export GPG_TTY=$(tty)

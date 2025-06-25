@@ -5,11 +5,19 @@ bindsym $mod+Shift+q kill
 set $mybind bindsym --to-code
 
 # startup apps
-exec --no-startup-id "fcitx5 -rd"
-exec xsettingsd
-exec pulseaudio --start 
-exec mako
-exec wl-paste --watch cliphist store
+exec --no-startup-id "systemctl --user restart fcitx5.service"
+exec --no-startup-id "systemctl --user start pipewire pipewire-pulse wireplumber"
+exec swaync
+exec swayosd-server
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
+
+workspace 4
+exec discord
+workspace 2
+exec ghostty
+workspace 1
+exec vivaldi
 
 bar {
   swaybar_command waybar
@@ -41,17 +49,18 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+f fullscreen toggle
-bindsym $mod+Shift+t exec swaylock 
+# bindsym $mod+f fullscreen toggle
+bindsym $mod+comma exec "swayosd-client --output-volume mute-toggle && brightnessctl set 0\% && waylock && brightnessctl set 100\% && swayosd-client --output-volume mute-toggle"
+bindsym $mod+period exec "systectl suspend && waylock"
 
 # set font
 font pango:noto sans CJK JP 12
 
 # app start keybinds
-bindsym $mod+Return exec wezterm
-bindsym $mod+F2 exec "vivaldi --gtk-version=4"
+bindsym $mod+Return exec ghostty
+bindsym $mod+F2 exec vivaldi
 bindsym $mod+F3 exec pcmanfm
-bindsym $mod+d exec  ~/rofi_start.sh
+bindsym $mod+d exec  "rofi -combi-modi window\,drun\,ssh -show combi"
 bindsym $mod+v exec cliphist list | rofi -dmenu | cliphist decode | wl-copy
 
 
@@ -91,10 +100,26 @@ bindsym $mod+ctrl+8 move container to workspace number $ws8
 bindsym $mod+ctrl+9 move container to workspace number $ws9
 bindsym $mod+Ctrl+0 move container to workspace number $ws10
 
+# Volume control
+bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume=raise
+bindsym XF86AudioLowerVolume exec swayosd-client --output-volume=lower
+bindsym XF86AudioMute exec swayosd-client --output-volume mute-toggle
+bindsym XF86AudioMicMute exec swayosd-client --input-volume mute-toggle
+
+# Brightness control
+bindsym XF86MonBrightnessUp exec swayosd-client --brightness raise
+bindsym XF86MonBrightnessDown exec swayosd-client --brightness lower
+
+# Media control (requires playerctl)
+bindsym XF86AudioNext exec swayosd-client --playerctl next
+bindsym XF86AudioPlay exec swayosd-client --playerctl play
+bindsym XF86AudioPause exec swayosd-client --playerctl pause
+bindsym XF86AudioPrev exec swayosd-client --playerctl prev
+
 # set wallpaper
 output "*" background "/usr/share/backgrounds/archlinux/simple.png" fill
 
-for_window [app_id=".*"] border pixel 0
+for_window [app_id=".*"] border pixel 2
 # include /etc/sway/config.d/*.conf
 
 # floating settings
