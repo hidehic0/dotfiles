@@ -117,7 +117,7 @@ bindsym XF86AudioPause exec swayosd-client --playerctl pause
 bindsym XF86AudioPrev exec swayosd-client --playerctl prev
 
 # set wallpaper
-output "*" background "/usr/share/backgrounds/archlinux/simple.png" fill
+output "*" background "/usr/share/backgrounds/archlinux/awesome.png" fill
 
 for_window [app_id=".*"] border pixel 2
 # include /etc/sway/config.d/*.conf
