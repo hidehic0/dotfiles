@@ -306,6 +306,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.2/atcoderproblems-cli_linux_arm64.tar.gz",
+      "checksum": "3B0238B0BCAECE529AD6534440689D2627CB40C1B185A528E0108A53C979E713",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.2/atcoderproblems-cli_linux_x86_64.tar.gz",
+      "checksum": "C830BA33AAE5A301D7338E89BBF1C9C28B026C051689455F7F58E027F071F339",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.2/custom-completion-zsh_Linux_amd64.tar.gz",
       "checksum": "2EBB4605317ECC5BFE63A55C2852FFBFF39D1F76FDE4338B73C26961E1AC72F9",
       "algorithm": "sha256"
