@@ -296,26 +296,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/0.1.2/atcoderproblems-cli_linux_arm64.tar.gz",
-      "checksum": "725A5EC32153E4766E19EE5B951BC69028E8BE00AC932D71E11DAFC319F0AB6C",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/0.1.2/atcoderproblems-cli_linux_x86_64.tar.gz",
-      "checksum": "71E6106E6E54AC4503714EF1E6305E934AE99AFC6F1FAC293780D7AC9AD19BFA",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.2/atcoderproblems-cli_linux_arm64.tar.gz",
-      "checksum": "3B0238B0BCAECE529AD6534440689D2627CB40C1B185A528E0108A53C979E713",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.2/atcoderproblems-cli_linux_x86_64.tar.gz",
-      "checksum": "C830BA33AAE5A301D7338E89BBF1C9C28B026C051689455F7F58E027F071F339",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.3/atcoderproblems-cli_linux_arm64.tar.gz",
       "checksum": "0F9B6F9F2AD0364711215F49385C227B1519B39FA94C288CEE607987B15F2D49",
       "algorithm": "sha256"
@@ -441,33 +421,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.62.0/fzf-0.62.0-darwin_amd64.tar.gz",
-      "checksum": "7657712753FEA74F9390B0DC99D175A9336CA722DE413CCCFCA16AAE86720ACD",
+      "id": "github_release/github.com/junegunn/fzf/v0.63.0/fzf-0.63.0-darwin_amd64.tar.gz",
+      "checksum": "DDD99FAF0AEFFF30EFA5D972358156F4F1E80AE8A7D6D756BFDC7B633A781FC6",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.62.0/fzf-0.62.0-darwin_arm64.tar.gz",
-      "checksum": "7EA045FFEC6D5461A983E299ECCFAA66324373C6E3D1894568F09E47FA7560C1",
+      "id": "github_release/github.com/junegunn/fzf/v0.63.0/fzf-0.63.0-darwin_arm64.tar.gz",
+      "checksum": "2F3A1AC15EE28DF1E23112BCC3EACF2D2488D1D2D0477159A4C3B21338B4EA91",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.62.0/fzf-0.62.0-linux_amd64.tar.gz",
-      "checksum": "64B56DD484A2317D5F04C28AC0791B36807F034ADB419209AD39FB6637255794",
+      "id": "github_release/github.com/junegunn/fzf/v0.63.0/fzf-0.63.0-linux_amd64.tar.gz",
+      "checksum": "36E60FE51FED2F72954B39B9CE1E7EA72C1DC79BC99F4A3C2A7B98BB1A2B49BB",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.62.0/fzf-0.62.0-linux_arm64.tar.gz",
-      "checksum": "929FD132705D02F222A52E23C076018EF3E699793DD5E8C3183BB11ED9B7696E",
+      "id": "github_release/github.com/junegunn/fzf/v0.63.0/fzf-0.63.0-linux_arm64.tar.gz",
+      "checksum": "BB5DAFDD566E2BCEA4FE7D8BA8D97CAD15D733C6D05FC04E7B6DA8126A0A2F82",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.62.0/fzf-0.62.0-windows_amd64.zip",
-      "checksum": "DAC80C9D652C34F0CCD5D7C1C7B0E3AC9AA2E26C86D0A98B206CE5126F8A9774",
+      "id": "github_release/github.com/junegunn/fzf/v0.63.0/fzf-0.63.0-windows_amd64.zip",
+      "checksum": "6CCA8CAA140632F7B7ABDF36110B6CDE651F4470FB95ACF1366B578AD097CAE7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.62.0/fzf-0.62.0-windows_arm64.zip",
-      "checksum": "84F5208A4F5ED45DA23137A854A9B0119E1A3E2F4D60DF8B05835EEC2F2BBFF1",
+      "id": "github_release/github.com/junegunn/fzf/v0.63.0/fzf-0.63.0-windows_arm64.zip",
+      "checksum": "57B1F799D7A4C3E2839C766AED7F10BD0D0C662B2034E76FE63B5A64C1C1A279",
       "algorithm": "sha256"
     },
     {
