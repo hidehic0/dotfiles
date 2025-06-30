@@ -503,5 +503,3 @@ vim.fn["skkeleton#config"]({
   completionRankFile = "~/.cache/skkeleton/rank.json",
   kanaTable = "rom",
 })
-
-vim.cmd([[call skkeleton#register_keymap('input', "x", 'disable')]])
