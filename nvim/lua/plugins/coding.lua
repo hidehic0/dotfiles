@@ -227,9 +227,22 @@ return {
     event = "LspAttach",
     opts = {},
   },
-  { "kosayoda/nvim-lightbulb", event = "LspAttach", opts = {
-    autocmd = { enabled = true },
-  } },
+  {
+    "kosayoda/nvim-lightbulb",
+    event = "LspAttach",
+    opts = {
+      autocmd = { enabled = true },
+      sign = {
+        enabled = false,
+      },
+      virtual_text = {
+        enabled = true,
+      },
+      number = {
+        enabled = true,
+      },
+    },
+  },
   {
     "nvim-neotest/neotest",
     cmd = "Neotest",
