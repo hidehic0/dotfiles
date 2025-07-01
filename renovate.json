@@ -1,21 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": true,
-  "customManagers": [
-    {
-      "customType": "regex",
-      "datasourceTemplate": "npm",
-      "depNameTemplate": "{{depName}}",
-      "managerFilePatterns": [
-        "/\\.mise\\.toml$/",
-        "/mise/config\\.toml$/"
-      ],
-      "matchStrings": [
-        "\"npm:(?<depName>[^\"]+)\"\\s*=\\s*\"(?<currentValue>[^\"]+)\""
-      ],
-      "versioningTemplate": "npm"
-    }
-  ],
   "extends": [
     "config:recommended",
     "github>Omochice/renovate-config:deno",
