@@ -120,29 +120,29 @@ return {
     end,
   },
   { "folke/zen-mode.nvim", opts = {}, cmd = "ZenMode" },
-  {
-    "rcarriga/nvim-notify",
-    event = "VeryLazy",
-    config = function()
-      require("notify").setup({
-        stages = "slide",
-        fps = 144,
-        icons = {
-          ERROR = " ERROR",
-          WARN = " WARN",
-          INFO = " INFO",
-          DEBUG = " DEBUG",
-          TRACE = "✎ TRACE",
-        },
-        timeout = 1500,
-      })
-      vim.notify = require("notify")
-
-      vim.api.nvim_create_user_command("NotifyDismiss", function()
-        require("notify").dismiss()
-      end, {})
-    end,
-  },
+  -- {
+  --   "rcarriga/nvim-notify",
+  --   event = "VeryLazy",
+  --   config = function()
+  --     require("notify").setup({
+  --       stages = "slide",
+  --       fps = 144,
+  --       icons = {
+  --         ERROR = " ERROR",
+  --         WARN = " WARN",
+  --         INFO = " INFO",
+  --         DEBUG = " DEBUG",
+  --         TRACE = "✎ TRACE",
+  --       },
+  --       timeout = 1500,
+  --     })
+  --     vim.notify = require("notify")
+  --
+  --     vim.api.nvim_create_user_command("NotifyDismiss", function()
+  --       require("notify").dismiss()
+  --     end, {})
+  --   end,
+  -- },
   -- { "Sam-programs/cmdline-hl.nvim", event = "VeryLazy", opts = {
   --   ghost_text = false,
   -- } },
