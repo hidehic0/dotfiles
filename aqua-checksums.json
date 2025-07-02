@@ -26,6 +26,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/Feel-ix-343/markdown-oxide/v0.25.3/markdown-oxide-v0.25.3-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "93FBA8C92C97BC7C725942C27DFCADA379C804C6FAAC50DC685DAA5558090ED1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/Feel-ix-343/markdown-oxide/v0.25.3/markdown-oxide-v0.25.3-x86_64-unknown-linux-gnu.tar.gz",
+      "checksum": "F6E973BEA302C4574A51D4FD70CB8446090100D2E022D1F5E54F923502ADD79C",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-linux-aarch64.zip",
       "checksum": "D4DF7A455242C4EFB0E5614F99CB55168C0057485201AE71E1BE31C5FCD5A923",
       "algorithm": "sha256"

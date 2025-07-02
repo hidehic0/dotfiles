@@ -1,13 +1,14 @@
 # dotfiles
+
 構成
 
 * os
   * archlinux
 * package manager
-  * pacman + aqua + mise + npm 
-    * 言語は、mise 
+  * pacman + aqua + mise + npm
+    * 言語は、mise
     * go製ツール,rust製ツールは、aqua
-    * node製ツールは、npm 
+    * node製ツールは、npm
     * シェルとかは、pacman
     * このような形で管理しています
 * window manager
@@ -17,12 +18,12 @@
 * editor
   * neovim</br>
   主要なプラグイン
-      * lazy.nvim
-      * ddc.vim
-      * ddu.vim
-      * ddt.vim 
-      * nvim-lspconfig
-      * noice.nvim
+    * lazy.nvim
+    * ddc.vim
+    * ddu.vim
+    * ddt.vim
+    * nvim-lspconfig
+    * noice.nvim
 
 </br>
 みたいな感じです</br>

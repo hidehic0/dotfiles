@@ -166,5 +166,13 @@ export class Config extends BaseConfig {
         },
       },
     });
+
+    args.contextBuilder.patchFiletype("markdown", {
+      sourceOptions: {
+        lsp: {
+          forceCompletionPattern: "\(\k\| \|\/\|#\)\+]",
+        },
+      },
+    });
   }
 }

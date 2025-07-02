@@ -66,3 +66,17 @@ packages:
       - linux
     replacements:
       linux: Linux
+  - type: github_release
+    repo_owner: Feel-ix-343
+    repo_name: markdown-oxide
+    asset: markdown-oxide-{{.Version}}-{{.Arch}}-{{.OS}}.{{.Format}}
+    format: tar.gz
+    files:
+      - name: markdown-oxide
+        src: markdown-oxide-{{.Version}}-{{.Arch}}-{{.OS}}/markdown-oxide
+    supported_envs:
+      - linux
+    replacements:
+      linux: linux-gnu
+      amd64: x86_64-unknown
+      arm64: aarch64-unknown
