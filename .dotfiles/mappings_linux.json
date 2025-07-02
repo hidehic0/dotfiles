@@ -27,5 +27,6 @@
   "foot": "~/.config/foot",
   "libskk": "~/.config/libskk",
   ".bin": "~/.config/.bin",
-  "xprofile": "~/.xinitrc"
+  "xprofile": "~/.xinitrc",
+  "swaync": "~/.config/swaync"
 }
