@@ -64,7 +64,7 @@ mouse-hide-while-typing = true
 
 command="tmux"
 
-font-family = "NotoSans CJK JP"
+font-family = "HackGenConsole-Regular"
 
 background=black
 
