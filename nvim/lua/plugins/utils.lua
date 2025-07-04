@@ -299,6 +299,12 @@ return {
         dependencies = { "lambdalisue/kensaku.vim" },
         opts = { picker = "egrepify" },
       },
+      {
+        "oflisback/obsidian-bridge.nvim",
+        opts = {
+          scroll_sync = true,
+        },
+      },
     },
     opts = {
       workspaces = {

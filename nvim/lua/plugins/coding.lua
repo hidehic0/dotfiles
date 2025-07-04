@@ -14,7 +14,7 @@ return {
         "ruff",
         "clangd",
         "denols",
-        "marksman",
+        -- "marksman",
         "tombi",
         "nim_langserver",
         "gopls",
