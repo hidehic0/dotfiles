@@ -1,0 +1,14 @@
+{
+  "Frac": {
+    "body": [
+      "\\frac{$1}{$2}"
+    ],
+    "prefix": "frac"
+  },
+  "Comma": {
+    "body": [
+      " ,\\; "
+    ],
+    "prefix": "comma"
+  }
+}
