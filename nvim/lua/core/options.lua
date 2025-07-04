@@ -16,6 +16,8 @@ vim.opt.laststatus = 3
 -- vim.o.cmdheight = 0
 vim.o.showmode = false
 vim.o.cursorline = false
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 vim.cmd([[let &grepprg='rg --vimgrep']])
 
