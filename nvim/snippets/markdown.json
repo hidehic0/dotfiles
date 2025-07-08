@@ -10,5 +10,29 @@
       " ,\\; "
     ],
     "prefix": "comma"
+  },
+  "sin": {
+    "body": [
+      "\\sin "
+    ],
+    "prefix": "sin"
+  },
+  "cos": {
+    "body": [
+      "\\cos "
+    ],
+    "prefix": "cos"
+  },
+  "tan": {
+    "body": [
+      "\\tan "
+    ],
+    "prefix": "tan"
+  },
+  "circ": {
+    "body": [
+      "^\\circ"
+    ],
+    "prefix": "circ"
   }
 }
