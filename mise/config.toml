@@ -10,7 +10,7 @@ uv = "0.7.19"
 "npm:markdownlint-cli2" = "0.18.1"
 "npm:pyright" = "1.1.402"
 "npm:typescript-language-server" = "4.3.4"
-"npm:@devcontainers/cli" = "0.78.0"
+"npm:@devcontainers/cli" = "0.79.0"
 "npm:eslint" = "9.30.1"
 # python製tools
 "pipx:terminaltexteffects" = "0.12.0"
