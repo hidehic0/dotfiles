@@ -1,5 +1,7 @@
 require("nightfox").setup({
-  options = {},
+  options = {
+    transparent = true,
+  },
 })
 
 vim.cmd("colorscheme terafox")
