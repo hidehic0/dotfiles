@@ -106,8 +106,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/aquaproj/aqua-registry-updater/v0.1.5/aqua-registry-updater_linux_amd64.tar.gz",
-      "checksum": "EE3C2FB8DFF51875958243C78462C56F6049783FD17F34A54CCAD8DB251531BF",
+      "id": "github_release/github.com/aquaproj/aqua-registry-updater/v0.1.6/aqua-registry-updater_linux_amd64.tar.gz",
+      "checksum": "CE9E628A6F949607B9F8788E91A757BD632E36B21AC0535DC3F2ADCDF0D58A67",
       "algorithm": "sha256"
     },
     {
