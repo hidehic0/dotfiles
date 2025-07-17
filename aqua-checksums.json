@@ -361,23 +361,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jdx/mise/v2025.7.10/mise-v2025.7.10-linux-arm64-musl.tar.gz",
-      "checksum": "D9695FF84EF4B8105806A17DF40B582E263F6DA9B90A5D71793B11AF33EB689A",
+      "id": "github_release/github.com/jdx/mise/v2025.7.11/mise-v2025.7.11-linux-arm64-musl.tar.gz",
+      "checksum": "AE6857CED87366450831F8A0EC21DAB4D78919CE68C7D603C54F89892CC45236",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jdx/mise/v2025.7.10/mise-v2025.7.10-linux-x64-musl.tar.gz",
-      "checksum": "B14AF10B0BFF351C0E9CF8F0F4703707B33E3C8A136A6F9E681C7364F85D2049",
+      "id": "github_release/github.com/jdx/mise/v2025.7.11/mise-v2025.7.11-linux-x64-musl.tar.gz",
+      "checksum": "70B01F43A0DC006DCE90266C7678D422E31EB02E1390C67E6539B5D4A6376F3F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jdx/mise/v2025.7.10/mise-v2025.7.10-macos-arm64.tar.gz",
-      "checksum": "5A7D36CF3B93799EF7AF1A1BA0EA25EA5B8392DB4F0878B7DD94764EE46D8372",
+      "id": "github_release/github.com/jdx/mise/v2025.7.11/mise-v2025.7.11-macos-arm64.tar.gz",
+      "checksum": "399B8FF26E24C88582532939CDBE1BC64A197C7545BF9E52861DE852A844D0CC",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jdx/mise/v2025.7.10/mise-v2025.7.10-macos-x64.tar.gz",
-      "checksum": "929703BD3994E376B65BA1C226FD4E98950835E81CB04EA5DB4B02964A6BAB73",
+      "id": "github_release/github.com/jdx/mise/v2025.7.11/mise-v2025.7.11-macos-x64.tar.gz",
+      "checksum": "751703610F7771BD1F7FEBA799ACB13ACE6E0BB842267457175775049264E8CD",
       "algorithm": "sha256"
     },
     {
