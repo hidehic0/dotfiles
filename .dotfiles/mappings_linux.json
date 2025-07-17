@@ -28,5 +28,6 @@
   "libskk": "~/.config/libskk",
   ".bin": "~/.config/.bin",
   "xprofile": "~/.xinitrc",
-  "swaync": "~/.config/swaync"
+  "swaync": "~/.config/swaync",
+  "clangd": "~/.config/clangd"
 }
