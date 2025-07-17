@@ -300,9 +300,12 @@ return {
     ft = "markdown",
     cmd = {
       "Obsidian",
-      "ObsidianOpen",
       "ObsidianKensaku",
       "ObsidianQuickKensaku",
+    },
+    keys = {
+      { "<leader>oo", "<Cmd>Obsidian open<CR>" },
+      { "<leader>of", "<CMD>Obsidian<CR><ESC><CMD>ObsidianQuickKensaku<CR>" }, -- うまく読み込めないので苦肉の策 一瞬チラつく
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
