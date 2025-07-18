@@ -42,7 +42,42 @@ vim.keymap.set("n", "<F12>", function()
 end, { desc = "Step Out" })
 -- vim.keymap.set("n", "<leader>b", "<CMD>DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
 
-dapui.setup() -- デフォルト設定でdap-uiをセットアップ
+dapui.setup({
+  layouts = {
+    {
+      elements = {
+        {
+          id = "scopes",
+          size = 1,
+        },
+        -- {
+        --   id = "stacks",
+        --   size = 0.25,
+        -- },
+        -- {
+        --   id = "watches",
+        --   size = 0.25,
+        -- },
+      },
+      position = "left",
+      size = 40,
+    },
+    {
+      elements = {
+        {
+          id = "repl",
+          size = 0.5,
+        },
+        {
+          id = "console",
+          size = 0.5,
+        },
+      },
+      position = "bottom",
+      size = 10,
+    },
+  },
+}) -- デフォルト設定でdap-uiをセットアップ
 
 -- デバッグ開始時にUIを開く
 dap.listeners.after.event_initialized["dapui_config"] = function()
