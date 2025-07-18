@@ -29,5 +29,5 @@
   ".bin": "~/.config/.bin",
   "xprofile": "~/.xinitrc",
   "swaync": "~/.config/swaync",
-  "clangd": "~/.config/clangd"
+  "clangd/config.yml": "~/.clangd"
 }

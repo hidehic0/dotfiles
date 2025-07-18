@@ -7,11 +7,12 @@ dap.adapters.codelldb = {
   type = "server",
   port = "${port}",
   executable = {
-    command = "codelldb", -- or if not in $PATH: "/absolute/path/to/codelldb"
-    args = { "--port", "${port}" },
 
-    -- On windows you may have to uncomment this:
-    -- detached = false,
+    -- Masonはここにデバッガを入れてくれる
+    command = vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/adapter/codelldb",
+
+    -- ポートを自動的に割り振ってくれる
+    args = { "--port", "${port}" },
   },
 }
 

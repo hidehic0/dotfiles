@@ -278,4 +278,5 @@ return {
       end, 1000)
     end,
   },
+  { "mason-org/mason.nvim", cmd = "Mason", build = ":MasonUpdate", opts = {} },
 }
