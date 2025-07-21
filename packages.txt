@@ -37,3 +37,4 @@ foot
 ghostty
 noto-fonts-cjk
 swayidle
+swayosd
