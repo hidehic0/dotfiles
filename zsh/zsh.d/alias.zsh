@@ -5,6 +5,7 @@ bin_dir="$HOME/.config/zsh/bin"
 alias qcp="$bin_dir/quicktest.sh"
 alias ojtp="$bin_dir/oj_test_python.sh"
 alias ojtc="$bin_dir/oj_test_cpp.sh"
+alias acs="$bin_dir/atc_submit.zsh"
 alias acsp="$bin_dir/acc_submit_python.sh"
 alias acsc="$bin_dir/acc_submit_cpp.sh"
 

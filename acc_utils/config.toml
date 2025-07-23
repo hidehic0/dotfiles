@@ -1,0 +1,7 @@
+[[configs]]
+file = "main.py"
+cmd = "/bin/cat main.py | wl-copy"
+
+[[configs]]
+file = "main.cpp"
+cmd = "oj-bundle main.cpp  -I $(ghq root)/github.com/hidehic0/library_cpp | wl-copy"
