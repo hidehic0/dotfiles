@@ -15,7 +15,7 @@ uv = "0.8.0"
 # python製tools
 "pipx:terminaltexteffects" = "0.12.0"
 lua = "5.4.8"
-usage = "2.1.1"
+usage = "2.2.2"
 
 [settings]
 experimental = true
