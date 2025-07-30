@@ -76,6 +76,9 @@ export class Config extends BaseConfig {
           ignoredDirectories: [
             ".git",
             "node_modules",
+            ".venv",
+            "__pycache__",
+            ".ruff_cache",
           ],
         },
       },
