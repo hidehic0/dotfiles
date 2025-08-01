@@ -26,13 +26,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/Feel-ix-343/markdown-oxide/v0.25.4/markdown-oxide-v0.25.4-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "0CAD552842526F3B9660F71655192276682FA92F1C7488701AA5E54ABA546673",
+      "id": "github_release/github.com/Feel-ix-343/markdown-oxide/v0.25.5/markdown-oxide-v0.25.5-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "84A9EB12491EA642ED5BD05F67BE828197375C65726055E61AAF57101764D94E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/Feel-ix-343/markdown-oxide/v0.25.4/markdown-oxide-v0.25.4-x86_64-unknown-linux-gnu.tar.gz",
-      "checksum": "440444C490FC268E9DBBCAB528004EF5D1E40C3A9B7F1470FDFF258F628C69E3",
+      "id": "github_release/github.com/Feel-ix-343/markdown-oxide/v0.25.5/markdown-oxide-v0.25.5-x86_64-unknown-linux-gnu.tar.gz",
+      "checksum": "BBCD8522C1B080933F8F442E0DF6CC40700D4399059BAECCB6F686F61AE84299",
       "algorithm": "sha256"
     },
     {
