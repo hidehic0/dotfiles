@@ -209,13 +209,13 @@ return {
       }) -- Only if needed in your configuration, if you already have native LSP diagnostics
     end,
   },
-  {
-    "liangxianzhe/floating-input.nvim",
-    event = "VeryLazy",
-    config = function()
-      vim.ui.input = function(opts, on_confirm)
-        require("floating-input").input(opts, on_confirm, { border = "rounded" })
-      end
-    end,
-  },
+  -- {
+  --   "liangxianzhe/floating-input.nvim",
+  --   event = "VeryLazy",
+  --   config = function()
+  --     vim.ui.input = function(opts, on_confirm)
+  --       require("floating-input").input(opts, on_confirm, { border = "rounded" })
+  --     end
+  --   end,
+  -- },
 }
