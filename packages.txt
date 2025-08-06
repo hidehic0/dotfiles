@@ -39,4 +39,3 @@ noto-fonts-cjk
 swayidle
 swayosd
 acc_utils-bin
-bongocat
