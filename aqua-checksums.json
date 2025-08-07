@@ -256,8 +256,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/exaloop/codon/v0.19.1/codon-linux-x86_64.tar.gz",
-      "checksum": "403361F3CC017DCA513A5A00064022817FBBB989A286E8FD6CFF441292231E77",
+      "id": "github_release/github.com/exaloop/codon/v0.19.2/codon-linux-x86_64.tar.gz",
+      "checksum": "0C1FFB9B1E37DDA5155353E0E22C3DF0CB68DB5DE827FB34379D2A95ADF39984",
       "algorithm": "sha256"
     },
     {
