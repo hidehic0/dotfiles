@@ -9,7 +9,7 @@ uv = "0.8.4"
 "npm:atcoder-cli" = "2.2.0"
 "npm:markdownlint-cli2" = "0.18.1"
 "npm:pyright" = "1.1.403"
-"npm:typescript-language-server" = "4.3.4"
+"npm:typescript-language-server" = "4.4.0"
 "npm:@devcontainers/cli" = "0.80.0"
 "npm:eslint" = "9.32.0"
 # python製tools
