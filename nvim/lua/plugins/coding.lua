@@ -4,10 +4,19 @@ return {
     "neovim/nvim-lspconfig",
     event = "VimEnter",
     dependencies = {
-      "Shougo/ddc-source-lsp",
+      "saghen/blink.cmp",
     },
     config = function()
-      vim.lsp.config("*", { capabilities = require("ddc_source_lsp").make_client_capabilities() })
+      vim.lsp.config("*", {
+        capabilities = require("blink.cmp").get_lsp_capabilities({
+          textDocument = {
+            foldingRange = {
+              dynamicRegistration = false,
+              lineFoldingOnly = true,
+            },
+          },
+        }),
+      })
       vim.lsp.enable({
         "lua_ls",
         "pyright",
@@ -24,6 +33,28 @@ return {
       })
     end,
   },
+  {
+    "saghen/blink.cmp",
+    event = "InsertEnter",
+    dependencies = {
+      {
+        "L3MON4D3/LuaSnip",
+        dependencies = {
+          "rafamadriz/friendly-snippets",
+        },
+        run = "make install_jsregexp",
+        config = function()
+          require("luasnip.loaders.from_vscode").lazy_load({ paths = { "~/.config/nvim/snippets" } })
+        end,
+      },
+      { "saghen/blink.compat", version = "2.*" },
+      "mikavilpas/blink-ripgrep.nvim",
+    },
+    version = "1.*",
+    config = function()
+      require("plugins.config.blink")
+    end,
+  },
   -- {
   --   "nvimdev/lspsaga.nvim",
   --   event = "LspAttach",
@@ -35,99 +66,99 @@ return {
   --     require("plugins.config.lspsaga")
   --   end,
   -- },
-  {
-    "matsui54/denops-popup-preview.vim",
-    dependencies = {
-      "vim-denops/denops.vim",
-      "yuki-yano/denops-lazy.nvim",
-    },
-    event = "InsertEnter",
-    priority = 0,
-    config = function(spec)
-      require("denops-lazy").load(spec.name)
-      vim.fn["popup_preview#enable"]()
-    end,
-  },
-  {
-    "matsui54/denops-signature_help",
-    dependencies = {
-      "vim-denops/denops.vim",
-      "yuki-yano/denops-lazy.nvim",
-    },
-    event = "InsertEnter",
-    priority = 0,
-    config = function(spec)
-      require("denops-lazy").load(spec.name)
-      vim.g.signature_help_config = {
-        contentsStyle = "full",
-        viewStyle = "floating",
-      }
-      vim.fn["signature_help#enable"]()
-    end,
-  },
-  {
-    "Shougo/ddc.vim",
-    dependencies = {
-      -- denops
-      "vim-denops/denops.vim",
-      "yuki-yano/denops-lazy.nvim",
-      -- ui
-      "Shougo/ddc-ui-pum",
-      "Shougo/pum.vim",
-      -- sources
-      "LumaKernel/ddc-source-file",
-      "Shougo/ddc-source-codeium",
-      "Exafunction/windsurf.vim",
-      "Shougo/ddc-source-around",
-      "Shougo/ddc-source-cmdline",
-      "Shougo/ddc-source-cmdline_history",
-      -- "Shougo/ddc-source-copilot",
-      "Shougo/ddc-source-lsp",
-      "Shougo/ddc-source-mocword",
-      "Shougo/ddc-source-rg",
-      "Shougo/ddc-source-shell-native",
-      "uga-rosa/ddc-source-vsnip",
-      -- sorters
-      "tani/ddc-fuzzy",
-      -- converters
-      "Shougo/ddc-filter-converter_remove_overlap",
-      "Shougo/ddc-filter-converter_truncate_abbr",
-      -- filters
-      "matsui54/ddc-postfilter_score",
-      "Shougo/ddc-filter-matcher_prefix",
-      -- snip
-      "uga-rosa/denippet.vim",
-
-      -- helper
-      "tani/vim-artemis",
-    },
-    event = {
-      "CmdlineEnter",
-      "CmdlineChanged",
-      "InsertEnter",
-      "TextChangedI",
-      "TextChangedP",
-      "TextChangedT",
-    },
-    config = function(spec)
-      require("denops-lazy").load(spec.name)
-      require("plugins/config/ddc")
-    end,
-  },
-  {
-    "uga-rosa/denippet.vim",
-    dependencies = {
-      "vim-denops/denops.vim",
-      "tani/vim-artemis",
-      "rafamadriz/friendly-snippets",
-      "yuki-yano/denops-lazy.nvim",
-    },
-    event = "InsertEnter",
-    config = function(spec)
-      require("denops-lazy").load(spec.name)
-      require("plugins.config.denippet")
-    end,
-  },
+  -- {
+  --   "matsui54/denops-popup-preview.vim",
+  --   dependencies = {
+  --     "vim-denops/denops.vim",
+  --     "yuki-yano/denops-lazy.nvim",
+  --   },
+  --   event = "InsertEnter",
+  --   priority = 0,
+  --   config = function(spec)
+  --     require("denops-lazy").load(spec.name)
+  --     vim.fn["popup_preview#enable"]()
+  --   end,
+  -- },
+  -- {
+  --   "matsui54/denops-signature_help",
+  --   dependencies = {
+  --     "vim-denops/denops.vim",
+  --     "yuki-yano/denops-lazy.nvim",
+  --   },
+  --   event = "InsertEnter",
+  --   priority = 0,
+  --   config = function(spec)
+  --     require("denops-lazy").load(spec.name)
+  --     vim.g.signature_help_config = {
+  --       contentsStyle = "full",
+  --       viewStyle = "floating",
+  --     }
+  --     vim.fn["signature_help#enable"]()
+  --   end,
+  -- },
+  -- {
+  --   "Shougo/ddc.vim",
+  --   dependencies = {
+  --     -- denops
+  --     "vim-denops/denops.vim",
+  --     "yuki-yano/denops-lazy.nvim",
+  --     -- ui
+  --     "Shougo/ddc-ui-pum",
+  --     "Shougo/pum.vim",
+  --     -- sources
+  --     "LumaKernel/ddc-source-file",
+  --     "Shougo/ddc-source-codeium",
+  --     "Exafunction/windsurf.vim",
+  --     "Shougo/ddc-source-around",
+  --     "Shougo/ddc-source-cmdline",
+  --     "Shougo/ddc-source-cmdline_history",
+  --     -- "Shougo/ddc-source-copilot",
+  --     "Shougo/ddc-source-lsp",
+  --     "Shougo/ddc-source-mocword",
+  --     "Shougo/ddc-source-rg",
+  --     "Shougo/ddc-source-shell-native",
+  --     "uga-rosa/ddc-source-vsnip",
+  --     -- sorters
+  --     "tani/ddc-fuzzy",
+  --     -- converters
+  --     "Shougo/ddc-filter-converter_remove_overlap",
+  --     "Shougo/ddc-filter-converter_truncate_abbr",
+  --     -- filters
+  --     "matsui54/ddc-postfilter_score",
+  --     "Shougo/ddc-filter-matcher_prefix",
+  --     -- snip
+  --     "uga-rosa/denippet.vim",
+  --
+  --     -- helper
+  --     "tani/vim-artemis",
+  --   },
+  --   event = {
+  --     "CmdlineEnter",
+  --     "CmdlineChanged",
+  --     "InsertEnter",
+  --     "TextChangedI",
+  --     "TextChangedP",
+  --     "TextChangedT",
+  --   },
+  --   config = function(spec)
+  --     require("denops-lazy").load(spec.name)
+  --     require("plugins/config/ddc")
+  --   end,
+  -- },
+  -- {
+  --   "uga-rosa/denippet.vim",
+  --   dependencies = {
+  --     "vim-denops/denops.vim",
+  --     "tani/vim-artemis",
+  --     "rafamadriz/friendly-snippets",
+  --     "yuki-yano/denops-lazy.nvim",
+  --   },
+  --   event = "InsertEnter",
+  --   config = function(spec)
+  --     require("denops-lazy").load(spec.name)
+  --     require("plugins.config.denippet")
+  --   end,
+  -- },
   {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
