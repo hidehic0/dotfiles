@@ -100,7 +100,7 @@ require("blink.cmp").setup(
         ["<S-Tab>"] = { "select_prev", "snippet_backward", "fallback" },
         ["<CR>"] = { "accept_and_enter", "fallback" },
       },
-      completion = { menu = { auto_show = true } },
+      completion = { menu = { auto_show = true }, list = { selection = { preselect = false } } },
       sources = { "cmdline", "path", "buffer" },
     },
   }
