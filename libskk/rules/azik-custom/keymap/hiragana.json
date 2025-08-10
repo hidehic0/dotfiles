@@ -7,7 +7,8 @@
     "keymap": {
       "[": "set-input-mode-katakana",
       "@": "set-input-mode-katakana",
-      "'": "set-input-mode-hankaku-katakana"
+      "'": "set-input-mode-hankaku-katakana",
+      "q": null
     }
   }
 }
