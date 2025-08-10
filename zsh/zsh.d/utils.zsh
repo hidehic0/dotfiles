@@ -14,3 +14,5 @@ export FZF_DEFAULT_OPTS="--ignore-case"
 export EDITOR=nvim
 
 export GPG_TTY=$(tty)
+
+eval "$(direnv hook zsh)"
