@@ -43,9 +43,9 @@ local ripgrep_config = {
   end,
   min_keyword_length = 3,
   max_items = 3,
-  score_offset = -1,
+  score_offset = -2,
   enabled = function()
-    return not vim.fn["skkeleton#is_enabled"]()
+    return false
   end,
 }
 
