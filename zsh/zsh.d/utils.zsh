@@ -15,4 +15,6 @@ export EDITOR=nvim
 
 export GPG_TTY=$(tty)
 
+# dirnev
 eval "$(direnv hook zsh)"
+export DIRENV_LOG_FORMAT=

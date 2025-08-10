@@ -30,5 +30,6 @@
   "xprofile": "~/.xinitrc",
   "swaync": "~/.config/swaync",
   "clangd/config.yml": "~/.clangd",
-  "acc_utils": "~/.config/acc_utils"
+  "acc_utils": "~/.config/acc_utils",
+  "direnv": "~/.config/direnv"
 }
