@@ -72,7 +72,7 @@ require("blink.cmp").setup(
       accept = { auto_brackets = { enabled = false } },
     },
     sources = {
-      default = { "lsp", "ripgrep", "path", "snippets", "buffer" },
+      default = { "lsp", "snippets", "ripgrep", "path", "buffer" },
       providers = {
         ripgrep = ripgrep_config,
         cmdline = {
