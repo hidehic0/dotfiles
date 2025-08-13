@@ -1,12 +1,12 @@
 import {
 	type ContextBuilder,
 	type Plugin,
-} from "jsr:@shougo/dpp-vim@~4.5.0/types";
+} from "jsr:@shougo/dpp-vim@~4.7.0/types";
 import {
 	BaseConfig,
 	type ConfigReturn,
 	type MultipleHook,
-} from "jsr:@shougo/dpp-vim@~4.5.0/config";
+} from "jsr:@shougo/dpp-vim@~4.7.0/config";
 import type {
 	Ext as TomlExt,
 	Params as TomlParams,
