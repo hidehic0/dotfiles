@@ -25,6 +25,7 @@ local langs = {
   "git_config",
   "gitignore",
   "gitcommit",
+  "go",
 }
 
 local assist = {

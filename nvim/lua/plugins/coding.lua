@@ -214,13 +214,13 @@ return {
       require("plugins.config.treesitter")
     end,
   },
-  {
-    "tani/dmacro.nvim",
-    event = { "CursorMoved", "InsertEnter" },
-    config = function()
-      vim.keymap.set({ "i", "n" }, "<C-.>", "<Plug>(dmacro-play-macro)")
-    end,
-  },
+  -- {
+  --   "tani/dmacro.nvim",
+  --   event = { "CursorMoved", "InsertEnter" },
+  --   config = function()
+  --     vim.keymap.set({ "i", "n" }, "<C-.>", "<Plug>(dmacro-play-macro)")
+  --   end,
+  -- },
 
   {
     "numToStr/Comment.nvim",

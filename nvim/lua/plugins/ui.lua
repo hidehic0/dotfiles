@@ -95,23 +95,22 @@ return {
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
-    event = "VeryLazy",
+    event = "CursorMoved",
     opts = {},
-    keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
+    -- keys = { { "<leader>t", "<CMD>TodoLocList<CR>", desc = "Show TODOS" } },
   },
   {
     "MeanderingProgrammer/render-markdown.nvim",
     ft = { "markdown" },
     opts = { latex = {
-
       render_modes = false,
     } },
   },
-  {
-    "nvim-zh/colorful-winsep.nvim",
-    event = "WinNew",
-    opts = {},
-  },
+  -- {
+  --   "nvim-zh/colorful-winsep.nvim",
+  --   event = "WinNew",
+  --   opts = {},
+  -- },
   {
     "petertriho/nvim-scrollbar",
     event = "VeryLazy",
@@ -119,7 +118,7 @@ return {
       require("plugins.config.scrollbar")
     end,
   },
-  { "folke/zen-mode.nvim", opts = {}, cmd = "ZenMode" },
+  -- { "folke/zen-mode.nvim", opts = {}, cmd = "ZenMode" },
   -- {
   --   "rcarriga/nvim-notify",
   --   event = "VeryLazy",
