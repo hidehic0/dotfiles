@@ -191,10 +191,9 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
+    branch = "main",
     dependencies = {
-      "nvim-treesitter/nvim-treesitter-refactor",
-      "yioneko/nvim-yati",
-      "JoosepAlviste/nvim-ts-context-commentstring",
+      { "JoosepAlviste/nvim-ts-context-commentstring", opts = {} },
       { "andersevenrud/nvim_context_vt", event = "VeryLazy", opts = {} },
       {
         "HiPhish/rainbow-delimiters.nvim",
@@ -208,7 +207,8 @@ return {
         end,
       },
     },
-    event = "VeryLazy",
+    -- event = "VeryLazy",
+    lazy = false,
     build = { ":TSUpdateSync" },
     config = function()
       require("plugins.config.treesitter")
