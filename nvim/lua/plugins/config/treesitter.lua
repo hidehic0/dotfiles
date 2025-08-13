@@ -27,6 +27,7 @@ local langs = {
   "gitcommit",
   "go",
   "json",
+  "typescript",
 }
 
 local assist = {

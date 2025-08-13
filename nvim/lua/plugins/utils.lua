@@ -91,6 +91,7 @@ return {
       "Shougo/ddu-kind-word",
       -- filters
       "yuki-yano/ddu-filter-fzf",
+      "Milly/ddu-filter-kensaku",
       -- converters
       "uga-rosa/ddu-filter-converter_devicon",
       "kyoh86/ddu-filter-converter_hl_dir",
@@ -105,6 +106,7 @@ return {
       "tani/vim-artemis",
       -- utils
       "nvim-tree/nvim-web-devicons",
+      "lambdalisue/vim-kensaku",
     },
     config = function(spec)
       require("denops-lazy").load(spec.name)

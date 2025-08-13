@@ -115,6 +115,9 @@ export class Config extends BaseConfig {
         matcher_fzf: {
           highlightMatched: "Title",
         },
+        matcher_kensaku: {
+          highlightMatched: "Title",
+        },
       },
     });
 
