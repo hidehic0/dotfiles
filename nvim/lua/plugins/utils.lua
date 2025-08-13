@@ -177,6 +177,7 @@ return {
       "yuki-yano/denops-lazy.nvim",
       "lambdalisue/kensaku.vim",
     },
+    event = "CursorMoved",
     cmd = { "FuzzyMotion" },
     init = function()
       vim.g.fuzzy_motion_matchers = { "fzf", "kensaku" }
@@ -340,5 +341,4 @@ return {
     },
   },
   { "wakatime/vim-wakatime", event = "VeryLazy" },
-  { "vyfor/cord.nvim", build = ":Cord update", event = "VeryLazy", priority = 0, opts = {}, cond = false },
 }
