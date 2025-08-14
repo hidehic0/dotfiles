@@ -18,7 +18,7 @@ lua = "5.4.8"
 usage = "2.2.2"
 "aqua:astral-sh/ruff" = "0.12.8"
 "aqua:LuaLS/lua-language-server" = "3.15.0"
-"ubi:hidehic0/acc_utils" = { version = "0.0.5", exe = "acc_utils" }
+"ubi:hidehic0/acc_utils" = { version = "0.0.6", exe = "acc_utils" }
 
 [settings]
 experimental = true
