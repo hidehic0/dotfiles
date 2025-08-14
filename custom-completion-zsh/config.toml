@@ -32,5 +32,9 @@ name = "atcoderproblems-cli"
 exec = "atcoderproblems-cli completion zsh"
 
 [[tool]]
+name = "acc_utils"
+exec = "acc_utils completion zsh"
+
+[[tool]]
 name = "tailscale"
 exec = "tailscale completion zsh"
