@@ -161,6 +161,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.16.1/gh-dash_v4.16.1_darwin-amd64",
+      "checksum": "5BE34282C2C356892F0624091D6678D91C8D933D9505DE574D74FB3B5D909E7A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.16.1/gh-dash_v4.16.1_darwin-arm64",
+      "checksum": "B4FB75EB16E99AD4F1407C1EA65E32723285F387C4C0BC5BA3B8B1016912A0AC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.16.1/gh-dash_v4.16.1_linux-amd64",
+      "checksum": "2E68B59C129E01678477F6E63D07021D0E98C1A654DE5DACFC94AE114FC49BFF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.16.1/gh-dash_v4.16.1_linux-arm64",
+      "checksum": "8F13A2D295337EA65A6B5F5D9ED720053C24A4046B44DCEBB4649D472C95BCA5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.16.1/gh-dash_v4.16.1_windows-amd64.exe",
+      "checksum": "D70474F34B556B2AE8BF1F85DE00FB8D2ECCD90EB07D7386D9F0FC72B5A232E5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.16.1/gh-dash_v4.16.1_windows-arm64.exe",
+      "checksum": "FBD8AE1CDB9F16BCBF38190CCFF181415D36371F18C953DFF02E71EDCCBE6E5C",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/eza-community/eza/v0.23.0/eza.exe_x86_64-pc-windows-gnu.tar.gz",
       "checksum": "A2AA1D87B86B26183EBD8DA1CA0822F0398DAECC8446EDB6EE674A626212FCF7",
       "algorithm": "sha256"
