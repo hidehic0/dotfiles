@@ -2,7 +2,7 @@
 deno = "2.4.4"
 go = "1.25.0"
 node = "23.11.1"
-python = "3.13.7"
+python = "3.13.5"
 rust = "1.89.0"
 uv = "0.8.11"
 # node製tools
@@ -27,5 +27,5 @@ idiomatic_version_file_enable_tools = ["python"]
 [settings.pipx]
 uvx = true
 
-[settings.python]
-compile = true
+# [settings.python]
+# compile = true
