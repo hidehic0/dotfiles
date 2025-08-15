@@ -207,8 +207,7 @@ return {
         end,
       },
     },
-    -- event = "VeryLazy",
-    lazy = false,
+    event = "VeryLazy",
     build = { ":TSUpdateSync" },
     config = function()
       require("plugins.config.treesitter")
