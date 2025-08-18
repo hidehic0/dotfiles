@@ -343,4 +343,5 @@ return {
     },
   },
   { "wakatime/vim-wakatime", event = "VeryLazy" },
+  { "akinsho/git-conflict.nvim", opts = { default_mappings = false }, event = "VeryLazy" },
 }
