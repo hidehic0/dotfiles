@@ -67,5 +67,12 @@ packages:
   - name: jesseduffield/lazydocker@v0.24.1
   - name: direnv/direnv@v2.37.1
   - name: dlvhdr/gh-dash@v4.16.1
+  - name: XAMPPRocky/tokei@v12.1.2
+<<<<<<< HEAD
 # - name: Feel-ix-343/markdown-oxide@v0.25.8
+||||||| parent of cde3f5d (fix)
+# - name: Feel-ix-343/markdown-oxide@v0.25.6
+=======
+# - name: Feel-ix-343/markdown-oxide@v0.25.6
+>>>>>>> cde3f5d (fix)
 #   registry: local

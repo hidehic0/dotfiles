@@ -27,5 +27,5 @@ idiomatic_version_file_enable_tools = ["python"]
 [settings.pipx]
 uvx = true
 
-# [settings.python]
-# compile = true
+[settings.python]
+compile = true
