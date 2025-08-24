@@ -28,6 +28,7 @@ local langs = {
   "go",
   "json",
   "typescript",
+  "rust",
 }
 
 local assist = {

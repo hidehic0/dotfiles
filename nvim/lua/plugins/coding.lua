@@ -29,6 +29,7 @@ return {
         "gopls",
         "nil_ls",
         "ts_ls",
+        "rust_analyzer",
         -- "markdown_oxide",
       })
     end,
