@@ -451,33 +451,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.0/gat_Darwin_arm64.tar.gz",
-      "checksum": "2259C2747E981F8BA2589AA79C090D12D610F2A32A76EBF88E762B3EA442BCD3",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Darwin_arm64.tar.gz",
+      "checksum": "C86463394A7C7806AF08C29D2B8E360A86F0043C43B958529FBED3B08FE7218B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.0/gat_Darwin_x86_64.tar.gz",
-      "checksum": "46E3961889ADD94E09DFB20EAC411C3FD86503243D4F992E50A575F5112B01C7",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Darwin_x86_64.tar.gz",
+      "checksum": "9E46BF87CD1680FBEEA9D0CEBD1C6ECDF38138DB60A85A90454F91DAF65BA571",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.0/gat_Linux_arm64.tar.gz",
-      "checksum": "26C7A722C66163FE21BF7BF457BB6194A154EE74B67C86B19FA4CCC7FDD85831",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Linux_arm64.tar.gz",
+      "checksum": "4A02B3EFEB59FE27665BF13B341FC48174B155582E615AA587782E7E7F9708CD",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.0/gat_Linux_x86_64.tar.gz",
-      "checksum": "C8FCCC81E610447BE87344EEB83B9878B1EDFA87C6277341F1305BB2E2409CD3",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Linux_x86_64.tar.gz",
+      "checksum": "EB8FFB370B54EEA9E4E6B30F75771CBE6DE3921A4CBE7FCB2BEA22E37FF0D207",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.0/gat_Windows_arm64.zip",
-      "checksum": "FF7130314179364638D9A09D78404C7DCF12250AB84F410914C5DAD52A98870C",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Windows_arm64.zip",
+      "checksum": "AE59A4E40F46F2D4FD336B888D2339084AA8FFEB7EC467A3B2A7C026055F9544",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.0/gat_Windows_x86_64.zip",
-      "checksum": "337B03B33CF51D3A2B2B9DCC7DBA5DFD978F65E3CC18566829344A41FDDC0645",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Windows_x86_64.zip",
+      "checksum": "ABE543AD469FCF9A6A1AA0AD53BB8801FB221CB3B55863B9A967939004C79E9F",
       "algorithm": "sha256"
     },
     {
