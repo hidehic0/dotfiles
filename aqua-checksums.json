@@ -451,33 +451,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Darwin_arm64.tar.gz",
-      "checksum": "C86463394A7C7806AF08C29D2B8E360A86F0043C43B958529FBED3B08FE7218B",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.2/gat_Darwin_arm64.tar.gz",
+      "checksum": "0AADEB7564438E77107C0C0C37DF5C18E36B6B6AC7768D6F6C062A615D4F7113",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Darwin_x86_64.tar.gz",
-      "checksum": "9E46BF87CD1680FBEEA9D0CEBD1C6ECDF38138DB60A85A90454F91DAF65BA571",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.2/gat_Darwin_x86_64.tar.gz",
+      "checksum": "305866BCC448297190E7A7826114A4CAB0D9DBC3B37DCEE9631AA0E48BC3C254",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Linux_arm64.tar.gz",
-      "checksum": "4A02B3EFEB59FE27665BF13B341FC48174B155582E615AA587782E7E7F9708CD",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.2/gat_Linux_arm64.tar.gz",
+      "checksum": "3009EB936075911FE8CD69392EA1A2276745627B5E1FCF74E956AEB623F58738",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Linux_x86_64.tar.gz",
-      "checksum": "EB8FFB370B54EEA9E4E6B30F75771CBE6DE3921A4CBE7FCB2BEA22E37FF0D207",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.2/gat_Linux_x86_64.tar.gz",
+      "checksum": "97B519E6E981FF6AEC8B422E1568345CFA3F59E3E260BD1C9DEB376EEBFE7E76",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Windows_arm64.zip",
-      "checksum": "AE59A4E40F46F2D4FD336B888D2339084AA8FFEB7EC467A3B2A7C026055F9544",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.2/gat_Windows_arm64.zip",
+      "checksum": "E8D9F5102B9F76B81CD9EC072CF402466DCA3F1D1EDE3B84F0672C3C96E35756",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.1/gat_Windows_x86_64.zip",
-      "checksum": "ABE543AD469FCF9A6A1AA0AD53BB8801FB221CB3B55863B9A967939004C79E9F",
+      "id": "github_release/github.com/koki-develop/gat/v0.25.2/gat_Windows_x86_64.zip",
+      "checksum": "56C596A58915C084E357E8B134D9613BB2BE5A0F535E39ED938E378A8DD30F03",
       "algorithm": "sha256"
     },
     {
@@ -641,28 +641,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/fd/v10.2.0/fd-v10.2.0-aarch64-apple-darwin.tar.gz",
-      "checksum": "AE6327BA8C9A487CD63EDD8BDDD97DA0207887A66D61E067DFE80C1430C5AE36",
+      "id": "github_release/github.com/sharkdp/fd/v10.3.0/fd-v10.3.0-aarch64-apple-darwin.tar.gz",
+      "checksum": "0570263812089120BC2A5D84F9E65CD0C25E4A4D724C80075C357239C74AE904",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/fd/v10.2.0/fd-v10.2.0-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "4E8E596646D047D904F2C5CA74B39DCCC69978B6E1FB101094E534B0B59C1BB0",
+      "id": "github_release/github.com/sharkdp/fd/v10.3.0/fd-v10.3.0-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "996B9B1366433B211CB3BBEDBA91C9DBCE2431842144D925428EAD0ADF32020B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/fd/v10.2.0/fd-v10.2.0-x86_64-apple-darwin.tar.gz",
-      "checksum": "991A648A58870230AF9547C1AE33E72CB5C5199A622FE5E540E162D6DBA82D48",
+      "id": "github_release/github.com/sharkdp/fd/v10.3.0/fd-v10.3.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "50D30F13FE3D5914B14C4FFF5ABCBD4D0CDAB4B855970A6956F4F006C17117A3",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/fd/v10.2.0/fd-v10.2.0-x86_64-pc-windows-msvc.zip",
-      "checksum": "92AC9E6B0A0C6ECDAB638FFE210DC786403FFF4C66373604CF70DF27BE45E4FE",
+      "id": "github_release/github.com/sharkdp/fd/v10.3.0/fd-v10.3.0-x86_64-pc-windows-msvc.zip",
+      "checksum": "318AA2A6FA664325933E81FDA60D523FFF29444129E91EBF0726B5B3BCD8B059",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/fd/v10.2.0/fd-v10.2.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "D9BFA25EC28624545C222992E1B00673B7C9CA5EB15393C40369F10B28F9C932",
+      "id": "github_release/github.com/sharkdp/fd/v10.3.0/fd-v10.3.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "2B6BFAAE8C48F12050813C2FFE1884C61EA26E750D803DF9C9114550A314CD14",
       "algorithm": "sha256"
     },
     {
@@ -796,8 +796,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.404.0/registry.yaml",
-      "checksum": "412C30FEB64F87BAC279534D709DFBA8A747CD59B5566D89DAC47E97005029927F58C12990420F6AF65049C90376295CED118A7EC27227E3DEA6095CCAB5ABE7",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.405.0/registry.yaml",
+      "checksum": "D799403B03BDE217A3781109BA756E3077DDF566D8D87C02CB70C8E8B5619AF8D1FB78C3D64EF407D3E19C5764F4029CECC0CA3A8249A85077178FDD4C99D355",
       "algorithm": "sha512"
     }
   ]
