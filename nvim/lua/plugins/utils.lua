@@ -308,7 +308,6 @@ return {
     },
     keys = {
       { "<leader>oo", "<Cmd>Obsidian open<CR>" },
-      { "<leader>of", "<CMD>Obsidian<CR><ESC><CMD>ObsidianQuickKensaku<CR>" }, -- うまく読み込めないので苦肉の策 一瞬チラつく
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -319,6 +318,9 @@ return {
         branch = "feat/quick-kensaku",
         dependencies = { "lambdalisue/kensaku.vim" },
         opts = { picker = "egrepify" },
+        keys = {
+          { "<leader>of", "<CMD>ObsidianQuickKensaku<CR>" }, -- うまく読み込めないので苦肉の策 一瞬チラつく
+        },
       },
       {
         "oflisback/obsidian-bridge.nvim",
@@ -327,20 +329,9 @@ return {
         },
       },
     },
-    opts = {
-      legacy_commands = false,
-      workspaces = {
-        { name = "main", path = "~/src/github.com/hidehic0/obsidain_vault" },
-      },
-      daily_notes = {
-        folder = "dailies",
-      },
-      callbacks = {
-        post_setup = function(client)
-          require("obsidian-kensaku")(client)
-        end,
-      },
-    },
+    config = function()
+      require("plugins.config.obsidian")
+    end,
   },
   { "wakatime/vim-wakatime", event = "VeryLazy" },
   { "akinsho/git-conflict.nvim", opts = { default_mappings = false }, event = "VeryLazy" },
