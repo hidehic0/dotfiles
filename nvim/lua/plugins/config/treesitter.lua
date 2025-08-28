@@ -35,10 +35,19 @@ local assist = {
   "markdown_inline",
 }
 
+local register_langs = {
+  zsh = "bash",
+}
+
 local parsers = {}
 
 for _, v in ipairs(langs) do
   table.insert(parsers, v)
+end
+
+for k, v in pairs(register_langs) do
+  vim.treesitter.language.register(k, v)
+  table.insert(assist, k)
 end
 
 for _, v in ipairs(assist) do
