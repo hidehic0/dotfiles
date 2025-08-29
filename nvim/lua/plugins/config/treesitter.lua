@@ -46,7 +46,7 @@ for _, v in ipairs(langs) do
 end
 
 for k, v in pairs(register_langs) do
-  vim.treesitter.language.register(k, v)
+  vim.treesitter.language.register(v, { k })
   table.insert(assist, k)
 end
 
