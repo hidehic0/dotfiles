@@ -66,6 +66,7 @@ packages:
       - linux
     replacements:
       linux: Linux
+      amd64: x86_64
   - type: github_release
     repo_owner: Feel-ix-343
     repo_name: markdown-oxide
