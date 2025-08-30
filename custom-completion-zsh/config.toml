@@ -24,8 +24,8 @@ name = "uv"
 exec = "uv generate-shell-completion zsh"
 
 [[tool]]
-name = "custom-completion"
-exec = "custom-completion-zsh completion zsh"
+name = "custom-completion-zsh"
+exec = "custom-completion-zsh completion --shell zsh"
 
 [[tool]]
 name = "atcoderproblems-cli"

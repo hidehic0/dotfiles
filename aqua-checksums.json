@@ -266,23 +266,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.2/custom-completion-zsh_Linux_amd64.tar.gz",
-      "checksum": "2EBB4605317ECC5BFE63A55C2852FFBFF39D1F76FDE4338B73C26961E1AC72F9",
+      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.4/custom-completion-zsh_Linux_arm64.tar.gz",
+      "checksum": "040E7289FDC0CF6CD4ABE92FF893B1F9597A29BCD1EA6E091F03102428745C8D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.2/custom-completion-zsh_Linux_arm64.tar.gz",
-      "checksum": "2B48AAE3DE5DFF27BD31F59E68FB0CB215E19CFD4B605679E42BA01A6898289A",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.3/custom-completion-zsh_Linux_arm64.tar.gz",
-      "checksum": "2BC17E11651709DCE0A75F448C0A878DCB304174664B3FDA292DEB37329688FF",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.3/custom-completion-zsh_Linux_x86_64.tar.gz",
-      "checksum": "3F3221294DE3C24CDD9F71AC3FDE4455546EAB76034646A907AA9D289A07A7E6",
+      "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.4/custom-completion-zsh_Linux_x86_64.tar.gz",
+      "checksum": "6E195531C7AD4C2A6D9C9686588BC25DED4B608AF8722106BEA3012F349473CC",
       "algorithm": "sha256"
     },
     {
