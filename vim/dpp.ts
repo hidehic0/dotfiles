@@ -15,7 +15,7 @@ import type {
 	Ext as LazyExt,
 	LazyMakeStateResult,
 	Params as LazyParams,
-} from "jsr:@shougo/dpp-ext-lazy@~1.5.0";
+} from "jsr:@shougo/dpp-ext-lazy@~2.0.0";
 import type {
 	Ext as LocalExt,
 	Params as LocalParams,
