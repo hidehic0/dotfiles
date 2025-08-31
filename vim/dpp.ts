@@ -10,7 +10,7 @@ import {
 import type {
 	Ext as TomlExt,
 	Params as TomlParams,
-} from "jsr:@shougo/dpp-ext-toml@~1.3.0";
+} from "jsr:@shougo/dpp-ext-toml@~2.0.0";
 import type {
 	Ext as LazyExt,
 	LazyMakeStateResult,
