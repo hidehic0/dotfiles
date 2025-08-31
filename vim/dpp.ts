@@ -19,7 +19,7 @@ import type {
 import type {
 	Ext as LocalExt,
 	Params as LocalParams,
-} from "jsr:@shougo/dpp-ext-local@~1.3.0";
+} from "jsr:@shougo/dpp-ext-local@~2.0.0";
 
 import type { Denops } from "jsr:@denops/std@~8.0.0";
 import * as fn from "jsr:@denops/std@~8.0.0/function";
