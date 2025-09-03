@@ -38,3 +38,11 @@ exec = "acc_utils completion zsh"
 [[tool]]
 name = "tailscale"
 exec = "tailscale completion zsh"
+
+[[tool]]
+name = "cargo"
+exec = "rustup completions zsh cargo"
+
+[[tool]]
+name = "rustup"
+exec = "rustup completions zsh rustup"
