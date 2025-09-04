@@ -37,6 +37,7 @@ local assist = {
 
 local register_langs = {
   zsh = "bash",
+  ["yaml.ghaction"] = "yaml",
 }
 
 local parsers = {}
@@ -47,11 +48,12 @@ end
 
 for k, v in pairs(register_langs) do
   vim.treesitter.language.register(v, { k })
-  table.insert(assist, k)
+  table.insert(langs, k)
 end
 
 for _, v in ipairs(assist) do
   table.insert(parsers, v)
+  table.insert(langs, v)
 end
 
 require("nvim-treesitter").install(parsers):wait(300000)
