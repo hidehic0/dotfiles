@@ -67,9 +67,14 @@ require("blink.cmp").setup(
       nerd_font_variant = "mono",
     },
     completion = {
-      documentation = { auto_show = true },
+      documentation = { auto_show = true, auto_show_delay_ms = 200 },
       list = { selection = { preselect = false } },
       accept = { auto_brackets = { enabled = false } },
+      menu = {
+        draw = {
+          treesitter = { "lsp" },
+        },
+      },
     },
     sources = {
       default = { "lsp", "snippets", "ripgrep", "path", "buffer" },
