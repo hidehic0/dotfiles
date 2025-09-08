@@ -49,3 +49,4 @@ packages:
   - name: direnv/direnv@v2.37.1
   - name: dlvhdr/gh-dash@v4.16.2
   - name: XAMPPRocky/tokei@v12.1.2
+  - name: jj-vcs/jj@v0.33.0

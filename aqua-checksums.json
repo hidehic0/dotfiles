@@ -371,6 +371,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-aarch64-apple-darwin.tar.gz",
+      "checksum": "1BA71332AB6DDF578CFB0D74F781C3E06A48125312B31CDD44789941FF6F8B5C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "2CE8822F2161D4EAEE96CE2BC7D6F791ACE38913DB02487116103D41C8B58CA4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "63C48D3899B52EB26AC0A3258101FFF4765F74C4CEB70EAE3DD8350126A73CF5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-x86_64-pc-windows-msvc.zip",
+      "checksum": "59108E804AFA614D5EB0494B97AB557D3B2D94859119666649EFAC20EA598CC1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "2703E13B3D5623AA67E19358B257FE5A761FAA883BD0BD716D0B1C801A214093",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jqlang/jq/jq-1.8.1/jq-linux-amd64",
       "checksum": "020468DE7539CE70EF1BCEAF7CDE2E8C4F2CA6C3AFB84642AABC5C97D9FC2A0D",
       "algorithm": "sha256"

@@ -46,3 +46,8 @@ exec = "rustup completions zsh cargo"
 [[tool]]
 name = "rustup"
 exec = "rustup completions zsh rustup"
+
+[[tool]]
+name = "jj"
+exec = "jj util completion zsh"
+

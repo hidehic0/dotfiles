@@ -32,5 +32,6 @@
   "clangd/config.yml": "~/.clangd",
   "acc_utils": "~/.config/acc_utils",
   "direnv": "~/.config/direnv",
-  "gh-dash": "~/.config/gh-dash"
+  "gh-dash": "~/.config/gh-dash",
+  "jj": "~/.config/jj"
 }
