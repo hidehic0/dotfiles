@@ -81,3 +81,18 @@ packages:
       linux: linux-gnu
       amd64: x86_64-unknown
       arm64: aarch64-unknown
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: binomial_coefficient-calc-cli
+    asset: nCr_calc_{{.OS}}_{{.Arch}}.{{.Format}}
+    format: tar.gz
+    files:
+      - name: nCr_calc
+        src: nCr_calc
+    supported_envs:
+      - linux
+      - darwin
+    replacements:
+      linux: Linux
+      amd64: x86_64
+      darwin: Darwin

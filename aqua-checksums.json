@@ -266,6 +266,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/binomial_coefficient-calc-cli/v0.0.1/nCr_calc_Darwin_arm64.tar.gz",
+      "checksum": "0C426161E5F90CC09055286C8C04B9218EEF2BAA7B08E1EFF6BDA6BA712ECBAF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/binomial_coefficient-calc-cli/v0.0.1/nCr_calc_Darwin_x86_64.tar.gz",
+      "checksum": "CE7DC2C34DBD2F138DE1F9B10C10D76D7BF3ED438678533F10FF0C666BE8D046",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/binomial_coefficient-calc-cli/v0.0.1/nCr_calc_Linux_arm64.tar.gz",
+      "checksum": "EF88C7B46BD525D2E1206ED45D1E78355551D47C267A65A5809EDB668354C87E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/binomial_coefficient-calc-cli/v0.0.1/nCr_calc_Linux_x86_64.tar.gz",
+      "checksum": "2130074FF0A675AE2211942EE81F6DD8A984867552B3AF4D0CF99DAE32316E7B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/custom-completion-zsh/v0.1.4/custom-completion-zsh_Linux_arm64.tar.gz",
       "checksum": "040E7289FDC0CF6CD4ABE92FF893B1F9597A29BCD1EA6E091F03102428745C8D",
       "algorithm": "sha256"

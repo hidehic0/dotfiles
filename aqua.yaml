@@ -50,3 +50,5 @@ packages:
   - name: dlvhdr/gh-dash@v4.16.2
   - name: XAMPPRocky/tokei@v12.1.2
   - name: jj-vcs/jj@v0.33.0
+  - name: hidehic0/binomial_coefficient-calc-cli@v0.0.1
+    registry: local
