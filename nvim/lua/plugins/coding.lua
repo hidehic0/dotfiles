@@ -284,6 +284,7 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
       "nvim-neotest/neotest-python",
+      { "mrcjkb/rustaceanvim" },
     },
     config = function()
       require("neotest").setup({
@@ -293,6 +294,7 @@ return {
             runner = "unittest",
             python = vim.fn.trim(vim.fn.system("which python")),
           }),
+          require("rustaceanvim.neotest"),
         },
       })
     end,
