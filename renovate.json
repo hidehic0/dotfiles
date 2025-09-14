@@ -4,6 +4,6 @@
   "extends": [
     "config:recommended",
     "github>Omochice/renovate-config:deno",
-    "github>aquaproj/aqua-renovate-config#2.8.2"
+    "github>aquaproj/aqua-renovate-config#2.9.0"
   ]
 }
