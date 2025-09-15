@@ -76,8 +76,7 @@ return {
     },
   },
   {
-    "h-michael/trouble.nvim",
-    branch = "fix/decoration-provider-api",
+    "folke/trouble.nvim",
     opts = {},
     cmd = { "Trouble", "TroubleToggle", "TroubleRefresh" },
     keys = {
