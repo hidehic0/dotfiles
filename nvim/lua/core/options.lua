@@ -3,7 +3,11 @@ vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.signcolumn = "yes"
 -- vim.cmd("syntax off") -- レガシーハイライト無効
-vim.cmd([[set guifont="FiraCode Nerd Font"]])
+-- vim.cmd([[set guifont="FiraCode Nerd Font"]])
+
+if vim.fn.has("gui_running") == 1 then
+  vim.o.guifont = "FiraCode Nerd Font:h12"
+end
 vim.cmd([[set shadafile="NONE"]])
 vim.opt.termguicolors = true
 
