@@ -30,6 +30,7 @@ return {
         "nil_ls",
         "ts_ls",
         "rust_analyzer",
+        "yamlls",
         -- "markdown_oxide",
       })
     end,
