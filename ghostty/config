@@ -63,7 +63,7 @@ keybind=ctrl+shift+c=copy_to_clipboard
 
 mouse-hide-while-typing = true
 
-command="tmux"
+command="tmux attach || tmux"
 
 font-family = "Noto Sans CJK JP"
 
