@@ -4,18 +4,11 @@ return {
     "neovim/nvim-lspconfig",
     event = "VimEnter",
     dependencies = {
-      "saghen/blink.cmp",
+      "Shougo/ddc-source-lsp",
     },
     config = function()
       vim.lsp.config("*", {
-        capabilities = require("blink.cmp").get_lsp_capabilities({
-          textDocument = {
-            foldingRange = {
-              dynamicRegistration = false,
-              lineFoldingOnly = true,
-            },
-          },
-        }),
+        capabilities = require("ddc_source_lsp").make_client_capabilities(),
       })
       vim.lsp.enable({
         "lua_ls",
