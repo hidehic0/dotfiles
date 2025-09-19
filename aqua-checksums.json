@@ -756,33 +756,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.6.8/tombi-cli-0.6.8-aarch64-apple-darwin.gz",
-      "checksum": "79D8CB129645374E630CE33CEE191B6B75FEEB6A68D459CE8252BF527AAB186E",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.10/tombi-cli-0.6.10-aarch64-apple-darwin.gz",
+      "checksum": "AD1E6C94A0A6D4985F70A50F950C5B0C653C195D7DDC89D32FAF6A4353485663",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.6.8/tombi-cli-0.6.8-aarch64-pc-windows-msvc.zip",
-      "checksum": "D8A9BA9038434FC691FA647C002FDC58FBDF179A8E39A6300497115C6B101964",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.10/tombi-cli-0.6.10-aarch64-pc-windows-msvc.zip",
+      "checksum": "75415C55C1A824E067C77DED5DE0BC3544550FD8CEB3CAC182B9704D6A4F6072",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.6.8/tombi-cli-0.6.8-aarch64-unknown-linux-musl.gz",
-      "checksum": "1AAC01D0BA5921E8838850B46837FBEFDC08102E4348FEEE982F3EE62C021F0D",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.10/tombi-cli-0.6.10-aarch64-unknown-linux-musl.gz",
+      "checksum": "7EF25708AE3EA90067AEC3F7C7A46B0F3013034EBD36019E38AC9CF9532B107F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.6.8/tombi-cli-0.6.8-x86_64-apple-darwin.gz",
-      "checksum": "2581DF4AC98B2CCBE5964ED645936C3590C75098BA4E4E589A6955C2DF967FB4",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.10/tombi-cli-0.6.10-x86_64-apple-darwin.gz",
+      "checksum": "A068F6F247F4EFBBD6487EBCEC42CC12B978897D438508B00C3789B930FC2881",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.6.8/tombi-cli-0.6.8-x86_64-pc-windows-msvc.zip",
-      "checksum": "A3AB1D7935185B60DFA5AD97140D35DAF9C35FF4627EB7DC09F9262EEBCAD618",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.10/tombi-cli-0.6.10-x86_64-pc-windows-msvc.zip",
+      "checksum": "037167F4EAB28AB55654A3C33B2BDF459CF5AA5A2046A5540AACC562D2E1B76F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.6.8/tombi-cli-0.6.8-x86_64-unknown-linux-musl.gz",
-      "checksum": "57D2E8B24171CA0C06DB0E92EDD9D648F9A483403531C5853514238EE2780C9F",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.10/tombi-cli-0.6.10-x86_64-unknown-linux-musl.gz",
+      "checksum": "71D037609375A9972D602B8C70C6555D54B23E3DCFF7B2F3B4D270D42F53F977",
       "algorithm": "sha256"
     },
     {
@@ -846,8 +846,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.411.1/registry.yaml",
-      "checksum": "900CE1DBC1E797EF612A0A2165C5899604D989D8A75D33908BA547A0A772FB5FDA20E63C9D7FEBFC4C94B09C246FEE8E6C185627912474802D263FED21F7C255",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.412.0/registry.yaml",
+      "checksum": "E5CDC5EACB5910B5C52E9B71F00396E3320509598F0FD26D89F4A7ED502435E63CA6DCCC3973F93B0141917DFC16CE942ACB2B84F4EFE9C7B8219FE6ABFF09D0",
       "algorithm": "sha512"
     }
   ]

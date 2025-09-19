@@ -3,7 +3,7 @@ deno = "2.5.1"
 go = "1.25.1"
 node = "23.11.1"
 python = "3.13.7"
-rust = "1.89.0"
+rust = "1.90.0"
 uv = "0.8.18"
 # node製tools
 "npm:atcoder-cli" = "2.2.0"
@@ -17,7 +17,7 @@ uv = "0.8.18"
 "pipx:terminaltexteffects" = "0.12.0"
 lua = "5.4.8"
 usage = "2.2.2"
-"aqua:astral-sh/ruff" = "0.13.0"
+"aqua:astral-sh/ruff" = "0.13.1"
 "aqua:LuaLS/lua-language-server" = "3.15.0"
 "ubi:hidehic0/acc_utils" = { version = "0.0.6", exe = "acc_utils" }
 
