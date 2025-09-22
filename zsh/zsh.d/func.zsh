@@ -22,3 +22,14 @@ function ghq-fzf() {
 }
 zle -N ghq-fzf
 bindkey '^g' ghq-fzf
+
+function ghq-fzf-insert() {
+  local src=$(ghq list | fzf --preview "ls /$(ghq root)/{}")
+  if [ -n "$src" ]; then
+    LBUFFER+="$(ghq root)/$src"
+  fi
+  zle -R -c
+}
+
+zle -N ghq-fzf-insert
+bindkey '^G' ghq-fzf-insert
