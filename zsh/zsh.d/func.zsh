@@ -32,4 +32,4 @@ function ghq-fzf-insert() {
 }
 
 zle -N ghq-fzf-insert
-bindkey '^G' ghq-fzf-insert
+bindkey '^h' ghq-fzf-insert
