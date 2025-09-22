@@ -1,15 +1,15 @@
 require("conform").setup({
   formatters_by_ft = {
     lua = { "stylua" },
-    python = { "ruff_format" },
+    -- python = { "ruff_format" },
     zsh = { "shfmt" },
     bash = { "shfmt" },
     sh = { "shfmt" },
     yaml = { "yamlfmt" },
-    typescript = { "deno_fmt" },
+    -- typescript = { "deno_fmt" },
     json = { "jq" },
-    nim = { "nimpretty" },
-    go = { "gofmt" },
+    -- nim = { "nimpretty" },
+    -- go = { "gofmt" },
     markdown = { "markdownlint-cli2" },
   },
   format_on_save = {

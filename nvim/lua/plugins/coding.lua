@@ -5,6 +5,7 @@ return {
     event = "VimEnter",
     dependencies = {
       "Shougo/ddc-source-lsp",
+      "creativenull/efmls-configs-nvim",
     },
     config = function()
       vim.lsp.config("*", {
@@ -24,6 +25,7 @@ return {
         "ts_ls",
         "rust_analyzer",
         "yamlls",
+        "efm",
         -- "markdown_oxide",
       })
     end,
@@ -169,6 +171,7 @@ return {
   {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
+    cond = false,
     config = function()
       require("plugins.config.nvim-lint")
     end,
