@@ -34,7 +34,7 @@ alias package_update="$bin_dir/package_update.zsh"
 alias rmcp='(){rm $2 && cp $1 $2}'
 
 # cd alias
-alias cdp="cd .."
+alias cdr="cd .."
 alias cdb="cd -"
 
 # atcoder-cli
