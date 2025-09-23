@@ -168,21 +168,22 @@ return {
       require("plugins.config.denippet")
     end,
   },
-  {
-    "mfussenegger/nvim-lint",
-    event = "VeryLazy",
-    cond = false,
-    config = function()
-      require("plugins.config.nvim-lint")
-    end,
-  },
-  {
-    "stevearc/conform.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("plugins.config.conform")
-    end,
-  },
+  -- {
+  --   "mfussenegger/nvim-lint",
+  --   event = "VeryLazy",
+  --   cond = false,
+  --   config = function()
+  --     require("plugins.config.nvim-lint")
+  --   end,
+  -- },
+  -- {
+  --   "stevearc/conform.nvim",
+  --   cond = false,
+  --   event = "VeryLazy",
+  --   config = function()
+  --     require("plugins.config.conform")
+  --   end,
+  -- },
   {
     "mfussenegger/nvim-dap",
     dependencies = {
@@ -192,7 +193,7 @@ return {
     },
     -- event = "VeryLazy",
     keys = {
-      { "<F5>", "<CMD>DapContinue<CR>", desc = "Start/Continue Debugging" },
+      { "<F5>",      "<CMD>DapContinue<CR>",         desc = "Start/Continue Debugging" },
       { "<leader>b", "<CMD>DapToggleBreakpoint<CR>", desc = "Toggle Breakpoint" },
     },
     config = function()
@@ -204,7 +205,7 @@ return {
     branch = "main",
     dependencies = {
       { "JoosepAlviste/nvim-ts-context-commentstring", opts = {} },
-      { "andersevenrud/nvim_context_vt", event = "VeryLazy", opts = {} },
+      { "andersevenrud/nvim_context_vt",               event = "VeryLazy", opts = {} },
       {
         "HiPhish/rainbow-delimiters.nvim",
         event = "VimEnter",

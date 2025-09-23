@@ -19,9 +19,12 @@ local function get_config(tools)
   return config
 end
 
+local filetypes = { "lua", "zsh", "bash", "sh", "yaml", "ts", "tsx", "json" }
+
+---@type vim.lsp.Config
 return {
   cmd = { "efm-langserver" },
-  filetypes = { "lua", "zsh", "bash", "sh", "yaml", "ts", "tsx", "json" },
+  filetypes = filetypes,
   init_options = {
     documentFormatting = true,
     documentRangeFormatting = true,
@@ -45,6 +48,17 @@ return {
         name = "eslint_d",
         ft = { "ts", "tsx" },
         type = "lint",
+      },
+      { name = "stylua", ft = { "lua" }, type = "format" },
+      {
+        name = "shfmt",
+        ft = { "zsh", "bash", "sh" },
+        type = "format",
+      },
+      {
+        name = "jq",
+        ft = { "json", "jsonc" },
+        type = "format",
       },
     }),
   },

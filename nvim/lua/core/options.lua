@@ -70,3 +70,11 @@ require("vim._extui").enable({
     timeout = 4000, -- Time a message is visible in the message window.
   },
 })
+
+-- format on save
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  callback = function()
+    vim.lsp.buf.format()
+  end,
+})
