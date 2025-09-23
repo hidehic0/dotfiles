@@ -52,6 +52,8 @@
   "widgets": [
     "inhibitors",
     "mpris",
+    "volume",
+    "backlight",
     "title",
     "dnd",
     "notifications"
@@ -76,13 +78,21 @@
     },
     "mpris": {
       "image-size": 96,
-      "image-radius": 12,
+      "image-radius": 6,
       "blacklist": []
+    },
+    "volume": {
+      "label": ""
+    },
+    "backlight": {
+      "label": "",
+      "device": "intel_backlight",
+      "min": 10
     },
     "buttons-grid": {
       "actions": [
         {
-          "label": "直",
+          "label": "",
           "type": "toggle",
           "active": true,
           "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
