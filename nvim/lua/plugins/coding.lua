@@ -115,7 +115,7 @@ return {
       "Shougo/pum.vim",
       -- sources
       "LumaKernel/ddc-source-file",
-      "Shougo/ddc-source-codeium",
+      -- "Shougo/ddc-source-codeium",
       "Exafunction/windsurf.vim",
       "Shougo/ddc-source-around",
       "Shougo/ddc-source-cmdline",
@@ -255,6 +255,7 @@ return {
     "Exafunction/windsurf.vim",
     event = { "InsertEnter" },
     cmd = { "Codeium" },
+    cond = false,
     config = function()
       vim.g.codeium_disable_bindings = 1
       vim.keymap.set("i", "<C-g>", function()
