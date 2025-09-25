@@ -29,6 +29,7 @@ local langs = {
   "json",
   "typescript",
   "rust",
+  "vim",
 }
 
 local assist = {
