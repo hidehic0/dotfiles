@@ -1,0 +1,11 @@
+[[plugins]]
+repo = "tpope/vim-surround"
+on_event = "CursorMoved"
+
+[[plugins]]
+repo = "junegunn/fzf.vim"
+on_cmd = "Files"
+#on_key="<leader>ff"
+hook_add = '''
+nnoremap <Leader>ff :Files<CR>
+'''

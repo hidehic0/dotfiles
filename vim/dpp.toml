@@ -1,0 +1,31 @@
+[[plugins]]
+repo = "Shougo/dpp.vim"
+
+[[plugins]]
+repo = "Shougo/dpp-ext-lazy"
+
+[[plugins]]
+repo = "Shougo/dpp-ext-toml"
+
+[[plugins]]
+repo = "Shougo/dpp-ext-installer"
+
+[[plugins]]
+repo = "Shougo/dpp-protocol-git"
+
+[[plugins]]  
+repo = "github.com/vim-denops/denops.vim"
+hook_add = '''
+let g:denops#server#deno_args = ['-q', '--no-lock', '--unstable-kv', '--unstable-ffi', '-A']
+'''
+[[plugins]]
+repo="vim-jp/vimdoc-ja"
+
+[[plugins]]
+repo="morhetz/gruvbox"
+hook_add = '''
+colorscheme gruvbox
+'''
+
+[[plugins]]
+repo="vim-airline/vim-airline"

@@ -1,0 +1,48 @@
+set nocompatible
+set background=dark
+let mapleader = "\<Space>"
+
+const s:dpp_base ="~/.cache/dpp/"
+const s:denops_src = s:dpp_base .. "repos/github.com/vim-denops/denops.vim"
+
+execute 'set runtimepath^=' .. s:dpp_base .. 'repos/github.com/Shougo/dpp.vim'
+execute 'set runtimepath^=' .. s:dpp_base .. 'repos/github.com/Shougo/dpp-ext-lazy'
+
+for s:plugin in ["dpp-ext-installer","dpp-ext-toml","dpp-protocol-git"]
+  execute 'set runtimepath^=' .. s:dpp_base .. 'repos/github.com/Shougo/' .. s:plugin
+endfor
+
+if dpp#min#load_state(s:dpp_base)
+  execute 'set runtimepath^=' .. s:denops_src
+
+  for s:plugin in ["dpp-ext-installer","dpp-ext-toml","dpp-protocol-git"]
+    execute 'set runtimepath^=' .. s:dpp_base .. 'repos/github.com/Shougo/' .. s:plugin
+  endfor
+
+  autocmd User DenopsReady
+  \ : echohl WarningMsg
+  \ | echomsg 'dpp load_state() is failed'
+  \ | echohl NONE
+  \ | call dpp#make_state(s:dpp_base, '~/.vim/dpp.ts')
+else
+autocmd BufWritePost *.toml
+      \ : if !dpp#sync_ext_action('installer', 'getNotInstalled')->empty()
+      \ |  call dpp#async_ext_action('installer', 'install')
+      \ | endif
+endif
+
+autocmd User Dpp:makeStatePost
+      \ : echohl WarningMsg
+      \ | echomsg 'dpp make_state() is done'
+      \ | echohl NONE
+
+filetype indent plugin on
+syntax on
+
+set clipboard&
+set clipboard+=unnamedplus
+inoremap <silent> jj <ESC>
+inoremap { {}<LEFT>
+inoremap ( ()<LEFT>
+inoremap [ []<LEFT>
+
