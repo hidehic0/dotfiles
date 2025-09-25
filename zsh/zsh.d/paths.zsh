@@ -7,7 +7,7 @@ fpath=(/home/hidehico/.local/share/sheldon/repos/github.com/zsh-users/zsh-comple
 
 # mise path
 if [ ! -e $HOME/.local/lib/zsh/mise_active.zsh ]; then
-  mise activate zsh >~/.local/lib/zsh/mise_active.zsh
+	mise activate zsh >~/.local/lib/zsh/mise_active.zsh
 fi
 
 zsh-defer source "$HOME/.local/lib/zsh/mise_active.zsh"
