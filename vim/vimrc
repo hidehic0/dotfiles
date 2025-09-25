@@ -45,4 +45,6 @@ inoremap <silent> jj <ESC>
 inoremap { {}<LEFT>
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
 
