@@ -126,6 +126,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.80.0/gh_2.80.0_linux_amd64.tar.gz",
+      "checksum": "E0AFFFBF36548194AED8A1BDAF474314857A808B1B1CFA38743E2F4ED6A35B0B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.80.0/gh_2.80.0_linux_arm64.tar.gz",
+      "checksum": "785A746A7B42BAAF42F7D792C9CA1732451A28B78112A1A3B38884156CDEB8A2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.80.0/gh_2.80.0_macOS_amd64.zip",
+      "checksum": "197E55F4E4A5728FA9C3CACF3891CB04A0874493664A80B0D9BDE1223173F205",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.80.0/gh_2.80.0_macOS_arm64.zip",
+      "checksum": "4E3567687D714272BE3664244C045785573660803EABF41DFF9A3A701B39F3B6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.80.0/gh_2.80.0_windows_amd64.zip",
+      "checksum": "A05F1E31C8760B33C4FD665E30DCFA214F0A3AD3B0750B4F765B83BF47EBC2C9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.80.0/gh_2.80.0_windows_arm64.zip",
+      "checksum": "9B545F6A38D35B0E44ED89D3B041B0F8C84CAE35A5CEDFFE862177681C022A86",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-aarch64-apple-darwin.tar.gz",
       "checksum": "6BA38DCE9F91EE1B9A24AA4AEDE1DB7195258FE176C3F8276AE2D4457D8170A0",
       "algorithm": "sha256"
@@ -816,6 +846,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.13/tombi-cli-0.6.13-aarch64-apple-darwin.gz",
+      "checksum": "EC6FBCFDD0A9B00E3AA865BA8C2277195ADB3EB0F7AE9E9F40FDB242FA3A4BF5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.13/tombi-cli-0.6.13-aarch64-pc-windows-msvc.zip",
+      "checksum": "D6F09BABBD160C25B2852D4DD137510F0702BDB37A1B5268AF67A9478F6AEAD8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.13/tombi-cli-0.6.13-aarch64-unknown-linux-musl.gz",
+      "checksum": "6357C896D0F85CBF3B16BEF75DDF869818E476F1588587F92F2B479A6B991A85",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.13/tombi-cli-0.6.13-x86_64-apple-darwin.gz",
+      "checksum": "8BB3812E9B65B772E51D598179A20634555704BAF1E0A5DE807538378067C146",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.13/tombi-cli-0.6.13-x86_64-pc-windows-msvc.zip",
+      "checksum": "91B823BD57F7CCAFDE6240D4DEA3AF4C3B31BDC302873E068C45C41DD1A55DD0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.6.13/tombi-cli-0.6.13-x86_64-unknown-linux-musl.gz",
+      "checksum": "9EE41E6D925D6B4A96D03160F0178F6E627B014AE84D716DD10B9678DB9FDCA1",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/tree-sitter/tree-sitter/v0.25.10/tree-sitter-linux-arm64.gz",
       "checksum": "07FBFF8AE0EEB0D3E496E14FC1A30DCC730CC2C97D70E601E5357F2E51958AF5",
       "algorithm": "sha256"
@@ -878,6 +938,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.414.0/registry.yaml",
       "checksum": "89E380CDA61266EE4DC470D48083223D2ACCF4D3C474592DE01F82799E238A0AACC11C8BFCBF1120B94DECDE28C39A2B613590A53205F80349FDBC8072ACEA26",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.416.0/registry.yaml",
+      "checksum": "C5E20436AF2CFF46B287E1C1ED47C9202E818BF962AA05984808EFE38CDCBB921B4FF22D2DA5CE084E9145377888136F82DC03645609B38DC6BB5A2A623B3F45",
       "algorithm": "sha512"
     }
   ]

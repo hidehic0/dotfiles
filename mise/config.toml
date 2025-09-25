@@ -1,17 +1,17 @@
 [tools]
-deno = "2.5.1"
+deno = "2.5.2"
 go = "1.25.1"
 node = "23.11.1"
 python = "3.13.7"
 rust = "1.90.0"
-uv = "0.8.20"
+uv = "0.8.22"
 # node製tools
 "npm:atcoder-cli" = "2.2.0"
 "npm:markdownlint-cli2" = "0.18.1"
 "npm:pyright" = "1.1.405"
 "npm:typescript-language-server" = "5.0.0"
 "npm:@devcontainers/cli" = "0.80.1"
-"npm:yaml-language-server" = "1.18.0"
+"npm:yaml-language-server" = "1.19.1"
 "npm:eslint" = "9.36.0"
 # python製tools
 "pipx:terminaltexteffects" = "0.12.0"
