@@ -9,3 +9,13 @@ on_cmd = "Files"
 hook_add = '''
 nnoremap <Leader>ff :Files<CR>
 '''
+
+[[plugins]]
+repo="vim-airline/vim-airline"
+on_event="BufEnter"
+
+[[plugins]]
+repo="vim-jp/vimdoc-ja"
+on_ft ="help"
+
+

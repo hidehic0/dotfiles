@@ -19,13 +19,8 @@ hook_add = '''
 let g:denops#server#deno_args = ['-q', '--no-lock', '--unstable-kv', '--unstable-ffi', '-A']
 '''
 [[plugins]]
-repo="vim-jp/vimdoc-ja"
-
-[[plugins]]
 repo="morhetz/gruvbox"
+on_event="BufEnter"
 hook_add = '''
 colorscheme gruvbox
 '''
-
-[[plugins]]
-repo="vim-airline/vim-airline"
