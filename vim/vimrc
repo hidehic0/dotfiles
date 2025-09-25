@@ -39,8 +39,6 @@ autocmd User Dpp:makeStatePost
 filetype indent plugin on
 syntax on
 
-set clipboard&
-set clipboard+=unnamedplus
 inoremap <silent> jj <ESC>
 inoremap { {}<LEFT>
 inoremap ( ()<LEFT>
@@ -48,3 +46,6 @@ inoremap [ []<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 
+set clipboard=unnamedplus
+set number
+set relativenumber

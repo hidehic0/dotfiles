@@ -12,10 +12,8 @@ nnoremap <Leader>ff :Files<CR>
 
 [[plugins]]
 repo="vim-airline/vim-airline"
-on_event="BufEnter"
+on_event="BufReadPre"
 
 [[plugins]]
 repo="vim-jp/vimdoc-ja"
 on_ft ="help"
-
-
