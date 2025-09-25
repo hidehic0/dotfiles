@@ -15,6 +15,8 @@ return {
       "deno.json",
       "deno.jsonc",
       "deps.ts",
+      "vimrc",
+      ".vimrc",
       "init.lua",
     }, {
       upward = true,
