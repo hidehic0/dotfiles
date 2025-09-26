@@ -1,4 +1,7 @@
+vim.env.XDG_STATE_HOME = "/tmp"
+vim.opt.undodir = vim.env.XDG_STATE_HOME .. "/nvim/undo"
 vim.opt.swapfile = false
+vim.opt.undofile = true
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.signcolumn = "yes"
@@ -8,7 +11,6 @@ vim.opt.signcolumn = "yes"
 if vim.fn.has("gui_running") == 1 then
   vim.o.guifont = "FiraCode Nerd Font:h12"
 end
-vim.cmd([[set shadafile="NONE"]])
 vim.opt.termguicolors = true
 
 -- exrc
@@ -63,7 +65,7 @@ vim.api.nvim_create_autocmd({ "InsertEnter" }, {
 
 require("vim._extui").enable({
   enable = true, -- Whether to enable or disable the UI.
-  msg = { -- Options related to the message module.
+  msg = {        -- Options related to the message module.
     ---@type 'cmd'|'msg' Where to place regular messages, either in the
     ---cmdline or in a separate ephemeral message window.
     target = "cmd",
