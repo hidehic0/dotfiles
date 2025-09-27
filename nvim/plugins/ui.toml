@@ -1,0 +1,20 @@
+[[plugins]]
+repo = "nvim-lualine/lualine.nvim"
+on_event = ["VimEnter"]
+hooks_file = "$HOOK_DIR/lualine.lua"
+
+[[plugins]]
+repo = "yavorski/lualine-macro-recording.nvim"
+on_source = "lualine.nvim"
+
+[[plugins]]
+repo = "EdenEast/nightfox.nvim"
+on_event = "VimEnter"
+hooks_file = "$HOOK_DIR/nightfox.lua"
+
+[[plugins]]
+repo = "lewis6991/gitsigns.nvim"
+on_event = ["CursorHold","CursorHoldI"]
+lua_source = '''
+require("gitsigns").setup()
+'''
