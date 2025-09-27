@@ -1,0 +1,5 @@
+[[plugins]]
+repo = "MunifTanjim/nui.nvim"
+
+[[plugins]]
+repo = "nvim-lua/plenary.nvim"

@@ -5,3 +5,10 @@ on_source ="nvim-treesitter"
 [[plugins]] 
 repo = "andersevenrud/nvim_context_vt" 
 on_source = "nvim-treesitter"
+
+[[plugins]]
+repo = "windwp/nvim-autopairs"
+on_event = "InsertEnter"
+lua_source = '''
+require("nvim-autopairs").setup({})
+'''

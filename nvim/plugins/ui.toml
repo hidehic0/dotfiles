@@ -11,3 +11,10 @@ on_source = "lualine.nvim"
 repo = "EdenEast/nightfox.nvim"
 on_event = "VimEnter"
 hooks_file = "$HOOK_DIR/nightfox.lua"
+
+[[plugins]]
+repo = "lewis6991/gitsigns.nvim"
+on_event = ["CursorHold","CursorHoldI"]
+lua_source = '''
+require("gitsigns").setup()
+'''
