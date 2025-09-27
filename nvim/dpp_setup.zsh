@@ -5,6 +5,7 @@ git clone --depth 1 https://github.com/Shougo/dpp.vim
 git clone --depth 1 https://github.com/Shougo/dpp-ext-installer
 git clone --depth 1 https://github.com/Shougo/dpp-ext-lazy
 git clone --depth 1 https://github.com/Shougo/dpp-ext-toml
+git clone --depth 1 https://github.com/Shougo/dpp-protocol-git
 cd ..
 mkdir vim-denops
 cd vim-denops

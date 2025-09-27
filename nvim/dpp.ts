@@ -41,6 +41,10 @@ export class Config extends BaseConfig {
 
     const checkFiles: CheckFile[] = [{path: "~/.config/nvim/dpp.toml",lazy:false}];
 
+    for (const file of Deno.readDirSync(`${Deno.env.get("HOME")}/.config/nvim/plugins`)) {
+      checkFiles.push({path:`~/.config/nvim/plugins/${file.name}`,lazy:true})
+    }
+
     const [context, options] = await args.contextBuilder.get(args.denops);
 
     const tomls: Toml[] = [];
@@ -90,6 +94,7 @@ export class Config extends BaseConfig {
     ) as LazyMakeStateResult | undefined;
 
     return {
+      checkFiles,
       hooksFiles,
       plugins: lazyResult?.plugins ?? [],
       stateLines: lazyResult?.stateLines ?? [],

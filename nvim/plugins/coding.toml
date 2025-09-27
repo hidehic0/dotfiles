@@ -1,0 +1,7 @@
+[[plugins]]
+repo = "JoosepAlviste/nvim-ts-context-commentstring"
+on_source ="nvim-treesitter"
+
+[[plugins]] 
+repo = "andersevenrud/nvim_context_vt" 
+on_source = "nvim-treesitter"

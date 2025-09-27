@@ -1,5 +1,5 @@
 [[plugins]]
-repo = "Shougo/dpp.vim"
+rEpo = "Shougo/dpp.vim"
 
 [[plugins]]
 repo = "Shougo/dpp-ext-lazy"
@@ -15,3 +15,8 @@ repo = "Shougo/dpp-protocol-git"
 
 [[plugins]]
 repo = "github.com/vim-denops/denops.vim"
+
+[[plugins]]
+repo = "nvim-treesitter/nvim-treesitter"
+hooks_file = "$HOOK_DIR/treesitter.lua"
+rev = "main"
