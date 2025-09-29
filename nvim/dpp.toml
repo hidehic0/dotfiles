@@ -14,7 +14,7 @@ repo = "Shougo/dpp-ext-installer"
 repo = "Shougo/dpp-protocol-git"
 
 [[plugins]]
-repo = "github.com/vim-denops/denops.vim"
+repo = "vim-denops/denops.vim"
 
 [[plugins]]
 repo = "nvim-treesitter/nvim-treesitter"
