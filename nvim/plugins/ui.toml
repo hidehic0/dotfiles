@@ -14,7 +14,7 @@ hooks_file = "$HOOK_DIR/nightfox.lua"
 
 [[plugins]]
 repo = "lewis6991/gitsigns.nvim"
-on_event = ["CursorHold","CursorHoldI"]
+on_event = ["CursorHold", "CursorHoldI"]
 lua_source = '''
 require("gitsigns").setup()
 '''
@@ -22,7 +22,7 @@ require("gitsigns").setup()
 [[plugins]]
 repo = "akinsho/bufferline.nvim"
 depends = ["nvim-web-devicons"]
-on_event = ["BufAdd","CursorHold","CursorHoldI"]
+on_event = ["BufAdd", "CursorHold", "CursorHoldI"]
 hooks_file = "$HOOK_DIR/bufferline.lua"
 
 [[plugins]]
@@ -42,7 +42,7 @@ require("which-key").setup({
 
 [[plugins]]
 repo = "folke/trouble.nvim"
-on_cmd = ["Trouble", "TroubleToggle","TroubleRefresh" ]
+on_cmd = ["Trouble", "TroubleToggle", "TroubleRefresh"]
 on_map = "<leader>x"
 lua_source = '''
 require("trouble").setup()
@@ -52,7 +52,7 @@ vim.keymap.set("n", "<leader>x","<Cmd>Trouble diagnostics toggle<CR>",{desc = "D
 [[plugins]]
 repo = "folke/todo-comments.nvim"
 depends = "plenary.nvim"
-on_event = ["CursorMoved","CursorMovedI"]
+on_event = ["CursorMoved", "CursorMovedI"]
 lua_source = '''
 require("todo-comments").setup()
 '''

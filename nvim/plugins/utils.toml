@@ -82,13 +82,17 @@ require("telescope").setup({})
 [[plugins]]
 repo = "fdschmidt93/telescope-egrepify.nvim"
 
-
 [[plugins]]
 repo = "obsidian-nvim/obsidian.nvim"
 on_ft = "markdown"
-on_cmd = ["Obsidian","ObsidianKensaku","ObsidianQuickKensaku"]
-on_map = ["<leader>oo","<leader>of"]
-depends = ["telescope.nvim","telescope-egrepify.nvim","obsidian-kensaku.nvim","obsidian-bridge.nvim"]
+on_cmd = ["Obsidian", "ObsidianKensaku", "ObsidianQuickKensaku"]
+on_map = ["<leader>oo", "<leader>of"]
+depends = [
+  "telescope.nvim",
+  "telescope-egrepify.nvim",
+  "obsidian-kensaku.nvim",
+  "obsidian-bridge.nvim",
+]
 hooks_file = "$HOOK_DIR/obsidian.lua"
 
 [[plugins]]

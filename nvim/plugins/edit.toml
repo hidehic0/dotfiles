@@ -5,4 +5,3 @@ on_map = ["y", "c"]
 lua_source = '''
 require("nvim-surround").setup({})
 '''
-
