@@ -12,3 +12,12 @@ on_event = "InsertEnter"
 lua_source = '''
 require("nvim-autopairs").setup({})
 '''
+
+[[plugins]]
+repo = "neovim/nvim-lspconfig"
+on_event = "VimEnter"
+hooks_file = "$HOOK_DIR/lsp.lua"
+
+[[plugins]]
+repo = "creativenull/efmls-configs-nvim"
+on_source = "nvim-lspconfig"
