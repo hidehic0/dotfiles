@@ -8,6 +8,10 @@ repo = "yavorski/lualine-macro-recording.nvim"
 on_source = "lualine.nvim"
 
 [[plugins]]
+repo = "pnx/lualine-lsp-status"
+on_source = "lualine.nvim"
+
+[[plugins]]
 repo = "EdenEast/nightfox.nvim"
 on_event = "VimEnter"
 hooks_file = "$HOOK_DIR/nightfox.lua"
