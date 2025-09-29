@@ -18,3 +18,119 @@ on_event = ["CursorHold","CursorHoldI"]
 lua_source = '''
 require("gitsigns").setup()
 '''
+
+[[plugins]]
+repo = "akinsho/bufferline.nvim"
+depends = ["nvim-web-devicons"]
+on_event = ["BufAdd","CursorHold","CursorHoldI"]
+hooks_file = "$HOOK_DIR/bufferline.lua"
+
+[[plugins]]
+repo = "folke/which-key.nvim"
+on_map = ["<leader>", "g", "z"]
+lua_source = '''
+require("which-key").setup({
+  preset = "modern",
+  triggers = {
+    { "<leader>", mode = "n" },
+    { "z", mode = { "n", "x" } },
+    { "g", mode = { "n", "x" } },
+    { "<C-w>", mode = "n" },
+  },
+})
+'''
+
+[[plugins]]
+repo = "folke/trouble.nvim"
+on_cmd = ["Trouble", "TroubleToggle","TroubleRefresh" ]
+on_map = "<leader>x"
+lua_source = '''
+require("trouble").setup()
+vim.keymap.set("n", "<leader>x","<Cmd>Trouble diagnostics toggle<CR>",{desc = "Diagnostics (Trouble)"})
+'''
+
+[[plugins]]
+repo = "folke/todo-comments.nvim"
+depends = "plenary.nvim"
+on_event = ["CursorMoved","CursorMovedI"]
+lua_source = '''
+require("todo-comments").setup()
+'''
+
+[[plugins]]
+repo = "MeanderingProgrammer/render-markdown.nvim"
+depends = "nvim-treesitter"
+on_ft = "markdown"
+lua_source = '''
+require('render-markdown').setup({
+  latex = {
+    render_modes = false,
+  } 
+})
+'''
+
+[[plugins]]
+repo = "petertriho/nvim-scrollbar"
+on_event = "VimEnter"
+lua_source = '''
+vim.defer_fn(function()
+  require("scrollbar").setup({
+    show = true,
+    set_highlights = true,
+  })
+end, 100)
+'''
+
+[[plugins]]
+repo = "lukas-reineke/indent-blankline.nvim"
+on_event = "VimEnter"
+lua_source = '''
+vim.defer_fn(function()
+  local highlight = {
+    "RainbowRed",
+    "RainbowYellow",
+    "RainbowBlue",
+    "RainbowOrange",
+    "RainbowGreen",
+    "RainbowViolet",
+    "RainbowCyan",
+  }
+
+  local hooks = require("ibl.hooks")
+  -- create the highlight groups in the highlight setup hook, so they are reset
+  -- every time the colorscheme changes
+  hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
+    vim.api.nvim_set_hl(0, "RainbowRed", { fg = "#E06C75" })
+    vim.api.nvim_set_hl(0, "RainbowYellow", { fg = "#E5C07B" })
+    vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#61AFEF" })
+    vim.api.nvim_set_hl(0, "RainbowOrange", { fg = "#D19A66" })
+    vim.api.nvim_set_hl(0, "RainbowGreen", { fg = "#98C379" })
+    vim.api.nvim_set_hl(0, "RainbowViolet", { fg = "#C678DD" })
+    vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56B6C2" })
+  end)
+
+  require("ibl").setup({ indent = { highlight = highlight } })
+end, 100)
+'''
+
+[[plugins]]
+repo = "rachartier/tiny-inline-diagnostic.nvim"
+on_event = "LspAttach"
+lua_source = '''
+require("tiny-inline-diagnostic").setup({
+  options = {
+    enable_on_insert = true,
+    overwrite_events = { "DiagnosticChanged" },
+    multilines = {
+      enabled = true,
+      always_show = true,
+    },
+  },
+})
+vim.diagnostic.config({
+  virtual_text = false,
+  severity_sort = true,
+  update_in_insert = true,
+  underline = true,
+}) -- Only if needed in your configuration, if you already have native LSP diagnostics
+'''
