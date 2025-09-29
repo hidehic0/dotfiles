@@ -17,6 +17,7 @@ require("nvim-autopairs").setup({})
 repo = "neovim/nvim-lspconfig"
 on_event = "VimEnter"
 hooks_file = "$HOOK_DIR/lsp.lua"
+depends = "ddc-source-lsp"
 
 [[plugins]]
 repo = "creativenull/efmls-configs-nvim"
