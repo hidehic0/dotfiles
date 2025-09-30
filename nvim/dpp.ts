@@ -34,15 +34,28 @@ export class Config extends BaseConfig {
       extParams: {
         installer: {
           checkDiff: true,
+          githubAPIToken: Deno.env.has("GITHUB_TOKEN_READONLY")
+            ? Deno.env.get("GITHUB_TOKEN_READONLY")
+            : "",
         },
       },
       protocols: ["git"],
     });
 
-    const checkFiles: CheckFile[] = [{path: "~/.config/nvim/dpp.toml",lazy:false}];
+    const checkFiles: CheckFile[] = [{
+      path: "~/.config/nvim/dpp.toml",
+      lazy: false,
+    }];
 
-    for (const file of Deno.readDirSync(`${Deno.env.get("HOME")}/.config/nvim/plugins`)) {
-      checkFiles.push({path:`~/.config/nvim/plugins/${file.name}`,lazy:true})
+    for (
+      const file of Deno.readDirSync(
+        `${Deno.env.get("HOME")}/.config/nvim/plugins`,
+      )
+    ) {
+      checkFiles.push({
+        path: `~/.config/nvim/plugins/${file.name}`,
+        lazy: true,
+      });
     }
 
     const [context, options] = await args.contextBuilder.get(args.denops);
@@ -94,7 +107,6 @@ export class Config extends BaseConfig {
     ) as LazyMakeStateResult | undefined;
 
     return {
-      checkFiles,
       hooksFiles,
       plugins: lazyResult?.plugins ?? [],
       stateLines: lazyResult?.stateLines ?? [],
