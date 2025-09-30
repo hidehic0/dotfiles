@@ -8,9 +8,12 @@ on_source = "nvim-treesitter"
 
 [[plugins]]
 repo = "m-demare/hlargs.nvim"
-on_source = "nvim-treesitter"
+on_event = "VimEnter"
+depends = "nvim-treesitter"
 lua_source = """
+vim.defer_fn(function()
 require("hlargs").setup()
+end, 1000)
 """
 
 [[plugins]]
