@@ -8,7 +8,7 @@ return {
       "creativenull/efmls-configs-nvim",
     },
     config = function()
-     vim.lsp.config("*", {
+      vim.lsp.config("*", {
         capabilities = require("ddc_source_lsp").make_client_capabilities(),
       })
       vim.lsp.enable({

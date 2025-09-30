@@ -7,6 +7,13 @@ repo = "andersevenrud/nvim_context_vt"
 on_source = "nvim-treesitter"
 
 [[plugins]]
+repo = "m-demare/hlargs.nvim"
+on_source = "nvim-treesitter"
+lua_source = """
+require("hlargs").setup()
+"""
+
+[[plugins]]
 repo = "HiPhish/rainbow-delimiters.nvim"
 on_event = "VimEnter"
 lua_source = """
@@ -33,3 +40,86 @@ depends = "ddc-source-lsp"
 [[plugins]]
 repo = "creativenull/efmls-configs-nvim"
 on_source = "nvim-lspconfig"
+
+[[plugins]]
+repo = "mfussenegger/nvim-dap"
+depends = "nvim-nio"
+on_map = ["<F5>", "<leader>b"]
+hooks_file = "$HOOK_DIR/nvim-dap.lua"
+
+[[plugins]]
+repo = "rcarriga/nvim-dap-ui"
+on_source = "nvim-dap"
+
+[[plugins]]
+repo = "mfussenegger/nvim-dap-python"
+on_source = "nvim-dap"
+
+[[plugins]]
+repo = "numToStr/Comment.nvim"
+on_event = "CursorMoved"
+lua_source = """
+require("Comment").setup()
+"""
+
+[[plugins]]
+repo = "Bekaboo/dropbar.nvim"
+on_event = "LspAttach"
+lua_source = """
+require("dropbar").setup()
+"""
+
+[[plugins]]
+repo = "kosayoda/nvim-lightbulb"
+on_event = "LspAttach"
+lua_source = """
+require("nvim-lightbulb").setup({
+  autocmd = { enabled = true },
+  sign = {
+    enabled = false,
+  },
+  virtual_text = {
+    enabled = true,
+  },
+  number = {
+    enabled = true,
+  },
+})
+"""
+
+[[plugins]]
+repo = "nvim-neotest/neotest"
+on_cmd = "Neotest"
+on_map = "<leader>st"
+depends = ["nvim-nio", "nvim-treesitter", "plenary.nvim"]
+lua_source = """
+vim.keymap.set("n", "<leader>st", "<CMD>Neotest summary<CR>", {desc = "open neotest"})
+require("neotest").setup({
+  log_level = vim.log.levels.DEBUG,
+  adapters = {
+    require("neotest-python")({
+      runner = "unittest",
+      python = vim.fn.trim(vim.fn.system("which python")),
+    }),
+    require("rustaceanvim.neotest"),
+  },
+})
+"""
+
+[[plugins]]
+repo = "nvim-neotest/neotest-python"
+on_source = "neotest"
+
+[[plugins]]
+repo = "mrcjkb/rustaceanvim"
+on_source = "neotest"
+
+[[plugins]]
+repo = "mason-org/mason.nvim"
+on_cmd = "Mason"
+lua_post_update = """
+vim.cmd("MasonUpdate")
+"""
+lua_source = """
+require("mason").setup()
+"""
