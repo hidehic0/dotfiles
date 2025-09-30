@@ -1,3 +1,4 @@
+-- lua_source {{{
 local dap, dapui = require("dap"), require("dapui")
 
 local python_venv_path = vim.fn.system("which python"):gsub("\n", "")
@@ -30,7 +31,7 @@ dap.configurations.cpp = {
 }
 
 -- キーマッピング設定
--- vim.keymap.set("n", "<F5>", "<CMD>DapContinue<CR>", { desc = "Start/Continue Debugging" })
+vim.keymap.set("n", "<F5>", "<CMD>DapContinue<CR>", { desc = "Start/Continue Debugging" })
 vim.keymap.set("n", "<F10>", function()
   dap.step_over()
 end, { desc = "Step Over" })
@@ -40,7 +41,7 @@ end, { desc = "Step Into" })
 vim.keymap.set("n", "<F12>", function()
   dap.step_out()
 end, { desc = "Step Out" })
--- vim.keymap.set("n", "<leader>b", "<CMD>DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
+vim.keymap.set("n", "<leader>b", "<CMD>DapToggleBreakpoint<CR>", { desc = "Toggle Breakpoint" })
 
 dapui.setup({
   layouts = {
@@ -91,3 +92,4 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
   dapui.close()
 end
+-- }}}

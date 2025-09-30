@@ -1,3 +1,4 @@
+-- lua_source {{{
 require("bufferline").setup({
   options = {
     -- mode = "tabs",
@@ -17,3 +18,4 @@ vim.api.nvim_set_keymap("n", "gt", ":BufferLineCycleNext<CR>", { noremap = true,
 vim.api.nvim_set_keymap("n", "gT", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
 -- バッファを削除
 vim.api.nvim_set_keymap("n", "<leader>q", ":bdelete<CR>", { noremap = true, silent = true })
+-- }}}

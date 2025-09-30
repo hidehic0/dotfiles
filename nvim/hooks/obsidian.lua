@@ -1,3 +1,4 @@
+-- lua_source {{{
 require("obsidian").setup({
   legacy_commands = false,
   workspaces = {
@@ -12,3 +13,7 @@ require("obsidian").setup({
     end,
   },
 })
+
+vim.keymap.set("n","<leader>oo","<Cmd>Obsidian open<CR>")
+vim.keymap.set("n","<leader>of","<Cmd>ObsidianQuickKensaku<CR>")
+-- }}}

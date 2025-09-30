@@ -1,0 +1,5 @@
+[[plugins]]
+repo = "vim-skk/skkeleton"
+depends = "denops.vim"
+on_event = ["CmdlineEnter", "InsertEnter"]
+hooks_file = "$HOOK_DIR/skkeleton.lua"

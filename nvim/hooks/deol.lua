@@ -1,3 +1,4 @@
+-- lua_source {{{
 local fn = require("artemis").fn
 local keymaps_set = require("utils").keymaps_set
 
@@ -27,3 +28,4 @@ vim.api.nvim_create_autocmd("FileType", {
     })
   end,
 })
+-- }}}

@@ -1,3 +1,4 @@
+-- lua_source {{{
 require("nightfox").setup({
   options = {
     transparent = true,
@@ -5,3 +6,7 @@ require("nightfox").setup({
 })
 
 vim.cmd("colorscheme terafox")
+-- }}}
+-- lua_post_update {{{
+require("nightfox").compile()
+-- }}}

@@ -1,8 +1,9 @@
+-- lua_source {{{
 local fn = require("artemis").fn
 local customAction = fn.ddu.custom.action
 local doAction = fn.ddu.ui.do_action
 
-vim.fn["ddu#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua", "plugins", "config", "ddu.ts"))
+vim.fn["ddu#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "hooks", "ddu.ts"))
 
 -- helpers
 
@@ -99,3 +100,4 @@ vim.api.nvim_create_autocmd("FileType", {
     map_item_action("O", "newDirectory")
   end,
 })
+-- }}}

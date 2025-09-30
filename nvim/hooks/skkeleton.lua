@@ -1,3 +1,4 @@
+-- lua_source {{{
 vim.fn["skkeleton#initialize"]()
 vim.keymap.set({ "i", "c" }, "<C-j>", "<Plug>(skkeleton-enable)")
 
@@ -540,3 +541,4 @@ vim.fn["skkeleton#config"]({
   completionRankFile = "~/.cache/skkeleton/rank.json",
   kanaTable = "rom",
 })
+-- }}}

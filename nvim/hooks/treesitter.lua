@@ -1,3 +1,4 @@
+-- lua_source {{{
 require("nvim-treesitter").setup({
   highlight = {
     enable = true,
@@ -67,3 +68,9 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
   end,
 })
+
+-- }}}
+
+-- lua_post_update {{{
+vim.cmd([[TSUpdate]])
+-- }}}

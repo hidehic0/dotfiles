@@ -1,7 +1,8 @@
+-- lua_source {{{
 local fn = require("artemis").fn
 local keymaps_set = require("utils").keymaps_set
 
-vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua", "plugins", "config", "ddc.ts"))
+vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "hooks", "ddc.ts"))
 
 -- pum config
 fn.pum.set_option({
@@ -102,16 +103,6 @@ vim.api.nvim_create_autocmd({ "CmdlineEnter" }, {
       },
     })
     vim.fn["ddc#enable_cmdline_completion"]()
-
-    vim.api.nvim_create_autocmd({ "CmdlineLeavePre" }, {
-      pattern = "*",
-      once = true,
-      callback = function()
-        for _, key in ipairs({ "<Tab>", "<S-Tab>", "<C-n>", "<C-p>", "<C-e>", "<C-y>" }) do
-          vim.keymap.del("c", key, { silent = true })
-        end
-      end,
-    })
   end,
 })
 
@@ -138,3 +129,4 @@ fn.ddc.enable()
 fn.ddc.enable_terminal_completion()
 
 vim.notify("ddc.vim loaded successfully")
+-- }}}

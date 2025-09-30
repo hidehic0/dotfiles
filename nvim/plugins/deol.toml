@@ -1,0 +1,5 @@
+[[plugins]]
+repo = "Shougo/deol.nvim"
+depends = ["vim-artemis", "denops.vim"]
+on_map = "<C-t>"
+hooks_file = "$HOOK_DIR/deol.lua"

@@ -1,0 +1,14 @@
+[[plugins]]
+repo = "MunifTanjim/nui.nvim"
+
+[[plugins]]
+repo = "nvim-lua/plenary.nvim"
+
+[[plugins]]
+repo = "nvim-tree/nvim-web-devicons"
+
+[[plugins]]
+repo = "tani/vim-artemis"
+
+[[plugins]]
+repo = "nvim-neotest/nvim-nio"

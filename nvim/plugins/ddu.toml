@@ -1,0 +1,97 @@
+[[plugins]]
+repo = "Shougo/ddu.vim"
+on_map = "<leader>f"
+depends = ["denops.vim", "vim-artemis", "vim-kensaku"]
+hooks_file = "$HOOK_DIR/ddu.lua"
+
+[[plugins]]
+repo = "Shougo/ddu-ui-ff"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-ui-filer"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "4513ECHO/ddu-source-emoji"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-source-action"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-source-file"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-source-file_rec"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-source-line"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "kuuote/ddu-source-git_status"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "kyoh86/ddu-source-git_branch"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "matsui54/ddu-source-help"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "shun/ddu-source-rg"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "staticWagomU/ddu-source-patch_local"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "uga-rosa/ddu-source-lsp"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-kind-file"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-kind-word"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "yuki-yano/ddu-filter-fzf"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Milly/ddu-filter-kensaku"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "uga-rosa/ddu-filter-converter_devicon"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "kyoh86/ddu-filter-converter_hl_dir"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-commands.vim"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-column-filename"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "tamago3keran/ddu-column-devicon_filename"
+on_source = "ddu.vim"
+
+[[plugins]]
+repo = "Shougo/ddu-filter-sorter_alpha"
+on_source = "ddu.vim"

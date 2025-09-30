@@ -1,0 +1,127 @@
+[[plugins]]
+repo = "lambdalisue/vim-kensaku"
+on_event = "CmdlineEnter"
+lua_source = '''
+vim.keymap.set("c", "<CR>", "<Plug>(kensaku-search-replace)<CR>")
+'''
+
+[[plugins]]
+repo = "lambdalisue/vim-kensaku-search"
+on_source = ["vim-kensaku", "fuzzy-motion.nvim"]
+
+[[plugins]]
+repo = "folke/flash.nvim"
+on_event = "CursorMoved"
+on_map = ["<leader>j"]
+lua_source = '''
+require("flash").setup({
+  modes = {
+    char = {
+      enabled = true,
+      multi_line = false,
+      search = { wrap = false },
+      highlight = { backdrop = true, groups = { label = "", backdrop = "" } },
+      jump = { register = false },
+    },
+  },
+})
+
+vim.keymap.set("n", "<leader>j", require("flash").jump,{desc="Flash"})
+'''
+
+[[plugins]]
+repo = "yuki-yano/fuzzy-motion.vim"
+on_cmd = "FuzzyMotion"
+on_map = ["<leader>J"]
+lua_source = '''
+vim.g.fuzzy_motion_matchers = { "fzf", "kensaku" }
+vim.keymap.set("n", "<leader>J", "<Cmd>FuzzyMotion<CR>", { desc = "FuzzyMotion" })
+'''
+
+[[plugins]]
+repo = "kevinhwang91/nvim-hlslens"
+on_event = "CmdlineEnter"
+lua_source = '''
+require('hlslens').setup()
+
+local kopts = {noremap = true, silent = true}
+
+vim.api.nvim_set_keymap('n', 'n',
+    [[<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>]],
+    kopts)
+vim.api.nvim_set_keymap('n', 'N',
+    [[<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>]],
+    kopts)
+'''
+
+[[plugins]]
+repo = "monaqa/dial.nvim"
+on_map = ["<C-x>", "<C-a>", "g<C-x>", "g<C-a>"]
+hooks_file = "$HOOK_DIR/dial.lua"
+
+[[plugins]]
+repo = "m4xshen/hardtime.nvim"
+depends = ["nui.nvim"]
+on_event = "CursorMoved"
+lua_source = '''
+require("hardtime").setup({
+  disabled_filetypes = { "ddu-ff" },
+  timeout = 10000,
+  enabled = vim.g.hardtime_enabled,
+})
+'''
+
+[[plugins]]
+repo = "nvim-telescope/telescope.nvim"
+depends = ["plenary.nvim"]
+on_cmd = "Telescope"
+lua_source = '''
+require("telescope").setup({})
+'''
+
+[[plugins]]
+repo = "fdschmidt93/telescope-egrepify.nvim"
+
+[[plugins]]
+repo = "obsidian-nvim/obsidian.nvim"
+on_ft = "markdown"
+on_cmd = ["Obsidian", "ObsidianKensaku", "ObsidianQuickKensaku"]
+on_map = ["<leader>oo", "<leader>of"]
+depends = [
+  "telescope.nvim",
+  "telescope-egrepify.nvim",
+  "obsidian-kensaku.nvim",
+  "obsidian-bridge.nvim",
+]
+hooks_file = "$HOOK_DIR/obsidian.lua"
+
+[[plugins]]
+repo = "delphinus/obsidian-kensaku.nvim"
+rev = "feat/quick-kensaku"
+depends = "vim-kensaku"
+lua_source = '''
+require("obsidian-kensaku").setup({
+ picker = "egrepify" 
+})
+'''
+
+[[plugins]]
+repo = "oflisback/obsidian-bridge.nvim"
+lua_source = '''
+require("obsidian-bridge").setup({
+  scroll_sync = true,
+})
+'''
+
+[[plugins]]
+repo = "wakatime/vim-wakatime"
+on_event = "VimEnter"
+
+[[plugins]]
+repo = "akinsho/git-conflict.nvim"
+on_event = "BufReadPost"
+lua_source = '''
+vim.defer_fn(function()
+  require('git-conflict').setup()
+end,300)
+'''
