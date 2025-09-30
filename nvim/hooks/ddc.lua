@@ -103,16 +103,6 @@ vim.api.nvim_create_autocmd({ "CmdlineEnter" }, {
       },
     })
     vim.fn["ddc#enable_cmdline_completion"]()
-
-    vim.api.nvim_create_autocmd({ "CmdlineLeavePre" }, {
-      pattern = "*",
-      once = true,
-      callback = function()
-        for _, key in ipairs({ "<Tab>", "<S-Tab>", "<C-n>", "<C-p>", "<C-e>", "<C-y>" }) do
-          vim.keymap.del("c", key, { silent = true })
-        end
-      end,
-    })
   end,
 })
 
