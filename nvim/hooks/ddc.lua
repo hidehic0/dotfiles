@@ -2,7 +2,7 @@
 local fn = require("artemis").fn
 local keymaps_set = require("utils").keymaps_set
 
-vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "lua", "plugins", "config", "ddc.ts"))
+vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "hooks", "ddc.ts"))
 
 -- pum config
 fn.pum.set_option({
