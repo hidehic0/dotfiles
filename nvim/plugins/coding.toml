@@ -7,6 +7,17 @@ repo = "andersevenrud/nvim_context_vt"
 on_source = "nvim-treesitter"
 
 [[plugins]]
+repo = "HiPhish/rainbow-delimiters.nvim"
+on_event = "VimEnter"
+lua_source = """
+vim.defer_fn(function()
+  if vim.fn.expand("%:p") ~= "" then
+    vim.cmd.edit({ bang = true })
+  end
+end, 300)
+"""
+
+[[plugins]]
 repo = "windwp/nvim-autopairs"
 on_event = "InsertEnter"
 lua_source = '''
