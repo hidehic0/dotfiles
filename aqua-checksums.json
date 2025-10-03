@@ -391,28 +391,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-aarch64-apple-darwin.tar.gz",
-      "checksum": "1BA71332AB6DDF578CFB0D74F781C3E06A48125312B31CDD44789941FF6F8B5C",
+      "id": "github_release/github.com/jj-vcs/jj/v0.34.0/jj-v0.34.0-aarch64-apple-darwin.tar.gz",
+      "checksum": "8893D34FF0C76E16FDF46BA8771EA2498294957AEC5EFB0618DE15CC493AEE27",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "2CE8822F2161D4EAEE96CE2BC7D6F791ACE38913DB02487116103D41C8B58CA4",
+      "id": "github_release/github.com/jj-vcs/jj/v0.34.0/jj-v0.34.0-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "39B5D689BCDC37256FE5F9ED9CACCF5E73B310D1F86848FDF610A7BEA9D75C14",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-x86_64-apple-darwin.tar.gz",
-      "checksum": "63C48D3899B52EB26AC0A3258101FFF4765F74C4CEB70EAE3DD8350126A73CF5",
+      "id": "github_release/github.com/jj-vcs/jj/v0.34.0/jj-v0.34.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "807417125E574432B71C4568A0E2D6168C30AF3B59E64CE02A45A54CF0880BD7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-x86_64-pc-windows-msvc.zip",
-      "checksum": "59108E804AFA614D5EB0494B97AB557D3B2D94859119666649EFAC20EA598CC1",
+      "id": "github_release/github.com/jj-vcs/jj/v0.34.0/jj-v0.34.0-x86_64-pc-windows-msvc.zip",
+      "checksum": "138F2642A99AFB08AFF0F7DC54B2076DCDC625D07A9A2E21B52895EA72DB900E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jj-vcs/jj/v0.33.0/jj-v0.33.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "2703E13B3D5623AA67E19358B257FE5A761FAA883BD0BD716D0B1C801A214093",
+      "id": "github_release/github.com/jj-vcs/jj/v0.34.0/jj-v0.34.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "1E8E1EDE656FECBA91CEB8248A76402A110017AD677D0ECFD1F2040F5543CFA3",
       "algorithm": "sha256"
     },
     {
