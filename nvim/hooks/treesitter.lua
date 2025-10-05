@@ -1,16 +1,6 @@
 -- lua_source {{{
 require("nvim-treesitter").setup({
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false,
-  },
-  indent = {
-    enable = false,
-  },
-  incremental_selection = {
-    enable = true,
-  },
-  ts_context_commentstring = { enable = true },
+  install_dir = vim.fs.joinpath(vim.fn.stdpath("data"), "site"),
 })
 
 local langs = {
@@ -28,7 +18,7 @@ local langs = {
   "gitcommit",
   "go",
   "json",
-  "typescript",
+  "ecma",
   "rust",
   "vim",
 }

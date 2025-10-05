@@ -1,4 +1,9 @@
 [[plugins]]
+repo = "nvim-treesitter/nvim-treesitter"
+hooks_file = "$HOOK_DIR/treesitter.lua"
+rev = "main"
+
+[[plugins]]
 repo = "JoosepAlviste/nvim-ts-context-commentstring"
 on_source = "nvim-treesitter"
 
