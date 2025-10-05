@@ -6,7 +6,7 @@ vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "python",
+  pattern = { "python", "rust" },
   callback = function()
     vim.bo.shiftwidth = 4
     vim.bo.tabstop = 4
