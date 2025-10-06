@@ -53,3 +53,4 @@ packages:
   - name: hidehic0/binomial_coefficient-calc-cli@v0.0.1
     registry: local
   - name: mattn/efm-langserver@v0.0.54
+  - name: suzuki-shunsuke/pinact@v3.4.2
