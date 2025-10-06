@@ -1,6 +1,6 @@
 [[plugins]]
 repo = "Shougo/ddu.vim"
-on_map = "<leader>f"
+on_map = ["<leader>f", "<leader>c"]
 depends = ["denops.vim", "vim-artemis", "vim-kensaku"]
 hooks_file = "$HOOK_DIR/ddu.lua"
 
