@@ -96,3 +96,23 @@ packages:
       linux: Linux
       amd64: x86_64
       darwin: Darwin
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: oj-download-atc
+    description: A wrapper to simplify downloading tasks from AtCoder with oj download
+    asset: oj-download-atc_{{.OS}}_{{.Arch}}.{{.Format}}
+    files:
+      - name: oj-download-atc
+        src: oj-download-atc
+    replacements:
+      linux: Linux
+      amd64: x86_64
+      darwin: Darwin
+    supported_envs:
+      - linux
+      - darwin
+      - windows/amd64
+    format: tar.gz
+    overrides:
+      - goos: windows
+        format: zip

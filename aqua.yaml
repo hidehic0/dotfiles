@@ -54,3 +54,5 @@ packages:
     registry: local
   - name: mattn/efm-langserver@v0.0.54
   - name: suzuki-shunsuke/pinact@v3.4.2
+  - name: hidehic0/oj-download-atc@v0.0.1
+    registry: local

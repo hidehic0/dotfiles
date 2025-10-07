@@ -296,6 +296,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/oj-download-atc/v0.0.1/oj-download-atc_Darwin_arm64.tar.gz",
+      "checksum": "AC31D0696E02579B78BFB62BB0EA4B6A712FE1BE2F7494960C6FD9EB2660CBDE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/oj-download-atc/v0.0.1/oj-download-atc_Darwin_x86_64.tar.gz",
+      "checksum": "5E38133D79102C71F6EE724B7EF47014B3F6F69282A9C2835325ABAF42D7061C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/oj-download-atc/v0.0.1/oj-download-atc_Linux_arm64.tar.gz",
+      "checksum": "FFEF14DA0269B30D7BA120E26301AE831D8C5451FACED719D3AA45325790E7B7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/oj-download-atc/v0.0.1/oj-download-atc_Linux_x86_64.tar.gz",
+      "checksum": "149CBC7F0D9EEAB107100ED754DF8C4516C55F005614DBF9A38231ECD84718D6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/oj-download-atc/v0.0.1/oj-download-atc_windows_x86_64.zip",
+      "checksum": "78FEAFD565571E95681548899746F6F9A4ADB0EEE3F5B5683509C509504C99D4",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/primesplit/v0.1.1/primesplit_linux_arm64.tar.gz",
       "checksum": "864B3EEB181EE50D41D0BF5DD6E1486D767255790225BA3AA29FB250FD41380D",
       "algorithm": "sha256"
