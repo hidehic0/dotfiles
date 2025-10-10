@@ -13,6 +13,14 @@ if vim.fn.has("gui_running") == 1 then
 end
 vim.opt.termguicolors = true
 
+-- mouse
+vim.api.nvim_create_autocmd("CursorMoved", {
+  pattern = "*",
+  callback = function()
+    vim.opt.mouse = "nv"
+  end,
+})
+
 -- exrc
 vim.opt.exrc = true
 vim.opt.secure = true
