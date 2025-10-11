@@ -30,7 +30,7 @@ packages:
   - name: x-motemen/ghq@v1.8.0
   - name: golang.org/x/tools/gopls@v0.20.0
   - name: high-moctane/mocword@v0.2.0
-  - name: rhysd/actionlint@v1.7.7
+  - name: rhysd/actionlint@v1.7.8
   - name: jqlang/jq@jq-1.8.1
   - name: aquaproj/aqua-registry-updater@v0.1.6
   - name: hidehic0/primesplit@v0.1.1
