@@ -8,6 +8,10 @@ vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "hook
 fn.pum.set_option({
   max_width = 40,
   direction = "below",
+  border = "rounded",
+  highlight_normal_menu = "",
+  highlight_scrollbar = "",
+  scrollbar_char = "▎",
 })
 
 local pum_next = function()
