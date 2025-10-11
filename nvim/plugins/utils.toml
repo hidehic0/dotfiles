@@ -125,3 +125,7 @@ vim.defer_fn(function()
   require('git-conflict').setup()
 end,300)
 '''
+
+[[plugins]]
+repo = "vim-jp/vimdoc-ja"
+on_ft = "help"
