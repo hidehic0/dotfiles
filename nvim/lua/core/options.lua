@@ -37,12 +37,13 @@ vim.cmd([[let &grepprg='rg --vimgrep']])
 
 vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
 
--- vim.filetype.add({
---   pattern = {
---     [".*/.github/workflows/.*%.yml"] = "yaml.ghaction",
---     [".*/.github/workflows/.*%.yaml"] = "yaml.ghaction",
---   },
--- })
+vim.filetype.add({
+  pattern = {
+    [".*/.github/workflows/.*%.yml"] = "yaml.ghaction",
+    [".*/.github/workflows/.*%.yaml"] = "yaml.ghaction",
+    [".*/git/config"] = "gitconfig",
+  },
+})
 
 -- copilot
 vim.g.copilot_no_tab_map = true

@@ -30,6 +30,7 @@ local assist = {
 local register_langs = {
   zsh = "bash",
   ["yaml.ghaction"] = "yaml",
+  gitconfig = "ini",
 }
 
 local parsers = {}
