@@ -141,3 +141,13 @@ command Ddx call ddx#start(#{ path: "%"->expand() })
 [[plugins]]
 repo = "Shougo/ddx-ui-hex"
 on_source = "ddx.vim"
+
+[[plugins]]
+repo = "kevinhwang91/nvim-ufo"
+depends = "nvim-treesitter"
+on_map = ["zR", "zo", "zc"]
+hooks_file = "$HOOK_DIR/nvim-ufo.lua"
+
+[[plugins]]
+repo = "kevinhwang91/promise-async"
+on_source = "nvim-ufo"
