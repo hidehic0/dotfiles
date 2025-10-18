@@ -5,7 +5,7 @@ import {
   type ConfigReturn,
 } from "jsr:@shougo/dpp-vim@~5.0.0/config";
 
-import type { Denops } from "jsr:@denops/core@8.0.0";
+import type { Denops } from "jsr:@denops/core@8.0.1";
 
 type Toml = {
   hooks_file?: string;
