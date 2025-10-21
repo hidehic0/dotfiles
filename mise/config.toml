@@ -4,7 +4,7 @@ go = "1.25.3"
 node = "23.11.1"
 python = "3.14.0"
 rust = "1.90.0"
-uv = "0.9.4"
+uv = "0.9.5"
 # node製tools
 "npm:atcoder-cli" = "2.2.0"
 "npm:markdownlint-cli2" = "0.18.1"
