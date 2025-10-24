@@ -34,5 +34,6 @@
   "direnv": "~/.config/direnv",
   "gh-dash": "~/.config/gh-dash",
   "jj": "~/.config/jj",
-  "vim": "~/.vim"
+  "vim": "~/.vim",
+  "tombi": "~/.config/tombi"
 }
