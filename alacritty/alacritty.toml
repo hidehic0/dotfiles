@@ -9,4 +9,4 @@ term = "xterm-256color"
 [terminal]
 [terminal.shell]
 program = "/bin/zsh"
-args = ["-l", "-c", "tmux"]
+args = ["-l", "-c", "tmux attach || tmux"]
