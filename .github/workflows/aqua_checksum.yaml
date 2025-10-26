@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write
     with:
-      aqua_version: v2.55.0
+      aqua_version: v2.55.1
       prune: true
     secrets:
       gh_token: ${{secrets.GH_TOKEN}}
