@@ -84,7 +84,7 @@ vim.api.nvim_create_autocmd("FileType", {
         doAction("expandItem", { isInTree = true })
         doAction("clearSelectAllItems")
       else
-        doAction("itemAction", { name = "open" })
+        doAction("itemAction")
       end
     end)
     map_action("i", "openFilterWindow")
