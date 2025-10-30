@@ -1,0 +1,20 @@
+{
+  "Cin1": {
+    "body": [
+      "cin >> $1;$2"
+    ],
+    "prefix": "cin1"
+  },
+  "Cin2": {
+    "body": [
+      "cin >> $1 >> $2;$3"
+    ],
+    "prefix": "cin2"
+  },
+  "Cin3": {
+    "body": [
+      "cin >> $1 >> $2 >> $3;$4"
+    ],
+    "prefix": "cin3"
+  }
+}
