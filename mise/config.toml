@@ -3,7 +3,7 @@ deno = "2.5.6"
 go = "1.25.3"
 node = "24.11.0"
 python = "3.14.0"
-rust = "1.90.0"
+rust = "1.91.0"
 uv = "0.9.7"
 # node製tools
 "npm:atcoder-cli" = "2.2.0"
