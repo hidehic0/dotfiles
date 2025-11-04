@@ -21,6 +21,7 @@ local langs = {
   "ecma",
   "rust",
   "vim",
+  "jsx",
 }
 
 local assist = {
