@@ -416,36 +416,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.56.0/lazygit_0.56.0_darwin_arm64.tar.gz",
-      "checksum": "1835B5183809F50D1D15683AC059384E5F15017ACB8B40695B734A8529A54ED1",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.56.0/lazygit_0.56.0_darwin_x86_64.tar.gz",
-      "checksum": "500C32EE7FA643A9E95892A137DCFE355277C7268C6859FC1CF4F6D4D0004BBB",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.56.0/lazygit_0.56.0_linux_arm64.tar.gz",
-      "checksum": "57503B0074BEAAEAAC35DA2D462D1DDF2AF52D8C822766C935EA5515BA21875C",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.56.0/lazygit_0.56.0_linux_x86_64.tar.gz",
-      "checksum": "CED13C2AE074BBF6C201BC700EE2971E193B811C3B2AE0ED4D00D6225C6C9AB7",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.56.0/lazygit_0.56.0_windows_arm64.zip",
-      "checksum": "BC43F05BE933DCE1F471B5288D66FB2FD7910AA09A258B0335691B9CEB22F278",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.56.0/lazygit_0.56.0_windows_x86_64.zip",
-      "checksum": "ADD1E4E7696FDBD3EC51422FFEC1B7CB7988394D2E209315BF0058D8C8132A58",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/jj-vcs/jj/v0.34.0/jj-v0.34.0-aarch64-apple-darwin.tar.gz",
       "checksum": "8893D34FF0C76E16FDF46BA8771EA2498294957AEC5EFB0618DE15CC493AEE27",
       "algorithm": "sha256"
@@ -961,8 +931,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.432.0/registry.yaml",
-      "checksum": "96CBA2F96234E92A8BEA7A9F4E8D111F725D0AA0C7EDE342CDFAB9119C4176593BB2AB922B3D3FF3A539386BE19D2FA704323C13A11E098BB2B82C270AF60874",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.433.0/registry.yaml",
+      "checksum": "731B0130B2222F170D38E9F03223A286BFFF02043B5B17E46E15569A7CFF5D0F0D149C7120BEEF32BCBF0A2285543AA379BF3A6F67DEC6FC91091B9AA0A0826D",
       "algorithm": "sha512"
     }
   ]
