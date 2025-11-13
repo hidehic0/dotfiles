@@ -13,3 +13,12 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.bo.softtabstop = 4
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "make",
+  callback = function()
+    vim.o.expandtab = false
+    vim.o.tabstop = 8
+    vim.o.shiftwidth = 8
+  end,
+})

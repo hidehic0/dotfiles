@@ -22,6 +22,7 @@ local langs = {
   "rust",
   "vim",
   "jsx",
+  "make",
 }
 
 local assist = {
