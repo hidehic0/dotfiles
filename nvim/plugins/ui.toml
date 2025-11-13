@@ -146,3 +146,18 @@ on_event = "LspAttach"
 lua_source = """
 require("fidget").setup({})
 """
+
+[[plugins]]
+repo = "gisketch/triforce.nvim"
+on_map = ["<leader>tp"]
+lua_source = """
+require("triforce").setup({
+  keymap = {
+    show_profile = "<leader>tp", -- Open profile with <leader>tp
+  },
+})
+"""
+
+[[plugins]]
+repo = "nvzone/volt"
+on_source = "triforce.nvim"
