@@ -23,6 +23,7 @@ local langs = {
   "vim",
   "jsx",
   "make",
+  "javascript",
 }
 
 local assist = {
