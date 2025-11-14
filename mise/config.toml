@@ -7,7 +7,7 @@ rust = "1.91.1"
 uv = "0.9.9"
 # node製tools
 "npm:atcoder-cli" = "2.2.0"
-"npm:markdownlint-cli2" = "0.18.1"
+"npm:markdownlint-cli2" = "0.19.0"
 "npm:pyright" = "1.1.407"
 "npm:typescript-language-server" = "5.1.1"
 "npm:@devcontainers/cli" = "0.80.1"
