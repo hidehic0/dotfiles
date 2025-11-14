@@ -149,13 +149,15 @@ require("fidget").setup({})
 
 [[plugins]]
 repo = "gisketch/triforce.nvim"
-on_map = ["<leader>tp"]
+on_event = "VimEnter"
 lua_source = """
-require("triforce").setup({
-  keymap = {
-    show_profile = "<leader>tp", -- Open profile with <leader>tp
-  },
-})
+vim.defer_fn(function()
+  require("triforce").setup({
+    keymap = {
+      show_profile = "<leader>tp", -- Open profile with <leader>tp
+    },
+  })
+end,500)
 """
 
 [[plugins]]
