@@ -706,13 +706,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sassman/t-rec-rs/v0.7.9/t-rec-v0.7.9-x86_64-apple-darwin.tar.gz",
-      "checksum": "5AE3653F3DCF37BD6D9E35D70FED439CA3F18C006CB0763E25DB964F1656F040",
+      "id": "github_release/github.com/sassman/t-rec-rs/v0.7.10/t-rec-v0.7.10-x86_64-apple-darwin.tar.gz",
+      "checksum": "34B0C194A1342CFDF76330D8D9DD684007A05E3CEB2C5002C51BA74D470F57EA",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sassman/t-rec-rs/v0.7.9/t-rec-v0.7.9-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "91927575857A4A22F74560259EF767FB4D831C48DCEAC2899030381C13EB09A8",
+      "id": "github_release/github.com/sassman/t-rec-rs/v0.7.10/t-rec-v0.7.10-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "344FDBAB943C42116B0036228969997BC676C4EE36D6138299B6D04BCCD99821",
       "algorithm": "sha256"
     },
     {
