@@ -4,3 +4,4 @@ CompileFlags:
   Add:
     - -I/home/hidehic0/src/github.com/hidehic0/library_cpp
     - --std=c++23
+    - -Wall
