@@ -116,3 +116,19 @@ packages:
     overrides:
       - goos: windows
         format: zip
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: prime-generator
+    description: 桁を指定して(17桁以下)その桁数の素数を生成できるツール
+    asset: prime-generator_{{.OS}}_{{.Arch}}.{{.Format}}
+    files:
+      - name: prime-generator
+        src: prime-generator
+    replacements:
+      linux: Linux
+      amd64: x86_64
+      darwin: Darwin
+    format: tar.gz
+    supported_envs:
+      - linux
+      - darwin

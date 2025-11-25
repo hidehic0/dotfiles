@@ -57,3 +57,5 @@ packages:
   - name: hidehic0/oj-download-atc@v0.0.1
     registry: local
   - name: goreleaser/goreleaser@v2.12.7
+  - name: hidehic0/prime-generator@v0.0.1
+    registry: local

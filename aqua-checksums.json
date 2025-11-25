@@ -346,6 +346,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/prime-generator/v0.0.1/prime-generator_Darwin_arm64.tar.gz",
+      "checksum": "A1A2F9380F32880814C806B0DE325AE398535A57875D88BDC0665CDC9106E10C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/prime-generator/v0.0.1/prime-generator_Darwin_x86_64.tar.gz",
+      "checksum": "64D1BF0BBA5B59B71745C694593AF1E814791FA7A55A7F01FA32B39B5DE2B04B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/prime-generator/v0.0.1/prime-generator_Linux_arm64.tar.gz",
+      "checksum": "936EE2028E4ACE632E7258B3AECFE8612146CD2448E3DC85FD11DB73CFDDEE5D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/prime-generator/v0.0.1/prime-generator_Linux_x86_64.tar.gz",
+      "checksum": "7FB64A078A4AA10B5AFE2249B8AB4CB933F12150C5FEE550D22B65572241FBDC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/primesplit/v0.1.1/primesplit_linux_arm64.tar.gz",
       "checksum": "864B3EEB181EE50D41D0BF5DD6E1486D767255790225BA3AA29FB250FD41380D",
       "algorithm": "sha256"
