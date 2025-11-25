@@ -56,3 +56,4 @@ packages:
   - name: suzuki-shunsuke/pinact@v3.4.4
   - name: hidehic0/oj-download-atc@v0.0.1
     registry: local
+  - name: goreleaser/goreleaser@v2.12.7

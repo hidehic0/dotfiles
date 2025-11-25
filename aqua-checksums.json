@@ -256,6 +256,31 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.12.7/goreleaser_Darwin_all.tar.gz",
+      "checksum": "9EBF84C40C8D69C85567283CE371E1BBCE4EC6FC87105D323476354AFCCC0D1D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.12.7/goreleaser_Linux_arm64.tar.gz",
+      "checksum": "7948D8CE09CCE3D3A2FFF9202EAE47D2223958E508F849B340345583BB2C0E1F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.12.7/goreleaser_Linux_x86_64.tar.gz",
+      "checksum": "DE95C5D1E728E18753C3DDCF02974D63D6432F0A7355A5AFA6813971A95A01B8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.12.7/goreleaser_Windows_arm64.zip",
+      "checksum": "FF5D9692C4ACFF082869D0BF4995661C31F9E73BDA278EC50B07E7F8AC6C02E6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/goreleaser/goreleaser/v2.12.7/goreleaser_Windows_x86_64.zip",
+      "checksum": "D8BFA5643CE29645D0BB11BC2AAC8061579D14F720ED278E3D75EAD8F3F5B0D4",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.3/atcoderproblems-cli_linux_arm64.tar.gz",
       "checksum": "0F9B6F9F2AD0364711215F49385C227B1519B39FA94C288CEE607987B15F2D49",
       "algorithm": "sha256"
