@@ -10,23 +10,41 @@ repo = "lambdalisue/vim-kensaku-search"
 on_source = ["vim-kensaku", "fuzzy-motion.nvim"]
 
 [[plugins]]
-repo = "folke/flash.nvim"
-on_event = "CursorMoved"
-on_map = ["<leader>j"]
-lua_source = '''
-require("flash").setup({
-  modes = {
-    char = {
-      enabled = true,
-      multi_line = false,
-      search = { wrap = false },
-      highlight = { backdrop = true, groups = { label = "", backdrop = "" } },
-      jump = { register = false },
-    },
-  },
-})
+repo = "hrsh7th/vim-eft"
+on_map = ["f", "F", "t", "T"]
+hook_source = '''
+nmap ; <Plug>(eft-repeat)
+xmap ; <Plug>(eft-repeat)
+omap ; <Plug>(eft-repeat)
 
-vim.keymap.set("n", "<leader>j", require("flash").jump,{desc="Flash"})
+nmap f <Plug>(eft-f-repeatable)
+xmap f <Plug>(eft-f-repeatable)
+omap f <Plug>(eft-f-repeatable)
+nmap F <Plug>(eft-F-repeatable)
+xmap F <Plug>(eft-F-repeatable)
+omap F <Plug>(eft-F-repeatable)
+
+nmap t <Plug>(eft-t-repeatable)
+xmap t <Plug>(eft-t-repeatable)
+omap t <Plug>(eft-t-repeatable)
+nmap T <Plug>(eft-T-repeatable)
+xmap T <Plug>(eft-T-repeatable)
+omap T <Plug>(eft-T-repeatable)
+
+" ignore case
+let g:eft_ignorecase = v:true
+
+let g:eft_index_function = {
+\   'head': function('eft#index#head'),
+\   'tail': function('eft#index#tail'),
+\   'space': function('eft#index#space'),
+\   'camel': function('eft#index#camel'),
+\   'symbol': function('eft#index#symbol'),
+\ }
+
+let g:eft_index_function = {
+\   'all': { -> v:true },
+\ }
 '''
 
 [[plugins]]
