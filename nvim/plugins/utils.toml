@@ -48,6 +48,15 @@ let g:eft_index_function = {
 '''
 
 [[plugins]]
+repo = "smoka7/hop.nvim"
+on_map = ["<leader>j"]
+on_cmd = "HopPattern"
+lua_source = '''
+vim.keymap.set("n","<leader>j","<Cmd>HopPattern<CR>")
+require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+'''
+
+[[plugins]]
 repo = "yuki-yano/fuzzy-motion.vim"
 on_cmd = "FuzzyMotion"
 on_map = ["<leader>J"]
