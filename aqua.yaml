@@ -48,7 +48,7 @@ packages:
   - name: jesseduffield/lazydocker@v0.24.2
   - name: direnv/direnv@v2.37.1
   - name: dlvhdr/gh-dash@v4.19.1
-  - name: XAMPPRocky/tokei@v12.1.2
+  - name: XAMPPRocky/tokei@v13.0.0
   - name: jj-vcs/jj@v0.35.0
   - name: hidehic0/binomial_coefficient-calc-cli@v0.0.1
     registry: local
