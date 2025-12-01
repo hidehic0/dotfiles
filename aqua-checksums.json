@@ -51,26 +51,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "EF514FD12CFC3EE2D1725E5ECB866EE1123163004879EC285B22F3323389EBE2",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-apple-darwin.tar.gz",
-      "checksum": "2AF8ABB6A08B0513F9D16CA2C7CD37949B858D2A3E3227BE8CC412B3B4937D5B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-pc-windows-msvc.exe",
-      "checksum": "B1D6C4B18F5FA238BD2C6E47CAA65A7A3E4A1BD0DE6DF0B7C19C8083C941F57B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "331E77046935D655DCE8D97EBB943FCC7E9684586DADF3D197F3DF5E760CD31B",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/aquaproj/aqua-registry-updater/v0.1.6/aqua-registry-updater_linux_amd64.tar.gz",
       "checksum": "CE9E628A6F949607B9F8788E91A757BD632E36B21AC0535DC3F2ADCDF0D58A67",
       "algorithm": "sha256"
@@ -976,8 +956,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.437.0/registry.yaml",
-      "checksum": "3A50B5A13E9886A4F66D2D12E5DA32EC181FF3F17F915C92328B9E53FAB49DABF38B4925EE91AEA63B008EF99A6F4B60F139672003779EAA05CE180FC2B7021B",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.442.0/registry.yaml",
+      "checksum": "C7FDDA27BF14FFC97130196E3E29B38948B7F76FC309BAA7CD3F50784CAB7F2AD1E4FD1D1FBFDD7960A2A4DAE601E9948CDD326021DC0C11FBB7D671CFE41272",
       "algorithm": "sha512"
     }
   ]
