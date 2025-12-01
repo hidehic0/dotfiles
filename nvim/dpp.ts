@@ -1,9 +1,9 @@
-import type { ContextBuilder, Plugin } from "jsr:@shougo/dpp-vim@~5.0.0/types";
-import type { Dpp } from "jsr:@shougo/dpp-vim@~5.0.0/dpp";
+import type { ContextBuilder, Plugin } from "jsr:@shougo/dpp-vim@~5.1.0/types";
+import type { Dpp } from "jsr:@shougo/dpp-vim@~5.1.0/dpp";
 import {
   BaseConfig,
   type ConfigReturn,
-} from "jsr:@shougo/dpp-vim@~5.0.0/config";
+} from "jsr:@shougo/dpp-vim@~5.1.0/config";
 
 import type { Denops } from "jsr:@denops/core@8.0.1";
 
