@@ -18,7 +18,7 @@ uv = "0.9.10"
 lua = "5.4.8"
 usage = "2.8.0"
 "aqua:astral-sh/ruff" = "0.14.7"
-"aqua:LuaLS/lua-language-server" = "3.15.0"
+"aqua:LuaLS/lua-language-server" = "3.16.0"
 "ubi:hidehic0/acc_utils" = { version = "0.0.7", exe = "acc_utils" }
 
 [settings]
