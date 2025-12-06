@@ -14,7 +14,7 @@ uv = "0.9.16"
 "npm:yaml-language-server" = "1.19.2"
 "npm:eslint" = "9.39.1"
 # python製tools
-"pipx:terminaltexteffects" = "0.13.0"
+"pipx:terminaltexteffects" = "0.14.2"
 lua = "5.4.8"
 usage = "2.8.0"
 "aqua:astral-sh/ruff" = "0.14.7"
