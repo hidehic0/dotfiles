@@ -32,7 +32,7 @@ packages:
   - name: high-moctane/mocword@v0.2.0
   - name: rhysd/actionlint@v1.7.9
   - name: jqlang/jq@jq-1.8.1
-  - name: aquaproj/aqua-registry-updater@v0.1.6
+  - name: aquaproj/aqua-registry-updater@v0.1.7
   - name: hidehic0/primesplit@v0.1.1
     registry: local
   - name: tombi-toml/tombi@v0.7.0
