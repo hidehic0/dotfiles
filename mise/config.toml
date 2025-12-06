@@ -15,10 +15,10 @@ uv = "0.9.16"
 "npm:eslint" = "9.39.1"
 # python製tools
 "pipx:terminaltexteffects" = "0.14.2"
+"pipx:basedpyright" = "1.35.0"
 lua = "5.4.8"
 usage = "2.8.0"
 "aqua:astral-sh/ruff" = "0.14.8"
-"aqua:LuaLS/lua-language-server" = "3.16.0"
 "ubi:hidehic0/acc_utils" = { version = "0.0.7", exe = "acc_utils" }
 
 [settings]
