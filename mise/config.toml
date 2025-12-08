@@ -17,7 +17,7 @@ uv = "0.9.16"
 "pipx:terminaltexteffects" = "0.14.2"
 "pipx:basedpyright" = "1.35.0"
 lua = "5.4.8"
-usage = "2.8.0"
+usage = "2.9.0"
 "aqua:astral-sh/ruff" = "0.14.8"
 "ubi:hidehic0/acc_utils" = { version = "0.0.7", exe = "acc_utils" }
 
