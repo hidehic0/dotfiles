@@ -28,7 +28,7 @@ packages:
   - name: sharkdp/hyperfine@v1.20.0
   - name: tree-sitter/tree-sitter@v0.26.2
   - name: x-motemen/ghq@v1.8.0
-  - name: golang.org/x/tools/gopls@v0.20.0
+  - name: golang.org/x/tools/gopls@v0.21.0
   - name: high-moctane/mocword@v0.2.0
   - name: rhysd/actionlint@v1.7.9
   - name: jqlang/jq@jq-1.8.1
