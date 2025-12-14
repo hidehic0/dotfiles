@@ -56,26 +56,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/artempyanykh/marksman/2024-12-18/marksman-linux-arm64",
-      "checksum": "B8D6972A56F3F9B7BBBF7C77EF8998E3B66FA82FB03C01398E224144486C9E73",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/artempyanykh/marksman/2024-12-18/marksman-linux-x64",
-      "checksum": "B9CB666C643DFD9B699811FDFC445ED4C56BE65C1D878C21D46847F0D7B0E475",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/artempyanykh/marksman/2024-12-18/marksman-macos",
-      "checksum": "7E18803966231A33EE107D0D26F69B41F2F0DC1332C52DD9729C2E29FB77BE83",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/artempyanykh/marksman/2024-12-18/marksman.exe",
-      "checksum": "39DE9DF039C8B0D627AC5918A9D8792AD20FC49E2461D1F5C906975C016799EC",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/artempyanykh/marksman/2025-11-30/marksman-linux-arm64",
       "checksum": "762F5628D337B41926D3D02B6F66DCFAF6B516B4EE15F1BCCD2BCF95F7C7A39E",
       "algorithm": "sha256"
@@ -886,66 +866,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.5/tombi-cli-0.7.5-aarch64-apple-darwin.gz",
-      "checksum": "D26F4F7A9BC261722CC364E686C26ADA0F8C2F720F0E80646A0CB4911DC31F65",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.5/tombi-cli-0.7.5-aarch64-pc-windows-msvc.zip",
-      "checksum": "CA208CC5D19CABDBFB43C2F52D2CA2E163EAA1FFA8740B0CF716A0CF1B6EDA9E",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.5/tombi-cli-0.7.5-aarch64-unknown-linux-musl.gz",
-      "checksum": "B6049F4DC98637B8CA4AFE26D14F618EFAF9EC0D420F3DBAFBA04B17C1297622",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.5/tombi-cli-0.7.5-x86_64-apple-darwin.gz",
-      "checksum": "7F5713EF63F0B44525FD550437A01810DB12802A1CE42CF0A978989ED98E3AA8",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.5/tombi-cli-0.7.5-x86_64-pc-windows-msvc.zip",
-      "checksum": "707E0368D371408635B789B289821151F0C4835A2F7170C91DCA3FB933708B35",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.5/tombi-cli-0.7.5-x86_64-unknown-linux-musl.gz",
-      "checksum": "274901687E24FAE5FEFF751ED03B0AC772699BC2B2220946892B537AA2814333",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.6/tombi-cli-0.7.6-aarch64-apple-darwin.gz",
-      "checksum": "75428FE077861D06A3A4924C4DDD0562C9172785D5FCE2524B8ABB5BC9884A27",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.6/tombi-cli-0.7.6-aarch64-pc-windows-msvc.zip",
-      "checksum": "211C18C02EC8192F3E7C80D21CC4F337147E20EEA1D4162EFEAE1A3C515BECBE",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.6/tombi-cli-0.7.6-aarch64-unknown-linux-musl.gz",
-      "checksum": "3B32AE84221D5011DF7D5BBBB536B5DE82E57DB2791CFC2138123B731153BBFA",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.6/tombi-cli-0.7.6-x86_64-apple-darwin.gz",
-      "checksum": "F77C7FEFED9B747914D82E344E2FF3241495B48AD439ECC59FF121AE99D822A0",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.6/tombi-cli-0.7.6-x86_64-pc-windows-msvc.zip",
-      "checksum": "6FFBAE520F012B6BD3F56EC5EB17BF951F15A3D730F39E9A8E1E4FEE6368A6BA",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.6/tombi-cli-0.7.6-x86_64-unknown-linux-musl.gz",
-      "checksum": "A3BC8EC39EED7EFF8AD60E817685BB8360C61B4863D9BF3DE42F37D3D11F3C33",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/tombi-toml/tombi/v0.7.7/tombi-cli-0.7.7-aarch64-apple-darwin.gz",
       "checksum": "49335469A2112E1946F9C399C6B9A5C97DFCF5EB2C5F89818AACBE9420350454",
       "algorithm": "sha256"
@@ -1036,8 +956,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.445.0/registry.yaml",
-      "checksum": "AEC9F10EF0D8DD8CB3A3DC7AAC1655FF182432BDCB18811469B59C18E7316CC9BE6EB99DC850AA4E761B4570111DFD4439C46D24436A0ACF458EBD2ED6C058AE",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.446.0/registry.yaml",
+      "checksum": "F89F41662F54892E9E06168596845AA2C84865B6ED9782B527C47622BE3035E3C126C51D80BFFF76B41C4150D41FF1F70F6B521EA52FB6B4933D6170CACEF9F3",
       "algorithm": "sha512"
     }
   ]
