@@ -132,3 +132,9 @@ packages:
     supported_envs:
       - linux
       - darwin
+  - name: crates.io/pahcer
+    type: cargo
+    crate: pahcer
+    cargo:
+      locked: true
+      all_features: true
