@@ -16,5 +16,18 @@
       "cin >> $1 >> $2 >> $3;$4"
     ],
     "prefix": "cin3"
+  },
+  "CoutSpace": {
+    "body": [
+      "<< \" \" << $1"
+    ],
+    "prefix": "cus"
+  },
+  "ACL MODINT 998244353": {
+    "body": [
+      "#include <atcoder/modint>",
+      "using mint=atcoder::modint998244353;$1"
+    ],
+    "prefix": "aclmint998"
   }
 }
