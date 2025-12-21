@@ -12,11 +12,8 @@
       myNixOS = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
+          ./nixos/configuration.nix
         ];
-        specialArgs = {
-          inherit inputs;
-        };
       };
     };
     homeConfigurations={
@@ -25,6 +22,9 @@
           system="x86_64-linux";
           config.allowUnfree=true;
         };
+	modules = [
+          ./home-manager/home.nix
+	];
         extraSpecialArgs={
           inherit inputs;
         };
