@@ -18,3 +18,6 @@ export GPG_TTY=$(tty)
 # dirnev
 eval "$(direnv hook zsh)"
 export DIRENV_LOG_FORMAT=
+
+# ssh
+export SSH_AUTH_SOCK=~/.bitwarden-ssh-agent.sock
