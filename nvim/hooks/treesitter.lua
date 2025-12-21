@@ -4,28 +4,15 @@ require("nvim-treesitter").setup({
 })
 
 local langs = {
-  "python",
   "bash",
-  "markdown",
-  "cpp",
   "toml",
-  "yaml",
   "lua",
-  "vimdoc",
-  "checkhealth",
   "git_config",
   "gitignore",
   "gitcommit",
-  "go",
   "json",
-  "ecma",
-  "rust",
   "vim",
-  "jsx",
-  "tsx",
-  "make",
-  "javascript",
-  "typescript",
+  "nix",
 }
 
 local assist = {
