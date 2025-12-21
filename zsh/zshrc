@@ -1,4 +1,4 @@
-SPLIT_FILES="/home/hidehico/.config/zsh/zsh.d"
+SPLIT_FILES="/home/hidehico/.dotfiles/zsh/zsh.d"
 
 ZSHRC_DIR=${${(%):-%N}:A:h}
 
