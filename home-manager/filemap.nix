@@ -7,5 +7,8 @@ in{
     ".config/sheldon" = {
       source = symlink "${path}/sheldon";
     };
+    ".config/lazygit" = {
+      source = symlink "${path}/lazygit";
+    };
   };
 }
