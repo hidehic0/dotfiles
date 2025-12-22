@@ -56,23 +56,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/artempyanykh/marksman/2025-11-30/marksman-linux-arm64",
-      "checksum": "762F5628D337B41926D3D02B6F66DCFAF6B516B4EE15F1BCCD2BCF95F7C7A39E",
+      "id": "github_release/github.com/artempyanykh/marksman/2025-12-13/marksman-linux-arm64",
+      "checksum": "5FCBC44C7C366EB2C3F0B7270D7D912ABA1F9C26A8775B33ED7D3274C52B3AA0",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/artempyanykh/marksman/2025-11-30/marksman-linux-x64",
-      "checksum": "A8EBE6FAE58EB86B35414F72783BCA6788F6D126641125E82D2D5D0B78DC0E1A",
+      "id": "github_release/github.com/artempyanykh/marksman/2025-12-13/marksman-linux-x64",
+      "checksum": "D4AF5BB8DEA1EB6D235A12B7513656DB5168B46D407D26E70E5F68E9143CE06D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/artempyanykh/marksman/2025-11-30/marksman-macos",
-      "checksum": "C5AC4CBB96D9A7CDC2A8A9225C5A0FD1B07FFE9BAA2D0DB9A058284BB4F4A6CB",
+      "id": "github_release/github.com/artempyanykh/marksman/2025-12-13/marksman-macos",
+      "checksum": "EC949F430C18679057983BCD8A24F95550EDEA2A855FC040B307DA67C78F0989",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/artempyanykh/marksman/2025-11-30/marksman.exe",
-      "checksum": "9A9BE7C71290CFE18E79C1785C16F913545B603FC8FDE7A8D131462247D24A77",
+      "id": "github_release/github.com/artempyanykh/marksman/2025-12-13/marksman.exe",
+      "checksum": "F27B0BD37E6250CA9826F3B3043DE9BD7A988C8B2B4F74674620A5CD16F13B6D",
       "algorithm": "sha256"
     },
     {
@@ -161,33 +161,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.0/gh-dash_v4.20.0_darwin-amd64",
-      "checksum": "4FFCCC6F3793007E4702B85B16763E39BD5F9C2A52B403AB95737B730E9542C6",
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.1/gh-dash_v4.20.1_darwin-amd64",
+      "checksum": "3A764BA49D74837F7E74C64155B5E56E708EDEECBF3C81529EEBB5F772CEC425",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.0/gh-dash_v4.20.0_darwin-arm64",
-      "checksum": "D3666861520BA23171B2ED79434E5FE7308B85DA9025D9336269FE4DE67067D6",
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.1/gh-dash_v4.20.1_darwin-arm64",
+      "checksum": "5B01C654B71E143F3959B253A548D76F06B89DD3CDC3B06B6A133912FCBE6C3C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.0/gh-dash_v4.20.0_linux-amd64",
-      "checksum": "F1AAE83160D78BF4F7BD015243FE96BDB9DE0FEE444EC8745848F39D33D456FE",
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.1/gh-dash_v4.20.1_linux-amd64",
+      "checksum": "76CD2C2B628A18A9C633BB1B0CF48B84BFAC76C932620084A9AE146D9F802B6C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.0/gh-dash_v4.20.0_linux-arm64",
-      "checksum": "0747C19191FBC6CCB8942F19BA6FB45D7F9BDC899943AB2A2CB8D05584C8D49E",
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.1/gh-dash_v4.20.1_linux-arm64",
+      "checksum": "B24BF1943B5C8D7205FB9EAB52500FCEC441B09D90FADC8D12311C63206EE1BC",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.0/gh-dash_v4.20.0_windows-amd64.exe",
-      "checksum": "A1853468D44774748082BF3C9062D8249AFBAC3803BEFCAFCBEDFB57890945C4",
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.1/gh-dash_v4.20.1_windows-amd64.exe",
+      "checksum": "74C1823C5F8FA1B740FA941202A4A2854AA6421C9287F3AEE6BBD9E972EA3D0C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.0/gh-dash_v4.20.0_windows-arm64.exe",
-      "checksum": "10358F3E07E338B697F63133568D79D79C9495B40435BD553C60F607A1E12600",
+      "id": "github_release/github.com/dlvhdr/gh-dash/v4.20.1/gh-dash_v4.20.1_windows-arm64.exe",
+      "checksum": "89CA05907D6C77E93BD74A3A1F19685940B01D41617FF7833A74596A0F92B4F5",
       "algorithm": "sha256"
     },
     {
@@ -381,33 +381,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.2/lazydocker_0.24.2_Darwin_arm64.tar.gz",
-      "checksum": "6B00CF2CC6D55C64363D715995732BDCC6997D30CEEF2393DDA2953F8C7EA3F3",
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.3/lazydocker_0.24.3_Darwin_arm64.tar.gz",
+      "checksum": "685D1B24048F9958FBC7F5A7EFEA9C26D81A6164F432883079993253460E4879",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.2/lazydocker_0.24.2_Darwin_x86_64.tar.gz",
-      "checksum": "3DAE8BBB9C3757EDCEA857D647C74FBAB1E630859B4DCF8FE167C5FC7326BAAA",
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.3/lazydocker_0.24.3_Darwin_x86_64.tar.gz",
+      "checksum": "3F5F0C3127CDF94C91C62E001EF16B510711EF022C26FE4DB2A392DFEC88B9B7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.2/lazydocker_0.24.2_Linux_arm64.tar.gz",
-      "checksum": "63C1C7E781914C7624CB30C826DD55B3B8797CE391B38DDD263EDDEB999A463F",
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.3/lazydocker_0.24.3_Linux_arm64.tar.gz",
+      "checksum": "FA233D7303F34BF2C71A8A53AFD761852AD97C0DBEAC4DBF806F8F06EF6E4C9E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.2/lazydocker_0.24.2_Linux_x86_64.tar.gz",
-      "checksum": "AB1E3DDC208FDD8EA1A1789CF3AF5D83A8ED5C6A482788D09DFCD147ADB2A2E4",
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.3/lazydocker_0.24.3_Linux_x86_64.tar.gz",
+      "checksum": "39F81A138FBD3290B5B78FA22D73793F856A2323B39241644C4FCC197718CDB4",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.2/lazydocker_0.24.2_Windows_arm64.zip",
-      "checksum": "60E9C928D75BD7EE41B7B51E5F6DFA6D4850A675E80623DF531E76E0A6F30C85",
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.3/lazydocker_0.24.3_Windows_arm64.zip",
+      "checksum": "1D20A0CC16BBCFAB4360064A87BFEFCD5382BD28429D78EAD417B0F661EFB6E5",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.2/lazydocker_0.24.2_Windows_x86_64.zip",
-      "checksum": "7E10DF642E715A83B3CC8C158C00C47F063167EEAE0D1ADE2A3B1A20A8056039",
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.3/lazydocker_0.24.3_Windows_x86_64.zip",
+      "checksum": "88009C4A3F783FB72B6FCD6B7F9DFFC0B4C7DB2498B1D4212139D22B9F29E2CD",
       "algorithm": "sha256"
     },
     {
@@ -546,33 +546,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.8/gat_Darwin_arm64.tar.gz",
-      "checksum": "5B94621F38AC4E7E5C7E38EE68070EF7F751B0C9DCF2DB8A7F4F866EE894DDEE",
+      "id": "github_release/github.com/koki-develop/gat/v0.26.0/gat_Darwin_arm64.tar.gz",
+      "checksum": "1DD91594C981D275B04A20E621316263A4DF19B5C7637A3C2A347D57D949E80C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.8/gat_Darwin_x86_64.tar.gz",
-      "checksum": "C7920B1D8DF7A52EE9AE4C67C550AEF926817D7418AFEBBD0620DD5B8B01AFEB",
+      "id": "github_release/github.com/koki-develop/gat/v0.26.0/gat_Darwin_x86_64.tar.gz",
+      "checksum": "FDED4448CDB30BAFCDEC3BD5FFD3CDBA4061A1AE5EFB404F530346BFD4297C8B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.8/gat_Linux_arm64.tar.gz",
-      "checksum": "76535D2BD3C5BAC5A8346D08469149352063EE958F1AF3C654453181BCF483E9",
+      "id": "github_release/github.com/koki-develop/gat/v0.26.0/gat_Linux_arm64.tar.gz",
+      "checksum": "A90CA76C0088948D837CAE5971D66B750D2065C71B2DFD2C35A1E2FA4B836441",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.8/gat_Linux_x86_64.tar.gz",
-      "checksum": "170C4C6C8EE34D22B32FBBC7A32C354B5C2874BB9ABA986322549D8C97E3F6C7",
+      "id": "github_release/github.com/koki-develop/gat/v0.26.0/gat_Linux_x86_64.tar.gz",
+      "checksum": "A966BAFE0E4860E239BC6C38AA8BAF764FEC62904FB2D46C738CEBE01FCF8F3D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.8/gat_Windows_arm64.zip",
-      "checksum": "387A3F4903575D9BFBAF0030771DC646D90E37C191C9F72F5C524872A67049ED",
+      "id": "github_release/github.com/koki-develop/gat/v0.26.0/gat_Windows_arm64.zip",
+      "checksum": "A4BF430BF851CE245CA1767E8BC07821670689BD648082700B828405854A35AF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/koki-develop/gat/v0.25.8/gat_Windows_x86_64.zip",
-      "checksum": "CFFA38F96B16278E3A160B3559EB1645C62ECC4C03545BE7FC42FE052720D7EB",
+      "id": "github_release/github.com/koki-develop/gat/v0.26.0/gat_Windows_x86_64.zip",
+      "checksum": "C23F033BB1F2DB191744DC77236B3248470B99D4AFC45CEE69575D6D1D059955",
       "algorithm": "sha256"
     },
     {
@@ -731,13 +731,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sassman/t-rec-rs/v0.8.1/t-rec-v0.8.1-x86_64-apple-darwin.tar.gz",
-      "checksum": "D9B84C7E400158A6EB6D74E15CD86C12A2434D519469BC88ABAE44C9C2F0D05A",
+      "id": "github_release/github.com/sassman/t-rec-rs/v0.8.2/t-rec-v0.8.2-x86_64-apple-darwin.tar.gz",
+      "checksum": "2087966F81C5A67A4BA299F4FFB2E3E25938DF3D8D9BEAB543DEC665D6FBF800",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sassman/t-rec-rs/v0.8.1/t-rec-v0.8.1-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "5F51408A8A7732BE6802A289823AE1E6D212943D2846960FBB321A6BBF7E21F6",
+      "id": "github_release/github.com/sassman/t-rec-rs/v0.8.2/t-rec-v0.8.2-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "94DB8C41402B2ECE4EB807B8673D9F3A7365CCEABA83501CEB9E60BC7BC0308B",
       "algorithm": "sha256"
     },
     {
@@ -811,33 +811,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.5.0/pinact_darwin_amd64.tar.gz",
-      "checksum": "D86DF98BE282A613CE82D07FAAD4AD070312B35B03E66A5D468C53317565D3C3",
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.6.0/pinact_darwin_amd64.tar.gz",
+      "checksum": "49D10A46D9E1C87541BFE8551964868F3F62CF33BF6A80A9C68F7D3696651420",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.5.0/pinact_darwin_arm64.tar.gz",
-      "checksum": "A51B767D839C19C82B773872DA376A430AF51B6C9410F11CA58CFA6F4E28EAB0",
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.6.0/pinact_darwin_arm64.tar.gz",
+      "checksum": "B5B8229A2F00B209D7168E41A335E612BD2CCF6E0E41DD830A7CFC65A06532BF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.5.0/pinact_linux_amd64.tar.gz",
-      "checksum": "BACC6DBF388CB09C13584A305BE83AEF938A0BC5CE91B738BE2F01C16C0E0B37",
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.6.0/pinact_linux_amd64.tar.gz",
+      "checksum": "BAAD9DCFC298B1281BDA3E29A977C4B2F6979DFD80718ABD8CCB23D170005D5E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.5.0/pinact_linux_arm64.tar.gz",
-      "checksum": "11B8690D2605329C60476EEC31E100410F0D8689D3EC810D462AE6525270DC79",
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.6.0/pinact_linux_arm64.tar.gz",
+      "checksum": "971CDF464BE2AC09E2600307571AD5FBE78E1AA1F978F4CAD3B1C56EFA4A39E4",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.5.0/pinact_windows_amd64.zip",
-      "checksum": "F3908FA9CF85F9DF482C7D1F2D8DE45A0F3258378752ABFCFEDAB2F8FA9E38D8",
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.6.0/pinact_windows_amd64.zip",
+      "checksum": "B510414A442473AC96F4F5D20C57AC1F5E8BA502C9DCAB985AB0A9FBFCD40826",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.5.0/pinact_windows_arm64.zip",
-      "checksum": "DA18ABF23EB0C16E6849F814118453104661883FE7BB6CC0F55A73AEDC6BAE4E",
+      "id": "github_release/github.com/suzuki-shunsuke/pinact/v3.6.0/pinact_windows_arm64.zip",
+      "checksum": "083510E344D403E98AFF942A619FA7A96B35E42F36B24B901FA3D6AA217E1B2A",
       "algorithm": "sha256"
     },
     {
@@ -866,33 +866,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.7/tombi-cli-0.7.7-aarch64-apple-darwin.gz",
-      "checksum": "49335469A2112E1946F9C399C6B9A5C97DFCF5EB2C5F89818AACBE9420350454",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.9/tombi-cli-0.7.9-aarch64-apple-darwin.gz",
+      "checksum": "63EE2FC3EAF87E12BB2EC019B815746AA0D1A90CC16DEE49188B494697B82BAB",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.7/tombi-cli-0.7.7-aarch64-pc-windows-msvc.zip",
-      "checksum": "4F56A889EB540D41D6D3EA973879A5591ADC96A7F978E37BD65CD2573065E3C9",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.9/tombi-cli-0.7.9-aarch64-pc-windows-msvc.zip",
+      "checksum": "CBC0B845BA60A309AF28D0EA0B8F1CBD847B2E2E8C2E2F9EF8C46876FE1C461D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.7/tombi-cli-0.7.7-aarch64-unknown-linux-musl.gz",
-      "checksum": "0EC248D2310170399F0B7710D3C8DEE572B571BC892936A17D7831E6DD849E3C",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.9/tombi-cli-0.7.9-aarch64-unknown-linux-musl.gz",
+      "checksum": "468D2087604988A42634DF632BEA367488B223D6592279551E86A1354BD1F96F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.7/tombi-cli-0.7.7-x86_64-apple-darwin.gz",
-      "checksum": "C54AE4201382C8F8838DC0296D02D4A071FF52A3CABA99E5259D5ABB3426EE04",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.9/tombi-cli-0.7.9-x86_64-apple-darwin.gz",
+      "checksum": "CDADD2D9CEFEA7BF67766030913DBEE1A097EF1343B2773260E426EA33A20BA4",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.7/tombi-cli-0.7.7-x86_64-pc-windows-msvc.zip",
-      "checksum": "AB073E78646B1BE8116A093FFDB5581D799B0D8BB78BCF9FD6AF3C49FF243043",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.9/tombi-cli-0.7.9-x86_64-pc-windows-msvc.zip",
+      "checksum": "AE49E03EFE8D2FA2EDDC2003BFB0ED12219B10CCCD07A63D8A36ACBF9FE6793B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.7/tombi-cli-0.7.7-x86_64-unknown-linux-musl.gz",
-      "checksum": "A38F26E0DA090EF9623CC2C98FC34448819B37036CFA1DE93E1363FA82A00506",
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.9/tombi-cli-0.7.9-x86_64-unknown-linux-musl.gz",
+      "checksum": "0893C527E5E45508EF047D3BB05C141C1A061D1A88179B65AFF74E791E588268",
       "algorithm": "sha256"
     },
     {
