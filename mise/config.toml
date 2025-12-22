@@ -18,7 +18,7 @@ uv = "0.9.17"
 "pipx:basedpyright" = "1.36.1"
 lua = "5.4.8"
 usage = "2.9.0"
-"aqua:astral-sh/ruff" = "0.14.9"
+"aqua:astral-sh/ruff" = "0.14.10"
 "ubi:hidehic0/acc_utils" = { version = "0.0.7", exe = "acc_utils" }
 
 [settings]
