@@ -3,5 +3,6 @@
     sheldon
     fzf
     eza
+    gat
   ];
 }
