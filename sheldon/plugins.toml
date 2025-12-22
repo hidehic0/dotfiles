@@ -82,21 +82,21 @@ remote = "https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/co
 apply = ["fpath"]
 
 [plugins.defer_configs]
-local = "~/.config/zsh/zsh.d"
+local = "~/.dotfiles/zsh/zsh.d"
 use = ["utils.zsh", "alias.zsh", "func.zsh", "paths.zsh", "completion.zsh"]
 apply = ["defer"]
 
 [plugins.nondefer_configs]
-local = "~/.config/zsh/zsh.d"
+local = "~/.dotfiles/zsh/zsh.d"
 use = ["p10k.zsh", "hist.zsh"]
 
-[plugins.tokens]
-local = "~/"
-use = ["tokens.zsh"]  # github_tokenなどを置く
+#[plugins.tokens]
+#local = "~/"
+#use = ["tokens.zsh"]  # github_tokenなどを置く
 
-[plugins.fpath]
-local = "~/.local/share/zsh/custom-completion-zsh"
-apply = ["fpath"]
+#[plugins.fpath]
+#local = "~/.local/share/zsh/custom-completion-zsh"
+#apply = ["fpath"]
 
 # [plugins._nix]
 # github = "nix-community/nix-zsh-completions"
