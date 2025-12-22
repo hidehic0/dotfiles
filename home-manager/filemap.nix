@@ -4,5 +4,8 @@
 in{
   home.file = {
     ".zshrc".source =  symlink "${path}/zsh/zshrc";
+    ".config/sheldon" = {
+      source = symlink "${path}/sheldon";
+    };
   };
 }
