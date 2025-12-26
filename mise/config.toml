@@ -15,7 +15,6 @@ uv = "0.9.18"
 "npm:eslint" = "9.39.2"
 # python製tools
 "pipx:terminaltexteffects" = "0.14.2"
-lua = "5.5.0"
 usage = "2.10.0"
 "aqua:astral-sh/ruff" = "0.14.10"
 "ubi:hidehic0/acc_utils" = { version = "0.0.7", exe = "acc_utils" }
