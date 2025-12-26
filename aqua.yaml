@@ -62,3 +62,5 @@ packages:
   - name: crates.io/pahcer@0.3.1
     registry: local
   - name: astral-sh/ruff@0.14.10
+  - name: hidehic0/acc_utils@v0.0.7
+    registry: local

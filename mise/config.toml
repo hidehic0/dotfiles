@@ -16,7 +16,6 @@ uv = "0.9.18"
 # python製tools
 "pipx:terminaltexteffects" = "0.14.2"
 usage = "2.10.0"
-"ubi:hidehic0/acc_utils" = { version = "0.0.7", exe = "acc_utils" }
 
 [settings]
 experimental = true

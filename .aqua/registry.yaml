@@ -138,3 +138,19 @@ packages:
     cargo:
       locked: true
       all_features: true
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: acc_utils
+    description: A tool with enhanced functionality using files created by atcoder-cli
+    asset: acc_utils_{{.OS}}_{{.Arch}}.{{.Format}}
+    files:
+      - name: acc_utils
+        src: acc_utils
+    format: tar.gz
+    supported_envs:
+      - linux
+      - darwin
+    replacements:
+      linux: Linux
+      darwin: Darwin
+      amd64: x86_64

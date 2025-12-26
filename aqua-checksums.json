@@ -291,6 +291,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/acc_utils/v0.0.7/acc_utils_Darwin_arm64.tar.gz",
+      "checksum": "48BA8B0A9C25101C0EC249757B85891236860FC17129F0D9FBFE5ECA1F8B25EC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/acc_utils/v0.0.7/acc_utils_Darwin_x86_64.tar.gz",
+      "checksum": "ED2034EBFBDFD7F18AB1CEA40116693085A5883F19076A68D7AB52BEDF815668",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/acc_utils/v0.0.7/acc_utils_Linux_arm64.tar.gz",
+      "checksum": "6BD5260B011C91243391068D271212CDC59AF1622AD949DCDE736FB797AC440F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/acc_utils/v0.0.7/acc_utils_Linux_x86_64.tar.gz",
+      "checksum": "4BA4A00161A1E933113016AC8F909298E3667E036D2933F496B43BB68B480C4A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hidehic0/atcoderproblems-cli/v0.1.3/atcoderproblems-cli_linux_arm64.tar.gz",
       "checksum": "0F9B6F9F2AD0364711215F49385C227B1519B39FA94C288CEE607987B15F2D49",
       "algorithm": "sha256"
