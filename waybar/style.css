@@ -3,7 +3,7 @@ window#waybar {
     background: rgba(30, 32, 48, 0); /* 完全に透明 */
     color: #e0e0e0;
     border-radius: 10px;
-    font-family: "JetBrains Mono", sans-serif; /* モダンなフォント */
+    font-family:  sans-serif; /* モダンなフォント */
     font-size: 13px;
     transition: opacity 0.3s ease; /* スムーズな透明度アニメーション */
 }
