@@ -10,5 +10,8 @@ in{
     ".config/lazygit" = {
       source = symlink "${path}/lazygit";
     };
+    ".config/nvim" = {
+      source = symlink "${path}/nvim";
+    };
   };
 }

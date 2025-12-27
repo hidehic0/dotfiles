@@ -5,6 +5,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
   };
 
   outputs = inputs: {
@@ -21,6 +22,7 @@
         pkgs = import inputs.nixpkgs {
           system="x86_64-linux";
           config.allowUnfree=true;
+          overlays = [ inputs.neovim-nightly-overlay.overlays.default ];
         };
 	modules = [
           ./home-manager/home.nix

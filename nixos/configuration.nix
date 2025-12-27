@@ -121,6 +121,7 @@
   #  wget
    neovim
    git
+   gcc15
   ];
 
 
