@@ -9,7 +9,6 @@ local langs = {
   "lua",
   "git_config",
   "gitignore",
-  "gitcommit",
   "json",
   "vim",
   "nix",
