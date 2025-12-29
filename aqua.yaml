@@ -53,7 +53,7 @@ packages:
   - name: hidehic0/binomial_coefficient-calc-cli@v0.0.1
     registry: local
   - name: mattn/efm-langserver@v0.0.54
-  - name: suzuki-shunsuke/pinact@v3.7.1
+  - name: suzuki-shunsuke/pinact@v3.7.3
   - name: hidehic0/oj-download-atc@v0.0.1
     registry: local
   - name: goreleaser/goreleaser@v2.13.2
