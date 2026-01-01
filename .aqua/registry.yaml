@@ -154,3 +154,19 @@ packages:
       linux: Linux
       darwin: Darwin
       amd64: x86_64
+  - type: github_release
+    repo_owner: hidehic0
+    repo_name: tpfl
+    description: Copy a template file on the CLI
+    asset: tpfl_{{.OS}}_{{.Arch}}.{{.Format}}
+    files:
+      - name: tpfl
+        src: tpfl
+    format: tar.gz
+    supported_envs:
+      - linux
+      - darwin
+    replacements:
+      linux: Linux
+      darwin: Darwin
+      amd64: x86_64
