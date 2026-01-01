@@ -406,6 +406,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/hidehic0/tpfl/v0.0.1/tpfl_Darwin_arm64.tar.gz",
+      "checksum": "C1A9569F99A8B7C47A2B5201FB831DCB7C4DD2AC4B6B9370093963FA97044EF1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/tpfl/v0.0.1/tpfl_Darwin_x86_64.tar.gz",
+      "checksum": "AF4A457AF062EF2F399957FCEB795399D463CA457C5676DE138ED26776F33360",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/tpfl/v0.0.1/tpfl_Linux_arm64.tar.gz",
+      "checksum": "BF6D9E18DAC7D78443C1D6CE40A52F0A4A61F0509C8213C977DC8A3FA7364A71",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/hidehic0/tpfl/v0.0.1/tpfl_Linux_x86_64.tar.gz",
+      "checksum": "BBE50ACF6A4757D493B6066A10CBC8315827AA07202AA70B1B054620A0F493CE",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/high-moctane/mocword/v0.2.0/mocword-aarch64-apple-darwin",
       "checksum": "DF923C927384782C8EBC2DF99E47E0EEBEB46687BBC65FDA6DD7A5A93C5053AF",
       "algorithm": "sha256"

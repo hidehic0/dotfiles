@@ -1,9 +1,9 @@
 # fzfでディレクトリを移動する関数
 cfd() {
-  local dir
-  dir=$(find . -name "*" -type d | fzf)
+	local dir
+	dir=$(find . -name "*" -type d | fzf)
 
-  cd "$dir"
+	cd "$dir"
 }
 
 # cdしたら自動でls
@@ -13,23 +13,32 @@ cfd() {
 # alias cd='custom_cd'
 
 function ghq-fzf() {
-  local src=$(ghq list | fzf --preview "ls /$(ghq root)/{}")
-  if [ -n "$src" ]; then
-    BUFFER="cd $(ghq root)/$src"
-    zle accept-line
-  fi
-  zle -R -c
+	local src=$(ghq list | fzf --preview "ls /$(ghq root)/{}")
+	if [ -n "$src" ]; then
+		BUFFER="cd $(ghq root)/$src"
+		zle accept-line
+	fi
+	zle -R -c
 }
 zle -N ghq-fzf
 bindkey '^g' ghq-fzf
 
 function ghq-fzf-insert() {
-  local src=$(ghq list | fzf --preview "ls /$(ghq root)/{}")
-  if [ -n "$src" ]; then
-    LBUFFER+="$(ghq root)/$src"
-  fi
-  zle -R -c
+	local src=$(ghq list | fzf --preview "ls /$(ghq root)/{}")
+	if [ -n "$src" ]; then
+		LBUFFER+="$(ghq root)/$src"
+	fi
+	zle -R -c
 }
 
 zle -N ghq-fzf-insert
 bindkey '^h' ghq-fzf-insert
+
+function tpf() {
+	local name=$(tpfl list | fzf | cut -d" " -f 1)
+	if [ -z "$1" ]; then
+		tpfl cp $name
+	else
+		tpfl cp $name -o $1
+	fi
+}
