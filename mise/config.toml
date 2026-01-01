@@ -15,7 +15,7 @@ uv = "0.9.21"
 "npm:eslint" = "9.39.2"
 # python製tools
 "pipx:terminaltexteffects" = "0.14.2"
-usage = "2.10.0"
+usage = "2.11.0"
 
 [settings]
 experimental = true
