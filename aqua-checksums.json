@@ -966,6 +966,36 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.14/tombi-cli-0.7.14-aarch64-apple-darwin.gz",
+      "checksum": "1D1A507B58783F9C5F19E78DB8C135BCA3279083EE2FDAE2D98BA7C036ACC7A6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.14/tombi-cli-0.7.14-aarch64-pc-windows-msvc.zip",
+      "checksum": "4D8B1AFF453C7E48268494755FF36929A58C637CBDE9173CB6329F54F0492972",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.14/tombi-cli-0.7.14-aarch64-unknown-linux-musl.gz",
+      "checksum": "D8E6454093096DE275F748AB14C62AB1F9966FA48BDE0F02EE4630ED590A9ED4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.14/tombi-cli-0.7.14-x86_64-apple-darwin.gz",
+      "checksum": "2BB8742B6C8A702411ED6D1B48EC21774979A1876B8EB2DC8EEDEBC521139A24",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.14/tombi-cli-0.7.14-x86_64-pc-windows-msvc.zip",
+      "checksum": "F001189ACAEC76D631616936A6A048D8521E3E4F4F51C5B460050AC7EF557BAF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.14/tombi-cli-0.7.14-x86_64-unknown-linux-musl.gz",
+      "checksum": "4D39F14FBAAE9EEE4FBE9C529EE911A676E0B0F01A7840FB6CC4E578DF9D561C",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/tree-sitter/tree-sitter/v0.26.3/tree-sitter-linux-arm64.gz",
       "checksum": "456D880B2C81E3E1905C8CBD93BEBD3F7F47EFB743FACEF729070E71FB648C71",
       "algorithm": "sha256"
@@ -1028,6 +1058,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.451.0/registry.yaml",
       "checksum": "F36ECA7EE5C3A2B1BC5C3CD0EFAA48A83D5F5CA14EEA24B743A4EA0193712996E7EF5EE47C368B0B82F3C3FF85CEEF27B07F6860484EBF7B57A9AD9EFFB8462F",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.451.1/registry.yaml",
+      "checksum": "915D61B78C467C1C2ABBD626BA1F2A63B3AA736580E9D8AACB16D3D1AC046CCEA8B2C0733903FFF79529239E0D2454629669B1121437208A0765B9993A168FB8",
       "algorithm": "sha512"
     }
   ]
