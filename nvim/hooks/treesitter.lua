@@ -12,7 +12,7 @@ local langs = {
   "yaml",
   "lua",
   "vimdoc",
-  "checkhealth",
+  -- "checkhealth",
   "git_config",
   "gitignore",
   "gitcommit",
