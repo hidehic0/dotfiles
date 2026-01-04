@@ -92,3 +92,20 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 
 -- undotree
 vim.cmd("packadd nvim.undotree")
+
+-- restart
+-- 参考: https://zenn.dev/vim_jp/articles/2308d5e7db8bc7
+vim.api.nvim_create_user_command("Restart", function()
+  for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
+    if vim.bo[bufnr].buftype ~= "" then
+      vim.api.nvim_buf_delete(bufnr, { force = true })
+    end
+  end
+
+  local session = vim.fs.joinpath(tostring(vim.fn.stdpath("state")), "restart_session.vim")
+  vim.fn.mkdir(vim.fs.dirname(session), "p")
+  vim.cmd.mksession({ args = { session }, bang = true })
+  vim.fn.jobstart({ "sed", "-i", "s/setlocal.winbar.*//g", session }) -- workaround
+  vim.cmd.restart({ args = { "source", session } })
+end, { desc = "Restart current Neovim session" })
+vim.keymap.set("n", "<leader>R", "<Cmd>Restart<CR>", { desc = "Restart current Neovim session" })
