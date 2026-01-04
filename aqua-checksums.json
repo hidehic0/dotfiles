@@ -911,58 +911,28 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sxyazi/yazi/v25.12.29/yazi-aarch64-apple-darwin.zip",
-      "checksum": "20AC3D7AA2371645E1E1A95FCD25172AB16A338D3EBAAA661E61A35F2F524BA8",
+      "id": "github_release/github.com/sxyazi/yazi/v26.1.4/yazi-aarch64-apple-darwin.zip",
+      "checksum": "04EF51EE7865B5B34F242CBC03F6AB8978B4F9C41E42899E3E886CFCCD8B5FB0",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sxyazi/yazi/v25.12.29/yazi-aarch64-unknown-linux-musl.zip",
-      "checksum": "112E0DF24C2D24668B322B1A9BAC97A239085DD25893FFAE32AAE86722BC7524",
+      "id": "github_release/github.com/sxyazi/yazi/v26.1.4/yazi-aarch64-unknown-linux-musl.zip",
+      "checksum": "D1B6753E56CA4ED963B9DE26A2033D97566C66F37E915F3CC6B2379925C9F8DF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sxyazi/yazi/v25.12.29/yazi-x86_64-apple-darwin.zip",
-      "checksum": "738299849DCA452C90CF548E5BEFAD1E6997EB4526A90BE736EEB7721CE4FAEC",
+      "id": "github_release/github.com/sxyazi/yazi/v26.1.4/yazi-x86_64-apple-darwin.zip",
+      "checksum": "9B10B7710E80E68B3BA4E8608ABF1478256CB7D226B1B95207B91B53EC05134E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sxyazi/yazi/v25.12.29/yazi-x86_64-pc-windows-msvc.zip",
-      "checksum": "B4508AFABB008EB8BD30807B4BF74C940C2BA3B8BF8C9B8AD8E8FF5083F1CB94",
+      "id": "github_release/github.com/sxyazi/yazi/v26.1.4/yazi-x86_64-pc-windows-msvc.zip",
+      "checksum": "16876E1A7ACD62A6DAF14C1A7C142DD1DE12649786B511D4A2AD5A345829478C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sxyazi/yazi/v25.12.29/yazi-x86_64-unknown-linux-musl.zip",
-      "checksum": "F2C5164811C56A0E6FF0D7DE6DBE8B33CF8A603C2185686AC8523D37FC81E718",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-aarch64-apple-darwin.gz",
-      "checksum": "F4B23CAA68EE89B422FEE457BE6F6C5B0147F5FF169DAB74F9CE3CB3A709FE3C",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-aarch64-pc-windows-msvc.zip",
-      "checksum": "25A71A45E894B4DD99CB9544EF657A5978B3B58F638FD3DEB9BE8C575EDC5774",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-aarch64-unknown-linux-musl.gz",
-      "checksum": "98B406128E9765580ECCE1B4BC830F37B207F14404C97AFB29777904A30FA2B5",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-x86_64-apple-darwin.gz",
-      "checksum": "63334F3E3F8722AF22443B3D0CEA62E84EA944478559AA8D3C8519E07689E2C8",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-x86_64-pc-windows-msvc.zip",
-      "checksum": "6C6B6E3842AD006377E87C5031E8687F73BDF2A70923EA991DA1084AE1BE9CE6",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-x86_64-unknown-linux-musl.gz",
-      "checksum": "FB82291F4C70C7F80923987C164D7A02E6BD7EBBDF26F8E034C629E454965343",
+      "id": "github_release/github.com/sxyazi/yazi/v26.1.4/yazi-x86_64-unknown-linux-musl.zip",
+      "checksum": "76E5010E1DCD11259D34BDA4CCA75D33FAD4B4DEB59DADF179832A39D6B99994",
       "algorithm": "sha256"
     },
     {
@@ -1054,11 +1024,6 @@
       "id": "github_release/github.com/x-motemen/ghq/v1.8.0/ghq_windows_arm64.zip",
       "checksum": "03E329E679B10A1B1A2C28A9BCB6D90AE9A39E273C0E8923071ABF8F72DB1C85",
       "algorithm": "sha256"
-    },
-    {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.451.0/registry.yaml",
-      "checksum": "F36ECA7EE5C3A2B1BC5C3CD0EFAA48A83D5F5CA14EEA24B743A4EA0193712996E7EF5EE47C368B0B82F3C3FF85CEEF27B07F6860484EBF7B57A9AD9EFFB8462F",
-      "algorithm": "sha512"
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.451.1/registry.yaml",
