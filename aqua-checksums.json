@@ -221,6 +221,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/exaloop/codon/v0.19.4/codon-linux-x86_64.tar.gz",
+      "checksum": "F715F414FC93D834F1F2368F0B0DCF86BC5CE89E1106D834BE229691672832E6",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/eza-community/eza/v0.23.4/eza.exe_x86_64-pc-windows-gnu.tar.gz",
       "checksum": "4D4F87F6BC8E6EE176789C28BEE698234CE0275DA013709EB16B0F14819C1688",
       "algorithm": "sha256"
