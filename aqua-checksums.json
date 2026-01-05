@@ -221,6 +221,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/exaloop/codon/v0.19.4/codon-linux-x86_64.tar.gz",
+      "checksum": "F715F414FC93D834F1F2368F0B0DCF86BC5CE89E1106D834BE229691672832E6",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/eza-community/eza/v0.23.4/eza.exe_x86_64-pc-windows-gnu.tar.gz",
       "checksum": "4D4F87F6BC8E6EE176789C28BEE698234CE0275DA013709EB16B0F14819C1688",
       "algorithm": "sha256"
@@ -481,33 +486,33 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.57.0/lazygit_0.57.0_darwin_arm64.tar.gz",
-      "checksum": "E90DD90C37BB012F1FE708E7F3D32D28747C8638C75A45268734C5E33277C3D0",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.0/lazygit_0.58.0_darwin_arm64.tar.gz",
+      "checksum": "7E6C4794F18FBAE11CCB75131A71F0216846847A772F702E4F78D26EB2137D35",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.57.0/lazygit_0.57.0_darwin_x86_64.tar.gz",
-      "checksum": "C34DD41BA01007B3684FD84761F7103DBA4AF087785200FA1D355A253ACD31A2",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.0/lazygit_0.58.0_darwin_x86_64.tar.gz",
+      "checksum": "22A16C6A6DB258A448EDE340D81E32B56AB3A6D51FFDFA763F5C9AF27188B4EE",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.57.0/lazygit_0.57.0_linux_arm64.tar.gz",
-      "checksum": "6BC14DCFAFE943363226ED2A2C222D5DDA68247ACC9BDC382D129DD7FE98F985",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.0/lazygit_0.58.0_linux_arm64.tar.gz",
+      "checksum": "0E3BF5AE9688763198A63E4BC3D0306FA0199E74A28C7CCB42A8B316CD69529C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.57.0/lazygit_0.57.0_linux_x86_64.tar.gz",
-      "checksum": "CED011ECD1459D069C66128FBF172B7248C8B99D8983FA17D84A247A98146D5E",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.0/lazygit_0.58.0_linux_x86_64.tar.gz",
+      "checksum": "6161FA717CD07D133F7F1C53FE6E49DE97D718DBB4B9E1481604DCA6F3B8C647",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.57.0/lazygit_0.57.0_windows_arm64.zip",
-      "checksum": "38D53AB577BB29EC6BEDBD094A56F45FA01B4F42BA01BE21D00416323661D4C6",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.0/lazygit_0.58.0_windows_arm64.zip",
+      "checksum": "5A00649CF1627E0795591A37CABFA20BE89E331C590E064A3EE09AA45C4B9778",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.57.0/lazygit_0.57.0_windows_x86_64.zip",
-      "checksum": "775A210B3BECD262A067D75BE33D3D0ECD58CBC2DDE3A36CA74E4757B080618C",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.58.0/lazygit_0.58.0_windows_x86_64.zip",
+      "checksum": "DD7C87030D4E4E7D1D1A5F72B6193BE6BBE5D03D4409EEC32DE85B9F57DEE5BB",
       "algorithm": "sha256"
     },
     {
@@ -933,6 +938,36 @@
     {
       "id": "github_release/github.com/sxyazi/yazi/v26.1.4/yazi-x86_64-unknown-linux-musl.zip",
       "checksum": "76E5010E1DCD11259D34BDA4CCA75D33FAD4B4DEB59DADF179832A39D6B99994",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-aarch64-apple-darwin.gz",
+      "checksum": "F4B23CAA68EE89B422FEE457BE6F6C5B0147F5FF169DAB74F9CE3CB3A709FE3C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-aarch64-pc-windows-msvc.zip",
+      "checksum": "25A71A45E894B4DD99CB9544EF657A5978B3B58F638FD3DEB9BE8C575EDC5774",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-aarch64-unknown-linux-musl.gz",
+      "checksum": "98B406128E9765580ECCE1B4BC830F37B207F14404C97AFB29777904A30FA2B5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-x86_64-apple-darwin.gz",
+      "checksum": "63334F3E3F8722AF22443B3D0CEA62E84EA944478559AA8D3C8519E07689E2C8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-x86_64-pc-windows-msvc.zip",
+      "checksum": "6C6B6E3842AD006377E87C5031E8687F73BDF2A70923EA991DA1084AE1BE9CE6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tombi-toml/tombi/v0.7.12/tombi-cli-0.7.12-x86_64-unknown-linux-musl.gz",
+      "checksum": "FB82291F4C70C7F80923987C164D7A02E6BD7EBBDF26F8E034C629E454965343",
       "algorithm": "sha256"
     },
     {

@@ -39,7 +39,7 @@ packages:
     format: tar.gz
     files:
       - name: codon
-        src: codon-deploy/bin/codon
+        src: codon-deploy-{{.OS}}-x86_64/bin/codon
     supported_envs:
       - linux
   - type: github_release
