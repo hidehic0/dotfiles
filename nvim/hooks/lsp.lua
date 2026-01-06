@@ -5,8 +5,9 @@ vim.lsp.config("*", {
 
 vim.lsp.enable({
   "lua_ls",
-  "pyright",
-  "ruff",
+  -- "pyright",
+  -- "ruff",
+  "ty",
   "clangd",
   "denols",
   -- "marksman",

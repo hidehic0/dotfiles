@@ -19,7 +19,7 @@ local function get_config(tools)
   return config
 end
 
-local filetypes = { "lua", "zsh", "bash", "sh", "yaml", "ts", "tsx", "json" }
+local filetypes = { "lua", "zsh", "bash", "sh", "yaml", "ts", "tsx", "json", "python" }
 
 ---@type vim.lsp.Config
 return {
@@ -49,7 +49,7 @@ return {
         ft = { "ts", "tsx" },
         type = "lint",
       },
-      { name = "stylua", ft = { "lua" }, type = "format" },
+      { name = "stylua", ft = { "lua" },    type = "format" },
       {
         name = "shfmt",
         ft = { "zsh", "bash", "sh" },
@@ -60,6 +60,7 @@ return {
         ft = { "json", "jsonc" },
         type = "format",
       },
+      { name = "ruff",   ft = { "python" }, type = "format" },
     }),
   },
   single_file_support = true,

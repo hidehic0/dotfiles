@@ -68,3 +68,4 @@ packages:
     registry: local
   - name: exaloop/codon@v0.19.4
     registry: local
+  - name: astral-sh/ty@0.0.9
