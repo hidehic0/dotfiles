@@ -81,13 +81,13 @@ hooks_file = "$HOOK_DIR/denippet.lua"
 repo = "rafamadriz/friendly-snippets"
 on_source = "denippet.vim"
 
-[[plugins]]
-repo = "matsui54/denops-popup-preview.vim"
-depends = "denops.vim"
-on_event = "InsertEnter"
-hook_source = """
-call popup_preview#enable()
-"""
+# [[plugins]]
+# repo = "matsui54/denops-popup-preview.vim"
+# depends = "denops.vim"
+# on_event = "InsertEnter"
+# hook_source = """
+# call popup_preview#enable()
+# """
 
 [[plugins]]
 repo = "ray-x/lsp_signature.nvim"
@@ -99,4 +99,3 @@ require("lsp_signature").setup({
   },
 })
 """
-
