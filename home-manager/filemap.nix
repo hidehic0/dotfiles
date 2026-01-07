@@ -13,5 +13,7 @@ in{
     ".config/nvim" = {
       source = symlink "${path}/nvim";
     };
+    ".config/ghostty".source = symlink "${path}/ghostty";
+    ".config/wezterm".source = symlink "${path}/wezterm";
   };
 }

@@ -3,5 +3,6 @@
     bitwarden-desktop
     ghostty
     pcmanfm
+    wezterm
   ];
 }
