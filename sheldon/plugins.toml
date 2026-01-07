@@ -48,6 +48,8 @@ zstyle ':fzf-tab:*' fzf-command fzf
 zstyle ':fzf-tab:*' fzf-preview 'echo {}'
 zstyle ':completion:*:descriptions' format '[%d]'
 zstyle ':completion:*' menu no
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 """
 
 [plugins.git-sync]
@@ -87,13 +89,13 @@ apply = ["defer"]
 local = "~/.dotfiles/zsh/zsh.d"
 use = ["p10k.zsh", "hist.zsh"]
 
-#[plugins.tokens]
-#local = "~/"
-#use = ["tokens.zsh"]  # github_tokenなどを置く
+# [plugins.tokens]
+# local = "~/"
+# use = ["tokens.zsh"]  # github_tokenなどを置く
 
-#[plugins.fpath]
-#local = "~/.local/share/zsh/custom-completion-zsh"
-#apply = ["fpath"]
+# [plugins.fpath]
+# local = "~/.local/share/zsh/custom-completion-zsh"
+# apply = ["fpath"]
 
 # [plugins._nix]
 # github = "nix-community/nix-zsh-completions"
