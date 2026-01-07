@@ -7,6 +7,7 @@ local langs = {
   "bash",
   "toml",
   "lua",
+  "vimdoc",
   "git_config",
   "gitignore",
   "json",
