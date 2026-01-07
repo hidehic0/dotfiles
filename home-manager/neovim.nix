@@ -13,5 +13,6 @@
     eslint
     shfmt
     jq
+    tree-sitter
   ];
 }
