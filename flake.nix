@@ -52,6 +52,12 @@
             ./nixos/configuration.nix
           ];
         };
+        thinkpad-e14-gen6 = inputs.nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = [
+            ./nixos/hosts/thinkpad-e14-gen6/default.nix
+          ];
+        };
       };
       homeConfigurations = {
         myHome = inputs.home-manager.lib.homeManagerConfiguration {
