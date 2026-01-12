@@ -1,8 +1,11 @@
-{pkgs, ...}:{
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [
     bitwarden-desktop
     ghostty
     pcmanfm
-    wezterm
+    vivaldi
+    discord
+    obsidian
   ];
 }

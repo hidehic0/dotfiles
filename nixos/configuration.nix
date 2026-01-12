@@ -1,14 +1,14 @@
-# Edit this configuration file to define what should be installed on
+#https://img.atcoder.jp/ahc059/b8ckwh7N.zip Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -22,6 +22,9 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  # Enable bluetooth
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   # Font Config
   fonts = {
@@ -34,11 +37,20 @@
     fontDir.enable = true;
     fontconfig = {
       defaultFonts = {
-       serif = ["Noto Serif CJK JP" "Noto Color Emoji"];
-       sansSerif = ["Noto Sans CJK JP" "Noto Color Emoji"];
-       monospace = ["FiraCode Nerd Font" "Noto Color Emoji"];
-       emoji = ["Noto Color Emoji"];
-     };
+        serif = [
+          "Noto Serif CJK JP"
+          "Noto Color Emoji"
+        ];
+        sansSerif = [
+          "Noto Sans CJK JP"
+          "Noto Color Emoji"
+        ];
+        monospace = [
+          "FiraCode Nerd Font"
+          "Noto Color Emoji"
+        ];
+        emoji = [ "Noto Color Emoji" ];
+      };
     };
   };
 
@@ -64,8 +76,14 @@
   services.xserver.enable = true;
 
   # Enable the XFCE Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
+  # services.xserver.desktopManager.gnome.enable = true;
+
+  # Hyprland
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -102,39 +120,78 @@
   users.users.hidehic0 = {
     isNormalUser = true;
     description = "hidehic0";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    #  thunderbird
+    extraGroups = [
+      "networkmanager"
+      "wheel"
     ];
-    shell=pkgs.zsh;
+    packages = with pkgs; [
+      #  thunderbird
+    ];
+    shell = pkgs.zsh;
   };
 
   # Install firefox.
   #programs.firefox.enable = true;
 
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-   neovim
-   git
-   gcc15
+    #  wget
+    neovim
+    git
+    gcc15
+    wget
+    brightnessctl
+    btop
+    unzip
+    boost
+    ac-library
   ];
+  services.power-profiles-daemon.enable = true;
 
+  # direnv
+  programs.direnv = {
+    enable = true;
+    silent = true;
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
   # Nix Config
-  nix = {settings ={experimental-features = ["nix-command" "flakes"];};};
+  nix = {
+    settings = {
+      auto-optimise-store = true;
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+      substituters = [
+        "https://wezterm.cachix.org"
+        "https://nix-community.cachix.org"
+      ];
+      trusted-public-keys = [
+        "wezterm.cachix.org-1:kAbhjYUC9qvblTE+s7S+kl5XM1zVa4skO+E/1IDWdH0="
+        "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
+      ];
+    };
+  };
+
+  # nix-ld
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    glibc
+    zlib
+    openssl
+    stdenv.cc.cc
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
   programs.gnupg.agent = {
-     enable = true;
-     enableSSHSupport = false;
+    enable = true;
+    enableSSHSupport = false;
   };
 
   # List services that you want to enable:
@@ -151,8 +208,8 @@
   # Or disable the firewall altogether.
   networking.firewall = {
     enable = true;
-    trustedInterfaces = ["tailscale0"];
-    allowedUDPPorts = [config.services.tailscale.port];
+    trustedInterfaces = [ "tailscale0" ];
+    allowedUDPPorts = [ config.services.tailscale.port ];
   };
 
   # This value determines the NixOS release from which the default

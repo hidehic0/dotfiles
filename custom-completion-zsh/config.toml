@@ -3,17 +3,17 @@
 # name = "custom-completion"
 # exec = "custom-completion-zsh completion zsh"
 
-[[tool]]
-name = "mise"
-exec = "mise completion zsh"
+# [[tool]]
+# name = "mise"
+# exec = "mise completion zsh"
 
 [[tool]]
 name = "gh"
 exec = "gh completion -s zsh"
 
-[[tool]]
-name = "aqua"
-exec = "aqua completion zsh"
+# [[tool]]
+# name = "aqua"
+# exec = "aqua completion zsh"
 
 [[tool]]
 name = "sheldon"
@@ -27,9 +27,9 @@ exec = "uv generate-shell-completion zsh"
 name = "custom-completion-zsh"
 exec = "custom-completion-zsh completion --shell zsh"
 
-[[tool]]
-name = "atcoderproblems-cli"
-exec = "atcoderproblems-cli completion zsh"
+# [[tool]]
+# name = "atcoderproblems-cli"
+# exec = "atcoderproblems-cli completion zsh"
 
 [[tool]]
 name = "acc_utils"
@@ -47,7 +47,6 @@ exec = "rustup completions zsh cargo"
 name = "rustup"
 exec = "rustup completions zsh rustup"
 
-[[tool]]
-name = "jj"
-exec = "jj util completion zsh"
-
+# [[tool]]
+# name = "jj"
+# exec = "jj util completion zsh"

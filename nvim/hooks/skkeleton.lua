@@ -535,10 +535,9 @@ vim.fn["skkeleton#register_kanatable"]("rom", {
 
 vim.fn["skkeleton#config"]({
   globalDictionaries = {
-    "~/.local/share/nvim/dpp/repos/github.com/skk-dev/dict/SKK-JISYO.L",
     -- "~/.local/share/fcitx5/skk/user.dict",
   },
-  sources = {  "skk_dictionary" },
+  sources = { "skk_server", "skk_dictionary" },
   completionRankFile = "~/.cache/skkeleton/rank.json",
   kanaTable = "rom",
 })

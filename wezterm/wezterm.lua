@@ -17,7 +17,7 @@ config.keys = keymaps.keys
 config.key_tables = keymaps.key_tables
 config.enable_wayland = true
 
-config.window_background_opacity = 0.5
+config.window_background_opacity = 0.6
 
 config.tab_bar_at_bottom = true
 config.window_frame = {

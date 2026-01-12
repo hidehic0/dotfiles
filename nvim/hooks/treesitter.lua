@@ -13,6 +13,11 @@ local langs = {
   "json",
   "vim",
   "nix",
+  "python",
+  "yaml",
+  "ini",
+  "gitcommit",
+  "cpp",
 }
 
 local assist = {

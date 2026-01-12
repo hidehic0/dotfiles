@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [
     neovim
@@ -7,12 +7,18 @@
     lua-language-server
     efm-langserver
     tombi
-    pyright
     shellcheck
     actionlint
     eslint
     shfmt
     jq
     tree-sitter
+    ty
+    nil
+    yaml-language-server
+    rust-analyzer
+    gopls
+    stylua
+    ruff
   ];
 }

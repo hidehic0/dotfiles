@@ -1,0 +1,5 @@
+templates:
+  - name: cpMakeFile
+    filename: Makefile
+    type: url
+    path: https://raw.githubusercontent.com/hidehic0/library/refs/heads/main/code/Makefile

@@ -86,7 +86,7 @@
     },
     "backlight": {
       "label": "",
-      "device": "intel_backlight",
+      "device": "amd_backlight",
       "min": 10
     },
     "buttons-grid": {
