@@ -9,11 +9,26 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-    wezterm.url = "github:wezterm/wezterm?dir=nix";
-    acc_utils.url = "github:hidehic0/acc_utils";
-    tpfl.url = "github:hidehic0/tpfl";
-    custom-completion-zsh.url = "github:hidehic0/custom-completion-zsh";
+    neovim-nightly-overlay = {
+      url = "github:nix-community/neovim-nightly-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    wezterm = {
+      url = "github:wezterm/wezterm?dir=nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    acc_utils = {
+      url = "github:hidehic0/acc_utils";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    tpfl = {
+      url = "github:hidehic0/tpfl";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    custom-completion-zsh = {
+      url = "github:hidehic0/custom-completion-zsh";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
