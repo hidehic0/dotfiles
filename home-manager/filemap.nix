@@ -30,5 +30,6 @@ in
     ".config/custom-completion-zsh".source = symlink "${path}/custom-completion-zsh";
     ".config/tpfl".source = symlink "${path}/tpfl";
     ".clangd".source = symlink "${path}/clangd/config.yml";
+    ".config/atcoder-cli-nodejs".source = symlink "${path}/atcoder-cli-nodejs";
   };
 }
