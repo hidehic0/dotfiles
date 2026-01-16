@@ -7,5 +7,6 @@
     vivaldi
     discord
     obsidian
+    gnome-clocks
   ];
 }
