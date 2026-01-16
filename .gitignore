@@ -100,3 +100,7 @@ GIMP/3.0
 .aider*
 emacs/eshell
 emacs/init.elc
+hypr/hyprlock.conf
+hypr/hyprpaper.conf
+hypr/hyprlock.conf
+hypr/hyprpaper.conf
