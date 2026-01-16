@@ -17,6 +17,8 @@ in
       clang-tools
       ac-library
       fastfetch
+      grim
+      slurp
     ]
     ++ [
       acc_utils_pkg
