@@ -26,7 +26,11 @@
   "ACL MODINT 998244353": {
     "body": [
       "#include <atcoder/modint>",
-      "using mint=atcoder::modint998244353;$1"
+      "using mint=atcoder::modint998244353;",
+      "using vm = vector<mint>;",
+      "using vvm = vector<vm>;",
+      "using vvvm = vector<vvm>;",
+      "using pmm = vector<mint,mint>;$1"
     ],
     "prefix": "aclmint998"
   }
