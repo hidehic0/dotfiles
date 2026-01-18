@@ -5,4 +5,5 @@ on_event = ["CmdlineEnter", "InsertEnter"]
 hooks_file = "$HOOK_DIR/skkeleton.lua"
 
 [[plugins]]
-repo = "skk-dev/dict"
+repo = "hidehic0/skkeleton-azik-kanatable"
+on_source = "skkeleton"
