@@ -1,6 +1,6 @@
 [[configs]]
 file = "main.py"
-cmd = "/bin/cat main.py | wl-copy"
+cmd = "cat main.py | wl-copy"
 
 [[configs]]
 file = "main.cpp"
