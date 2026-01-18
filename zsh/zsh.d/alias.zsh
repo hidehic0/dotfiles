@@ -2,12 +2,26 @@
 bin_dir="$HOME/.config/zsh/bin"
 
 # quicktest command
-alias qcp="$bin_dir/quicktest.sh"
-alias ojtp="$bin_dir/oj_test_python.sh"
-alias ojtc="$bin_dir/oj_test_cpp.sh"
-alias acs="$bin_dir/atc_submit.zsh"
-alias acsp="$bin_dir/acc_submit_python.sh"
-alias acsc="$bin_dir/acc_submit_cpp.sh"
+# alias ojtp="$bin_dir/oj_test_python.sh"
+# alias ojtc="$bin_dir/oj_test_cpp.sh"
+# alias acs="$bin_dir/atc_submit.zsh"
+
+function ojtp() {
+	oj t -c "python3 main.py" -d tests
+}
+function ojtc() {
+	if [ -e Makefile ]; then
+		make cpp-build
+	else
+		g++ main.cpp -I$HOME/src/github.com/hidehic0/library_cpp -std=gnu++23
+	fi
+	oj t -c "./a.out" -d tests
+}
+function acs() {
+	DIR=$(basename $(pwd))
+	cd ..
+	acc_utils submit $DIR
+}
 
 # git command alias
 alias git_push="$bin_dir/git_commands/push_cur_branch.zsh"
@@ -39,16 +53,16 @@ alias cdb="cd -"
 
 # atcoder-cli
 atc() {
-  acc new $1
-  cd $1
+	acc new $1
+	cd $1
 }
 
 catc() {
-  if [ -d $1 ]; then
-    cd $1
-  else
-    atc $1
-  fi
+	if [ -d $1 ]; then
+		cd $1
+	else
+		atc $1
+	fi
 }
 
 alias cat="gat"
