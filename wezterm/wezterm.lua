@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 local keymaps = require("keymaps")
 
 local config = wezterm.config_builder()
+config.check_for_updates = false
 config.disable_default_key_bindings = true
 config.automatically_reload_config = true
 config.use_ime = false
@@ -46,7 +47,17 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
     foreground = "#1e1e2e"
   end
 
-  local title = "   " .. tab.tab_index .. ":" .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
+  local zoomed = ""
+  if tab.active_pane.is_zoomed then
+    zoomed = "[Z]"
+  end
+
+  local title = "   "
+      .. tab.tab_index
+      .. ":"
+      .. zoomed
+      .. wezterm.truncate_right(tab.active_pane.title, max_width - 1)
+      .. "   "
 
   return {
     { Foreground = { Color = background } },

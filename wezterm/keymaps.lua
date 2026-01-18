@@ -54,6 +54,8 @@ M.keys = {
   --  pane create keybinds
   { key = "%", mods = "LEADER|SHIFT", action = act({ SplitVertical = { domain = "CurrentPaneDomain" } }) },
   { key = '"', mods = "LEADER|SHIFT", action = act({ SplitHorizontal = { domain = "CurrentPaneDomain" } }) },
+  -- pane zoom keybind
+  { key = "z", mods = "LEADER",       action = act.TogglePaneZoomState },
 
   -- copy mode setting
   {
