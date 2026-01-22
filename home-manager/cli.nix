@@ -19,6 +19,7 @@ in
       fastfetch
       grim
       slurp
+      uv
     ]
     ++ [
       acc_utils_pkg
