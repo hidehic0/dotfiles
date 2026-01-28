@@ -18,6 +18,7 @@
     ../../modules/hyprland.nix
     ../../modules/systempackage.nix
     ../../modules/gnupg.nix
+    ../../modules/geoclue.nix
   ];
 
   users.users.hidehic0 = {
