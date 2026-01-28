@@ -11,11 +11,12 @@
     ./fcitx5.nix
     ./cli.nix
     ./wezterm.nix
+    ./chromium.nix
   ];
   home = rec {
     username = "hidehic0";
     homeDirectory = "/home/${username}";
-    stateVersion = "25.11";
+    stateVersion = "26.05";
   };
 
   programs.home-manager.enable = true;
