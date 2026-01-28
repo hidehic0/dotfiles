@@ -21,8 +21,9 @@ jobs:
         id: import-gpg
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-      - run: gpg -K
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore(flake): updated flake.lock"
