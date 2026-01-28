@@ -1,5 +1,6 @@
 ---@type vim.lsp.Config
 return {
+  filetypes = { "yaml", "yaml.ghaction" },
   settings = {
     yaml = {
       format = {
