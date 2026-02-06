@@ -29,6 +29,10 @@
       url = "github:hidehic0/custom-completion-zsh";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    prime-generator = {
+      url = "github:hidehic0/prime-generator";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -40,6 +44,7 @@
       rust-overlay,
       acc_utils,
       tpfl,
+      prime-generator,
       ...
     }:
     let

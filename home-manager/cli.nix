@@ -4,6 +4,7 @@ let
   acc_utils_pkg = inputs.acc_utils.packages.${pkgs.system}.default;
   tpfl_pkg = inputs.tpfl.packages.${pkgs.system}.default;
   custom_completion_zsh_pkg = inputs.custom-completion-zsh.packages.${pkgs.system}.default;
+  prime-generator_pkg = inputs.prime-generator.packages.${pkgs.system}.default;
 in
 {
   home.packages =
@@ -27,6 +28,7 @@ in
       acc_utils_pkg
       tpfl_pkg
       custom_completion_zsh_pkg
+      prime-generator_pkg
     ];
 
 }
