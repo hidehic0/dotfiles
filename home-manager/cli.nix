@@ -20,6 +20,8 @@ in
       grim
       slurp
       uv
+      libsixel
+      exiftool
     ]
     ++ [
       acc_utils_pkg
