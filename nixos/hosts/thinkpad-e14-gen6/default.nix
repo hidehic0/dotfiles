@@ -19,6 +19,7 @@
     ../../modules/systempackage.nix
     ../../modules/gnupg.nix
     ../../modules/geoclue.nix
+    ../../modules/kernel.nix
   ];
 
   users.users.hidehic0 = {
