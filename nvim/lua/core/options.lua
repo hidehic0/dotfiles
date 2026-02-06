@@ -72,7 +72,7 @@ vim.api.nvim_create_autocmd({ "InsertEnter" }, {
   end,
 })
 
-require("vim._extui").enable({
+require("vim._core.ui2").enable({
   enable = true, -- Whether to enable or disable the UI.
   msg = {        -- Options related to the message module.
     ---@type 'cmd'|'msg' Where to place regular messages, either in the
