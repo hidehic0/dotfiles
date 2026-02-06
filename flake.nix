@@ -24,14 +24,17 @@
     tpfl = {
       url = "github:hidehic0/tpfl";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     custom-completion-zsh = {
       url = "github:hidehic0/custom-completion-zsh";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
     prime-generator = {
       url = "github:hidehic0/prime-generator";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
     };
   };
 
