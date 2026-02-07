@@ -36,6 +36,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
+    binomial_coefficient-calc-cli = {
+      url = "github:hidehic0/binomial_coefficient-calc-cli";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
+    };
   };
 
   outputs =
@@ -48,6 +53,7 @@
       acc_utils,
       tpfl,
       prime-generator,
+      binomial_coefficient-calc-cli,
       ...
     }:
     let

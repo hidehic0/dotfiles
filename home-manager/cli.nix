@@ -5,6 +5,8 @@ let
   tpfl_pkg = inputs.tpfl.packages.${pkgs.system}.default;
   custom_completion_zsh_pkg = inputs.custom-completion-zsh.packages.${pkgs.system}.default;
   prime-generator_pkg = inputs.prime-generator.packages.${pkgs.system}.default;
+  binomial_coefficient-calc-cli =
+    inputs.binomial_coefficient-calc-cli.packages.${pkgs.system}.default;
 in
 {
   home.packages =
@@ -29,6 +31,7 @@ in
       tpfl_pkg
       custom_completion_zsh_pkg
       prime-generator_pkg
+      binomial_coefficient-calc-cli
     ];
 
 }
