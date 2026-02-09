@@ -25,6 +25,8 @@ in
       uv
       libsixel
       exiftool
+      cbonsai
+      cmatrix
     ]
     ++ [
       acc_utils_pkg
