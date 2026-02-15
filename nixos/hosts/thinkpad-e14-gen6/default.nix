@@ -31,4 +31,9 @@
     ];
     shell = pkgs.zsh;
   };
+  boot.loader.grub2-theme = {
+    enable = true;
+    theme = "tela";
+    footer = true;
+  };
 }

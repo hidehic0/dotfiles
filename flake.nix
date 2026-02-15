@@ -41,6 +41,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
+    grub2-themes = {
+      url = "github:vinceliuice/grub2-themes";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -54,6 +58,7 @@
       tpfl,
       prime-generator,
       binomial_coefficient-calc-cli,
+      grub2-themes,
       ...
     }:
     let
@@ -85,6 +90,7 @@
           system = "x86_64-linux";
           modules = [
             ./nixos/hosts/thinkpad-e14-gen6/default.nix
+            grub2-themes.nixosModules.default
           ];
         };
       };
