@@ -8,5 +8,6 @@
     discord
     obsidian
     gnome-clocks
+    gnome-pomodoro
   ];
 }
