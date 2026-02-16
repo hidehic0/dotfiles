@@ -76,6 +76,28 @@ M.keys = {
     mods = "CTRL|SHIFT",
     action = act.CopyTo("Clipboard"),
   },
+
+  -- command palette
+  {
+    key = ":",
+    mods = "LEADER",
+    action = act.ActivateCommandPalette,
+  },
+
+  -- workspace
+  { key = "s", mods = "LEADER", action = act.ShowLauncherArgs({ flags = "WORKSPACES" }) },
+  {
+    key = "R",
+    mods = "LEADER",
+    action = act.PromptInputLine({
+      description = "(wezterm) Set workspace title:",
+      action = wezterm.action_callback(function(win, pane, line)
+        if line then
+          wezterm.mux.rename_workspace(wezterm.mux.get_active_workspace(), line)
+        end
+      end),
+    }),
+  },
 }
 
 M.key_tables = {
