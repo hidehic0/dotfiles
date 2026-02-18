@@ -27,6 +27,7 @@ in
       exiftool
       cbonsai
       cmatrix
+      handlr
     ]
     ++ [
       acc_utils_pkg
