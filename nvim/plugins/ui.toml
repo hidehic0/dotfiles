@@ -23,11 +23,17 @@ lua_source = '''
 require("gitsigns").setup()
 '''
 
+# [[plugins]]
+# repo = "akinsho/bufferline.nvim"
+# depends = ["nvim-web-devicons"]
+# on_event = ["BufAdd", "CursorHold", "CursorHoldI"]
+# hooks_file = "$HOOK_DIR/bufferline.lua"
+
 [[plugins]]
-repo = "akinsho/bufferline.nvim"
+repo = "romgrk/barbar.nvim"
 depends = ["nvim-web-devicons"]
 on_event = ["BufAdd", "CursorHold", "CursorHoldI"]
-hooks_file = "$HOOK_DIR/bufferline.lua"
+hooks_file = "$HOOK_DIR/barbar.lua"
 
 [[plugins]]
 repo = "folke/which-key.nvim"
