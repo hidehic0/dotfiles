@@ -9,51 +9,67 @@ vim.keymap.set("c", "<CR>", "<Plug>(kensaku-search-replace)<CR>")
 repo = "lambdalisue/vim-kensaku-search"
 on_source = ["vim-kensaku", "fuzzy-motion.nvim"]
 
+# [[plugins]]
+# repo = "hrsh7th/vim-eft"
+# on_map = ["f", "F", "t", "T"]
+# hook_source = '''
+# nmap ; <Plug>(eft-repeat)
+# xmap ; <Plug>(eft-repeat)
+# omap ; <Plug>(eft-repeat)
+#
+# nmap f <Plug>(eft-f-repeatable)
+# xmap f <Plug>(eft-f-repeatable)
+# omap f <Plug>(eft-f-repeatable)
+# nmap F <Plug>(eft-F-repeatable)
+# xmap F <Plug>(eft-F-repeatable)
+# omap F <Plug>(eft-F-repeatable)
+#
+# nmap t <Plug>(eft-t-repeatable)
+# xmap t <Plug>(eft-t-repeatable)
+# omap t <Plug>(eft-t-repeatable)
+# nmap T <Plug>(eft-T-repeatable)
+# xmap T <Plug>(eft-T-repeatable)
+# omap T <Plug>(eft-T-repeatable)
+#
+# " ignore case
+# let g:eft_ignorecase = v:true
+#
+# let g:eft_index_function = {
+# \   'head': function('eft#index#head'),
+# \   'tail': function('eft#index#tail'),
+# \   'space': function('eft#index#space'),
+# \   'camel': function('eft#index#camel'),
+# \   'symbol': function('eft#index#symbol'),
+# \ }
+#
+# let g:eft_index_function = {
+# \   'all': { -> v:true },
+# \ }
+# '''
+
+# [[plugins]]
+# repo = "smoka7/hop.nvim"
+# on_map = ["<leader>j"]
+# on_cmd = "HopPattern"
+# lua_source = '''
+# vim.keymap.set("n","<leader>j","<Cmd>HopPattern<CR>")
+# require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+# '''
+
 [[plugins]]
-repo = "hrsh7th/vim-eft"
-on_map = ["f", "F", "t", "T"]
-hook_source = '''
-nmap ; <Plug>(eft-repeat)
-xmap ; <Plug>(eft-repeat)
-omap ; <Plug>(eft-repeat)
-
-nmap f <Plug>(eft-f-repeatable)
-xmap f <Plug>(eft-f-repeatable)
-omap f <Plug>(eft-f-repeatable)
-nmap F <Plug>(eft-F-repeatable)
-xmap F <Plug>(eft-F-repeatable)
-omap F <Plug>(eft-F-repeatable)
-
-nmap t <Plug>(eft-t-repeatable)
-xmap t <Plug>(eft-t-repeatable)
-omap t <Plug>(eft-t-repeatable)
-nmap T <Plug>(eft-T-repeatable)
-xmap T <Plug>(eft-T-repeatable)
-omap T <Plug>(eft-T-repeatable)
-
-" ignore case
-let g:eft_ignorecase = v:true
-
-let g:eft_index_function = {
-\   'head': function('eft#index#head'),
-\   'tail': function('eft#index#tail'),
-\   'space': function('eft#index#space'),
-\   'camel': function('eft#index#camel'),
-\   'symbol': function('eft#index#symbol'),
-\ }
-
-let g:eft_index_function = {
-\   'all': { -> v:true },
-\ }
-'''
-
-[[plugins]]
-repo = "smoka7/hop.nvim"
-on_map = ["<leader>j"]
-on_cmd = "HopPattern"
+repo = "folke/flash.nvim"
+on_map = ["<leader>j", "f", "F", "t", "T"]
 lua_source = '''
-vim.keymap.set("n","<leader>j","<Cmd>HopPattern<CR>")
-require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
+require("flash").setup({
+    modes = {
+    char = {
+      jump_labels = false,
+      multi_line = false,
+      highlight = { backdrop = false },
+    }
+  }
+})
+vim.keymap.set("n", "<leader>j",function() require("flash").jump() end, {desc = "Flash"})
 '''
 
 [[plugins]]
