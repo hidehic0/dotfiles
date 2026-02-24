@@ -104,3 +104,4 @@ hypr/hyprlock.conf
 hypr/hyprpaper.conf
 hypr/hyprlock.conf
 hypr/hyprpaper.conf
+/.pre-commit-config.yaml

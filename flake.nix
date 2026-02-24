@@ -45,6 +45,9 @@
       url = "github:vinceliuice/grub2-themes";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    git-hooks-nix.inputs.nixpkgs.follows = "nixpkgs";
+    git-hooks-nix.url = "github:cachix/git-hooks.nix";
   };
 
   outputs =
@@ -59,6 +62,8 @@
       prime-generator,
       binomial_coefficient-calc-cli,
       grub2-themes,
+      flake-parts,
+      git-hooks-nix,
       ...
     }:
     let
@@ -105,5 +110,46 @@
           };
         };
       };
-    };
+    }
+    //
+      flake-parts.lib.mkFlake
+        {
+          inherit inputs;
+        }
+        {
+          imports = [
+            inputs.git-hooks-nix.flakeModule
+          ];
+
+          systems = [
+            "x86_64-linux"
+          ];
+          perSystem =
+            {
+              config,
+              self',
+              inputs',
+              pkgs,
+              ...
+            }:
+            {
+              pre-commit.settings.hooks = {
+                gitleaks = {
+                  enable = true;
+                  entry = "${pkgs.gitleaks}/bin/gitleaks protect --staged";
+                  language = "system";
+                };
+              };
+              devShells.default = pkgs.mkShell {
+                shellHook = ''
+                  ${config.pre-commit.shellHook}
+                '';
+
+                packages = config.pre-commit.settings.enabledPackages ++ [
+                  pkgs.gitleaks
+                ];
+              };
+            };
+        };
+
 }
