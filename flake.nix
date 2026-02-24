@@ -48,6 +48,10 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     git-hooks-nix.inputs.nixpkgs.follows = "nixpkgs";
     git-hooks-nix.url = "github:cachix/git-hooks.nix";
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -64,6 +68,7 @@
       grub2-themes,
       flake-parts,
       git-hooks-nix,
+      sops-nix,
       ...
     }:
     let
@@ -110,6 +115,7 @@
         thinkpad-e14-gen6 = inputs.nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
+            sops-nix.nixosModules.sops
             ./nixos/hosts/thinkpad-e14-gen6/default.nix
             grub2-themes.nixosModules.default
           ];

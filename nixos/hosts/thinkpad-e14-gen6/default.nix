@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   imports = [
     ./hardware-configuration.nix
@@ -20,11 +20,14 @@
     ../../modules/gnupg.nix
     ../../modules/geoclue.nix
     ../../modules/kernel.nix
+    ../../modules/sops.nix
   ];
 
+  sops.secrets.login-password.neededForUsers = true;
   users.users.hidehic0 = {
     isNormalUser = true;
     description = "hidehic0";
+    hashedPasswordFile = config.sops.secrets.login-password.path;
     extraGroups = [
       "networkmanager"
       "wheel"
