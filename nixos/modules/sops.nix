@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   sops = {
     age.keyFile = "/var/lib/sops-nix/key.txt";
@@ -6,4 +6,8 @@
     defaultSopsFile = ../../secrets/default.yaml;
     defaultSopsFormat = "yaml";
   };
+  environment.systemPackages = with pkgs; [
+    sops
+    age
+  ];
 }
