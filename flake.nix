@@ -108,6 +108,7 @@
         pkgs.mkShell {
           inherit shellHook;
           buildInputs = enabledPackages;
+          packages = with pkgs; [ gitleaks ];
         };
 
       packages."x86_64-linux".yaskkserv2 = pkgs.yaskkserv2;
