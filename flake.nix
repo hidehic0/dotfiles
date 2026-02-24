@@ -81,16 +81,32 @@
         ];
       };
     in
-
     {
+
+      checks.x86_64-linux = {
+        pre-commit-check = inputs.git-hooks-nix.lib.x86_64-linux.run {
+          src = ./.;
+          hooks = {
+            gitleaks = {
+              enable = true;
+              entry = "${pkgs.gitleaks}/bin/gitleaks protect --staged";
+            };
+          };
+        };
+
+      };
+
+      devShells.x86_64-linux.default =
+        let
+          inherit (self.checks.x86_64-linux.pre-commit-check) shellHook enabledPackages;
+        in
+        pkgs.mkShell {
+          inherit shellHook;
+          buildInputs = enabledPackages;
+        };
+
       packages."x86_64-linux".yaskkserv2 = pkgs.yaskkserv2;
       nixosConfigurations = {
-        myNixOS = inputs.nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
-          modules = [
-            ./nixos/configuration.nix
-          ];
-        };
         thinkpad-e14-gen6 = inputs.nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
@@ -110,46 +126,5 @@
           };
         };
       };
-    }
-    //
-      flake-parts.lib.mkFlake
-        {
-          inherit inputs;
-        }
-        {
-          imports = [
-            inputs.git-hooks-nix.flakeModule
-          ];
-
-          systems = [
-            "x86_64-linux"
-          ];
-          perSystem =
-            {
-              config,
-              self',
-              inputs',
-              pkgs,
-              ...
-            }:
-            {
-              pre-commit.settings.hooks = {
-                gitleaks = {
-                  enable = true;
-                  entry = "${pkgs.gitleaks}/bin/gitleaks protect --staged";
-                  language = "system";
-                };
-              };
-              devShells.default = pkgs.mkShell {
-                shellHook = ''
-                  ${config.pre-commit.shellHook}
-                '';
-
-                packages = config.pre-commit.settings.enabledPackages ++ [
-                  pkgs.gitleaks
-                ];
-              };
-            };
-        };
-
+    };
 }
