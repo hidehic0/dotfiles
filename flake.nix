@@ -119,6 +119,7 @@
             sops-nix.nixosModules.sops
             ./nixos/hosts/thinkpad-e14-gen6/default.nix
             grub2-themes.nixosModules.default
+            home-manager.nixosModules.home-manager
           ];
         };
       };
