@@ -17,7 +17,7 @@ in
     };
     ".config/ghostty".source = symlink "${path}/ghostty";
     ".config/wezterm".source = symlink "${path}/wezterm";
-    ".config/hypr/hyprland.conf".source = symlink "${path}/hypr/hyprland.conf";
+    # ".config/hypr/hyprland.conf".source = symlink "${path}/hypr/hyprland.conf";
     ".config/hypr/hyprsunset.conf".source = symlink "${path}/hypr/hyprsunset.conf";
     ".config/hypr/hypridle.conf".source = symlink "${path}/hypr/hypridle.conf";
     ".config/waybar".source = symlink "${path}/waybar";
