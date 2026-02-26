@@ -1,26 +1,27 @@
-[[plugins]]
-repo = "Shougo/dpp.vim"
+# [[plugins]]
+# repo = "Shougo/dpp.vim"
+#
+# [[plugins]]
+# repo = "Shougo/dpp-ext-lazy"
+#
+# [[plugins]]
+# repo = "Shougo/dpp-ext-toml"
+#
+# [[plugins]]
+# repo = "Shougo/dpp-ext-installer"
+#
+# [[plugins]]
+# repo = "Shougo/dpp-protocol-git"
+#
+# [[plugins]]
+# repo = "github.com/vim-denops/denops.vim"
+# hook_add = '''
+# let g:denops#server#deno_args = ['-q', '--no-lock', '--unstable-kv', '--unstable-ffi', '-A']
+# '''
 
 [[plugins]]
-repo = "Shougo/dpp-ext-lazy"
-
-[[plugins]]
-repo = "Shougo/dpp-ext-toml"
-
-[[plugins]]
-repo = "Shougo/dpp-ext-installer"
-
-[[plugins]]
-repo = "Shougo/dpp-protocol-git"
-
-[[plugins]]  
-repo = "github.com/vim-denops/denops.vim"
-hook_add = '''
-let g:denops#server#deno_args = ['-q', '--no-lock', '--unstable-kv', '--unstable-ffi', '-A']
-'''
-[[plugins]]
-repo="morhetz/gruvbox"
-on_event="BufEnter"
+repo = "morhetz/gruvbox"
+on_event = "BufEnter"
 hook_add = '''
 colorscheme gruvbox
 '''

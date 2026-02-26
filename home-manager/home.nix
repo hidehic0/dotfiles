@@ -12,6 +12,7 @@
     ./cli.nix
     ./wezterm.nix
     ./chromium.nix
+    ./vim.nix
   ];
   home = rec {
     username = "hidehic0";

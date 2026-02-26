@@ -52,6 +52,30 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    dpp-vim = {
+      url = "github:Shougo/dpp.vim";
+      flake = false;
+    };
+    dpp-ext-lazy = {
+      url = "github:Shougo/dpp-ext-lazy";
+      flake = false;
+    };
+    dpp-ext-toml = {
+      url = "github:Shougo/dpp-ext-toml";
+      flake = false;
+    };
+    dpp-ext-installer = {
+      url = "github:Shougo/dpp-ext-installer";
+      flake = false;
+    };
+    dpp-protocol-git = {
+      url = "github:Shougo/dpp-protocol-git";
+      flake = false;
+    };
+    denops-vim = {
+      url = "github:vim-denops/denops.vim";
+      flake = false;
+    };
   };
 
   outputs =
@@ -69,6 +93,14 @@
       flake-parts,
       git-hooks-nix,
       sops-nix,
+
+      # dpp関連
+      dpp-vim,
+      dpp-ext-lazy,
+      dpp-ext-toml,
+      dpp-ext-installer,
+      dpp-protocol-git,
+      denops-vim,
       ...
     }:
     let

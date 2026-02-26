@@ -44,11 +44,11 @@ export class Config extends BaseConfig {
 
     const checkFiles: CheckFile[] = [
       {
-        path: "~/.vim/dpp.toml",
+        path: "~/.dotfiles/vim/dpp.toml",
         lazy: false,
       },
       {
-        path: "~/.vim/dpp_lazy.toml",
+        path: "~/.dotfiles/vim/dpp_lazy.toml",
         lazy: true,
       },
     ];
