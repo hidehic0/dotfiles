@@ -80,6 +80,7 @@ export class Config extends BaseConfig {
             "__pycache__",
             ".ruff_cache",
             "target",
+            ".direnv",
           ],
         },
       },
