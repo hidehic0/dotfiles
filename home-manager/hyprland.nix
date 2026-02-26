@@ -218,10 +218,10 @@
         "$mainMod+SHIFT, q, killactive"
 
         # move fucus
-        "$mainMod, left, movefocus, l"
-        "$mainMod, right, movefocus, r"
-        "$mainMod, up, movefocus, u"
-        "$mainMod, down, movefocus, d"
+        "$mainMod, h, movefocus, l"
+        "$mainMod, l, movefocus, r"
+        "$mainMod, k, movefocus, u"
+        "$mainMod, j, movefocus, d"
 
         # window move
         "SUPER+SHIFT,h,movewindow,l"
