@@ -12,5 +12,6 @@
     unzip
     boost
     ac-library
+    nvd
   ];
 }
