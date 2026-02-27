@@ -24,4 +24,14 @@
       RemainAfterExit = "yes";
     };
   };
+  systemd.user.services.fcitx5 = {
+    Install = {
+      WantedBy = [ ];
+    };
+    Service = {
+      Type = "oneshot";
+      RemainAfterExit = "yes";
+      ExecStart = "${pkgs.zsh}/bin/zsh -c 'fcitx5 -rd'";
+    };
+  };
 }

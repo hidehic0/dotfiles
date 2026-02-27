@@ -29,8 +29,7 @@
       ];
 
       exec-once = [
-        "systemctl --user start xdg-desktop-portal-gtk.service"
-        "fcitx5 -d"
+        "systemctl --user start xdg-desktop-portal-gtk.service fcitx5.service"
         "waybar"
         "swaync"
         "swayosd-server"
