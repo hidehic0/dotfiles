@@ -33,6 +33,7 @@ in
       cbonsai
       cmatrix
       handlr
+      universal-ctags
     ]
     ++ [
       acc_utils_pkg
