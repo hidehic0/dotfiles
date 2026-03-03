@@ -12,6 +12,7 @@ fn.pum.set_option({
   highlight_normal_menu = "",
   highlight_scrollbar = "",
   scrollbar_char = "▎",
+  use_setline = true,
 })
 
 local pum_next = function()
