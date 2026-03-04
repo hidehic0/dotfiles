@@ -5,5 +5,8 @@
     "config:recommended",
     "github>Omochice/renovate-config:deno",
     "github>aquaproj/aqua-renovate-config#2.9.0"
-  ]
+  ],
+  "nix": {
+    "enabled": true
+  }
 }
