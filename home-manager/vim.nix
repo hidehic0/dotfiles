@@ -53,6 +53,10 @@ in
       set clipboard=unnamedplus
       set number
       set relativenumber
+      set tabstop=2
+      set shiftwidth=2
+      set expandtab
+      set softtabstop=2
 
       const s:dpp_base ="~/.cache/dpp/"
     ''
