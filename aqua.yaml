@@ -66,6 +66,6 @@ packages:
     registry: local
   - name: hidehic0/tpfl@v0.0.1
     registry: local
-  - name: exaloop/codon@v0.19.4
+  - name: exaloop/codon@v0.19.6
     registry: local
   - name: astral-sh/ty@0.0.9
