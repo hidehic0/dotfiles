@@ -2,6 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "baseBranchPatterns": ["nixos"],
   "automerge": true,
+  "automergeType": "pr",
+  "platformAutomerge": true,
   "extends": [
     "config:base",
     "github>Omochice/renovate-config:deno",
