@@ -11,4 +11,6 @@
     enable = true;
     wlr.enable = true;
   };
+
+  services.gnome.gnome-keyring.enable = true;
 }

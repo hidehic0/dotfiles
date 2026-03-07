@@ -12,6 +12,7 @@ let
   prime-generator_pkg = inputs.prime-generator.packages.${pkgs.stdenv.hostPlatform.system}.default;
   binomial_coefficient-calc-cli =
     inputs.binomial_coefficient-calc-cli.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  ghtkn = pkgs.callPackage ../my-nix-packages/ghtkn/default.nix { };
 in
 {
   home.packages =
@@ -41,6 +42,6 @@ in
       custom_completion_zsh_pkg
       prime-generator_pkg
       binomial_coefficient-calc-cli
+      ghtkn
     ];
-
 }
