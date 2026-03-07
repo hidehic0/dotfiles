@@ -13,6 +13,7 @@
   },
   "lockFileMaintenance": {
     "enabled": true,
-    "extends": ["schedule:daily"]
+    "schedule":"daily",
+    "automergeSchedule":"at any time"
   }
 }
