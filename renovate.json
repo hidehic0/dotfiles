@@ -1,19 +1,23 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranchPatterns": ["nixos"],
+  "baseBranchPatterns": [
+    "nixos"
+  ],
   "automerge": true,
   "automergeType": "pr",
   "platformAutomerge": true,
   "extends": [
     "config:base",
-    "github>Omochice/renovate-config:deno",
+    "github>Omochice/renovate-config:deno"
   ],
   "nix": {
     "enabled": true
   },
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule":"daily",
-    "automergeSchedule":"at any time"
+    "schedule": "daily",
+    "automergeSchedule": [
+      "at any time"
+    ]
   }
 }
