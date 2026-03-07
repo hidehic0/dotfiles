@@ -35,6 +35,7 @@ in
       cmatrix
       handlr
       universal-ctags
+      renovate
     ]
     ++ [
       acc_utils_pkg
