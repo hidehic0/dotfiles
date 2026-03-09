@@ -42,3 +42,8 @@ function tpf() {
 		tpfl cp $name -o $1
 	fi
 }
+
+# github cli with ghtkn
+gh() {
+	GH_TOKEN=$(ghtkn get) command gh "$@" # command を使わないと無限ループになるので注意
+}
