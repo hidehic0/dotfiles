@@ -2,28 +2,32 @@ snippets:
   # snippet and keyword abbrev
   - name: git status
     keyword: gs
-    snippet: git status --short --branch
+    snippet: git status --short
   - name: git log
     keyword: gl
-    snippet: git log --graph --oneline --all
-  - name: clear
-    keyword: clr
-    snippet: clear
-  - name: "find file"
-    keyword: "ff"
-    snippet: "$(fd -H -t f -d 6 -E .git | fzf --tmux)"
-    context:
-      buffer: '.*\s'
-  - name: "find dir"
-    keyword: "fdi"
-    snippet: "$(fd -H -t d -t l -E .git -d 6 | fzf --tmux)"
-    context:
-      buffer: '.*\s'
+    snippet: git log --graph --oneline --color
+  - name: git commit
+    keyword: gc
+    snippet: git commit
+  - name: git add
+    keyword: ga
+    snippet: git add -A
+  - name: git add -p
+    keyword: gap
+    snippet: git add -p
+  - name: cd parrent dir
+    keyword: cdr
+    snippet: cd ..
+  - name: cd prev dir
+    keyword: cdb
+    snippet: cd -
+
 completions:
-  - name: path
+  - name: chdir
     patterns:
       - "^cd $"
-    sourceCommand: "fd --no-ignore-vcs -t d -t l -d 1"
+    sourceCommand: "fd -t d -d 3 -E .git -E .cache -E .direnv"
     options:
-      --multi: true
-    callback: "sed -e 's/^\\.\\///'"
+      --prompt: "'Chdir> '"
+      --preview: "cd {} && ls -a | sed '/^[.]*$/d'"
+    callbackZero: true

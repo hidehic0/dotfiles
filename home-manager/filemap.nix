@@ -32,5 +32,6 @@ in
     ".clangd".source = symlink "${path}/clangd/config.yml";
     ".config/atcoder-cli-nodejs".source = symlink "${path}/atcoder-cli-nodejs";
     ".config/acc_utils".source = symlink "${path}/acc_utils";
+    ".config/zeno".source = symlink "${path}/zeno";
   };
 }
