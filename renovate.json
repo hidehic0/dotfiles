@@ -5,7 +5,7 @@
   ],
   "automerge": true,
   "extends": [
-    "config:base",
+    "config:recommended",
     "github>Omochice/renovate-config:deno"
   ],
   "nix": {
