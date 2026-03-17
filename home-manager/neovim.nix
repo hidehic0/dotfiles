@@ -20,5 +20,7 @@
     gopls
     stylua
     ruff
+    oxlint
+    oxfmt
   ];
 }

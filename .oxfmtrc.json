@@ -1,0 +1,6 @@
+{
+  "ignorePatterns": [
+    "*.json",
+    "nvim/hooks/**.ts"
+  ]
+}

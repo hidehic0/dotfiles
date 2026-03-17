@@ -19,7 +19,7 @@ local function get_config(tools)
   return config
 end
 
-local filetypes = { "lua", "zsh", "bash", "sh", "yaml.ghaction", "ts", "tsx", "json", "python" }
+local filetypes = { "lua", "zsh", "bash", "sh", "yaml.ghaction", "json", "python" }
 
 ---@type vim.lsp.Config
 return {
@@ -44,11 +44,11 @@ return {
         ft = { "yaml.ghaction" },
         type = "lint",
       },
-      {
-        name = "eslint_d",
-        ft = { "ts", "tsx" },
-        type = "lint",
-      },
+      -- {
+      --   name = "eslint_d",
+      --   ft = { "ts", "tsx" },
+      --   type = "lint",
+      -- },
       { name = "stylua", ft = { "lua" },    type = "format" },
       {
         name = "shfmt",

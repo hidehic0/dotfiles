@@ -20,5 +20,7 @@ vim.lsp.enable({
   "yamlls",
   "efm",
   -- "markdown_oxide",
+  "oxlint",
+  "oxfmt",
 })
 -- }}}
