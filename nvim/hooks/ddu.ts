@@ -9,8 +9,6 @@ export class Config extends BaseConfig {
   override config(args: ConfigArguments): Promise<void> {
     args.contextBuilder.patchGlobal({
       ui: "ff",
-      converterCache: true,
-      matcherConcurrency: navigator.hardwareConcurrency,
       uiOptions: {
         _: {
           filterPrompt: "Search: ",
@@ -114,11 +112,7 @@ export class Config extends BaseConfig {
           defaultAction: "yank",
         },
       },
-      filterOptions: {
-        _: {
-          parallelSafe: true,
-        },
-      },
+
       filterParams: {
         matcher_fzf: {
           highlightMatched: "Title",
