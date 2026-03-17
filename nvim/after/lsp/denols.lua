@@ -5,6 +5,7 @@ return {
         imports = {
           hosts = {
             ["https://deno.land"] = true,
+            ["jsr"] = true,
           },
         },
       },
