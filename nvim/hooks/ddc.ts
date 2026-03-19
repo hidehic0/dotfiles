@@ -58,12 +58,12 @@ export class Config extends BaseConfig {
         },
         cmdline: {
           mark: "[CMD]",
-          isVolatile: true,
+          // isVolatile: true,
           dup: "force",
         },
         cmdline_history: {
           mark: "[Hist]",
-          isVolatile: true,
+          // isVolatile: true,
           maxItems: 2,
           // minAutoCompleteLength: 5,
         },
