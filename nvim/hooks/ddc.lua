@@ -7,6 +7,7 @@ vim.fn["ddc#custom#load_config"](vim.fs.joinpath(vim.fn.stdpath("config"), "hook
 -- pum config
 fn.pum.set_option({
   max_width = 40,
+  blend = 30,
   direction = "below",
   border = "rounded",
   highlight_normal_menu = "",
