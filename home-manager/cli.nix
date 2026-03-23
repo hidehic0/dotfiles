@@ -36,6 +36,7 @@ in
       handlr
       universal-ctags
       renovate
+      jdenticon-cli
     ]
     ++ [
       acc_utils_pkg
