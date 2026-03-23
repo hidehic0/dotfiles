@@ -23,6 +23,7 @@ export class Config extends BaseConfig {
 
     args.contextBuilder.patchGlobal({
       ui: "pum",
+      matcherConcurrency: navigator.hardwareConcurrency,
       autoCompleteEvents: [
         "InsertEnter",
         "TextChangedI",
@@ -115,6 +116,11 @@ export class Config extends BaseConfig {
           enableAdditionalTextEdit: true,
         },
         shell_native: { shell: "zsh" },
+      },
+      filterOptions: {
+        _: {
+          parallelSafe: true,
+        },
       },
       filterParams: {
         postfilter_score: {
