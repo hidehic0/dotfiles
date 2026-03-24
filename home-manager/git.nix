@@ -6,7 +6,7 @@
       user = {
         name = "hidehic0";
         email = "hidehico.ooba@gmail.com";
-        signingkey = "BA9DAF222569440E";
+        signingkey = "6201116F67AD6FAC";
       };
       core = {
         editor = "nvim";
