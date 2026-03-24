@@ -39,7 +39,7 @@
 
         "[workspace 1 silent] $browser"
         "[workspace 2 silent] $terminal"
-        "[workspace 4 silent] discord"
+        "[workspace 4 silent] discord --ozone-platform=x11"
       ]
       ++
         builtins.concatMap
@@ -63,7 +63,7 @@
         XCURSOR_THEME = "Adwaita";
 
         # wayland
-        ELECTRON_OZONE_PLATFORM_HINT = "wayland";
+        ELECTRON_OZONE_PLATFORM_HINT = "auto";
         MOZ_ENABLE_WAYLAND = 1;
         WLR_NO_HARDWARE_CURSORS = 1;
 
