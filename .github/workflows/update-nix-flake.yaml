@@ -24,7 +24,7 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
           git_user_signingkey: true
           git_commit_gpgsign: true
-          fingerprint: 9B09BB3BD08832BE
+          fingerprint: 4540DD3FDBD3826A9938906D9096832F6FC6C23F
       - uses: stefanzweifel/git-auto-commit-action@04702edda442b2e678b25b537cec683a1493fcb9 # v7.1.0
         with:
           commit_author: "hidehic0 <${{ steps.import-gpg.outputs.email }}>"
