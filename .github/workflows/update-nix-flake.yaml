@@ -1,0 +1,32 @@
+name: auto update nix flake
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-nix-flake.yaml"
+
+jobs:
+  update-nix-flake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: cachix/install-nix-action@v31
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix flake update
+      - name: "Import GPG key"
+        id: import-gpg
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          git_user_signingkey: true
+          git_commit_gpgsign: true
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_author: "hidehic0 <${{ steps.import-gpg.outputs.email }}>"
+          commit_user_name: hidehic0
+          commit_user_email: ${{ steps.import-gpg.outputs.email }}
+          commit_message: "chore(deps): updated flake.lock"
