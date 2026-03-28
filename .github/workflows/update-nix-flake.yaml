@@ -6,7 +6,8 @@ on:
     branches: [nixos]
     paths:
       - ".github/workflows/update-nix-flake.yaml"
-
+permissions:
+  contents: write
 jobs:
   update-nix-flake:
     runs-on: ubuntu-latest
