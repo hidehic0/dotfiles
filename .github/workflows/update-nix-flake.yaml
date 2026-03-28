@@ -32,3 +32,4 @@ jobs:
           commit_user_name: hidehic0
           commit_user_email: ${{ steps.import-gpg.outputs.email }}
           commit_message: "chore(deps): updated flake.lock"
+          pull: true
