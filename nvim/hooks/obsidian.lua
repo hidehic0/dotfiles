@@ -7,13 +7,7 @@ require("obsidian").setup({
   daily_notes = {
     folder = "dailies",
   },
-  callbacks = {
-    post_setup = function(client)
-      require("obsidian-kensaku")(client)
-    end,
-  },
 })
 
-vim.keymap.set("n","<leader>oo","<Cmd>Obsidian open<CR>")
-vim.keymap.set("n","<leader>of","<Cmd>ObsidianQuickKensaku<CR>")
+vim.keymap.set("n", "<leader>oo", "<Cmd>Obsidian open<CR>")
 -- }}}

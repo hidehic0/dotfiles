@@ -128,25 +128,10 @@ repo = "fdschmidt93/telescope-egrepify.nvim"
 [[plugins]]
 repo = "obsidian-nvim/obsidian.nvim"
 on_ft = "markdown"
-on_cmd = ["Obsidian", "ObsidianKensaku", "ObsidianQuickKensaku"]
-on_map = ["<leader>oo", "<leader>of"]
-depends = [
-  "telescope.nvim",
-  "telescope-egrepify.nvim",
-  "obsidian-kensaku.nvim",
-  "obsidian-bridge.nvim",
-]
+on_cmd = ["Obsidian"]
+on_map = ["<leader>oo"]
+depends = ["telescope.nvim", "telescope-egrepify.nvim", "obsidian-bridge.nvim"]
 hooks_file = "$HOOK_DIR/obsidian.lua"
-
-[[plugins]]
-repo = "delphinus/obsidian-kensaku.nvim"
-rev = "feat/quick-kensaku"
-depends = "vim-kensaku"
-lua_source = '''
-require("obsidian-kensaku").setup({
- picker = "egrepify" 
-})
-'''
 
 [[plugins]]
 repo = "oflisback/obsidian-bridge.nvim"
