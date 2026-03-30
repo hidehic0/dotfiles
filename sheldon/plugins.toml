@@ -39,33 +39,33 @@ use = ["{{ name }}.plugin.zsh"]
 [plugins.zsh-completions]
 github = "zsh-users/zsh-completions"
 
-# [plugins.fzf-tab]
-# github = "Aloxaf/fzf-tab"
-# apply = ["defer"]
-# use = ["fzf-tab.zsh"]
-# hooks.post = """
-# zstyle ':fzf-tab:*' fzf-command fzf
-# zstyle ':fzf-tab:*' fzf-preview 'echo {}'
-# zstyle ':completion:*:descriptions' format '[%d]'
-# zstyle ':completion:*' menu no
-# #zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-# #zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-# """
+[plugins.fzf-tab]
+github = "Aloxaf/fzf-tab"
+apply = ["defer"]
+use = ["fzf-tab.zsh"]
+hooks.post = """
+zstyle ':fzf-tab:*' fzf-command fzf
+zstyle ':fzf-tab:*' fzf-preview 'echo {}'
+zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':completion:*' menu no
+#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+#zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+"""
 
 [plugins.git-sync]
 github = "caarlos0-graveyard/zsh-git-sync"
 # apply = ["defer"]
 use = ["{{ name }}.plugin.zsh"]
 
-[plugins."zeno.zsh"]
-github = "yuki-yano/zeno.zsh"
-apply = ["defer"]
-use = ["zeno.zsh"]
-hooks.post = '''
-export ZENO_GIT_CAT="gat"
-export ZENO_GIT_TREE="eza --icons=always -T"
-
-'''
+# [plugins."zeno.zsh"]
+# github = "yuki-yano/zeno.zsh"
+# apply = ["defer"]
+# use = ["zeno.zsh"]
+# hooks.post = '''
+# export ZENO_GIT_CAT="gat"
+# export ZENO_GIT_TREE="eza --icons=always -T"
+#
+# '''
 
 [plugins.abbrev-alias]
 github = "momo-lab/zsh-abbrev-alias"

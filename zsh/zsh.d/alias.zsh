@@ -48,8 +48,8 @@ alias lsla="eza --icons=auto -la"
 alias rmcp='(){rm $2 && cp $1 $2}'
 
 # cd alias
-# alias cdr="cd .."
-# alias cdb="cd -"
+alias cdr="cd .."
+alias cdb="cd -"
 
 # atcoder-cli
 atc() {
