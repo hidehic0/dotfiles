@@ -1,4 +1,6 @@
 -- lua_source {{{
+math.randomseed(os.time())
+
 require("obsidian").setup({
   legacy_commands = false,
   workspaces = {
