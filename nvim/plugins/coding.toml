@@ -4,8 +4,7 @@ hooks_file = "$HOOK_DIR/treesitter.lua"
 rev = "main"
 
 [[plugins]]
-repo = "amadeus/nvim-ts-context-commentstring" # 上流が修正されないので
-rev = "neovim-nightly-fix"
+repo = "JoosepAlviste/nvim-ts-context-commentstring"
 on_source = "nvim-treesitter"
 
 [[plugins]]
