@@ -60,7 +60,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
   end,
 })
 
-vim.g.hardtime_enabled = true
+vim.g.hardtime_enabled = false
 
 vim.opt.cmdheight = 0
 
