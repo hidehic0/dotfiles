@@ -23,7 +23,7 @@ export class Config extends BaseConfig {
 
     args.contextBuilder.patchGlobal({
       ui: "pum",
-      matcherConcurrency: navigator.hardwareConcurrency,
+      matcherConcurrency: Math.min(navigator.hardwareConcurrency, 3),
       autoCompleteEvents: [
         "InsertEnter",
         "TextChangedI",
