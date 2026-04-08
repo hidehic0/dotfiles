@@ -4,7 +4,9 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "gomod2nix": "gomod2nix",
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1774678506,
@@ -23,8 +25,12 @@
     "binomial_coefficient-calc-cli": {
       "inputs": {
         "flake-utils": "flake-utils_2",
-        "nixpkgs": ["nixpkgs"],
-        "rust-overlay": ["rust-overlay"]
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "rust-overlay"
+        ]
       },
       "locked": {
         "lastModified": 1770378084,
@@ -43,8 +49,12 @@
     "custom-completion-zsh": {
       "inputs": {
         "flake-utils": "flake-utils_3",
-        "nixpkgs": ["nixpkgs"],
-        "rust-overlay": ["rust-overlay"]
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "rust-overlay"
+        ]
       },
       "locked": {
         "lastModified": 1768902872,
@@ -192,7 +202,10 @@
     },
     "flake-parts_2": {
       "inputs": {
-        "nixpkgs-lib": ["neovim-nightly-overlay", "nixpkgs"]
+        "nixpkgs-lib": [
+          "neovim-nightly-overlay",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1775087534,
@@ -337,7 +350,9 @@
       "inputs": {
         "flake-compat": "flake-compat",
         "gitignore": "gitignore",
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1775585728,
@@ -355,7 +370,10 @@
     },
     "gitignore": {
       "inputs": {
-        "nixpkgs": ["git-hooks-nix", "nixpkgs"]
+        "nixpkgs": [
+          "git-hooks-nix",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1709087332,
@@ -373,8 +391,14 @@
     },
     "gomod2nix": {
       "inputs": {
-        "flake-utils": ["acc_utils", "flake-utils"],
-        "nixpkgs": ["acc_utils", "nixpkgs"]
+        "flake-utils": [
+          "acc_utils",
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "acc_utils",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1770585520,
@@ -392,7 +416,9 @@
     },
     "grub2-themes": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1757136219,
@@ -427,7 +453,9 @@
     },
     "home-manager": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1775622785,
@@ -464,7 +492,9 @@
       "inputs": {
         "flake-parts": "flake-parts_2",
         "neovim-src": "neovim-src",
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1775628196,
@@ -498,11 +528,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1775579569,
-        "narHash": "sha256-/m3yyS/EnXqoPGBJYVy4jTOsirdgsEZ3JdN2gGkBr14=",
+        "lastModified": 1775608838,
+        "narHash": "sha256-2ySoGH+SAi34U0PeuQgABC0WiH9LQ3tkyHTiE93KUeg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "dfd9566f82a6e1d55c30f861879186440614696e",
+        "rev": "9a01fad67a57e44e1b3e1d905c6881bcfb209e8a",
         "type": "github"
       },
       "original": {
@@ -530,8 +560,12 @@
     "prime-generator": {
       "inputs": {
         "flake-utils": "flake-utils_4",
-        "nixpkgs": ["nixpkgs"],
-        "rust-overlay": ["rust-overlay"]
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "rust-overlay"
+        ]
       },
       "locked": {
         "lastModified": 1770377618,
@@ -573,7 +607,9 @@
     },
     "rust-overlay": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1775617983,
@@ -591,7 +627,10 @@
     },
     "rust-overlay_2": {
       "inputs": {
-        "nixpkgs": ["wezterm", "nixpkgs"]
+        "nixpkgs": [
+          "wezterm",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1764470739,
@@ -609,7 +648,9 @@
     },
     "sops-nix": {
       "inputs": {
-        "nixpkgs": ["nixpkgs"]
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1775619836,
@@ -718,8 +759,12 @@
     "tpfl": {
       "inputs": {
         "flake-utils": "flake-utils_5",
-        "nixpkgs": ["nixpkgs"],
-        "rust-overlay": ["rust-overlay"]
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "rust-overlay"
+        ]
       },
       "locked": {
         "lastModified": 1770123878,
@@ -741,7 +786,9 @@
         "freetype2": "freetype2",
         "harfbuzz": "harfbuzz",
         "libpng": "libpng",
-        "nixpkgs": ["nixpkgs"],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "rust-overlay": "rust-overlay_2",
         "zlib": "zlib"
       },
