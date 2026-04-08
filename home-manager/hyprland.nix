@@ -39,7 +39,7 @@
 
         "[workspace 1 silent] $browser"
         "[workspace 2 silent] $terminal"
-        "[workspace 4 silent] discord --ozone-platform=x11"
+        "[workspace 4 silent] discord"
       ]
       ++
         builtins.concatMap
