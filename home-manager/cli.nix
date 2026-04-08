@@ -37,6 +37,7 @@ in
       universal-ctags
       renovate
       jdenticon-cli
+      bulletty
     ]
     ++ [
       acc_utils_pkg
