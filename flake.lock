@@ -105,11 +105,11 @@
     "dpp-ext-lazy": {
       "flake": false,
       "locked": {
-        "lastModified": 1772852265,
-        "narHash": "sha256-tNova2vZiJYEdagzBHtJ9x/HN7suXXZlYxbm3ifvtU0=",
+        "lastModified": 1775693944,
+        "narHash": "sha256-mpE7u9kWSrOsnMC0bhjDBk0v88sMLRREFhWtOtKc2A4=",
         "owner": "Shougo",
         "repo": "dpp-ext-lazy",
-        "rev": "51ad5e2223ad2ca5c3f0c80a0f1063fbacb1fd4e",
+        "rev": "97839aac2f58de88ab761e06a20c1d17c4cf8a46",
         "type": "github"
       },
       "original": {
