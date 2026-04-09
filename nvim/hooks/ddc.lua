@@ -131,7 +131,7 @@ vim.api.nvim_create_autocmd({ "CmdlineEnter" }, {
 -- endfunction
 -- ]])
 
-fn.ddc.enable()
+fn.ddc.enable({ context_filetype = "treesitter" })
 fn.ddc.enable_terminal_completion()
 
 vim.notify("ddc.vim loaded successfully")
