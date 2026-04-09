@@ -9,6 +9,6 @@
     obsidian
     gnome-clocks
     gnome-pomodoro
-    anki-bin
+    anki
   ];
 }
