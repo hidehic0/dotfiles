@@ -120,6 +120,7 @@ on_source = "neotest"
 
 [[plugins]]
 repo = "mrcjkb/rustaceanvim"
+rev = "main"
 on_source = "neotest"
 
 [[plugins]]
