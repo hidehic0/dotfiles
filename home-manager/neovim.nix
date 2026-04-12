@@ -22,5 +22,6 @@
     ruff
     oxlint
     oxfmt
+    vim-startuptime
   ];
 }
