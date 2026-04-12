@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@denops/core": "jsr:@denops/core@^8.0.1",
+    "@shougo/ddc-vim": "jsr:@shougo/ddc-vim@^10.3.0",
+    "@shougo/dpp-vim": "jsr:@shougo/dpp-vim@^6.3.0"
+  }
+}

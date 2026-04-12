@@ -1,11 +1,8 @@
-import type { ContextBuilder, Plugin } from "jsr:@shougo/dpp-vim@~6.3.0/types";
-import type { Dpp } from "jsr:@shougo/dpp-vim@~6.3.0/dpp";
-import {
-  BaseConfig,
-  type ConfigReturn,
-} from "jsr:@shougo/dpp-vim@~6.3.0/config";
+import type { ContextBuilder, Plugin } from "@shougo/dpp-vim/types";
+import type { Dpp } from "@shougo/dpp-vim/dpp";
+import { BaseConfig, type ConfigReturn } from "@shougo/dpp-vim/config";
 
-import type { Denops } from "jsr:@denops/core@8.0.1";
+import type { Denops } from "@denops/core";
 
 type Toml = {
   hooks_file?: string;
@@ -42,16 +39,14 @@ export class Config extends BaseConfig {
       protocols: ["git"],
     });
 
-    const checkFiles: CheckFile[] = [{
-      path: "~/.config/nvim/dpp.toml",
-      lazy: false,
-    }];
+    const checkFiles: CheckFile[] = [
+      {
+        path: "~/.config/nvim/dpp.toml",
+        lazy: false,
+      },
+    ];
 
-    for (
-      const file of Deno.readDirSync(
-        `${Deno.env.get("HOME")}/.config/nvim/plugins`,
-      )
-    ) {
+    for (const file of Deno.readDirSync(`${Deno.env.get("HOME")}/.config/nvim/plugins`)) {
       checkFiles.push({
         path: `~/.config/nvim/plugins/${file.name}`,
         lazy: true,
@@ -64,19 +59,12 @@ export class Config extends BaseConfig {
 
     for (const file of checkFiles) {
       tomls.push(
-        await args.dpp.extAction(
-          args.denops,
-          context,
-          options,
-          "toml",
-          "load",
-          {
-            path: file.path,
-            options: {
-              lazy: file.lazy,
-            },
+        (await args.dpp.extAction(args.denops, context, options, "toml", "load", {
+          path: file.path,
+          options: {
+            lazy: file.lazy,
           },
-        ) as Toml,
+        })) as Toml,
       );
     }
 
@@ -95,7 +83,7 @@ export class Config extends BaseConfig {
       }
     }
 
-    const lazyResult = await args.dpp.extAction(
+    const lazyResult = (await args.dpp.extAction(
       args.denops,
       context,
       options,
@@ -104,7 +92,7 @@ export class Config extends BaseConfig {
       {
         plugins: Object.values(recordPlugins),
       },
-    ) as LazyMakeStateResult | undefined;
+    )) as LazyMakeStateResult | undefined;
 
     return {
       hooksFiles,
