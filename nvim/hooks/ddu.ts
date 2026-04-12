@@ -1,9 +1,6 @@
-import {
-  BaseConfig,
-  type ConfigArguments,
-} from "jsr:@shougo/ddu-vim@~11.3.0/config";
-import { type Params as FfParams } from "jsr:@shougo/ddu-ui-ff@~3.2.0";
-import { type Params as FilerParams } from "jsr:@shougo/ddu-ui-filer@~3.2.0";
+import { BaseConfig, type ConfigArguments } from "@shougo/ddu-vim/config";
+import { type Params as FfParams } from "@shougo/ddu-ui-ff";
+import { type Params as FilerParams } from "@shougo/ddu-ui-filer";
 
 export class Config extends BaseConfig {
   override config(args: ConfigArguments): Promise<void> {
