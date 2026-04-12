@@ -3,8 +3,5 @@ if vim.loader then
 end
 
 require("core.dpp")
-require("core.keymaps")
-require("core.options")
-require("core.indent")
 
 vim.cmd("syntax on")

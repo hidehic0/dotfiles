@@ -38,7 +38,14 @@ export class Config extends BaseConfig {
     basePath: string;
     dpp: Dpp;
   }): Promise<ConfigReturn> {
+    const inlineVimrcs: string[] = [
+      "~/.dotfiles/nvim/lua/core/options.lua",
+      "~/.dotfiles/nvim/lua/core/keymaps.lua",
+      "~/.dotfiles/nvim/lua/core/indent.lua",
+    ];
+
     args.contextBuilder.setGlobal({
+      inlineVimrcs,
       extParams: {
         installer: {
           checkDiff: true,
