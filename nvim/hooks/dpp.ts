@@ -1,11 +1,19 @@
-import type { ContextBuilder, ExtOptions, Plugin, ProtocolName } from "@shougo/dpp-vim/types";
+import type {
+  ContextBuilder,
+  ExtOptions,
+  Plugin,
+  ProtocolName,
+} from "@shougo/dpp-vim/types";
 import { Protocol } from "@shougo/dpp-vim/protocol";
 import type { Dpp } from "@shougo/dpp-vim/dpp";
 import { BaseConfig, type ConfigReturn } from "@shougo/dpp-vim/config";
 
 import type { Denops } from "@denops/core";
 
-import type { Ext as TomlExt, Params as TomlParams } from "@shougo/dpp-ext-toml";
+import type {
+  Ext as TomlExt,
+  Params as TomlParams,
+} from "@shougo/dpp-ext-toml";
 import type {
   Ext as LazyExt,
   LazyMakeStateResult,
@@ -52,24 +60,33 @@ export class Config extends BaseConfig {
 
     const checkFiles: CheckFile[] = [
       {
-        path: "~/.config/nvim/dpp.toml",
+        path: "~/.config/nvim/plugins/dpp.toml",
         lazy: false,
       },
     ];
 
-    for (const file of Deno.readDirSync(`${Deno.env.get("HOME")}/.config/nvim/plugins`)) {
-      checkFiles.push({
-        path: `~/.config/nvim/plugins/${file.name}`,
-        lazy: true,
-      });
+    for (
+      const file of Deno.readDirSync(
+        `${Deno.env.get("HOME")}/.config/nvim/plugins`,
+      )
+    ) {
+      if ("dpp.toml" != file.name) {
+        checkFiles.push({
+          path: `~/.config/nvim/plugins/${file.name}`,
+          lazy: true,
+        });
+      }
     }
 
-    const [tomlExt, tomlOptions, tomlParams]: [TomlExt | undefined, ExtOptions, TomlParams] =
-      (await args.denops.dispatcher.getExt("toml")) as [
-        TomlExt | undefined,
-        ExtOptions,
-        TomlParams,
-      ];
+    const [tomlExt, tomlOptions, tomlParams]: [
+      TomlExt | undefined,
+      ExtOptions,
+      TomlParams,
+    ] = (await args.denops.dispatcher.getExt("toml")) as [
+      TomlExt | undefined,
+      ExtOptions,
+      TomlParams,
+    ];
 
     if (tomlExt) {
       const action = tomlExt.actions.load;
@@ -88,7 +105,7 @@ export class Config extends BaseConfig {
               lazy: file.lazy,
             },
           },
-        }),
+        })
       );
       const tomls: Toml[] = await Promise.all(tomlPromises);
 
@@ -105,12 +122,15 @@ export class Config extends BaseConfig {
       }
     }
 
-    const [lazyExt, lazyOptions, lazyParams]: [LazyExt | undefined, ExtOptions, LazyParams] =
-      (await args.denops.dispatcher.getExt("lazy")) as [
-        LazyExt | undefined,
-        ExtOptions,
-        LazyParams,
-      ];
+    const [lazyExt, lazyOptions, lazyParams]: [
+      LazyExt | undefined,
+      ExtOptions,
+      LazyParams,
+    ] = (await args.denops.dispatcher.getExt("lazy")) as [
+      LazyExt | undefined,
+      ExtOptions,
+      LazyParams,
+    ];
 
     let lazyResult: LazyMakeStateResult | undefined = undefined;
     if (lazyExt) {

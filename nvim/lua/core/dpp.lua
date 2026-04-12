@@ -21,7 +21,7 @@ if dpp.load_state(dpp_base) then
     pattern = "DenopsReady",
     callback = function()
       vim.notify("dpp load_state() is failed")
-      dpp.make_state(dpp_base, "~/.config/nvim/dpp.ts")
+      dpp.make_state(dpp_base, "~/.config/nvim/hooks/dpp.ts")
     end,
   })
 end
@@ -36,7 +36,7 @@ vim.api.nvim_create_autocmd("User", {
 vim.api.nvim_create_user_command("DppReload", function()
   dpp.clear_state()
   print("old state removed")
-  dpp.make_state(dpp_base, "~/.config/nvim/dpp.ts")
+  dpp.make_state(dpp_base, "~/.config/nvim/hooks/dpp.ts")
 end, {})
 
 vim.api.nvim_create_user_command("DppInstall", function()
