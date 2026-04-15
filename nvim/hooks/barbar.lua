@@ -19,8 +19,8 @@ require("barbar").setup({
   },
 })
 
-vim.keymap.set("n", "gT", "<Cmd>BufferPrevious<CR>")
-vim.keymap.set("n", "gt", "<Cmd>BufferNext<CR>")
+vim.keymap.set("n", "]b", "<Cmd>BufferPrevious<CR>")
+vim.keymap.set("n", "[b", "<Cmd>BufferNext<CR>")
 vim.keymap.set("n", "<leader><", "<Cmd>BufferMovePrevious<CR>")
 vim.keymap.set("n", "<leader>>", "<Cmd>BufferMoveNext<CR>")
 vim.keymap.set("n", "<leader>q", "<Cmd>BufferClose<CR>")
