@@ -1,6 +1,14 @@
 local dpp_base = "~/.local/share/nvim/dpp/"
 vim.env.HOOK_DIR = "~/.config/nvim/hooks"
 
+vim.g["denops#server#deno_args"] = {
+  "-q",
+  "--no-lock",
+  "--unstable-kv",
+  "--unstable-ffi",
+  "-A",
+}
+
 local plugins = {
   "Shougo/dpp.vim",
   "Shougo/dpp-ext-lazy",
