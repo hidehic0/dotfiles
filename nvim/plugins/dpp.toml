@@ -3,6 +3,7 @@ repo = "Shougo/dpp.vim"
 
 [[plugins]]
 repo = "Shougo/dpp-ext-lazy"
+rev = "6e91905"
 
 [[plugins]]
 repo = "Shougo/dpp-ext-toml"
