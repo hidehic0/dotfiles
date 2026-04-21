@@ -21,7 +21,7 @@
       "$terminal" = "wezterm";
       "$fileManager" = "pcmanfm";
       "$menu" = "rofi -combi-modi window,drun,ssh -show combi";
-      "$browser" = "vivaldi";
+      "$browser" = "floorp";
 
       monitor = [
         "DP-1,3840x2160@60,auto,1.33"
@@ -204,7 +204,7 @@
 
       bind = [
         "$mainMod, RETURN, exec, $terminal"
-        "$mainMod, F2, exec, vivaldi --disable-gpu"
+        "$mainMod, F2, exec, floorp"
         "$mainMod, F3, exec, $fileManager"
         "$mainMod, d, exec, $menu"
 
