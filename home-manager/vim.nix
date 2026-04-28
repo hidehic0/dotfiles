@@ -1,28 +1,34 @@
 { pkgs, inputs, ... }:
 let
   dpp-vim = pkgs.vimUtils.buildVimPlugin {
-    name = "dpp.vim";
+    pname = "dpp.vim";
     src = inputs.dpp-vim;
+    version = "unstable";
   };
   dpp-ext-lazy = pkgs.vimUtils.buildVimPlugin {
-    name = "dpp-ext-lazy";
+    pname = "dpp-ext-lazy";
     src = inputs.dpp-ext-lazy;
+    version = "unstable";
   };
   dpp-ext-toml = pkgs.vimUtils.buildVimPlugin {
-    name = "dpp-ext-toml";
+    pname = "dpp-ext-toml";
     src = inputs.dpp-ext-toml;
+    version = "unstable";
 
   };
   dpp-ext-installer = pkgs.vimUtils.buildVimPlugin {
-    name = "dpp-ext-installer";
+    pname = "dpp-ext-installer";
     src = inputs.dpp-ext-installer;
+    version = "unstable";
   };
   dpp-protocol-git = pkgs.vimUtils.buildVimPlugin {
-    name = "dpp-protocol-git";
+    pname = "dpp-protocol-git";
     src = inputs.dpp-protocol-git;
+    version = "unstable";
   };
   denops-vim = pkgs.vimUtils.buildVimPlugin {
-    name = "denops.vim";
+    pname = "denops.vim";
+    version = "unstable";
     src = inputs.denops-vim;
   };
 in
