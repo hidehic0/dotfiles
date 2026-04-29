@@ -38,6 +38,7 @@ in
       renovate
       jdenticon-cli
       bulletty
+      codex
     ]
     ++ [
       acc_utils_pkg
