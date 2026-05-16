@@ -17,6 +17,7 @@
       url = "github:wezterm/wezterm?dir=nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
     acc_utils = {
       url = "github:hidehic0/acc_utils";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -147,6 +148,7 @@
       nixosConfigurations = {
         thinkpad-e14-gen6 = inputs.nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
           modules = [
             sops-nix.nixosModules.sops
             ./nixos/hosts/thinkpad-e14-gen6/default.nix
