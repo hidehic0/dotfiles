@@ -2,13 +2,13 @@ hl.monitor({
   output = "DP-1",
   mode = "3840x2160@60",
   position = "auto",
-  scale = "1.33",
+  scale = 1.33,
 })
 hl.monitor({
   output = "eDP-1",
   mode = "highrr",
   position = "auto",
-  scale = "1",
+  scale = 1,
   mirror = "DP-1",
 })
 
@@ -41,7 +41,7 @@ local envs = {
   QT_QPA_PLATFORM = "wayland",
 }
 
-for name, value in pairs(env) do
+for name, value in pairs(envs) do
   hl.env(name, value)
 end
 
@@ -59,15 +59,15 @@ local startup_commands = {
 }
 
 hl.on("hyprland.start", function()
-  for cmd in pairs(startup_commands) do
+  for _, cmd in ipairs(startup_commands) do
     hl.exec_cmd(cmd)
   end
 
-  hl.focus({ workspace = 4 })
+  hl.dispatch(hl.dsp.focus({ workspace = 4 }))
   hl.exec_cmd("discord")
-  hl.focus({ workspace = 2 })
+  hl.dispatch(hl.dsp.focus({ workspace = 2 }))
   hl.exec_cmd(terminal)
-  hl.focus({ workspace = 1 })
+  hl.dispatch(hl.dsp.focus({ workspace = 1 }))
   hl.exec_cmd(browser)
 end)
 
@@ -79,7 +79,7 @@ hl.config({
     border_size = 2,
 
     col = {
-      active_border = "rgba(5e81accc) rgba(4c566acc) 45deg",
+      active_border = "rgba(5e81accc)",
       inactive_border = "rgba(595959aa)",
     },
 
@@ -179,31 +179,31 @@ local function bind_with_main_mod(key, hook, other)
   hl.bind(mainMod .. " + " .. key, hook, other)
 end
 
-bind_with_main_mod("RETURN", hl.dlp.exec_cmd(terminal))
-bind_with_main_mod("F2", hl.dlp.exec_cmd(browser))
-bind_with_main_mod("F3", hl.dlp.exec_cmd(file_manager))
-bind_with_main_mod("d", hl.dlp.exec_cmd(menu))
+bind_with_main_mod("RETURN", hl.dsp.exec_cmd(terminal))
+bind_with_main_mod("F2", hl.dsp.exec_cmd(browser))
+bind_with_main_mod("F3", hl.dsp.exec_cmd(file_manager))
+bind_with_main_mod("d", hl.dsp.exec_cmd(menu))
 
-bind_with_main_mod("comma", hl.dlp.exec_cmd("hyprlock"))
+bind_with_main_mod("comma", hl.dsp.exec_cmd("hyprlock"))
 
 bind_with_main_mod("v", hl.dsp.window.float({ action = "toggle" }))
 
-bind_with_main_mod("SHIFT + q", hl.dlp.window.close())
+bind_with_main_mod("SHIFT + q", hl.dsp.window.close())
 
-bind_with_main_mod("h", hl.dlp.focus({ direction = "l" }))
-bind_with_main_mod("l", hl.dlp.focus({ direction = "r" }))
-bind_with_main_mod("k", hl.dlp.focus({ direction = "u" }))
-bind_with_main_mod("j", hl.dlp.focus({ direction = "d" }))
+bind_with_main_mod("h", hl.dsp.focus({ direction = "l" }))
+bind_with_main_mod("l", hl.dsp.focus({ direction = "r" }))
+bind_with_main_mod("k", hl.dsp.focus({ direction = "u" }))
+bind_with_main_mod("j", hl.dsp.focus({ direction = "d" }))
 
-bind_with_main_mod("SHIFT + h", hl.dlp.window.move({ direction = "l" }))
-bind_with_main_mod("SHIFT + l", hl.dlp.window.move({ direction = "r" }))
-bind_with_main_mod("SHIFT + k", hl.dlp.window.move({ direction = "u" }))
-bind_with_main_mod("SHIFT + j", hl.dlp.window.move({ direction = "d" }))
+bind_with_main_mod("SHIFT + h", hl.dsp.window.move({ direction = "l" }))
+bind_with_main_mod("SHIFT + l", hl.dsp.window.move({ direction = "r" }))
+bind_with_main_mod("SHIFT + k", hl.dsp.window.move({ direction = "u" }))
+bind_with_main_mod("SHIFT + j", hl.dsp.window.move({ direction = "d" }))
 
 for i = 1, 10 do
   local key = i % 10 -- 10 maps to key 0
   hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
-  hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
+  hl.bind(mainMod .. " + CTRL + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
 bind_with_main_mod("mouse:272", hl.dsp.window.drag(), { mouse = true })
