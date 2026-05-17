@@ -15,7 +15,7 @@
   ];
 
   wayland.windowManager.hyprland = {
-    enable = true;
+    enable = false; # now, it's using hypr/hyprland.lua
 
     settings = {
       "$terminal" = "wezterm";
