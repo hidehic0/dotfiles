@@ -20,8 +20,7 @@ in
     # ".config/hypr/hyprland.conf".source = symlink "${path}/hypr/hyprland.conf";
     ".config/hypr/hyprsunset.conf".source = symlink "${path}/hypr/hyprsunset.conf";
     ".config/hypr/hypridle.conf".source = symlink "${path}/hypr/hypridle.conf";
-    ".config/hypr/hyprland.lua".source =
-      symlink "${config.home.homeDirectory}/src/github.com/hidehic0/dotfiles/hypr/hyprland.lua";
+    ".config/hypr/hyprland.lua".source = symlink "${path}/hypr/hyprland.lua";
     ".config/waybar".source = symlink "${path}/waybar";
     ".config/gtk-3.0".source = symlink "${path}/gtk-3.0";
     ".config/gtk-4.0".source = symlink "${path}/gtk-4.0";
