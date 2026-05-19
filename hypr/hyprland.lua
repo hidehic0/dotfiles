@@ -295,3 +295,10 @@ hl.window_rule({
 
   opacity = 0.9,
 })
+hl.window_rule({
+  match = {
+    class = "anki",
+  },
+
+  opacity = 0.8,
+})
