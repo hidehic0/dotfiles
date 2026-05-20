@@ -93,11 +93,14 @@ on_source = "denippet.vim"
 repo = "ray-x/lsp_signature.nvim"
 on_event = "InsertEnter"
 lua_source = """
-require("lsp_signature").setup({
-  handler_opts = {
-    border = "rounded",
-  },
-})
+vim.defer_fn(
+  function()
+    require("lsp_signature").setup({
+      handler_opts = {
+        border = "rounded",
+      },
+    })
+  end ,500)
 """
 
 [[plugins]]
