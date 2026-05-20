@@ -99,3 +99,13 @@ require("lsp_signature").setup({
   },
 })
 """
+
+[[plugins]]
+repo = "hidehic0/denops-popup-preview.vim"
+on_event = "InsertEnter"
+lua_source = """
+vim.defer_fn(
+  function()
+    vim.fn["popup_preview#enable"]()
+  end ,300)
+"""
