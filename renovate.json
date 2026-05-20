@@ -9,10 +9,10 @@
     "github>Omochice/renovate-config:deno"
   ],
   "nix": {
-    "enabled": true
+    "enabled": false
   },
   "lockFileMaintenance": {
-    "enabled": false,
+    "enabled": true,
     "automergeSchedule": [
       "at any time"
     ],
