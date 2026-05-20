@@ -45,6 +45,14 @@ vim.filetype.add({
   },
 })
 
+-- hightlight yank or paste position
+vim.api.nvim_create_autocmd({ "TextYankPost", "TextPutPost" }, {
+  pattern = "*",
+  callback = function()
+    vim.hl.hl_op({ higroup = "Visual", timeout = 75 })
+  end,
+})
+
 -- copilot
 vim.g.copilot_no_tab_map = true
 vim.g.copilot_enabled = false -- 有効化関連
