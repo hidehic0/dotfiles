@@ -137,11 +137,11 @@
     "dpp-protocol-git": {
       "flake": false,
       "locked": {
-        "lastModified": 1777113916,
-        "narHash": "sha256-wATDWDx0sF3679wuxU/TsX0OhJLNfyWY1YD+G+vPv9A=",
+        "lastModified": 1779247607,
+        "narHash": "sha256-NEWHrpKoLTTj+xko3ImYZ739od3dZegpditC3cGw73Q=",
         "owner": "Shougo",
         "repo": "dpp-protocol-git",
-        "rev": "940e6062c673ec3b5565bd2d631424c234c6391c",
+        "rev": "0f0463f3ee116dbeac4a8714ca89d1ce52cfe7d7",
         "type": "github"
       },
       "original": {
@@ -612,11 +612,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779160702,
-        "narHash": "sha256-frUihZLlBLdcFN95mq5QiQmxF2M16nxtmw1GH4rhZmg=",
+        "lastModified": 1779247103,
+        "narHash": "sha256-DwltBoBl9a7fCzlKi3xnNha1NHbfvawwkNdnTXEyfFQ=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "8cd592658d4448c57326aaa819e1c2f91086eb40",
+        "rev": "86dbfb70dc1c2967245d87ed6d07d2c8bda305e3",
         "type": "github"
       },
       "original": {
