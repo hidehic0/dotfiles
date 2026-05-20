@@ -21,6 +21,7 @@
     ../../modules/geoclue.nix
     ../../modules/kernel.nix
     ../../modules/sops.nix
+    ../../modules/kdeconnect.nix
   ];
 
   sops.secrets.login-password.neededForUsers = true;
