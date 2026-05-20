@@ -13,5 +13,6 @@
     boost
     ac-library
     nvd
+    gnumake
   ];
 }
