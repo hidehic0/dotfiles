@@ -53,6 +53,7 @@ local startup_commands = {
 	"hypridle",
 	"hyprpaper",
 	"hyprsunset",
+	"kdeconnect-indicator",
 
 	"wl-paste --type text --watch cliphist store",
 	"wl-paste --type image --watch cliphist store",
