@@ -22,7 +22,7 @@ in
       fd
       python314
       rust-bin.stable.latest.default
-      nodejs_25
+      nodejs_latest
       clang-tools
       ac-library
       fastfetch
