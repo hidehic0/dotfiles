@@ -19,6 +19,9 @@
       tag = {
         gpgSign = true;
       };
+      log = {
+        date = "iso-local";
+      };
       init.defaultBranch = "main";
       parger = {
         diff = "delta";
