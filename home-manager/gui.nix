@@ -10,5 +10,6 @@
     gnome-clocks
     gnome-pomodoro
     anki
+    easyeffects
   ];
 }
