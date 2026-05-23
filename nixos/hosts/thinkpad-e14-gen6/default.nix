@@ -14,7 +14,7 @@
     ../../modules/power_profile.nix
     ../../modules/zsh.nix
     ../../modules/direnv.nix
-    ../../modules/gdm.nix
+    ../../modules/greetd.nix
     ../../modules/hyprland.nix
     ../../modules/systempackage.nix
     ../../modules/gnupg.nix

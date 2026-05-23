@@ -14,5 +14,6 @@
     ac-library
     nvd
     gnumake
+    adwaita-icon-theme
   ];
 }
