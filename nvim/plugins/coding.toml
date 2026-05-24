@@ -36,7 +36,9 @@ end, 300)
 repo = "windwp/nvim-autopairs"
 on_event = "InsertEnter"
 lua_source = '''
-require("nvim-autopairs").setup({})
+require("nvim-autopairs").setup({
+map_cr = false 
+})
 '''
 
 [[plugins]]
