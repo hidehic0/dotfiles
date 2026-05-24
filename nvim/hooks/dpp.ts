@@ -49,6 +49,8 @@ export class Config extends BaseConfig {
       extParams: {
         installer: {
           checkDiff: true,
+          logFilePath: "~/.cache/dpp/installer-log.txt",
+          minCommitDays: 1,
           githubAPIToken: Deno.env.has("GITHUB_TOKEN_READONLY")
             ? Deno.env.get("GITHUB_TOKEN_READONLY")
             : "",
