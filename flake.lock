@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1779632181,
-        "narHash": "sha256-t4mer2IRFEVQsprwzxhvpbtEqMyK3lks3ncfgIev71Y=",
+        "lastModified": 1779670517,
+        "narHash": "sha256-oAYT3ZK737WzZi8hrdDiAFeXlOTdrK15anJNRgwyIpM=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "e7aabae024af981f7c28f6db22e463580a25d655",
+        "rev": "a0014c0b53da8cb7fed11206be791bc42e58c2ea",
         "type": "github"
       },
       "original": {
@@ -105,11 +105,11 @@
     "dpp-ext-lazy": {
       "flake": false,
       "locked": {
-        "lastModified": 1776385176,
-        "narHash": "sha256-+5TeL5UFKkCfd0vDV3MO1sdZcfpdULsdBZS9oX9EFHs=",
+        "lastModified": 1779671954,
+        "narHash": "sha256-fDCShrBy2nxfdyG5j9pbADb14Raz5NQarumcZhrch08=",
         "owner": "Shougo",
         "repo": "dpp-ext-lazy",
-        "rev": "b707b3c68cfab190445cd7a41990aa5cb318e453",
+        "rev": "6d3fd5696bf5147c52e2f91c4c996003fc9d5818",
         "type": "github"
       },
       "original": {
@@ -121,11 +121,11 @@
     "dpp-ext-toml": {
       "flake": false,
       "locked": {
-        "lastModified": 1756537708,
-        "narHash": "sha256-txtUBfy9FcFQt/TWWD1p+Z8vVhUyolxtMpwfuvJzv8g=",
+        "lastModified": 1779670634,
+        "narHash": "sha256-5mjMMXguVVfRBoHN5xGSBQUsxDIVGdekPHlbWDbMpGE=",
         "owner": "Shougo",
         "repo": "dpp-ext-toml",
-        "rev": "9a441896eebb09ca5f9b93fec79d094799ae3cde",
+        "rev": "5b9774849ba838937643583a0b52de451faa0cae",
         "type": "github"
       },
       "original": {
@@ -137,11 +137,11 @@
     "dpp-protocol-git": {
       "flake": false,
       "locked": {
-        "lastModified": 1779598649,
-        "narHash": "sha256-KNcBHPixrzJoeYc8MPVXEl+ah0ful0ocDNBQ2lxKFI4=",
+        "lastModified": 1779670460,
+        "narHash": "sha256-izAvH1Si4Cwd/+DvgrgilkvAJVczo+sEljcobgpoDT0=",
         "owner": "Shougo",
         "repo": "dpp-protocol-git",
-        "rev": "36211e81c3f78c02b83da95b982fea0b4fdb822e",
+        "rev": "c89a6aa6d1aa5d62ec97da812acb2919f9c3445e",
         "type": "github"
       },
       "original": {
@@ -153,11 +153,11 @@
     "dpp-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1779633736,
-        "narHash": "sha256-ypJE5hBRZLCPBXF81/L6dt7+sUMlUoRlLSey6+Yf93M=",
+        "lastModified": 1779671306,
+        "narHash": "sha256-/9fFNCVynMCzFRjWbVmuZsKEMS/5dRi/nfvCzsEx/8Q=",
         "owner": "Shougo",
         "repo": "dpp.vim",
-        "rev": "0a0708cdb6cbccbf7e857dd8be6af58c6d087c6d",
+        "rev": "87fc471f8fa8477f9d88e80d0c5f02d1ad76c547",
         "type": "github"
       },
       "original": {
@@ -497,11 +497,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779581083,
-        "narHash": "sha256-8oH4tkPriJ0XgzCNUVvmK74mzGorswcDIeILcegajPA=",
+        "lastModified": 1779667492,
+        "narHash": "sha256-XOs1Zu7hrEW2wtnYsTVpEtjw8gkuwpugg1CW6D5JJrY=",
         "owner": "nix-community",
         "repo": "neovim-nightly-overlay",
-        "rev": "14f183fdf55c9ef0f506bd72fa70839b076724b8",
+        "rev": "0cbdb3a8833e52d3e51207291b17e613e8e94c99",
         "type": "github"
       },
       "original": {
@@ -513,11 +513,11 @@
     "neovim-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1779580748,
-        "narHash": "sha256-PlDirVwk8aSW5YdsIx5MxSdam/WuQF80JgDoS82Jl5s=",
+        "lastModified": 1779663920,
+        "narHash": "sha256-cvvVGl/jKrRSIfAyrrdVNu2ScQpvFgsDaIOKRceMvUE=",
         "owner": "neovim",
         "repo": "neovim",
-        "rev": "b6b2b124949d3a45ef32c14b445574b80c6bfafc",
+        "rev": "89623e5992150b4c748d010d62dccffce47386df",
         "type": "github"
       },
       "original": {
