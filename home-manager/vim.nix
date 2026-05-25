@@ -51,10 +51,6 @@ in
       let g:denops#server#deno_args = ['-q', '--no-lock', '--unstable-kv', '--unstable-ffi', '-A']
 
       inoremap <silent> jj <ESC>
-      inoremap { {}<LEFT>
-      inoremap ( ()<LEFT>
-      inoremap [ []<LEFT>
-      inoremap " ""<LEFT>
 
       set clipboard=unnamedplus
       set number

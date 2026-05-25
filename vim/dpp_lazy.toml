@@ -5,15 +5,19 @@ on_event = "CursorMoved"
 [[plugins]]
 repo = "junegunn/fzf.vim"
 on_cmd = "Files"
-#on_key="<leader>ff"
+on_key = "<leader>ff"
 hook_add = '''
 nnoremap <Leader>ff :Files<CR>
 '''
 
 [[plugins]]
-repo="vim-airline/vim-airline"
-on_event="BufReadPre"
+repo = "junegunn/fzf"
+on_source = "fzf.vim"
 
 [[plugins]]
-repo="vim-jp/vimdoc-ja"
-on_ft ="help"
+repo = "vim-airline/vim-airline"
+on_event = "BufReadPre"
+
+[[plugins]]
+repo = "vim-jp/vimdoc-ja"
+on_ft = "help"
