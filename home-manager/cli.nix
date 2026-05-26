@@ -39,6 +39,7 @@ in
       jdenticon-cli
       bulletty
       codex
+      bubblewrap
     ]
     ++ [
       acc_utils_pkg
