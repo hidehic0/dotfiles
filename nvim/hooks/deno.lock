@@ -14,6 +14,7 @@
     "jsr:@lambdalisue/itertools@^1.1.2": "1.1.2",
     "jsr:@lambdalisue/unreachable@^1.0.1": "1.0.1",
     "jsr:@shougo/ddc-vim@^10.3.0": "10.3.0",
+    "jsr:@shougo/ddt-vim@2": "2.0.0",
     "jsr:@shougo/ddu-ui-ff@^3.2.0": "3.2.0",
     "jsr:@shougo/ddu-ui-filer@^3.2.0": "3.2.0",
     "jsr:@shougo/ddu-vim@11.1": "11.1.0",
@@ -109,6 +110,14 @@
         "jsr:@denops/std@8.2",
         "jsr:@lambdalisue/import-map-importer",
         "jsr:@std/assert@~1.0.7",
+        "jsr:@std/path@1.1"
+      ]
+    },
+    "@shougo/ddt-vim@2.0.0": {
+      "integrity": "0d8e53d5fb3d26d2b94671dc3931bc2eb37a41564714ac85a8c34011de2379ca",
+      "dependencies": [
+        "jsr:@denops/std@8.0",
+        "jsr:@lambdalisue/import-map-importer",
         "jsr:@std/path@1.1"
       ]
     },
@@ -263,6 +272,7 @@
     "dependencies": [
       "jsr:@denops/core@^8.0.1",
       "jsr:@shougo/ddc-vim@^10.3.0",
+      "jsr:@shougo/ddt-vim@2",
       "jsr:@shougo/ddu-ui-ff@^3.2.0",
       "jsr:@shougo/ddu-ui-filer@^3.2.0",
       "jsr:@shougo/ddu-vim@^11.3.0",
