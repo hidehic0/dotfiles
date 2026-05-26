@@ -98,7 +98,7 @@ hl.config({
 
 		blur = {
 			enabled = true,
-			size = 3,
+			size = 7,
 			passes = 3,
 		},
 	},
@@ -294,7 +294,7 @@ hl.window_rule({
 		class = "discord",
 	},
 
-	opacity = 0.9,
+	opacity = 0.8,
 })
 hl.window_rule({
 	match = {
