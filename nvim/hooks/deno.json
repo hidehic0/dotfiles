@@ -8,6 +8,6 @@
     "@shougo/ddu-vim": "jsr:@shougo/ddu-vim@^11.3.0",
     "@shougo/dpp-ext-lazy": "jsr:@shougo/dpp-ext-lazy@^2.0.1",
     "@shougo/dpp-ext-toml": "jsr:@shougo/dpp-ext-toml@^2.0.1",
-    "@shougo/dpp-vim": "jsr:@shougo/dpp-vim@^6.3.1"
+    "@shougo/dpp-vim": "jsr:@shougo/dpp-vim@^6.4.0"
   }
 }
