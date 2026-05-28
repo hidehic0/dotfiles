@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1779854637,
-        "narHash": "sha256-97Z9Mn3Fh1Cn6NBdTZ1FAk1wcxccHlH1Hd1tzNCFaMs=",
+        "lastModified": 1779940805,
+        "narHash": "sha256-BgXSO7rxCzh7GNA2eLyms1lXsSzWYQ3b2FcdFhHaLUg=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "7c68c80dd87288a04911889b2afa50426eb84751",
+        "rev": "8f964ed5eb082ebea7de20cf8947bdd70e6f9721",
         "type": "github"
       },
       "original": {
@@ -137,11 +137,11 @@
     "dpp-protocol-git": {
       "flake": false,
       "locked": {
-        "lastModified": 1779874326,
-        "narHash": "sha256-gf+RsgQF/R16w3cuyO6LMHz4H5PHVHpbe9Ieh/iiuZA=",
+        "lastModified": 1779940615,
+        "narHash": "sha256-WFg+cB3LVXfgx99AVikkWDAhQKPagEm2qw3Z3AzIOko=",
         "owner": "Shougo",
         "repo": "dpp-protocol-git",
-        "rev": "cfda3b287733f0ace3eeb1c86a4b619c5a18237d",
+        "rev": "2edfd80756cdde52481e8b4d2d1342997a5c32a5",
         "type": "github"
       },
       "original": {
@@ -612,11 +612,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779851998,
-        "narHash": "sha256-UkkMh3bX9QW4Luqkm98nUaOqKWrU6i65mUnph3WeSSw=",
+        "lastModified": 1779938491,
+        "narHash": "sha256-khIekZCrhy3lQom4AZTmgBPV3DOFgAiopLUyUtbVGhY=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "6cddd512fa2bf7231f098d3a2f92f6e4cff71e0a",
+        "rev": "02f536e36eaee387594ce2a02d90ff678d056e0f",
         "type": "github"
       },
       "original": {
