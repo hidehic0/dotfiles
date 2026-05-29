@@ -55,6 +55,8 @@ local startup_commands = {
 	"hyprsunset",
 	"kdeconnect-indicator",
 
+	"easyeffects --gapplication-service",
+
 	"wl-paste --type text --watch cliphist store",
 	"wl-paste --type image --watch cliphist store",
 }
