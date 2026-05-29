@@ -30,7 +30,7 @@ in
     ".config/direnv".source = symlink "${path}/direnv";
     ".config/custom-completion-zsh".source = symlink "${path}/custom-completion-zsh";
     ".config/tpfl".source = symlink "${path}/tpfl";
-    ".clangd".source = symlink "${path}/clangd/config.yml";
+    ".config/clangd".source = symlink "${path}/clangd";
     ".config/atcoder-cli-nodejs".source = symlink "${path}/atcoder-cli-nodejs";
     ".config/acc_utils".source = symlink "${path}/acc_utils";
     ".config/zeno".source = symlink "${path}/zeno";
