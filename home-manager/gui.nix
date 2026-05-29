@@ -11,5 +11,6 @@
     gnome-pomodoro
     anki
     easyeffects
+    pinta
   ];
 }
