@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1780108551,
-        "narHash": "sha256-Q3R9vzOIm8/BQ01P52+rIgk4VmfevSBRpTdTSXeJUfs=",
+        "lastModified": 1780307550,
+        "narHash": "sha256-wqyCG2QDwlKT6o7ua9FIe1cfJ2XF/kBrPtQ4CyZT8s4=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "42a60893924ab8e7980d3cf178733364191dcca4",
+        "rev": "62889f766aa0109d70669f56a03d146a1b0177ff",
         "type": "github"
       },
       "original": {
@@ -137,11 +137,11 @@
     "dpp-protocol-git": {
       "flake": false,
       "locked": {
-        "lastModified": 1779940615,
-        "narHash": "sha256-WFg+cB3LVXfgx99AVikkWDAhQKPagEm2qw3Z3AzIOko=",
+        "lastModified": 1780308235,
+        "narHash": "sha256-c3X3ALFDowUWRhiwUqREuQr9wATsaTo5Oj05BeGyXw8=",
         "owner": "Shougo",
         "repo": "dpp-protocol-git",
-        "rev": "2edfd80756cdde52481e8b4d2d1342997a5c32a5",
+        "rev": "dad1a8da8001b3e26a1c3b7604b4dc595944cbbb",
         "type": "github"
       },
       "original": {
