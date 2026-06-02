@@ -12,5 +12,6 @@
     anki
     easyeffects
     pinta
+    safeeyes
   ];
 }

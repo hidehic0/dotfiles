@@ -54,6 +54,7 @@ local startup_commands = {
 	"hyprpaper",
 	"hyprsunset",
 	"kdeconnect-indicator",
+	"safeeyes",
 
 	"easyeffects --gapplication-service",
 
