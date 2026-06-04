@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1780481288,
-        "narHash": "sha256-XmQFhZN+nOj48b9JAMVmkeHrr+lscgcJAIzUVyiq8T8=",
+        "lastModified": 1780570611,
+        "narHash": "sha256-Frb6C9DN9v6SiKn2pGM7zeTRHS4vfNic1k4x9XpG8Ck=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "c774a9e59158149cb63477756c30b34eccfcd87d",
+        "rev": "a97f6058053f12fc605867246e4bd74b9a648bbc",
         "type": "github"
       },
       "original": {
@@ -137,11 +137,11 @@
     "dpp-protocol-git": {
       "flake": false,
       "locked": {
-        "lastModified": 1780308235,
-        "narHash": "sha256-c3X3ALFDowUWRhiwUqREuQr9wATsaTo5Oj05BeGyXw8=",
+        "lastModified": 1780569869,
+        "narHash": "sha256-HjIVog/Ibdd5iub7OxXtaw0qtmhGsExSRp62GSC6awg=",
         "owner": "Shougo",
         "repo": "dpp-protocol-git",
-        "rev": "dad1a8da8001b3e26a1c3b7604b4dc595944cbbb",
+        "rev": "e54eef6bd604a2faddf4703bc129eadda322bdc4",
         "type": "github"
       },
       "original": {
@@ -153,11 +153,11 @@
     "dpp-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1779874221,
-        "narHash": "sha256-HNs+EIt/tEMj214cdKJwA7jh0QgbtOBnHA8UKKfyhB4=",
+        "lastModified": 1780570401,
+        "narHash": "sha256-c1kF39wS57Joy6eI91PyPf1bA4tsE+JZpb3RlpgxhSg=",
         "owner": "Shougo",
         "repo": "dpp.vim",
-        "rev": "af052bce25a62d0df355859181176c1a3daecb9d",
+        "rev": "292a96c36d56a7a6252ac0bd9fae0d8b7ec420c2",
         "type": "github"
       },
       "original": {
@@ -794,11 +794,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1774954828,
-        "narHash": "sha256-F6qDnwdVlX/JJhM7XYkgU2QtBfN1EQ9UysP2xVKAA6I=",
+        "lastModified": 1780577693,
+        "narHash": "sha256-QueSRFm8x+jEPgSsCQu7V6CV8r4O2EPXJ2Ufs4moKXI=",
         "owner": "wezterm",
         "repo": "wezterm",
-        "rev": "577474d89ee61aef4a48145cdec82a638d874751",
+        "rev": "eeb80972921b8681d21d41d403c4ee6b913d8c1d",
         "type": "github"
       },
       "original": {
