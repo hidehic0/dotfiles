@@ -4,7 +4,7 @@
   fetchFromGitHub,
 }:
 let
-  version = "0.2.4";
+  version = "0.2.5-1";
 in
 buildGoModule {
   pname = "ghtkn";
@@ -13,10 +13,10 @@ buildGoModule {
     owner = "suzuki-shunsuke";
     repo = "ghtkn";
     rev = "v${version}";
-    hash = "sha256-Du8hf4twpWtAPe81SR+xO03a52YWj+AJFI2E/gReptw=";
+    hash = "sha256-kqJHnG7JDNfsnx2L/RaN6f+U+LW8q6y/6+Wy+nWoPPo=";
   };
 
-  vendorHash = "sha256-3teRNjOOQQEJzAkXhoiV9VpYQ4EdAMBIwAyVgkMzJCY=";
+  vendorHash = "sha256-MvziGBc12YacYZ3zBxQY7l/WdBe7FvR0d4im6rzlFXI=";
 
   ldflags = [
     "-X main.Version=v${version}"
