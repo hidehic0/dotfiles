@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1780570611,
-        "narHash": "sha256-Frb6C9DN9v6SiKn2pGM7zeTRHS4vfNic1k4x9XpG8Ck=",
+        "lastModified": 1780730261,
+        "narHash": "sha256-N07UgDZnpydCt5n4Y1h78eaXjkeVF4Zq5OP0dJsnGn4=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "a97f6058053f12fc605867246e4bd74b9a648bbc",
+        "rev": "12d54f117684c52e97bf1e8a509b10c915e124b1",
         "type": "github"
       },
       "original": {
@@ -612,11 +612,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780629589,
-        "narHash": "sha256-oHysjxZdaEqkmyDpN8G1bl3V+r9uyRD1O66bH0bq0Cs=",
+        "lastModified": 1780715792,
+        "narHash": "sha256-4+8gPeiPeud89mjo865RwpqmKwa1MThRsq2SvRxo7mg=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "7a5a1c0a5cb86a28224304309b68f050835fd1f6",
+        "rev": "27b7e78c6935293ee868469cc4172e9b8b17823b",
         "type": "github"
       },
       "original": {
@@ -794,11 +794,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1780647105,
-        "narHash": "sha256-bVXkH71cEVDmrEr+3lWOd5s66C3IyWm5SAqgJoGvqn4=",
+        "lastModified": 1780732330,
+        "narHash": "sha256-zjSn/yHZtBowhO7v+RukqjvLN4lA3+5QCyzuIrJ9B98=",
         "owner": "wezterm",
         "repo": "wezterm",
-        "rev": "dab1816d05e948182f799903e6d6be59699d7629",
+        "rev": "95d7b634e07e8da202bc60b8917aece7242308bb",
         "type": "github"
       },
       "original": {
