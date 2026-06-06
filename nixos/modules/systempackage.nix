@@ -15,6 +15,7 @@
     nvd
     gnumake
     adwaita-icon-theme
+    bubblewrap
   ];
 
   programs.steam = {
