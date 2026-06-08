@@ -22,5 +22,6 @@ vim.lsp.enable({
   -- "markdown_oxide",
   "oxlint",
   "oxfmt",
+  "tinymist",
 })
 -- }}}

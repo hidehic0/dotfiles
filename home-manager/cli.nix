@@ -40,6 +40,11 @@ in
       bulletty
       codex
       bubblewrap
+
+      typst
+      tinymist
+
+      websocat
     ]
     ++ [
       acc_utils_pkg
