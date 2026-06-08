@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1780805360,
-        "narHash": "sha256-S5dQcKJq1DDgjMDJFmrjWJO3IpuQ3OHkzJvZDZpHEbk=",
+        "lastModified": 1780898233,
+        "narHash": "sha256-I7A27ckhY4//cVkn85h/b5hcnbqQMAvZNruXa3zKQBY=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "ce4d26b0d0808bc5fa1f070342a12afbebd0dd78",
+        "rev": "7a2553abe6cad5edf3ae186a741dee7e8ccbe7f6",
         "type": "github"
       },
       "original": {
