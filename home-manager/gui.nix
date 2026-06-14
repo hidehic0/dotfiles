@@ -22,7 +22,7 @@ in
       bitwarden-desktop
       ghostty
       pcmanfm
-      discord
+      discord-ptb
       obsidian
       gnome-clocks
       gnome-pomodoro

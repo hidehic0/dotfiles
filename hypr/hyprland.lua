@@ -68,7 +68,7 @@ hl.on("hyprland.start", function()
 	end
 
 	hl.dispatch(hl.dsp.focus({ workspace = 4 }))
-	hl.exec_cmd("discord")
+	hl.exec_cmd("discordptb")
 	hl.dispatch(hl.dsp.focus({ workspace = 2 }))
 	hl.exec_cmd(terminal)
 	hl.dispatch(hl.dsp.focus({ workspace = 1 }))
