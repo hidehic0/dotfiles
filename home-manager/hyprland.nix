@@ -326,7 +326,7 @@
       fit_mode=cover
     }
     wallpaper {
-      monitor = DP-1
+      monitor = HDMI-A-1
       path = ${pkgs.nixos-artwork.wallpapers.catppuccin-mocha}/share/backgrounds/nixos/nixos-wallpaper-catppuccin-mocha.png
       fit_mode=cover
     }
