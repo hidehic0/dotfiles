@@ -6,6 +6,7 @@ on:
     branches: [nixos]
     paths:
       - ".github/workflows/update-nix-flake.yaml"
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
