@@ -153,11 +153,11 @@
     "dpp-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1781515973,
-        "narHash": "sha256-o+931HM0zySn8tSbKGrTqF6iAfwS/q1ZYj606iLlWBE=",
+        "lastModified": 1781581989,
+        "narHash": "sha256-PbNelh5xVlwM1U6YabX1CEIlrHsBwbVKK0oCPiaXtyA=",
         "owner": "Shougo",
         "repo": "dpp.vim",
-        "rev": "946156ee5811019dd74c897a7bdf8edf8b780558",
+        "rev": "c60269cbe38f230c0052bfd906e6c67524c18ca5",
         "type": "github"
       },
       "original": {
@@ -753,11 +753,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1781562039,
-        "narHash": "sha256-+OGNxx1J/013nLF0z9aXZS4AzBk2ZsDx0Dh/R8j/wsY=",
+        "lastModified": 1781595752,
+        "narHash": "sha256-wYlkyxQg8lyE4xANKTo0vyhNdnxwWZf4m8Hxk9xlIXs=",
         "ref": "refs/heads/main",
-        "rev": "40daec89346f44ca733dbcfa74e144a609d9acba",
-        "revCount": 8596,
+        "rev": "b1cc82bb5146fc9fecae49258ffd69eaa9beb1d6",
+        "revCount": 8598,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/wezterm/wezterm.git"
