@@ -7,14 +7,13 @@
     };
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
     neovim-nightly-overlay = {
       url = "github:nix-community/neovim-nightly-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     wezterm = {
-      url = "git+https://github.com/wezterm/wezterm.git?dir=nix&submodules=1";
+      url = "github:wezterm/wezterm?dir=nix";
     };
     acc_utils = {
       url = "github:hidehic0/acc_utils";

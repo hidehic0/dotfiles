@@ -559,6 +559,22 @@
     },
     "nixpkgs_2": {
       "locked": {
+        "lastModified": 1781607440,
+        "narHash": "sha256-rxO+uc/KFbSJp+pgyXRuAX6QlG9hJdnt0BXpEQRXY+U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3e41b24abd260e8f71dbe2f5737d24122f972158",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
         "lastModified": 1780711917,
         "narHash": "sha256-Cw9useKmvzRyrzQtghZPi56ImYXKsyrh+vo94hCYM3I=",
         "owner": "NixOS",
@@ -623,9 +639,7 @@
     },
     "rust-overlay": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1781666412,
@@ -802,26 +816,24 @@
         "freetype2": "freetype2",
         "harfbuzz": "harfbuzz",
         "libpng": "libpng",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs_3",
         "rust-overlay": "rust-overlay_2",
         "zlib": "zlib"
       },
       "locked": {
         "dir": "nix",
         "lastModified": 1781618735,
-        "narHash": "sha256-PRR/4r4Ip/KOyplwInZ7wMDGEBKEs+3z3VkG6EffX88=",
-        "ref": "refs/heads/main",
+        "narHash": "sha256-v3lw4WPBfLzicENBycxwJKT3l1VBnsurbG7lLnCPogc=",
+        "owner": "wezterm",
+        "repo": "wezterm",
         "rev": "95ffc5323548ac797e562af257e25c9e54bcca17",
-        "revCount": 8599,
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/wezterm/wezterm.git"
+        "type": "github"
       },
       "original": {
         "dir": "nix",
-        "submodules": true,
-        "type": "git",
-        "url": "https://github.com/wezterm/wezterm.git"
+        "owner": "wezterm",
+        "repo": "wezterm",
+        "type": "github"
       }
     },
     "zlib": {
