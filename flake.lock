@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1781260110,
-        "narHash": "sha256-apf18HtRpbsWKZAep5+VX4E8wo5ch75lj7QO99k29UE=",
+        "lastModified": 1781776395,
+        "narHash": "sha256-fl4cf3lf9+M2+BTYJiJydbVNlFBWG0YrggHYoQAOFhw=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "b762fe95f70466477f6baed909eee4f18d1bbbbc",
+        "rev": "bc1eac3621c8bedd7e28057c8749cc5de8ba5c41",
         "type": "github"
       },
       "original": {
@@ -153,11 +153,11 @@
     "dpp-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1781581989,
-        "narHash": "sha256-PbNelh5xVlwM1U6YabX1CEIlrHsBwbVKK0oCPiaXtyA=",
+        "lastModified": 1781776289,
+        "narHash": "sha256-6YJVMY++cTdZpeP1KnBO7Fqa6PJZ+FwB7pSvXgWVASw=",
         "owner": "Shougo",
         "repo": "dpp.vim",
-        "rev": "c60269cbe38f230c0052bfd906e6c67524c18ca5",
+        "rev": "a6d53c8f5ca9d86198c9ddeed01585ad381de2db",
         "type": "github"
       },
       "original": {
