@@ -23,7 +23,7 @@
     "jsr:@shougo/dpp-ext-lazy@^2.0.1": "2.0.1",
     "jsr:@shougo/dpp-ext-toml@^2.0.1": "2.0.1",
     "jsr:@shougo/dpp-vim@5.0": "5.0.0",
-    "jsr:@shougo/dpp-vim@^6.4.0": "6.5.0",
+    "jsr:@shougo/dpp-vim@^6.4.0": "6.6.0",
     "jsr:@std/assert@0.223": "0.223.0",
     "jsr:@std/assert@~1.0.7": "1.0.19",
     "jsr:@std/bytes@0.223": "0.223.0",
@@ -194,8 +194,8 @@
         "jsr:@std/path@1.1"
       ]
     },
-    "@shougo/dpp-vim@6.5.0": {
-      "integrity": "64b05caaab27a525f4251145b8bb045bf091546b88491c020979d2382de2a781",
+    "@shougo/dpp-vim@6.6.0": {
+      "integrity": "72fa3cfdf73af6e724e5035eaa82ece17eb9ff82bc86c8928f7ee1ff4adb6fd0",
       "dependencies": [
         "jsr:@denops/std@8.2",
         "jsr:@lambdalisue/import-map-importer",
