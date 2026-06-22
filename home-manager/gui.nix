@@ -13,5 +13,7 @@
     pinta
     safeeyes
     vivaldi
+
+    kdePackages.okular
   ];
 }
