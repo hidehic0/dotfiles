@@ -45,6 +45,8 @@ in
       tinymist
 
       websocat
+
+      github-copilot-cli
     ]
     ++ [
       acc_utils_pkg
