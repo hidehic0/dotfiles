@@ -822,11 +822,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1782074868,
-        "narHash": "sha256-HRpwe53jkLk0szhCMS2QjAtnDLP7FfZej43kg1C5OCc=",
+        "lastModified": 1782122462,
+        "narHash": "sha256-Q6gyRt4bI+pPRmAr/LJXSGnVhhvP4arMn27Kllj8gEg=",
         "owner": "wezterm",
         "repo": "wezterm",
-        "rev": "9edc0c09fcf3ffe0c548aefa5e1d927456b13f94",
+        "rev": "6ff5492866490be859f23db01541df0ec67dcc3b",
         "type": "github"
       },
       "original": {
