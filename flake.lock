@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1782010673,
-        "narHash": "sha256-Gx9TqDB4uoFvRWftjYxxK7VFJ4eYPrjNzWRwFiV79uw=",
+        "lastModified": 1782619882,
+        "narHash": "sha256-+cW0h7/ZKIWwNUxxhAZJxcxMzzoNb72GO3fsRBvnzOg=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "9a5ff8b519d6740a05606b071e19739d37d5d366",
+        "rev": "8a03060334425daeb6618cd30090c3d3799fc807",
         "type": "github"
       },
       "original": {
@@ -105,11 +105,11 @@
     "dpp-ext-lazy": {
       "flake": false,
       "locked": {
-        "lastModified": 1779671954,
-        "narHash": "sha256-fDCShrBy2nxfdyG5j9pbADb14Raz5NQarumcZhrch08=",
+        "lastModified": 1782620571,
+        "narHash": "sha256-KolDRDISsD1HbphvhMkRqe9x8XYcNpXx6qz12LsNHaE=",
         "owner": "Shougo",
         "repo": "dpp-ext-lazy",
-        "rev": "6d3fd5696bf5147c52e2f91c4c996003fc9d5818",
+        "rev": "456280b3c04993ea883f2fb0aebce37ac8c469d0",
         "type": "github"
       },
       "original": {
@@ -642,11 +642,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1782530211,
-        "narHash": "sha256-Zn5H2VVMaP79C+bvaUQD+SBXSKoTnURMZGiUrG00zII=",
+        "lastModified": 1782616745,
+        "narHash": "sha256-NN5B1cKBXF6h1Ec681gMGZ2o/99d7vKXAAfFNEvyOKA=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "06ba695dfefc4afc513b49dfc41c4bf0dd2eaeb1",
+        "rev": "b916d014dc57eb555f84e51172a82f7f6fb560d7",
         "type": "github"
       },
       "original": {
