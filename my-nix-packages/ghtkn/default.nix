@@ -4,7 +4,7 @@
   fetchFromGitHub,
 }:
 let
-  version = "0.2.5-1";
+  version = "0.3.1";
 in
 buildGoModule {
   pname = "ghtkn";
