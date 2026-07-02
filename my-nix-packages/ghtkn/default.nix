@@ -2,21 +2,35 @@
   lib,
   buildGoModule,
   fetchFromGitHub,
+  stdenv,
+  installShellFiles,
 }:
 let
-  version = "0.3.1";
+  version = "0.3.3";
 in
-buildGoModule {
+buildGoModule (finalAttrs: {
   pname = "ghtkn";
-  version = "v${version}";
+  version = "${version}";
+
   src = fetchFromGitHub {
     owner = "suzuki-shunsuke";
     repo = "ghtkn";
     rev = "v${version}";
-    hash = "sha256-kqJHnG7JDNfsnx2L/RaN6f+U+LW8q6y/6+Wy+nWoPPo=";
+    hash = "sha256-Tcw/JL5U0af6Bf8b2jV5ElhCSMrhGjHfVF1ZqCXnUR4=";
   };
 
-  vendorHash = "sha256-MvziGBc12YacYZ3zBxQY7l/WdBe7FvR0d4im6rzlFXI=";
+  nativeBuildInputs = [
+    installShellFiles
+  ];
+
+  postInstall = lib.optionalString (stdenv.buildPlatform.canExecute stdenv.hostPlatform) ''
+    installShellCompletion --cmd 'ghtkn' \
+      --bash <("$out/bin/ghtkn" completion bash) \
+      --zsh <("$out/bin/ghtkn" completion zsh) \
+      --fish <("$out/bin/ghtkn" completion fish)
+  '';
+
+  vendorHash = "sha256-rsTESgnUFTRXLOyX2Q/5QQFSnoANJELITI8btISWn7o=";
 
   ldflags = [
     "-X main.Version=v${version}"
@@ -29,4 +43,4 @@ buildGoModule {
     homepage = "https://github.com/suzuki-shunsuke/ghtkn";
     license = lib.licenses.mit;
   };
-}
+})

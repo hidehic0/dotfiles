@@ -37,3 +37,5 @@ export SSH_AUTH_SOCK=~/.bitwarden-ssh-agent.sock
 # bindkey '^x^m' accept-line
 #
 # bindkey '^r' zeno-history-selection
+
+export GHTKN_ENABLE_DEVICE_FLOW=true
