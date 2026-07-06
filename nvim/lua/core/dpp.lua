@@ -8,6 +8,7 @@ vim.g["denops#server#deno_args"] = {
   "--unstable-ffi",
   "-A",
 }
+vim.g["denops_server_addr"] = "127.0.0.1:32123"
 
 local plugins = {
   "Shougo/dpp.vim",
