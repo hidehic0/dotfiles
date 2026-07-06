@@ -18,6 +18,7 @@ local langs = {
   "ini",
   "gitcommit",
   "cpp",
+  "javascript",
 }
 
 local assist = {
