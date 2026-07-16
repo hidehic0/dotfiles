@@ -89,11 +89,11 @@
     "dpp-ext-installer": {
       "flake": false,
       "locked": {
-        "lastModified": 1783912759,
-        "narHash": "sha256-muuFia2lIXaKFtJ4/NCnFNRY4mqiSnRnmPLO5+CTYD8=",
+        "lastModified": 1784173521,
+        "narHash": "sha256-53hdU2pei+wrdZxfJNP3xmA5L5wCW8LIJkUsoMiF/KU=",
         "owner": "Shougo",
         "repo": "dpp-ext-installer",
-        "rev": "95babfe3e01d814813f2e8fc55f3c75ec55d03f0",
+        "rev": "c840235f77818c112e7404f6684a2b47d75e39ea",
         "type": "github"
       },
       "original": {
@@ -620,11 +620,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1784091390,
-        "narHash": "sha256-aILAwrBQPhKldL98N8lmsbfst3OPtbMM4vT2VXn40/Y=",
+        "lastModified": 1784178955,
+        "narHash": "sha256-YtXHVFBzzqSidcEhPhfTcF2yzzu0p0yA7x07LOR+LaY=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "a7887636a3959168bd1ba7ef24a8a70b168dcb56",
+        "rev": "1785b85aeccca381caf8777133410f577b8f2f59",
         "type": "github"
       },
       "original": {
