@@ -23,7 +23,7 @@ in
       python314
       rust-bin.stable.latest.default
       nodejs_latest
-      clang-tools
+      llvmPackages_22.clang-tools
       ac-library
       fastfetch
       grim
