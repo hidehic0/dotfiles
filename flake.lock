@@ -105,11 +105,11 @@
     "dpp-ext-lazy": {
       "flake": false,
       "locked": {
-        "lastModified": 1784950215,
-        "narHash": "sha256-uHwrd2Po0pyV+CXZlpwvTzM7s+hCuOJVHmNi4bQYN94=",
+        "lastModified": 1785037307,
+        "narHash": "sha256-dAgCm8QKoIr7az4Yh6aN1kJ2/r7LW5ha13J1FBbVUrk=",
         "owner": "Shougo",
         "repo": "dpp-ext-lazy",
-        "rev": "44ba7da9410ab0da2128318368b9a52fc788671a",
+        "rev": "ae41152cfc1f1c2647a4bc9f80ab90816d37f370",
         "type": "github"
       },
       "original": {
@@ -620,11 +620,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1784956772,
-        "narHash": "sha256-5polVWDhgATIQj+RUV2ZlOd5nE6cGJo+C4tOEs5vp6U=",
+        "lastModified": 1785044261,
+        "narHash": "sha256-ehF/c4fLdgmNu7YXEClnmwhoBYddhYIVoSQpsZoorC4=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "a163bd01a6e11ac58d4f8d11669da550b5afbbc6",
+        "rev": "fe2124391e739e7b3e8720cd8a73f06edd0aceba",
         "type": "github"
       },
       "original": {
