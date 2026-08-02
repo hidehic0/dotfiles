@@ -1,16 +1,22 @@
-hl.monitor({
-  output = "HDMI-A-1",
-  mode = "3840x2160@30",
-  position = "0x0",
-  scale = 1.33,
-})
-hl.monitor({
+local edp1_settings = {
   output = "eDP-1",
   mode = "highrr",
-  position = "0x1",
+  position = "auto",
   scale = 1,
-  mirror = "HDMI-A-1",
-})
+}
+
+if hl.get_monitor("HDMI-A-1") then
+  hl.monitor({
+    output = "HDMI-A-1",
+    mode = "3840x2160@30",
+    position = "auto",
+    scale = 1.33,
+  })
+
+  edp1_settings.mirror = "HDMI-A-1"
+end
+
+hl.monitor(edp1_settings)
 
 local browser = "vivaldi"
 local menu = "rofi -combi-modi window,drun,ssh -show combi"
