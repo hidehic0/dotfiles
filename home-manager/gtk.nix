@@ -1,6 +1,6 @@
-{pkgs,...}:{
+{ pkgs, ... }: {
   home.packages = with pkgs; [
-    orchis-theme
+    colloid-gtk-theme
     nwg-look
   ];
 }
