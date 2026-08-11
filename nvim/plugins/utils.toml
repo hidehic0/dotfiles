@@ -104,18 +104,6 @@ on_map = ["<C-x>", "<C-a>", "g<C-x>", "g<C-a>"]
 hooks_file = "$HOOK_DIR/dial.lua"
 
 [[plugins]]
-repo = "m4xshen/hardtime.nvim"
-depends = ["nui.nvim"]
-on_event = "CursorMoved"
-lua_source = '''
-require("hardtime").setup({
-  disabled_filetypes = { "ddu-ff" },
-  timeout = 10000,
-  enabled = vim.g.hardtime_enabled,
-})
-'''
-
-[[plugins]]
 repo = "nvim-telescope/telescope.nvim"
 depends = ["plenary.nvim"]
 on_cmd = "Telescope"
