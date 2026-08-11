@@ -16,6 +16,7 @@
     gnumake
     adwaita-icon-theme
     bubblewrap
+    libnotify
   ];
 
   programs.steam = {

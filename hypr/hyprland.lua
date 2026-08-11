@@ -210,6 +210,12 @@ bind_with_main_mod("SHIFT + l", hl.dsp.window.move({ direction = "r" }))
 bind_with_main_mod("SHIFT + k", hl.dsp.window.move({ direction = "u" }))
 bind_with_main_mod("SHIFT + j", hl.dsp.window.move({ direction = "d" }))
 
+bind_with_main_mod("t", function()
+  hl.env("XMODIFIERS", "@im=~/.dotfiles/.bin/scripts/vime.sh")
+  hl.dispatch(hl.dsp.exec_cmd("~/.dotfiles/.bin/scripts/vime.sh"))
+  hl.env("XMODIFIERS", envs["XMODIFIERS"])
+end)
+
 for i = 1, 10 do
   local key = i % 10 -- 10 maps to key 0
   hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
@@ -312,4 +318,10 @@ hl.window_rule({
   },
 
   opacity = 0.8,
+})
+hl.window_rule({
+  match = {
+    class = "VimIme",
+  },
+  float = true,
 })

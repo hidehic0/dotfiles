@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     bitwarden-desktop
-    ghostty
+    alacritty
     pcmanfm
     discord-ptb
     obsidian
