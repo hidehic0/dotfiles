@@ -142,6 +142,10 @@ hl.config({
     enabled = true,
     force_zero_scaling = true,
   },
+
+  dwindle = {
+    force_split = 2,
+  },
 })
 
 hl.device({
