@@ -1,7 +1,7 @@
 [[plugins]]
 repo = "lambdalisue/vim-kensaku"
 on_event = "CmdlineEnter"
-depends="denops.vim"
+depends = "denops.vim"
 lua_source = '''
 vim.keymap.set("c", "<CR>", "<Plug>(kensaku-search-replace)<CR>")
 '''
