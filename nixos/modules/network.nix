@@ -5,7 +5,16 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   # Enable bluetooth
-  hardware.bluetooth.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
+
   services.blueman.enable = true;
 
   # Tailscale
