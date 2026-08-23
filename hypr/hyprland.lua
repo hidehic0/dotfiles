@@ -53,12 +53,12 @@ end
 
 local startup_commands = {
   "systemctl --user start xdg-desktop-portal-gtk.service fcitx5.service",
+  "systemctl --user start hyprsunset.service",
+  "systemctl --user start hypridle.service",
   "waybar",
   "swaync",
   "swayosd-server",
-  "hypridle",
   "hyprpaper",
-  "hyprsunset",
   "kdeconnect-indicator",
   "safeeyes",
 
