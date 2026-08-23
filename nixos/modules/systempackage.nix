@@ -17,6 +17,7 @@
     adwaita-icon-theme
     bubblewrap
     libnotify
+    qpdf
   ];
 
   programs.steam = {
