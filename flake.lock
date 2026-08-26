@@ -800,11 +800,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1787702445,
-        "narHash": "sha256-Z8cWqFnmNJqxyUtt/KOJKhYxqYYjUIsEoWbTA1fI5Yc=",
+        "lastModified": 1787737031,
+        "narHash": "sha256-Nlw/Q8F6x0DuEfuURkvgVqna8BncjoHOQSgctJSvwBU=",
         "owner": "wezterm",
         "repo": "wezterm",
-        "rev": "6fecdf5ae1a362b6f2e5b2c8df95123b5bd48967",
+        "rev": "78cd82dbba7315814bfbff40e246b8bed4b702e7",
         "type": "github"
       },
       "original": {
