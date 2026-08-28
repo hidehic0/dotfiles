@@ -73,8 +73,7 @@ require("Comment").setup()
 """
 
 [[plugins]]
-repo = "cubewhy/dropbar.nvim"
-rev = "fix-event"
+repo = "Bekaboo/dropbar.nvim"
 extAttrs = { installerMinCommitDays = 30 }
 on_event = "LspAttach"
 lua_source = """
