@@ -47,6 +47,8 @@ in
       websocat
 
       github-copilot-cli
+
+      gdb
     ]
     ++ [
       acc_utils_pkg

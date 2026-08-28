@@ -4,29 +4,35 @@ local dap, dapui = require("dap"), require("dapui")
 local python_venv_path = vim.fn.system("which python"):gsub("\n", "")
 require("dap-python").setup(python_venv_path)
 
-dap.adapters.codelldb = {
-  type = "server",
-  port = "${port}",
-  executable = {
-
-    -- Masonはここにデバッガを入れてくれる
-    command = vim.fn.stdpath("data") .. "/mason/packages/codelldb/extension/adapter/codelldb",
-
-    -- ポートを自動的に割り振ってくれる
-    args = { "--port", "${port}" },
-  },
+dap.adapters.cppdbg = {
+  id = "cppdbg",
+  type = "executable",
+  -- Masonはここにデバッガを入れてくれる
+  command = vim.fn.stdpath("data") .. "/mason/bin/OpenDebugAD7",
 }
 
 dap.configurations.cpp = {
   {
     name = "Launch file",
-    type = "codelldb",
+    type = "cppdbg",
     request = "launch",
     program = function()
       return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
     end,
     cwd = "${workspaceFolder}",
-    stopOnEntry = false,
+    stopAtEntry = true,
+  },
+  {
+    name = "Attach to gdbserver :1234",
+    type = "cppdbg",
+    request = "launch",
+    MIMode = "gdb",
+    miDebuggerServerAddress = "localhost:1234",
+    miDebuggerPath = "~/.nix-profile/bin/gdb",
+    cwd = "${workspaceFolder}",
+    program = function()
+      return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+    end,
   },
 }
 
