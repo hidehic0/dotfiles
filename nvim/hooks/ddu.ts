@@ -2,9 +2,6 @@ import { BaseConfig, type ConfigArguments } from "@shougo/ddu-vim/config";
 import { type Params as FfParams } from "@shougo/ddu-ui-ff";
 import { type Params as FilerParams } from "@shougo/ddu-ui-filer";
 
-import type { Denops } from "@denops/std";
-import * as fn from "@denops/std/function";
-
 export class Config extends BaseConfig {
   override config(args: ConfigArguments): Promise<void> {
     args.contextBuilder.patchGlobal({
@@ -17,14 +14,8 @@ export class Config extends BaseConfig {
       uiParams: {
         ff: {
           // auto action
-          // startAutoAction: true,
-          // autoAction: { name: "preview", delay: 0 },
-          onPreview: async (args: {
-            denops: Denops;
-            previewWinId: number;
-          }) => {
-            await fn.win_execute(args.denops, args.previewWinId, "normal! zt");
-          },
+          startAutoAction: true,
+          autoAction: { name: "preview", delay: 0 },
           // floating configs
           split: "floating",
           winCol: 2,
