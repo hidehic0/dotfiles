@@ -11,7 +11,6 @@
     anki
     easyeffects
     pinta
-    safeeyes
     vivaldi
 
     kdePackages.okular

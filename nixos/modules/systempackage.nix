@@ -18,6 +18,12 @@
     bubblewrap
     libnotify
     qpdf
+    (safeeyes.overridePythonAttrs (old: {
+      dependencies = old.dependencies ++ [
+        python3Packages.pywayland
+        python3Packages.croniter
+      ];
+    }))
   ];
 
   programs.steam = {
