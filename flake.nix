@@ -9,7 +9,7 @@
       url = "github:oxalica/rust-overlay";
     };
     neovim-nightly-overlay = {
-      url = "github:nix-community/neovim-nightly-overlay/b72b293cb72c3918ddb7505e39549aff44760464";
+      url = "github:nix-community/neovim-nightly-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     wezterm = {
