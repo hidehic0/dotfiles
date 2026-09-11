@@ -153,11 +153,11 @@
     "dpp-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1789098550,
-        "narHash": "sha256-vAtvxCajeRsiYPNVT6v/de8gGk3fNyD+VCkBe5qJd+Q=",
+        "lastModified": 1789124504,
+        "narHash": "sha256-HTe72UgZHLBjK+w39ybsrV4YK5KHqR/CuxIJSO6Lf2M=",
         "owner": "Shougo",
         "repo": "dpp.vim",
-        "rev": "e5cf673f2f5e42fa762df4384f3b30302e52fb0a",
+        "rev": "10668382ff25ef71a61327652e79fc57ccb90ff1",
         "type": "github"
       },
       "original": {
@@ -436,11 +436,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789099078,
-        "narHash": "sha256-zzHj2wl69724lzx7DLAVziWbL75wRIk+xJ3duD0Bgrc=",
+        "lastModified": 1789136855,
+        "narHash": "sha256-82D7ADWE8erhfALj3dqxAOeQaoa+Bwlsdcp9v2m/ExM=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "f10b3f2ad4aae9259617a1ff518cc921e3394228",
+        "rev": "d0fd95e15e0c3baf565a9fd4bc352321e2564ea3",
         "type": "github"
       },
       "original": {
