@@ -153,11 +153,11 @@
     "dpp-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1790150596,
-        "narHash": "sha256-1GlME2InQSNBdlMqP6qJk30IDbvN5cDLLmNGhE3waCE=",
+        "lastModified": 1790335483,
+        "narHash": "sha256-3+oDS6vHsyEyu7NwrY6KODiYU3Y9/RkyALz1hBNMEh8=",
         "owner": "Shougo",
         "repo": "dpp.vim",
-        "rev": "932901ba50abb1832cacbc2281d04a6c1d1c715d",
+        "rev": "1b0e69ce3ecd760a49b0938151c0e6415cecd17c",
         "type": "github"
       },
       "original": {
