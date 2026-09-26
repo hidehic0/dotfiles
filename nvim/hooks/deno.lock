@@ -27,7 +27,7 @@
     "jsr:@std/assert@0.223": "0.223.0",
     "jsr:@std/assert@~1.0.7": "1.0.19",
     "jsr:@std/bytes@0.223": "0.223.0",
-    "jsr:@std/collections@^1.1.3": "1.3.0",
+    "jsr:@std/collections@^1.1.3": "1.4.0",
     "jsr:@std/crypto@^1.0.5": "1.1.0",
     "jsr:@std/fmt@0.223": "0.223.0",
     "jsr:@std/fs@0.223": "0.223.0",
@@ -215,8 +215,8 @@
     "@std/bytes@0.223.0": {
       "integrity": "84b75052cd8680942c397c2631318772b295019098f40aac5c36cead4cba51a8"
     },
-    "@std/collections@1.3.0": {
-      "integrity": "eb36b43d784477ea0b476483ac034a14bdd182aff921c812ecf662a1fcef9498"
+    "@std/collections@1.4.0": {
+      "integrity": "bd7f74966e11de11b1f0420b7e8cb7bb381d8af7872b738443b92050db28c9c0"
     },
     "@std/crypto@1.1.0": {
       "integrity": "b8d6d0a6377a32b213af2661ed7bf1062d94feac0c57def5526a8e74a95c3ec8"
