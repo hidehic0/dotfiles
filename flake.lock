@@ -801,11 +801,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1789638297,
-        "narHash": "sha256-hMYtOUp/mlKJ0mlFkyOQtKAPjZGH060LLDNuj5csIvg=",
+        "lastModified": 1790649229,
+        "narHash": "sha256-0hboZJ1hxh158RbFxLB6EdNkZJL+eDnNSSo/2fh6Tyk=",
         "owner": "wezterm",
         "repo": "wezterm",
-        "rev": "b09b56c29c1e367e598b60ca266e2cc9038751e0",
+        "rev": "cab25161054c50fd6c705db4ceefef0f1e5a9575",
         "type": "github"
       },
       "original": {
