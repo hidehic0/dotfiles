@@ -5,6 +5,17 @@ local edp1_settings = {
   scale = 1,
 }
 
+if hl.get_monitor("DP-1") then
+  hl.monitor({
+    output = "DP-1",
+    mode = "3840x2160@30",
+    position = "auto",
+    scale = 2,
+  })
+
+  edp1_settings.mirror = "DP-1"
+end
+
 if hl.get_monitor("HDMI-A-1") then
   hl.monitor({
     output = "HDMI-A-1",
