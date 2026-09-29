@@ -40,4 +40,6 @@
     theme = "tela";
     footer = true;
   };
+
+  services.fwupd.enable = true;
 }
