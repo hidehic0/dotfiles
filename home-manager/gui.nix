@@ -4,6 +4,7 @@
     bitwarden-desktop
     alacritty
     pcmanfm
+    ffmpegthumbnailer
     discord-ptb
     obsidian
     gnome-clocks
