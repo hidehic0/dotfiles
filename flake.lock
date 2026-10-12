@@ -73,11 +73,11 @@
     "denops-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1778798837,
-        "narHash": "sha256-z9FadzT6Y7vFLLdpFR/Ti/FVPGwED4uEkiNZZOkSkqU=",
+        "lastModified": 1791783395,
+        "narHash": "sha256-MOSIaQraPJTfbFE4DSl7bSVW780DBlS+xIRO0KlAuyE=",
         "owner": "vim-denops",
         "repo": "denops.vim",
-        "rev": "e82c5a94ca1154b05c9d74d6f6f58c9991b1424f",
+        "rev": "3cadd47a22eedc0a85d26c3b3ab5087fbfb67c73",
         "type": "github"
       },
       "original": {
@@ -621,11 +621,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1791707771,
-        "narHash": "sha256-w3m8HtAVCfGTHw+gcCTAy7jFHSdGbokm8NngbeFrkek=",
+        "lastModified": 1791795448,
+        "narHash": "sha256-12C5ef8a3endLXBvLOVR/jynM9EHGgP1t+y5uBorwx4=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "c1cfa7a2c809d364ac1a7e9b3ec418afa3f19793",
+        "rev": "404b7a5537f0adc6e5c558a1b94612e683dec504",
         "type": "github"
       },
       "original": {
