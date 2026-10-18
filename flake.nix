@@ -14,6 +14,7 @@
     };
     wezterm = {
       url = "github:wezterm/wezterm?dir=nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     acc_utils = {
       url = "github:hidehic0/acc_utils";
