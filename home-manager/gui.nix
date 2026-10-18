@@ -15,5 +15,7 @@
     vivaldi
 
     kdePackages.okular
+
+    obs-studio
   ];
 }
