@@ -45,5 +45,5 @@ function tpf() {
 
 # github cli with ghtkn
 gh() {
-	GH_TOKEN=$(ghtkn get) command gh "$@" # command を使わないと無限ループになるので注意
+	ghtkn exec -e GH_TOKEN -- gh "$@"
 }
