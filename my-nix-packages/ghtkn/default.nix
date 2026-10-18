@@ -1,14 +1,14 @@
 {
   lib,
-  buildGoModule,
+  buildGo127Module,
   fetchFromGitHub,
   stdenv,
   installShellFiles,
 }:
 let
-  version = "0.3.3";
+  version = "0.4.1";
 in
-buildGoModule (finalAttrs: {
+buildGo127Module (finalAttrs: {
   pname = "ghtkn";
   version = "${version}";
 
@@ -16,7 +16,7 @@ buildGoModule (finalAttrs: {
     owner = "suzuki-shunsuke";
     repo = "ghtkn";
     rev = "v${version}";
-    hash = "sha256-Tcw/JL5U0af6Bf8b2jV5ElhCSMrhGjHfVF1ZqCXnUR4=";
+    hash = "sha256-EtILxa6d6kmsd/6DykGqfokc3rrsXzf7ciettCkgo5E=";
   };
 
   nativeBuildInputs = [
@@ -30,7 +30,7 @@ buildGoModule (finalAttrs: {
       --fish <("$out/bin/ghtkn" completion fish)
   '';
 
-  vendorHash = "sha256-rsTESgnUFTRXLOyX2Q/5QQFSnoANJELITI8btISWn7o=";
+  vendorHash = "sha256-oA9US4CoGZrkhyVCiDooV5PkTV9akDUtcSqguc+4sEk=";
 
   ldflags = [
     "-X main.Version=v${version}"
