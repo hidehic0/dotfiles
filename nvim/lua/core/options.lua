@@ -88,21 +88,12 @@ require("vim._core.ui2").enable({
     ---Table keys are are matched as a Lua pattern to the message ID. 'default'
     ---mapping applies to any omitted kind: { default = 'cmd', progress = 'msg' }.
     targets = "msg",
-    cmd = {           -- Options related to messages in the cmdline window.
-      height = 10,    -- Maximum height while expanded for messages beyond 'cmdheight'.
-    },
-    dialog = {        -- Options related to dialog window.
-      height = 0.5,   -- Maximum height.
-    },
-    msg = {           -- Options related to msg window.
-      height = 0.5,   -- Maximum height.
-      timeout = 4000, -- Time a message is visible in the message window.
-    },
-    pager = {         -- Options related to message window.
-      height = 10,    -- Maximum height.
-    },
   },
 })
+
+vim.g.messagesopt = {
+  timeout = 4000,
+}
 
 -- format on save
 vim.api.nvim_create_autocmd("BufWritePre", {
