@@ -1,14 +1,7 @@
-import type {
-  ContextBuilder,
-  Dpp,
-  Plugin,
-} from "https://deno.land/x/dpp_vim@v1.0.0/types.ts";
-import {
-  BaseConfig,
-  type ConfigReturn,
-} from "https://deno.land/x/dpp_vim@v1.0.0/types.ts";
-
-import type { Denops } from "https://deno.land/x/dpp_vim@v1.0.0/deps.ts";
+import type { ContextBuilder, Plugin } from "@shougo/dpp-vim/types";
+import type { Dpp } from "@shougo/dpp-vim/dpp";
+import { BaseConfig, type ConfigReturn } from "@shougo/dpp-vim/config";
+import type { Denops } from "@denops/core";
 
 type Toml = {
   hooks_file?: string;
