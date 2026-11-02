@@ -53,6 +53,7 @@ export class Config extends BaseConfig {
           dup: "force",
           minAutoCompleteLength: 1,
           isVolatile: true,
+          hideTimeout: 300,
         },
         cmdline: {
           mark: "[CMD]",

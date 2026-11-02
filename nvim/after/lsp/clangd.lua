@@ -1,3 +1,3 @@
 return {
-  cmd = { "clangd", "--enable-config" },
+  cmd = { "clangd", "--enable-config", "-j=16" },
 }
