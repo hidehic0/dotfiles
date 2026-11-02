@@ -44,9 +44,16 @@
     };
   };
 
+  programs.gh = {
+    enable = true;
+    extensions = with pkgs; [
+      gh-actions-lock
+    ];
+  };
+
   home.packages = with pkgs; [
     lazygit
-    gh
+    # gh
     delta
     ghq
     pinact
