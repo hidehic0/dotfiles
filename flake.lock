@@ -786,11 +786,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1792999588,
-        "narHash": "sha256-/TbdG8AumOtUnF4x3shcyFAHIzYYPcfRpE5kZfZt+tg=",
+        "lastModified": 1794106564,
+        "narHash": "sha256-HbiLKE3mKjzhSSLOFcX3yTuum5peMlbeYE73pcACPWw=",
         "owner": "wezterm",
         "repo": "wezterm",
-        "rev": "e68a8ec27727fbbda15e07f0a0737cd5e16481f6",
+        "rev": "458a100c1bf4134d36cb5c42dd90e4c8266d9e1a",
         "type": "github"
       },
       "original": {
