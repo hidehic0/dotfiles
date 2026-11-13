@@ -18,12 +18,21 @@
     bubblewrap
     libnotify
     qpdf
-    (safeeyes.overridePythonAttrs (old: {
-      dependencies = old.dependencies ++ [
-        python3Packages.pywayland
-        python3Packages.croniter
-      ];
-    }))
+    (safeeyes.overridePythonAttrs (
+      finalAttrs: old: {
+        # pname = "safeeyes";
+        version = "3.5.1";
+        src = fetchPypi {
+          inherit (old) pname;
+          inherit (finalAttrs) version;
+          hash = "sha256-tuU2uWEi/7Tcmjb7ogAs0+HqfpwUU9q1SUnhX5US8I4=";
+        };
+        dependencies = old.dependencies ++ [
+          python3Packages.pywayland
+          python3Packages.croniter
+        ];
+      }
+    ))
   ];
 
   programs.steam = {
