@@ -1,0 +1,8 @@
+github.com/Shougo/goda-skk.vim v0.4.0 h1:H5k+iUc92DyhXfYCkXab1HZv46/fVIZ+N1hK0aEmq8I=
+github.com/Shougo/goda-skk.vim v0.4.0/go.mod h1:JrBsLjTEhE6kQYNerFhDiO2m6+qiIu01h68juXCDbbI=
+github.com/Shougo/goda.vim v0.8.0 h1:fcr+zeKVYRKE3mU0tOBnrbqNxGIfctpf75LPOrEhn1U=
+github.com/Shougo/goda.vim v0.8.0/go.mod h1:ohGPksso9XrqpdVRLS3TzoUtz2x3yMT8x+x+MnMpbM8=
+github.com/hidehic0/skkeleton-azik-kanatable v0.0.0-20261113120027-f6d75ae70f5a h1:g7ve8bLzPgLEbcuNDSSbUgVWk6xo6eYxOm3afxP/ies=
+github.com/hidehic0/skkeleton-azik-kanatable v0.0.0-20261113120027-f6d75ae70f5a/go.mod h1:HeMPNN1XlEprEWacpOSbrnns7d0x7ZO/++v92D6wk3I=
+golang.org/x/text v0.43.0 h1:1QivrlhwAsnMOcqgOdl9my7s9OyZl8O5/UGUTJVXoWc=
+golang.org/x/text v0.43.0/go.mod h1:hbSIYA/amXcRXTFSZqh8tWHEoqRvvbKPJ2uz/KU+a+s=

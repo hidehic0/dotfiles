@@ -1,9 +1,9 @@
-[[plugins]]
-repo = "vim-skk/skkeleton"
-depends = "denops.vim"
-on_event = ["CmdlineEnter", "InsertEnter"]
-hooks_file = "$HOOK_DIR/skkeleton.lua"
-
-[[plugins]]
-repo = "hidehic0/skkeleton-azik-kanatable"
-on_source = "skkeleton"
+# [[plugins]]
+# repo = "vim-skk/skkeleton"
+# depends = "denops.vim"
+# on_event = ["CmdlineEnter", "InsertEnter"]
+# hooks_file = "$HOOK_DIR/skkeleton.lua"
+#
+# [[plugins]]
+# repo = "hidehic0/skkeleton-azik-kanatable"
+# on_source = "skkeleton"

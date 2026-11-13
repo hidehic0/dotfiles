@@ -9,7 +9,7 @@ export class Config extends BaseConfig {
       "file",
       "rg",
       // "mocword",
-      "skkeleton",
+      // "skkeleton",
     ];
     const default_converters = [
       "converter_fuzzy",
@@ -31,7 +31,7 @@ export class Config extends BaseConfig {
 
       sources: default_sources,
       cmdlineSources: {
-        ":": ["cmdline", "file", "cmdline_history", "skkeleton"].concat(
+        ":": ["cmdline", "file", "cmdline_history"].concat(
           search_sources,
         ),
         "/": search_sources,
@@ -42,7 +42,7 @@ export class Config extends BaseConfig {
           // sorters: ["sorter_fuzzy"],
           matchers: ["matcher_fuzzy"],
           converters: default_converters,
-          enabledIf: "!skkeleton#is_enabled()",
+          enabledIf: "!goda_skk#is_enabled()",
           ignoreCase: true,
         },
         lsp: {
@@ -79,15 +79,15 @@ export class Config extends BaseConfig {
           minAutoCompleteLength: 3,
           maxItems: 5,
         },
-        skkeleton: {
-          mark: "あ",
-          matchers: [],
-          sorters: [],
-          converters: [],
-          isVolatile: true,
-          minAutoCompleteLength: 1,
-          enabledIf: "skkeleton#is_enabled()",
-        },
+        // skkeleton: {
+        //   mark: "あ",
+        //   matchers: [],
+        //   sorters: [],
+        //   converters: [],
+        //   isVolatile: true,
+        //   minAutoCompleteLength: 1,
+        //   enabledIf: "skkeleton#is_enabled()",
+        // },
         rg: {
           mark: "[rg]",
           minAutoCompleteLength: 1,
@@ -122,7 +122,7 @@ export class Config extends BaseConfig {
       },
       filterParams: {
         postfilter_score: {
-          excludeSources: ["skkeleton"],
+          excludeSources: [],
           showScore: false,
         },
         converter_fuzzy: {
