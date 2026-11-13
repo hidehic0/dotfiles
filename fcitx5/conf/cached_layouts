@@ -1079,9 +1079,14 @@ Language=ar
 Label="ar (ara)"
 
 [keyboard-pk-snd]
-Description="キーボード - ウルドゥー語 (パキスタン) - シンディー語"
+Description="キーボード - ウルドゥー語 (パキスタン) - Sindhi (M.B. Sindhi)"
 Language=sd
 Label="sd (snd)"
+
+[keyboard-pk-brahui]
+Description="キーボード - ウルドゥー語 (パキスタン) - Brahui (Pakistan)"
+Language=brh
+Label="brh (brahui)"
 
 [keyboard-pk-urd-navees]
 Description="キーボード - ウルドゥー語 (パキスタン) - Urdu (Pakistan, Navees)"
@@ -1593,6 +1598,11 @@ Description="キーボード - ベラルーシ語 - Belarusian (phonetic)"
 Language=be
 Label="by (phonetic)"
 
+[keyboard-by-typographic]
+Description="キーボード - ベラルーシ語 - Belarusian (typo.)"
+Language=be
+Label="by (typographic)"
+
 [keyboard-by-ru]
 Description="キーボード - ベラルーシ語 - Russian (Belarus)"
 Language=ru
@@ -1837,6 +1847,16 @@ Label="hr (unicodeus)"
 Description="キーボード - クロアチア語 - Croatian (US)"
 Language=hr
 Label="hr (us)"
+
+[keyboard-hr-glag]
+Description="キーボード - クロアチア語 - Croatian (Glagolitic)"
+Language=hr
+Label="hr (glag)"
+
+[keyboard-hr-glagyz]
+Description="キーボード - クロアチア語 - Croatian (Glagolitic, Zemlja and Jeru swapped)"
+Language=hr
+Label="hr (glagyz)"
 
 [keyboard-ma]
 Description="キーボード - アラビア語 (モロッコ)"
@@ -3252,6 +3272,11 @@ Label=az
 Description="キーボード - アゼルバイジャン語 - アゼルバイジャン語 (キリル文字)"
 Language=az
 Label="az (cyrillic)"
+
+[keyboard-az-standard]
+Description="キーボード - アゼルバイジャン語 - Azerbaijani (standard)"
+Language=az
+Label="az (standard)"
 
 [keyboard-kh]
 Description="キーボード - クメール語 (カンボジア)"
