@@ -1,5 +1,6 @@
 [[plugins]]
 repo = "Shougo/goda-skk.vim"
-on_event = ["CmdlineEnter", "InsertEnter"]
+# on_event = ["CmdlineEnter", "InsertEnter"]
+on_map = { "ic" = "<C-j>" }
 depends = "goda.vim"
 hooks_file = "$HOOK_DIR/goda_skk.lua"
