@@ -11,14 +11,14 @@
         "sway/mode",
         "sway/scratchpad",
         "custom/media",
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "sway/window",
+        // "sway/window",
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
+        // "mpd",
         // "idle_inhibitor",
         "custom/notification",
         "pulseaudio",
