@@ -311,24 +311,6 @@
         "type": "github"
       }
     },
-    "flake-utils_6": {
-      "inputs": {
-        "systems": "systems_6"
-      },
-      "locked": {
-        "lastModified": 1794427683,
-        "narHash": "sha256-o7ey9gEilsxaifqJWnBDlYSKbNWYQYtKwDyXeZU2kaU=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "cd489559845d81f673a12885576016c65cbe9363",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "freetype2": {
       "flake": false,
       "locked": {
@@ -604,11 +586,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1794561628,
-        "narHash": "sha256-oWtItM1eQqkp9OJXq2/Zo10Y9Vu9PDE6O8JRjj4+EkE=",
+        "lastModified": 1794646145,
+        "narHash": "sha256-rpqDyUM/d5fACYB8W+wKxxO57ICWjjalzb2X25oFFkY=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "84edd48f141b0c8910dffdd0296ddd577e829132",
+        "rev": "5b87ee0513c29127a01ad06e9cb362ea5ce91e78",
         "type": "github"
       },
       "original": {
@@ -733,21 +715,6 @@
         "type": "github"
       }
     },
-    "systems_6": {
-      "locked": {
-        "lastModified": 1791244623,
-        "narHash": "sha256-uuanbkFk8a313Zfrxdcz8Us/yQtaxNnKJtX8v0ZPpd8=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "d36eeed142f88b5a636f2e3856a53c61654cf29b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
     "tpfl": {
       "inputs": {
         "flake-utils": "flake-utils_5",
@@ -774,7 +741,6 @@
     },
     "wezterm": {
       "inputs": {
-        "flake-utils": "flake-utils_6",
         "freetype2": "freetype2",
         "harfbuzz": "harfbuzz",
         "libpng": "libpng",
@@ -786,11 +752,11 @@
       },
       "locked": {
         "dir": "nix",
-        "lastModified": 1794606273,
-        "narHash": "sha256-Alx67X86Kqi8pTuRTp5eXhCq1vJcARH3wlDKnpjKyGo=",
+        "lastModified": 1794654657,
+        "narHash": "sha256-OxyQy3RcxXdLeOkU73eHEBdZYv6ZLntT76wUxQk2GRg=",
         "owner": "wezterm",
         "repo": "wezterm",
-        "rev": "2f9851c06f6ddc16d2b5d637c5bab43674c818d1",
+        "rev": "e1eae81a56be8b5487dc77a29616afa568fb57b7",
         "type": "github"
       },
       "original": {
