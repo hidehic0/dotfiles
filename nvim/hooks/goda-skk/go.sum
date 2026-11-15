@@ -1,9 +1,5 @@
-github.com/Shougo/goda-skk.vim v0.4.0 h1:H5k+iUc92DyhXfYCkXab1HZv46/fVIZ+N1hK0aEmq8I=
-github.com/Shougo/goda-skk.vim v0.4.0/go.mod h1:JrBsLjTEhE6kQYNerFhDiO2m6+qiIu01h68juXCDbbI=
 github.com/Shougo/goda-skk.vim v0.6.1 h1:CyhhKhqHzElo1oOBM1lG227X5XKko8V6zoty4gIxD7M=
 github.com/Shougo/goda-skk.vim v0.6.1/go.mod h1:yofB0fJV5TAYQHVsU7pe4ca+yE6WaLQxqD0Vo+mkacg=
-github.com/Shougo/goda.vim v0.8.0 h1:fcr+zeKVYRKE3mU0tOBnrbqNxGIfctpf75LPOrEhn1U=
-github.com/Shougo/goda.vim v0.8.0/go.mod h1:ohGPksso9XrqpdVRLS3TzoUtz2x3yMT8x+x+MnMpbM8=
 github.com/Shougo/goda.vim v0.9.0 h1:FVqf1RkS6XgUbU6WFE7LAvLGzA2ETTdQDybXAMRgHqo=
 github.com/Shougo/goda.vim v0.9.0/go.mod h1:ohGPksso9XrqpdVRLS3TzoUtz2x3yMT8x+x+MnMpbM8=
 github.com/hidehic0/skkeleton-azik-kanatable v0.0.0-20261113120027-f6d75ae70f5a h1:g7ve8bLzPgLEbcuNDSSbUgVWk6xo6eYxOm3afxP/ies=
