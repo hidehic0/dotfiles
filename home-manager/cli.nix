@@ -56,5 +56,6 @@ in
       custom_completion_zsh_pkg
       prime-generator_pkg
       binomial_coefficient-calc-cli
+      inputs.primesplit.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
 }

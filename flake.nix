@@ -25,6 +25,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
+    primesplit = {
+      url = "github:hidehic0/primesplit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     custom-completion-zsh = {
       url = "github:hidehic0/custom-completion-zsh";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -87,6 +91,7 @@
       acc_utils,
       tpfl,
       prime-generator,
+      primesplit,
       binomial_coefficient-calc-cli,
       grub2-themes,
       flake-parts,
