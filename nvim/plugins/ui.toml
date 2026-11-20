@@ -80,18 +80,6 @@ require('render-markdown').setup({
 '''
 
 [[plugins]]
-repo = "petertriho/nvim-scrollbar"
-on_event = "VimEnter"
-lua_source = '''
-vim.defer_fn(function()
-  require("scrollbar").setup({
-    show = true,
-    set_highlights = true,
-  })
-end, 100)
-'''
-
-[[plugins]]
 repo = "shellRaining/hlchunk.nvim"
 on_event = "VimEnter"
 lua_source = '''
