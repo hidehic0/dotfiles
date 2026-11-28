@@ -1,8 +1,14 @@
 github.com/Shougo/goda-skk.vim v0.8.1 h1:vt7yc1W3j6lbGckxRWXuAAEo2BAu204KNuotcDz+gnE=
 github.com/Shougo/goda-skk.vim v0.8.1/go.mod h1:yofB0fJV5TAYQHVsU7pe4ca+yE6WaLQxqD0Vo+mkacg=
+github.com/Shougo/goda-skk.vim v0.17.0 h1:2c28MziJDbI38Y92whqMFmxjZrIpsVH5yZshBVxIehE=
+github.com/Shougo/goda-skk.vim v0.17.0/go.mod h1:SC5vLZB8vDEgEDc9SmRmANw5So7SBtb0UQMwidWdvmg=
 github.com/Shougo/goda.vim v0.9.0 h1:FVqf1RkS6XgUbU6WFE7LAvLGzA2ETTdQDybXAMRgHqo=
 github.com/Shougo/goda.vim v0.9.0/go.mod h1:ohGPksso9XrqpdVRLS3TzoUtz2x3yMT8x+x+MnMpbM8=
+github.com/Shougo/goda.vim v0.12.0 h1:Dr0Ljy4J/oxA8xeMMo7NXdFiiDf1krq1H2v1xPDxNO0=
+github.com/Shougo/goda.vim v0.12.0/go.mod h1:ohGPksso9XrqpdVRLS3TzoUtz2x3yMT8x+x+MnMpbM8=
 github.com/hidehic0/skkeleton-azik-kanatable v0.0.0-20261113120027-f6d75ae70f5a h1:g7ve8bLzPgLEbcuNDSSbUgVWk6xo6eYxOm3afxP/ies=
 github.com/hidehic0/skkeleton-azik-kanatable v0.0.0-20261113120027-f6d75ae70f5a/go.mod h1:HeMPNN1XlEprEWacpOSbrnns7d0x7ZO/++v92D6wk3I=
 golang.org/x/text v0.43.0 h1:1QivrlhwAsnMOcqgOdl9my7s9OyZl8O5/UGUTJVXoWc=
 golang.org/x/text v0.43.0/go.mod h1:hbSIYA/amXcRXTFSZqh8tWHEoqRvvbKPJ2uz/KU+a+s=
+golang.org/x/text v0.44.0 h1:YItdp/mQNGnsmrgpcdA5yQ3bnRxCfo/Tj/iByGW9GGo=
+golang.org/x/text v0.44.0/go.mod h1:S4FR1waQ9LbjQTls97SyRjDaUUVkaM+cXwwuG/G+MwY=
